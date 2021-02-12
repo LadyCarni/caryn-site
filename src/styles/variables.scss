@@ -1,0 +1,44 @@
+$primary: #0ABAB5;
+$primary-dark: #046059;
+$grey1: #2B2B2B;
+$grey2: #3F3F3F;
+$grey3: #595959;
+$light1: #EAEAEA;
+
+$content: $grey1;
+
+$type-headline: 'Gravitas One', cursive;
+$type-content: 'Josefin Sans', sans-serif;
+$type-pop: 'Just Me Again Down Here', cursive;
+
+$space: 1em;
+$sm-space: .5em;
+$lg-space: 1.5em;
+
+$std-size: 50px;
+
+$small: 767px;
+$medium: 992px;
+$large: 1200px;
+
+// $breakpoints: (
+//   'small':  ( min-width:  $small ),
+//   'medium': ( min-width:  $medium ),
+//   'large':  ( min-width: $large )
+// ) !default;
+
+// @mixin respond-to($breakpoint) {
+//   // If the key exists in the map
+//   @if map-has-key($breakpoints, $breakpoint) {
+//     // Prints a media query based on the value
+//     @media #{inspect(map-get($breakpoints, $breakpoint))} {
+//       @content;
+//     }
+//   }
+ 
+//   // If the key doesn't exist in the map
+//   @else {
+//     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+//         + "Available breakpoints are: #{map-keys($breakpoints)}.";
+//   }
+// }

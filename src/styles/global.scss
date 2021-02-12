@@ -1,0 +1,107 @@
+@import-normalize;
+@import 'variables.scss';
+@import 'utility.scss';
+@import 'home.scss';
+
+html, body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a, p {
+  font-family: $type-content;
+}
+
+p {
+  line-height: $lg-space;
+}
+
+.nav {
+  a {
+    margin-left: $std-size;
+  }
+}
+
+.brand {
+  font-size: 20px;
+}
+
+.headline {
+  font-family: $type-headline;
+  font-size: 2.5em;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-family: $type-content;
+  justify-content: space-between;
+  height: 50px;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  background: white;
+
+  a {
+    color: $grey1;
+    text-decoration: none;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $large;
+}
+
+.arrow-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: $content;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .feature-content {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h2 {
+      margin: 0;
+    }
+
+    .title, .description {
+      width: 50%;
+    }
+
+    .description {
+      align-self: flex-end;
+
+      h3 {
+        font-family: $type-content;
+        font-size: 1.25em;
+        margin: 0 0 $lg-space;
+      }
+
+      .pop {
+        color: $primary;
+        font-family: $type-pop;
+        font-size: 1.75em;
+        font-weight: 300;
+      }
+    }
+  }
+}
+

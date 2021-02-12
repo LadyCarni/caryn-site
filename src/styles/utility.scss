@@ -1,0 +1,25 @@
+.row {
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+
+  &-center {
+    justify-content: center;
+  }
+
+  &-spread {
+    justify-content: space-between;
+  }
+}
+
+.feature-width {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.feature-height {
+  height: 80vh;
+  max-height: 650px;
+}
