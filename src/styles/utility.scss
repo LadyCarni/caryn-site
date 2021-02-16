@@ -38,3 +38,14 @@
   position: absolute;
   bottom: 0;
 }
+
+.columns {
+  display: inline-flex;
+  align-items: flex-start;
+
+  .column {
+    flex: 1;
+    background: $grey3;
+    overflow: hidden;
+  }
+}
