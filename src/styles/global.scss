@@ -2,6 +2,7 @@
 @import 'variables.scss';
 @import 'utility.scss';
 @import 'home.scss';
+@import 'portfolio.scss';
 
 html, body {
   font-size: 16px;
@@ -23,6 +24,10 @@ p {
   line-height: $lg-space;
 }
 
+h1, h2 {
+  font-weight: 300;
+}
+
 .nav {
   a {
     margin-left: $std-size;
@@ -33,21 +38,16 @@ p {
   font-size: 20px;
 }
 
-.headline {
-  font-family: $type-headline;
-  font-size: 2.5em;
-}
-
 .header {
-  display: flex;
   align-items: center;
-  font-family: $type-content;
-  justify-content: space-between;
-  height: 50px;
-  position: sticky;
-  z-index: 5;
-  top: 0;
   background: white;
+  display: flex;
+  font-family: $type-content;
+  height: 50px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 
   a {
     color: $grey1;
@@ -77,79 +77,3 @@ p {
     color: $primary;
   }
 }
-
-.feature {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-
-  .feature-content {
-    width: $content-width;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-    .title {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    &.center {
-      .title {
-        .tri-small {
-          margin-bottom: 3em;
-        }
-      }
-
-      .description {
-        align-self: flex-end;
-      }
-    }
-
-    &.top {
-      .title {
-        .tri-small {
-          margin-top: 3em;
-        }
-      }
-
-      .description {
-        align-self: flex-start;
-      }
-    }
-
-    h2 {
-      margin: 0;
-    }
-
-    .title, .description {
-      width: 50%;
-    }
-
-    .description {
-      p {
-        &:first-child {
-          margin-top: 0;
-        }
-      }
-
-      h3 {
-        font-family: $type-content;
-        font-size: 1.25em;
-        margin: 0 0 $lg-space;
-      }
-
-      .pop {
-        color: $primary;
-        font-family: $type-pop;
-        font-size: 1.75em;
-        font-weight: 300;
-      }
-    }
-  }
-}
-

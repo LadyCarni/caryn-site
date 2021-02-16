@@ -4,19 +4,15 @@
 
 .flex {
   display: flex;
-
-  &-center {
-    justify-content: center;
-  }
-
-  &-spread {
-    justify-content: space-between;
-  }
 }
 
 .feature {
   &.light {
     background-color: $light1;
+  }
+
+  &.dark {
+    background-color: $grey3;
   }
 }
 
@@ -27,7 +23,7 @@
 
 .feature-height {
   height: 80vh;
-  max-height: 650px;
+  max-height: 750px;
 }
 
 .section-divider {
@@ -47,5 +43,46 @@
     flex: 1;
     background: $grey3;
     overflow: hidden;
+  }
+}
+
+.filter {
+  &.bottom {
+    &::after {
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+  }
+
+  &.middle {
+    &::after {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    }
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: height 200ms ease;
+    z-index: 2;
+  }
+
+  &.image {
+    &:hover {
+      &::after {
+        bottom: 0;
+        height: 120px;
+      }
+    }
+  }
+
+  &:hover {
+    &::after {
+      transition: height 200ms ease;
+    }
   }
 }
