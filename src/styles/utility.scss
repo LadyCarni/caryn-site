@@ -27,17 +27,17 @@
 }
 
 .section-divider {
-  width: $content-width;
-  margin: 0 auto;
-  height: 1px;
   background-color: $primary;
-  position: absolute;
   bottom: 0;
+  height: 1px;
+  margin: 0 auto;
+  position: absolute;
+  width: $content-width;
 }
 
 .columns {
-  display: inline-flex;
   align-items: flex-start;
+  display: inline-flex;
 
   .column {
     flex: 1;

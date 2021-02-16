@@ -83,16 +83,14 @@ class Home extends Component {
           </div>
         </div>
       </div>
-      <div className="dark feature feature-width feature-height">
-        <div className="feature-image filter middle">
-          <img src="https://images.unsplash.com/photo-1612831660648-ba96d72bfc5b?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1250&q=80" alt="placeholder"/>
+      <div className="dark feature feature-width feature-height headline">
+        <div className="headline-image filter middle">
+          <img src="https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="placeholder"/>
         </div>
-        <div className="feature-content">
-          <div className="headline overlay">
-            <h3>Project Name</h3>
-            <h2>Title for some fun thing</h2>
-            <Link to="/portfolio" className="arrow-link block">View case study <FontAwesomeIcon icon={faLongArrowRight} /></Link>
-          </div>
+        <div className="headline overlay">
+          <h3>Knak: A Case Study</h3>
+          <h2>Architecting User Experience</h2>
+          <Link to="/portfolio" className="arrow-link block">View case study <FontAwesomeIcon icon={faLongArrowRight} /></Link>
         </div>
       </div>
       </>
