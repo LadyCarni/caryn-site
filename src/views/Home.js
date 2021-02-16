@@ -50,7 +50,7 @@ class Home extends Component {
         <div className="feature-content bottom columns portfolio">
           <div className="column">
             <Link to="#" >
-              <div className="image">
+              <div className="image filter">
                 <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="placeholder"/>
               </div>
               <div className="caption">
@@ -61,7 +61,7 @@ class Home extends Component {
           </div>
           <div className="column">
             <Link to="#" >
-              <div className="image">
+              <div className="image filter">
                 <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="placeholder"/>
               </div>
               <div className="caption">
@@ -72,7 +72,7 @@ class Home extends Component {
           </div>
           <div className="column">
             <Link to="#" >
-              <div className="image">
+              <div className="image filter">
                 <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="placeholder"/>
               </div>
               <div className="caption">

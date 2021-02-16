@@ -67,6 +67,31 @@
       object-fit: cover;
       width: 100%;
     }
+
+    &.filter {
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        // opacity: 1;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        transition: height 200ms ease;
+        z-index: 2;
+      }
+
+      &:hover {
+        &::after {
+          // opacity: 0;
+          transition: height 200ms ease;
+          height: 120px;
+          bottom: 0;
+        }
+      }
+    }
   }
 
   .caption {
@@ -74,5 +99,6 @@
     position: absolute;
     bottom: 2em;
     left: 2em;
+    z-index: 4;
   }
 }
