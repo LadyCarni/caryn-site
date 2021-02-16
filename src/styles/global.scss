@@ -65,6 +65,11 @@ p {
   font-weight: 500;
   color: $content;
 
+  &.block {
+    display: block;
+    margin-top: 2em;
+  }
+
   svg {
     font-size: 1.5em;
     vertical-align: middle;
@@ -74,16 +79,48 @@ p {
 }
 
 .feature {
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  position: relative;
 
   .feature-content {
-    width: 960px;
+    width: $content-width;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &.center {
+      .title {
+        .tri-small {
+          margin-bottom: 3em;
+        }
+      }
+
+      .description {
+        align-self: flex-end;
+      }
+    }
+
+    &.top {
+      .title {
+        .tri-small {
+          margin-top: 3em;
+        }
+      }
+
+      .description {
+        align-self: flex-start;
+      }
+    }
 
     h2 {
       margin: 0;
@@ -94,7 +131,11 @@ p {
     }
 
     .description {
-      align-self: flex-end;
+      p {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
 
       h3 {
         font-family: $type-content;

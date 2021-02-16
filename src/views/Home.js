@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowDown, faLongArrowRight } from '@fortawesome/pro-light-svg-icons'
 import triangles from '../assets/tri-large.svg'; 
+import trismall from '../assets/tri-vert1.svg';
+import trismall2 from '../assets/tri-hor1.svg';
 
 class Home extends Component {
   render() {
@@ -15,20 +17,43 @@ class Home extends Component {
         </div>
         <FontAwesomeIcon icon={faLongArrowDown} className="scroll" alt="scroll down" />
       </div>
-      <div className="about feature feature-width feature-height">
-        <div className="feature-content">
+      <div className="light feature feature-width feature-height">
+        <div className="feature-content center">
           <div className="title">
+            <img src={trismall} alt="" className="tri-small" />
             <h2 className="headline">Who I am</h2>
           </div>
           <div className="description">
             <h3>I <span className="pop">design</span> experiences</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cupiditate corporis sed ea, nobis fugiat facere maiores praesentium perspiciatis tempora id aut culpa obcaecati saepe ipsam voluptatem repudiandae tenetur accusamus!</p>
+            <p>Whether it's on a keyboard, at the easle, in the garden, or with a power tool in hand: I live to create. The array of hobbies I've accumulated all share features of engagement, imagination, and a little whimsy.</p>
+            <p>I thrive on cross-functional teams, working with users to build elegant products that solve real problems. I believe that being a good UX and UI designer requires a high level of practical skill in front-end development. When I'm not learning about behavioral cognition, neuroscience, and psychology, I enjoy being active in skills-based volunteering, community groups, and STEM advocacy.</p>
             <p>
-              <Link to="/about" className="arrow-link">More about Caryn <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+              <Link to="/about" className="arrow-link block">More about Caryn <FontAwesomeIcon icon={faLongArrowRight} /></Link>
             </p>
           </div>
         </div>
+        <div className="section-divider"></div>
       </div>
+      <div className="light feature feature-width feature-height">
+        <div className="feature-content top">
+          <div className="title">
+            <h2 className="headline">What I do</h2>
+            <img src={trismall2} alt="" className="tri-small" />
+          </div>
+          <div className="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit quibusdam perferendis commodi ex, labore nulla tempora repudiandae eius minus vero illo cupiditate molestiae magnam consequuntur hic velit officiis omnis!</p>
+            <p>
+              <Link to="/portfolio" className="arrow-link block">View all work <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+            </p>
+          </div>
+        </div>
+        <div className="feature-content bottom columns">
+          <div className="column">feature</div>
+          <div className="column">feature</div>
+          <div className="column">feature</div>
+        </div>
+      </div>
+      
       </>
     )
   }
