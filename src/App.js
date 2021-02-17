@@ -45,10 +45,38 @@ export default function Site() {
       </Switch>
 
       <div className="footer">
-        <a href="https://github.com/LadyCarni" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} alt="Caryn's GitHub profile" title="GitHub" /></a>
-        <a href="https://twitter.com/LadyCarni" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} alt="Caryn's Twitter profile" title="Twitter" /></a>
-        <a href="https://www.instagram.com/lady.carni/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} alt="Caryn's Instagram profile" title="Instagram" /></a>
-        <a href="https://www.linkedin.com/in/carynfarvour/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} alt="Caryn's LinkedIn profile" title="LinkedIn"/></a>
+        <a href="https://github.com/LadyCarni"
+        target="_blank"
+        rel="noreferrer">
+          <FontAwesomeIcon icon={faGithub}
+          alt="Caryn's GitHub profile"
+          title="GitHub"
+          className="github" />
+        </a>
+        <a href="https://twitter.com/LadyCarni"
+        target="_blank"
+        rel="noreferrer">
+          <FontAwesomeIcon icon={faTwitter}
+          alt="Caryn's Twitter profile"
+          title="Twitter"
+          className="twitter" />
+        </a>
+        <a href="https://www.instagram.com/lady.carni/"
+        target="_blank"
+        rel="noreferrer">
+          <FontAwesomeIcon icon={faInstagram}
+          alt="Caryn's Instagram profile"
+          title="Instagram"
+          className="instagram" />
+        </a>
+        <a href="https://www.linkedin.com/in/carynfarvour/" 
+        target="_blank"
+        rel="noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} 
+          alt="Caryn's LinkedIn profile" 
+          title="LinkedIn"
+          className="linkedin" />
+        </a>
       </div>
     </Router>
   );

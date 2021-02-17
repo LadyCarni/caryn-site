@@ -97,6 +97,27 @@ h1, h2 {
   }
 
   a {
-    color: $grey3;
+    svg {
+      color: $grey3;
+      transition: all 300ms ease;
+    }
+
+    &:hover {
+      .github {
+        color: $github;
+      }
+
+      .twitter {
+        color: $twitter;
+      }
+
+      .instagram {
+        color: $instagram;
+      }
+
+      .linkedin {
+        color: $linkedin;
+      }
+    }
   }
 }
