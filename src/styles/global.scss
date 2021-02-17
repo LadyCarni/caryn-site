@@ -77,3 +77,69 @@ h1, h2 {
     color: $primary;
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background: white;
+  align-items: center;
+  font-size: 1.25em;
+  color: $grey3;
+  bottom: 0;
+  z-index: 5;
+  position: sticky;
+
+  svg {
+    margin-left: .75em;
+  }
+
+  a {
+    svg {
+      color: $grey3;
+      transition: all 300ms ease;
+    }
+
+    &:hover {
+      .github {
+        color: $github;
+      }
+
+      .twitter {
+        color: $twitter;
+      }
+
+      .instagram {
+        color: $instagram;
+      }
+
+      .linkedin {
+        color: $linkedin;
+      }
+    }
+  }
+
+  .follow-links {
+    justify-self: flex-end;
+    padding-right: 50px;
+    margin-left: auto;
+  }
+}
+
+.top-scroll {
+  align-items: center;
+  color: $content;
+  cursor: pointer;
+  font-family: $type-content;
+  font-size: .85em;
+  height: 40px;
+  justify-self: center;
+  left: 45vw;
+  position: sticky;
+
+  &:hover {
+    svg {
+      color: $primary;
+    }
+  }
+}
