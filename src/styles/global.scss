@@ -77,3 +77,26 @@ h1, h2 {
     color: $primary;
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  background: white;
+  align-items: center;
+  font-size: 1.25em;
+  color: $grey3;
+  bottom: 0;
+  z-index: 5;
+  position: sticky;
+  justify-content: flex-end;
+  padding-right: 50px;
+
+  svg {
+    margin-left: .75em;
+  }
+
+  a {
+    color: $grey3;
+  }
+}

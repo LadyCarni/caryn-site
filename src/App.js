@@ -45,10 +45,10 @@ export default function Site() {
       </Switch>
 
       <div className="footer">
-        <Link to="#"><FontAwesomeIcon icon={faGithub} alt="" /></Link>
-        <Link to="#"><FontAwesomeIcon icon={faTwitter} alt="" /></Link>
-        <Link to="#"><FontAwesomeIcon icon={faInstagram} alt="" /></Link>
-        <Link to="#"><FontAwesomeIcon icon={faLinkedin} alt="" /></Link>
+        <a href="https://github.com/LadyCarni" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} alt="Caryn's GitHub profile" title="GitHub" /></a>
+        <a href="https://twitter.com/LadyCarni" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} alt="Caryn's Twitter profile" title="Twitter" /></a>
+        <a href="https://www.instagram.com/lady.carni/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} alt="Caryn's Instagram profile" title="Instagram" /></a>
+        <a href="https://www.linkedin.com/in/carynfarvour/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} alt="Caryn's LinkedIn profile" title="LinkedIn"/></a>
       </div>
     </Router>
   );
