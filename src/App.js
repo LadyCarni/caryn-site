@@ -8,6 +8,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Home from './views/Home';
+import ScrollArrow from './components/scrollArrow';
 
 export default function Site() {
   return (
@@ -45,6 +46,7 @@ export default function Site() {
       </Switch>
 
       <div className="footer">
+        <ScrollArrow />
         <a href="https://github.com/LadyCarni"
         target="_blank"
         rel="noreferrer">
