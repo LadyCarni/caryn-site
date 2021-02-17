@@ -25,8 +25,8 @@ class Home extends Component {
           </div>
           <div className="description">
             <h3>I <span className="pop">design</span> experiences</h3>
-            <p>Whether it's on a keyboard, at the easle, in the garden, or with a power tool in hand: I live to create. The array of hobbies I've accumulated all share features of engagement, imagination, and a little whimsy.</p>
-            <p>I thrive on cross-functional teams, working with users to build elegant products that solve real problems. I believe that being a good UX and UI designer requires a high level of practical skill in front-end development. When I'm not learning about behavioral cognition, neuroscience, and psychology, I enjoy being active in skills-based volunteering, community groups, and STEM advocacy.</p>
+            <p>Whether it's on a keyboard, at the easle, in the garden, or with a power tool in hand: I live to create. The hobbies and skills I've accumulated all share features of engagement, imagination, and a little whimsy.</p>
+            <p>Professionally, I thrive on cross-functional teams, working directly with users to build elegant products that solve real problems.</p>
             <p>
               <Link to="/about" className="arrow-link block">More about Caryn <FontAwesomeIcon icon={faLongArrowRight} /></Link>
             </p>
@@ -41,7 +41,7 @@ class Home extends Component {
             <img src={trismall2} alt="" className="tri-small" />
           </div>
           <div className="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reprehenderit quibusdam perferendis commodi ex, labore nulla tempora repudiandae eius minus vero illo cupiditate molestiae magnam consequuntur hic velit officiis omnis!</p>
+            <p>I am a UX strategist, a UI designer, and a front-end developer. I write about practical UX, design, and product management skills. I coach teams and speak publicly about product strategy.</p>
             <p>
               <Link to="/portfolio" className="arrow-link block">View all work <FontAwesomeIcon icon={faLongArrowRight} /></Link>
             </p>
@@ -55,7 +55,7 @@ class Home extends Component {
               </div>
               <div className="caption overlay">
                 <h3>Title</h3>
-                <span>Category</span>
+                <span>Research & Strategy</span>
               </div>
             </Link>
           </div>
@@ -66,7 +66,7 @@ class Home extends Component {
               </div>
               <div className="caption overlay">
                 <h3>Title</h3>
-                <span>Category</span>
+                <span>UX Design</span>
               </div>
             </Link>
           </div>
@@ -77,7 +77,7 @@ class Home extends Component {
               </div>
               <div className="caption overlay">
                 <h3>Title</h3>
-                <span>Category</span>
+                <span>Website</span>
               </div>
             </Link>
           </div>

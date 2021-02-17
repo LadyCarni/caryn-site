@@ -20,6 +20,10 @@
   .caption {
     bottom: 2em;
     left: 2em;
+
+    &span {
+      font-size: .85em;
+    }
   }
 }
 
