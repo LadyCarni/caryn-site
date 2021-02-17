@@ -37,8 +37,8 @@ const StyledBurger = styled.button`
   }
 
   span {
-    width: 2rem;
-    height: 0.25rem;
+    width: 25px;
+    height: 4px;
     background: ${({ open }) => open ? '#595959' : '#3F3F3F'};
     border-radius: 10px;
     transition: all 0.3s linear;
