@@ -5,6 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Home from './views/Home';
 
 export default function Site() {
@@ -41,6 +43,13 @@ export default function Site() {
           <Contact />
         </Route>
       </Switch>
+
+      <div className="footer">
+        <Link to="#"><FontAwesomeIcon icon={faGithub} alt="" /></Link>
+        <Link to="#"><FontAwesomeIcon icon={faTwitter} alt="" /></Link>
+        <Link to="#"><FontAwesomeIcon icon={faInstagram} alt="" /></Link>
+        <Link to="#"><FontAwesomeIcon icon={faLinkedin} alt="" /></Link>
+      </div>
     </Router>
   );
 }
