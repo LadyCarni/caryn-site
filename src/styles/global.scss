@@ -89,8 +89,6 @@ h1, h2 {
   bottom: 0;
   z-index: 5;
   position: sticky;
-  justify-content: flex-end;
-  padding-right: 50px;
 
   svg {
     margin-left: .75em;
@@ -118,6 +116,30 @@ h1, h2 {
       .linkedin {
         color: $linkedin;
       }
+    }
+  }
+
+  .follow-links {
+    justify-self: flex-end;
+    padding-right: 50px;
+    margin-left: auto;
+  }
+}
+
+.top-scroll {
+  align-items: center;
+  color: $content;
+  cursor: pointer;
+  font-family: $type-content;
+  font-size: .85em;
+  height: 40px;
+  justify-self: center;
+  left: 45vw;
+  position: sticky;
+
+  &:hover {
+    svg {
+      color: $primary;
     }
   }
 }

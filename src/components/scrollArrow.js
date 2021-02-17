@@ -21,7 +21,7 @@ const ScrollArrow = () =>{
   window.addEventListener('scroll', checkScrollTop)
 
   return (
-    <button onClick={scrollTop} style={{height: 40, display: showScroll ? 'flex' : 'none'}} className="top-scroll">return to top <FontAwesomeIcon icon={faLongArrowUp} alt="scroll up" /></button>
+    <span onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}} className="top-scroll">return to top <FontAwesomeIcon icon={faLongArrowUp} alt="scroll up" /></span>
   );
 }
 
