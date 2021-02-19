@@ -17,7 +17,7 @@ class Home extends Component {
         </div>
         <FontAwesomeIcon icon={faLongArrowDown} className="scroll" alt="scroll down" />
       </div>
-      <div className="light feature feature-width feature-height">
+      <div className="light feature center feature-width feature-height">
         <div className="feature-content center">
           <div className="title">
             <img src={trismall} alt="" className="tri-small" />
@@ -34,7 +34,7 @@ class Home extends Component {
         </div>
         <div className="section-divider"></div>
       </div>
-      <div className="light feature feature-width feature-height">
+      <div className="light feature center feature-width feature-height">
         <div className="feature-content top">
           <div className="title">
             <h2>What I do</h2>
@@ -83,7 +83,7 @@ class Home extends Component {
           </div>
         </div>
       </div>
-      <div className="dark feature feature-width feature-height headline">
+      <div className="dark feature center feature-width feature-height headline">
         <div className="headline-image filter middle">
           <img src="https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="placeholder"/>
         </div>

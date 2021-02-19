@@ -41,7 +41,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="feature-content bottom columns portfolio">
+    <div className="feature-content columns portfolio">
       {data.map((project) => (
         <div className="column" key={project.id}>
           <Link to="#" >

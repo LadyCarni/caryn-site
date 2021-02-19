@@ -5,6 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Home from './views/Home';
@@ -15,6 +17,7 @@ import Menu from './components/menu';
 export default function Site() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="header row feature-width">
         <span className="brand"><Link to="/">Caryn Farvour</Link></span>
         <div className="nav-container">
@@ -82,6 +85,16 @@ export default function Site() {
       </div>
     </Router>
   );
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
 function Articles() {
