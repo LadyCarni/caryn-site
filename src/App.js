@@ -8,6 +8,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Home from './views/Home';
+import Portfolio from './views/Portfolio';
 import ScrollArrow from './components/scrollArrow';
 import Menu from './components/menu';
 
@@ -80,14 +81,6 @@ export default function Site() {
         </div>
       </div>
     </Router>
-  );
-}
-
-function Portfolio() {
-  return (
-    <div>
-      <h2>Portfolio</h2>
-    </div>
   );
 }
 
