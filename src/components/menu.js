@@ -25,7 +25,7 @@ const StyledBurger = styled.button`
   margin-left: auto;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
+  width: 33px;
   height: 2rem;
   background: transparent;
   border: none;
@@ -37,7 +37,7 @@ const StyledBurger = styled.button`
   }
 
   span {
-    width: 25px;
+    width: 33px;
     height: 4px;
     background: ${({ open }) => open ? '#595959' : '#3F3F3F'};
     border-radius: 10px;
