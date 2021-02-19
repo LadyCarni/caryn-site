@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
@@ -11,11 +11,11 @@ const StyledNav = styled.nav`
 const Nav = ({ open }) => {
   return (
     <StyledNav open={open} className="menu">
-      <Link to="/portfolio" aria-label="portfolio">Portfolio</Link>
-      <Link to="/articles" aria-label="articles">Articles</Link>
-      <Link to="/about" aria-label="about">About</Link>
-      <Link to="/creative" aria-label="creative">Creative</Link>
-      <Link to="/contact" aria-label="contact">Contact</Link>
+      <NavLink to="/portfolio" aria-label="portfolio">Portfolio</NavLink>
+      <NavLink to="/articles" aria-label="articles">Articles</NavLink>
+      <NavLink to="/about" aria-label="about">About</NavLink>
+      <NavLink to="/creative" aria-label="creative">Creative</NavLink>
+      <NavLink to="/contact" aria-label="contact">Contact</NavLink>
     </StyledNav>
   )
 }
