@@ -5,7 +5,7 @@ import { faLongArrowDown, faLongArrowRight } from '@fortawesome/pro-light-svg-ic
 import triangles from '../assets/tri-large.svg'; 
 import trismall from '../assets/tri-vert1.svg';
 import trismall2 from '../assets/tri-hor1.svg';
-
+import PortfolioFeatures from '../components/portfolioFeatures';
 class Home extends Component {
   render() {
     return (
@@ -48,39 +48,7 @@ class Home extends Component {
           </div>
         </div>
         <div className="feature-content bottom-content columns portfolio">
-          <div className="column">
-            <Link to="#" >
-              <div className="image filter bottom">
-                <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="placeholder"/>
-              </div>
-              <div className="caption overlay">
-                <h3>Title</h3>
-                <span>Research & Strategy</span>
-              </div>
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="#" >
-              <div className="image filter bottom">
-                <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="placeholder"/>
-              </div>
-              <div className="caption overlay">
-                <h3>Title</h3>
-                <span>UX Design</span>
-              </div>
-            </Link>
-          </div>
-          <div className="column">
-            <Link to="#" >
-              <div className="image filter bottom">
-                <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="placeholder"/>
-              </div>
-              <div className="caption overlay">
-                <h3>Title</h3>
-                <span>Website</span>
-              </div>
-            </Link>
-          </div>
+          <PortfolioFeatures />
         </div>
       </div>
       <div className="dark feature center feature-width feature-height headline">
