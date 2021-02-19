@@ -29,8 +29,42 @@ h1, h2 {
 }
 
 .nav {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  margin-right: 2em;
+  text-align: left;
+
   a {
-    margin-left: $std-size;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 0 1.5em;
+    transition: all 300ms ease;
+    border-bottom: 4px solid transparent;
+
+    &:hover {
+      background: rgba($primary, .3);
+      color: darken($primary, 20%);
+      transition: all 300ms ease;
+    }
+
+    &.active {
+      border-bottom: 4px solid $primary;
+    }
   }
 }
 

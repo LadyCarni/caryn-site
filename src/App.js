@@ -9,18 +9,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Home from './views/Home';
 import ScrollArrow from './components/scrollArrow';
+import Menu from './components/menu';
 
 export default function Site() {
   return (
     <Router>
       <div className="header row feature-width">
         <span className="brand"><Link to="/">Caryn Farvour</Link></span>
-        <div className="nav">
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/articles">Articles</Link>
-          <Link to="/about">About</Link>
-          <Link to="/creative">Creative</Link>
-          <Link to="/contact">Contact</Link>
+        <div className="nav-container">
+          <Menu />
         </div>
       </div>
 
