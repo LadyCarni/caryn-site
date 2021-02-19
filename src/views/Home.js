@@ -47,7 +47,7 @@ class Home extends Component {
             </p>
           </div>
         </div>
-        <div className="feature-content bottom columns portfolio">
+        <div className="feature-content bottom-content columns portfolio">
           <div className="column">
             <Link to="#" >
               <div className="image filter bottom">

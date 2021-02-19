@@ -26,6 +26,10 @@
   max-height: 750px;
 }
 
+.full-height {
+  height: 100vh;
+}
+
 .section-divider {
   background-color: $primary;
   bottom: 0;
@@ -38,10 +42,12 @@
 .columns {
   align-items: flex-start;
   display: inline-flex;
+  flex-wrap: wrap;
 
   .column {
     flex: 1;
     background: $grey3;
+    min-width: 30%;
     overflow: hidden;
   }
 }

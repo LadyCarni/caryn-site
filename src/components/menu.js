@@ -5,7 +5,6 @@ import styled from "styled-components";
 const StyledNav = styled.nav`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100vw)'};
   transition: transform 0.3s ease-in-out;
-  }
 `
 
 const Nav = ({ open }) => {
