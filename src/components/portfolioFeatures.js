@@ -23,7 +23,7 @@ const PortfolioFeatures = () => {
   ];
 
   return (
-    <div className="feature-content columns portfolio">
+    <div className="columns portfolio highlights">
       {gallery.map((project) => (
         <div className="column" key={project.id}>
           <Link to="#" >

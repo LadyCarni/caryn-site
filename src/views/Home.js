@@ -17,8 +17,8 @@ class Home extends Component {
         </div>
         <FontAwesomeIcon icon={faLongArrowDown} className="scroll" alt="scroll down" />
       </div>
-      <div className="light feature center feature-width feature-height">
-        <div className="feature-content center">
+      <div className="light feature bottom feature-width feature-height">
+        <div className="feature-content">
           <div className="title">
             <img src={trismall} alt="" className="tri-small" />
             <h2>Who I am</h2>
@@ -34,21 +34,23 @@ class Home extends Component {
         </div>
         <div className="section-divider"></div>
       </div>
-      <div className="light feature center feature-width feature-height">
-        <div className="feature-content top">
-          <div className="title">
-            <h2>What I do</h2>
-            <img src={trismall2} alt="" className="tri-small" />
+      <div className="light feature top feature-width feature-height">
+        <div className="feature-content flex column">
+          <div className="flex row">
+            <div className="title">
+              <img src={trismall2} alt="" className="tri-small" />
+              <h2>What I do</h2>
+            </div>
+            <div className="description">
+              <p>I am a UX strategist, a UI designer, and a front-end developer. I write about practical UX, design, and product management skills. I coach teams and speak publicly about product strategy.</p>
+              <p>
+                <Link to="/portfolio" className="arrow-link block">View all work <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+              </p>
+            </div>
           </div>
-          <div className="description">
-            <p>I am a UX strategist, a UI designer, and a front-end developer. I write about practical UX, design, and product management skills. I coach teams and speak publicly about product strategy.</p>
-            <p>
-              <Link to="/portfolio" className="arrow-link block">View all work <FontAwesomeIcon icon={faLongArrowRight} /></Link>
-            </p>
+          <div className="flex row">
+            <PortfolioFeatures />
           </div>
-        </div>
-        <div className="feature-content bottom-content columns portfolio">
-          <PortfolioFeatures />
         </div>
       </div>
       <div className="dark feature center feature-width feature-height headline">

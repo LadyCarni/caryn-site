@@ -1,11 +1,3 @@
-.row {
-  flex-direction: row;
-}
-
-.flex {
-  display: flex;
-}
-
 .feature {
   &.light {
     background-color: $light1;
@@ -19,11 +11,6 @@
 .feature-width {
   margin-right: 50px;
   margin-left: 50px;
-}
-
-.feature-height {
-  height: 80vh;
-  max-height: 750px;
 }
 
 .full-height {
@@ -94,6 +81,18 @@
   }
 }
 
+.flex {
+  display: flex;
+
+  &.row {
+    flex-direction: row;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+}
+
 .feature {
   align-items: center;
   display: flex;
@@ -104,8 +103,16 @@
     justify-content: center;
   }
 
+  &.bottom {
+    .description {
+      align-self: flex-end;
+    }
+  }
+
   &.top {
-    padding: 100px 0;
+    .description {
+      align-self: flex-start;
+    }
   }
 
   .pop {
@@ -124,8 +131,8 @@
   .feature-content {
     width: $content-width;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    padding: 100px 0;
     
     .title {
       display: flex;
@@ -135,30 +142,6 @@
       h2 {
         font-family: $type-headline;
         font-size: 2.5em;
-      }
-    }
-
-    &.center {
-      .title {
-        .tri-small {
-          margin-bottom: 3em;
-        }
-      }
-
-      .description {
-        align-self: flex-end;
-      }
-    }
-
-    &.top {
-      .title {
-        .tri-small {
-          margin-top: 3em;
-        }
-      }
-
-      .description {
-        align-self: flex-start;
       }
     }
 

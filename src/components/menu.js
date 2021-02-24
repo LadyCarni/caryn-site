@@ -12,8 +12,8 @@ const Nav = ({ open }) => {
     <StyledNav open={open} className="menu">
       <NavLink to="/portfolio" aria-label="portfolio">Portfolio</NavLink>
       <NavLink to="/articles" aria-label="articles">Articles</NavLink>
-      <NavLink to="/about" aria-label="about">About</NavLink>
       <NavLink to="/creative" aria-label="creative">Creative</NavLink>
+      <NavLink to="/about" aria-label="about">About</NavLink>
       <NavLink to="/contact" aria-label="contact">Contact</NavLink>
     </StyledNav>
   )

@@ -35,11 +35,11 @@ export default function Site() {
         <Route path="/articles">
           <Articles />
         </Route>
-        <Route path="/about">
-          <About />
-        </Route>
         <Route path="/creative">
           <Creative />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/contact">
           <Contact />
@@ -104,19 +104,18 @@ function Articles() {
     </div>
   );
 }
+function Creative() {
+  return (
+    <div>
+      <h2>Creative</h2>
+    </div>
+  );
+}
 
 function About() {
   return (
     <div>
       <h2>About</h2>
-    </div>
-  );
-}
-
-function Creative() {
-  return (
-    <div>
-      <h2>Creative</h2>
     </div>
   );
 }
