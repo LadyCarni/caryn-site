@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link, Route, Switch, useRouteMatch } from "react-router-dom";
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -46,7 +46,7 @@ const Projects = ({ match }) => {
     },
   ];
 
-  const { url } = useRouteMatch();
+  const { url, path } = useRouteMatch();
 
   const projectCards = gallery.map((project) => {
     return (
@@ -65,8 +65,19 @@ const Projects = ({ match }) => {
   });
 
   return (
-    <div className="feature-content shadow columns portfolio">
-      {projectCards}
+    <div className="light feature feature-width full-height">
+      <Switch>
+        <Route path={`${path}`} exact>
+          <div className="feature-content shadow columns portfolio">
+            {projectCards}
+          </div>
+        </Route>
+        <Route path={`${path}/wow-project`}>
+          <div>
+            wow project!
+          </div>
+        </Route>
+      </Switch>
     </div>
   );
 };
