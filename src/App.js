@@ -10,10 +10,10 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Home } from './views/home';
-import { Portfolio } from './views/portfolio';
-import ScrollArrow from './components/scrollArrow';
-import Menu from './components/menu';
+import { Home } from 'views/home';
+import { Portfolio } from 'views/portfolio';
+import ScrollArrow from 'components/scrollArrow';
+import Menu from 'components/menu';
 
 export default function Site() {
   return (
