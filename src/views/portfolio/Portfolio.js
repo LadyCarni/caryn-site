@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 // import { Link } from "react-router-dom";
-import Projects from '../components/projects';
+import Projects from '../../components/projects';
 
 class Portfolio extends Component {
   render() {
     return (
-      <div className="light feature top feature-width full-height">
+      <div className="light feature feature-width full-height">
         <Projects />
       </div>
     )

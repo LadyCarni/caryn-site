@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowDown, faLongArrowRight } from '@fortawesome/pro-light-svg-icons';
-import triangles from '../assets/tri-large.svg'; 
-import trismall from '../assets/tri-vert1.svg';
-import trismall2 from '../assets/tri-hor1.svg';
-import PortfolioFeatures from '../components/portfolioFeatures';
+import triangles from '../../assets/tri-large.svg'; 
+import trismall from '../../assets/tri-vert1.svg';
+import trismall2 from '../../assets/tri-hor1.svg';
+import PortfolioFeatures from '../../components/portfolioFeatures';
 class Home extends Component {
   render() {
     return (
