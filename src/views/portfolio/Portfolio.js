@@ -5,7 +5,9 @@ import Projects from 'components/projects';
 class Portfolio extends Component {
   render() {
     return (
-      <Projects />
+      <div className="light feature feature-width full-height portfolio">
+        <Projects />
+      </div>
     )
   }
 }
