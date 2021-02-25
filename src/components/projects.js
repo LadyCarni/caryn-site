@@ -27,7 +27,7 @@ const Projects = ({ match }) => {
       source: "https://source.unsplash.com/random?cafe",
       title: "So research right now",
       slug: "research-project",
-      category: "Research & Strategy",
+      category: "Web App",
       id: 3
     },
     { 

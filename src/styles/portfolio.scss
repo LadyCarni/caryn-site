@@ -43,7 +43,7 @@
 }
 
 .project-title {
-  height: 400px;
+  height: 500px;
   overflow: hidden;
   position: relative;
 
@@ -62,6 +62,31 @@
   }
 }
 
+.summary {
+  background: $primary;
+  padding: $std-size;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  h3 {
+    font-family: $type-content;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .about {
+    max-width: 50%;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.article {
+  width: 70vw;
+  margin: $std-size auto;
+}
 
 .tags {
   font-family: $type-content;
@@ -71,9 +96,12 @@
   padding: 0;
 
   li {
-    display: inline-block;
     font-style: italic;
-    padding-right: 1em;
+    padding-bottom: 1em;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
 }
 
