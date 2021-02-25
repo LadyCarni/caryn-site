@@ -133,27 +133,31 @@ const Projects = ({ match }) => {
   const { path } = useRouteMatch();
 
   return (
-    <Route
-      exact
-      path={`${path}`}
-      render={() => (
-        <div className="feature-content shadow columns portfolio">
-          {gallery.map(({id, slug, title, category, source}) =>(
-            <div className="column filter" key={id}>
-              <Link to={`${path}/${slug}`}>
-                <div className="image bottom">
-                  <img src={source} alt={title}/>
-                </div>
-                <div className="caption overlay">
-                  <h3>{title}</h3>
-                  <span>{category}</span>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      )}
-    />
+    <>
+      <h1>Welcome to the greatest portfolio on this website</h1>
+      <Route
+        exact
+        path={`${path}`}
+        render={() => (
+          <div className="feature-content shadow columns portfolio">
+            {gallery.map(({id, slug, title, category, source}) =>(
+              <div className="column filter" key={id}>
+                <Link to={`${path}/${slug}`}>
+                  <div className="image bottom">
+                    <img src={source} alt={title}/>
+                  </div>
+                  <div className="caption overlay">
+                    <h3>{title}</h3>
+                    <span>{category}</span>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        )}
+      />
+      <span className="gotcha">* To protect the privacy of the client, this project's identity has been hidden</span>
+    </>
   );
 };
 

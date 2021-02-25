@@ -1,4 +1,15 @@
 .portfolio {
+  h1 {
+    font-family: $type-content;
+    margin: 2em 0 0;
+  }
+
+  .gotcha {
+    font-family: $type-content;
+    color: $content;
+    margin-bottom: 2em;
+  }
+
   &.highlights {
     margin-top: 3em;
   }
