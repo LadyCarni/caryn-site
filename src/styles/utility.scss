@@ -44,43 +44,65 @@
 }
 
 .filter {
-  &.bottom {
-    &::after {
-      background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-      height: 120px;
-    }
-  }
 
-  &.middle {
-    &::after {
-      background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-      height: 100%;
-    }
-  }
+  &:hover {
+    .image {
+      &.bottom {
+        &::after {
+          bottom: 0;
+          height: 100%;
+        }
+      }
 
-  &::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    transition: height 200ms ease;
-    z-index: 2;
-  }
-
-  &.image {
-    &:hover {
-      &::after {
-        bottom: 0;
-        height: 100%;
+      &.left {
+        &::after {
+          left: 0;
+          width: 100%;
+        }
       }
     }
   }
 
-  &:hover {
+  .headline-image {
     &::after {
-      transition: height 200ms ease;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      height: 100%;
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  .image {
+    &.bottom {
+      &::after {
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        height: 120px;
+        transition: height 200ms ease;
+      }
+    }
+  
+    &.left {
+      &::after {
+        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        width: 700px;
+        height: 100%;
+        transition: width 200ms ease;
+      }
+    }
+  
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
     }
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route, useRouteMatch } from "react-router-dom";
+import { Link, Route, useRouteMatch } from "react-router-dom";
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -46,25 +46,24 @@ const Projects = ({ match }) => {
     },
   ];
 
-  const { url, path } = useRouteMatch();
+  const { path } = useRouteMatch();
 
   return (
     <div className="light feature feature-width full-height">
-      <Router>
         <Route
           exact
           path={`${path}`}
           render={() => (
             <div className="feature-content shadow columns portfolio">
-              {gallery.map(project =>(
-                <div className="column" key={project.id}>
-                  <Link to={`${url}/${project.slug}`}>
-                    <div className="image filter bottom">
-                      <img src={project.source} alt={project.title}/>
+              {gallery.map(({id, slug, title, category, source}) =>(
+                <div className="column filter" key={id}>
+                  <Link to={`${path}/${slug}`}>
+                    <div className="image bottom">
+                      <img src={source} alt={title}/>
                     </div>
                     <div className="caption overlay">
-                      <h3>{project.title}</h3>
-                      <span>{project.category}</span>
+                      <h3>{title}</h3>
+                      <span>{category}</span>
                     </div>
                   </Link>
                 </div>
@@ -72,12 +71,6 @@ const Projects = ({ match }) => {
             </div>
           )}
         />
-        <Route path={`${path}/wow-project`}>
-          <div>
-            wow project!
-          </div>
-        </Route>
-      </Router>
     </div>
   );
 };

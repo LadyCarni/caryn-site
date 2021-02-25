@@ -25,9 +25,9 @@ const PortfolioFeatures = () => {
   return (
     <div className="columns portfolio shadow highlights">
       {gallery.map((project) => (
-        <div className="column" key={project.id}>
+        <div className="column filter" key={project.id}>
           <Link to="#" >
-            <div className="image filter bottom">
+            <div className="image bottom">
               <img src={project.source} alt={project.title}/>
             </div>
             <div className="caption overlay">

@@ -30,6 +30,53 @@
   }
 }
 
+.project-content {
+  h1 {
+    font-family: $type-headline;
+    margin: .5em 0;
+  }
+
+  h2 {
+    font-family: $type-content;
+    font-weight: 500;
+  }
+}
+
+.project-title {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .title-content {
+    color: white;
+    position: absolute;
+    bottom: $std-size;
+    left: $std-size;
+    z-index: 3;
+  }
+}
+
+
+.tags {
+  font-family: $type-content;
+  font-size: 1em;
+  font-weight: 500;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    font-style: italic;
+    padding-right: 1em;
+  }
+}
+
 .headline {
   .overlay {
     text-align: center;

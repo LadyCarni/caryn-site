@@ -10,10 +10,11 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Home } from 'views/home';
+import Home from 'views/home/Home';
 import { Portfolio } from 'views/portfolio';
 import ScrollArrow from 'components/scrollArrow';
 import Menu from 'components/menu';
+import { PortfolioRoutes } from './views/portfolio/index';
 
 export default function Site() {
   return (
@@ -32,6 +33,7 @@ export default function Site() {
           <Redirect to="/Home" />
         </Route>
         <Route exact path="/portfolio" component={Portfolio} />
+        <PortfolioRoutes />
         <Route path="/articles">
           <Articles />
         </Route>
