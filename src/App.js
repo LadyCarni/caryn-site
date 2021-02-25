@@ -3,8 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect
+  Link
 } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
@@ -28,12 +27,8 @@ export default function Site() {
       </div>
 
       <Switch>
-        <Route exact path="/Home" component={Home} />
-        <Route exact path="/">
-          <Redirect to="/Home" />
-        </Route>
-        <Route exact path="/portfolio" component={Portfolio} />
-        <PortfolioRoutes />
+        <Route exact path="/" component={Home} />
+        <Route path="/portfolio" component={Portfolio} />
         <Route path="/articles">
           <Articles />
         </Route>
@@ -46,6 +41,7 @@ export default function Site() {
         <Route path="/contact">
           <Contact />
         </Route>
+        <PortfolioRoutes />
       </Switch>
 
       <div className="footer">
