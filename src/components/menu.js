@@ -5,7 +5,6 @@ import styled from "styled-components";
 const StyledNav = styled.nav`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100vw)'};
   transition: transform 0.3s ease-in-out;
-  }
 `
 
 const Nav = ({ open }) => {
@@ -13,8 +12,8 @@ const Nav = ({ open }) => {
     <StyledNav open={open} className="menu">
       <NavLink to="/portfolio" aria-label="portfolio">Portfolio</NavLink>
       <NavLink to="/articles" aria-label="articles">Articles</NavLink>
-      <NavLink to="/about" aria-label="about">About</NavLink>
       <NavLink to="/creative" aria-label="creative">Creative</NavLink>
+      <NavLink to="/about" aria-label="about">About</NavLink>
       <NavLink to="/contact" aria-label="contact">Contact</NavLink>
     </StyledNav>
   )
@@ -25,8 +24,8 @@ const StyledBurger = styled.button`
   margin-left: auto;
   flex-direction: column;
   justify-content: space-around;
-  width: 33px;
-  height: 2rem;
+  width: 25px;
+  height: 25px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -37,7 +36,6 @@ const StyledBurger = styled.button`
   }
 
   span {
-    width: 33px;
     height: 4px;
     background: ${({ open }) => open ? '#595959' : '#3F3F3F'};
     border-radius: 10px;
@@ -47,15 +45,18 @@ const StyledBurger = styled.button`
 
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      width:25px;
     }
 
     :nth-child(2) {
       opacity: ${({ open }) => open ? '0' : '1'};
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+      width:20px;
     }
 
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      width:25px;
     }
   }
 `

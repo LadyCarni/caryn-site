@@ -1,5 +1,8 @@
-
 .portfolio {
+  &.highlights {
+    margin-top: 3em;
+  }
+
   a {
     display: block;
     position: relative;
@@ -23,6 +26,81 @@
 
     &span {
       font-size: .85em;
+    }
+  }
+}
+
+.project-content {
+  h1 {
+    font-family: $type-headline;
+    margin: .5em 0;
+  }
+
+  h2 {
+    font-family: $type-content;
+    font-weight: 500;
+  }
+}
+
+.project-title {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .title-content {
+    color: white;
+    position: absolute;
+    bottom: $std-size;
+    left: $std-size;
+    z-index: 3;
+  }
+}
+
+.summary {
+  background: $primary;
+  padding: $std-size;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  h3 {
+    font-family: $type-content;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  .about {
+    max-width: 50%;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.article {
+  width: 70vw;
+  margin: $std-size auto;
+}
+
+.tags {
+  font-family: $type-content;
+  font-size: 1em;
+  font-weight: 500;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    font-style: italic;
+    padding-bottom: 1em;
+
+    &:last-child {
+      padding-bottom: 0;
     }
   }
 }
@@ -53,7 +131,7 @@
 
 .headline-image {
   width:100%;
-  height:100%;
+  height:80vh;
   overflow:hidden;
 
   img {

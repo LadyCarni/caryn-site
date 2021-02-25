@@ -3,17 +3,23 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Home from './views/Home';
-import ScrollArrow from './components/scrollArrow';
-import Menu from './components/menu';
+import Home from 'views/home/Home';
+import { Portfolio } from 'views/portfolio';
+import ScrollArrow from 'components/scrollArrow';
+import Menu from 'components/menu';
+import { PortfolioRoutes } from './views/portfolio/index';
 
 export default function Site() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="header row feature-width">
         <span className="brand"><Link to="/">Caryn Farvour</Link></span>
         <div className="nav-container">
@@ -22,20 +28,20 @@ export default function Site() {
       </div>
 
       <Switch>
+        <Route exact path="/Home" component={Home} />
         <Route exact path="/">
-          <Home />
+          <Redirect to="/Home" />
         </Route>
-        <Route path="/portfolio">
-          <Portfolio />
-        </Route>
+        <Route exact path="/portfolio" component={Portfolio} />
+        <PortfolioRoutes />
         <Route path="/articles">
           <Articles />
         </Route>
-        <Route path="/about">
-          <About />
-        </Route>
         <Route path="/creative">
           <Creative />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/contact">
           <Contact />
@@ -83,12 +89,14 @@ export default function Site() {
   );
 }
 
-function Portfolio() {
-  return (
-    <div>
-      <h2>Portfolio</h2>
-    </div>
-  );
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
 
 function Articles() {
@@ -98,19 +106,18 @@ function Articles() {
     </div>
   );
 }
+function Creative() {
+  return (
+    <div>
+      <h2>Creative</h2>
+    </div>
+  );
+}
 
 function About() {
   return (
     <div>
       <h2>About</h2>
-    </div>
-  );
-}
-
-function Creative() {
-  return (
-    <div>
-      <h2>Creative</h2>
     </div>
   );
 }

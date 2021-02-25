@@ -1,15 +1,8 @@
 .hero {
   background-color: $primary;
   position: relative;
-
-  .tri-large {
-    opacity: .25;
-    position: absolute;
-    top: 3em;
-    left: 3em;
-    width: 75%;
-    z-index: 1;
-  }
+  height: 80vh;
+  min-height: 650px;
   
   .content {
     align-items: flex-end;
@@ -45,94 +38,17 @@
   }
 }
 
+.tri-large {
+  opacity: .25;
+  position: absolute;
+  top: 3em;
+  left: 3em;
+  width: 75%;
+  z-index: 1;
+}
+
 .tri-small {
   max-height: 350px;
   max-width: 250px;
   margin-bottom: 3em;
-}
-
-.feature {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-
-  .pop {
-    color: $primary;
-    font-family: $type-pop;
-    font-size: 1.75em;
-    font-weight: 300;
-  }
-
-  .overlay {
-    color: white;
-    position: absolute;
-    z-index: 4;
-  }
-
-  .feature-content {
-    width: $content-width;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-    .title {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-
-      h2 {
-        font-family: $type-headline;
-        font-size: 2.5em;
-      }
-    }
-
-    &.center {
-      .title {
-        .tri-small {
-          margin-bottom: 3em;
-        }
-      }
-
-      .description {
-        align-self: flex-end;
-      }
-    }
-
-    &.top {
-      .title {
-        .tri-small {
-          margin-top: 3em;
-        }
-      }
-
-      .description {
-        align-self: flex-start;
-      }
-    }
-
-    h2 {
-      margin: 0;
-    }
-
-    .title, .description {
-      width: 50%;
-    }
-
-    .description {
-      p {
-        &:first-child {
-          margin-top: 0;
-        }
-      }
-
-      h3 {
-        font-family: $type-content;
-        font-size: 1.25em;
-        margin: 0 0 $lg-space;
-      }
-    }
-  }
 }
