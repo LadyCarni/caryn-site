@@ -28,7 +28,7 @@ export default function Site() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/portfolio" component={Portfolio} />
+        <Route exact path="/portfolio" component={Portfolio} />
         <Route path="/articles">
           <Articles />
         </Route>
@@ -97,31 +97,35 @@ function ScrollToTop() {
 
 function Articles() {
   return (
-    <div>
+    <div className="light feature feature-width full-height">
       <h2>Articles</h2>
+      <p>Coming soon for your reading pleasure!</p>
     </div>
   );
 }
 function Creative() {
   return (
-    <div>
+    <div className="light feature feature-width full-height">
       <h2>Creative</h2>
+      <p>Coming soon for your inspiration!</p>
     </div>
   );
 }
 
 function About() {
   return (
-    <div>
+    <div className="light feature feature-width full-height">
       <h2>About</h2>
+      <p>Coming soon... existential crisis pending!</p>
     </div>
   );
 }
 
 function Contact() {
   return (
-    <div>
+    <div className="light feature feature-width full-height">
       <h2>Contact</h2>
+      <p>Coming soon! Contact me somewhere else!</p>
     </div>
   );
 }
