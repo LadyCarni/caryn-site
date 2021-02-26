@@ -25,7 +25,7 @@ class Home extends Component {
           </div>
           <div className="description">
             <h3>I <span className="pop">design</span> experiences</h3>
-            <p>Whether it's on a keyboard, at the easle, in the garden, or with a power tool in hand: I live to create. The hobbies and skills I've accumulated all share features of engagement, imagination, and a little whimsy.</p>
+            <p>Whether it's on a keyboard, at the easel, in the garden, or with a power tool in hand: I live to create. The hobbies and skills I've accumulated all share features of engagement, imagination, and a little whimsy.</p>
             <p>Professionally, I thrive on cross-functional teams, working directly with users to build elegant products that solve real problems.</p>
             <p>
               <Link to="/about" className="arrow-link block">More about Caryn <FontAwesomeIcon icon={faLongArrowRight} /></Link>
