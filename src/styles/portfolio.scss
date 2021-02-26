@@ -97,6 +97,20 @@
     margin-top: 0;
   }
 
+  .section {
+    @media screen and (max-width: $small) {
+      max-width: 100%;
+
+      &:last-child {
+        margin-top: 2em;
+      }
+    }
+
+    @media screen and (min-width: ($small + 1)) {
+      max-width: 50%;
+    }
+  }
+
   .about {
     max-width: 50%;
   }
@@ -121,6 +135,15 @@
   li {
     font-style: italic;
     padding-bottom: 1em;
+
+    @media screen and (max-width: ($small)) {
+      display: inline-block;
+      padding-right: 1em;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
 
     &:last-child {
       padding-bottom: 0;

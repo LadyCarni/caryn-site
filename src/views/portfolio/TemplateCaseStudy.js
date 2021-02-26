@@ -16,11 +16,11 @@ class CaseStudy extends Component {
             </div>
           </div>
           <div className="summary flex row">
-            <div className="about">
+            <div className="section">
               <h3>About</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium et non tenetur illo suscipit culpa iusto fuga eum est veritatis deleniti, excepturi qui, magni ea ipsa aliquid nihil autem?</p>
             </div>
-            <div className="disciplines">
+            <div className="section">
               <h3>Disciplines</h3>
               <ul className="tags">
                 <li>UX Design</li>
