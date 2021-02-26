@@ -34,7 +34,7 @@ class Home extends Component {
         </div>
         <div className="section-divider"></div>
       </div>
-      <div className="light feature top feature-width">
+      <div className="light feature top feature-width feature-height">
         <div className="feature-content flex column">
           <div className="flex row">
             <div className="title">
