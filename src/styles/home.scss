@@ -79,10 +79,19 @@
 .tri-large {
   opacity: .25;
   position: absolute;
-  top: 3em;
-  left: 3em;
-  width: 75%;
   z-index: 1;
+
+  @media screen and (max-width: $small) {
+    width: 90%;
+    top: 20%;
+    left: 5%;
+  }
+
+  @media screen and (min-width: $small) { 
+    top: 3em;
+    left: 3em;
+    width: 75%;
+  }
 }
 
 .tri-small {
