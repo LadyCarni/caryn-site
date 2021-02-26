@@ -29,13 +29,25 @@
   height: 1px;
   margin: 0 auto;
   position: absolute;
-  width: $content-width;
+
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: ($medium + 1)) {
+    width: $content-width;
+  }
 }
 
 .columns {
   align-items: flex-start;
   display: inline-flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: $small) {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
 
   .column {
     flex: 1;
@@ -46,7 +58,6 @@
 }
 
 .filter {
-
   &:hover {
     .image {
       &.bottom {
@@ -114,6 +125,10 @@
 
   &.row {
     flex-direction: row;
+
+    @media screen and (max-width: $small) {
+      flex-direction: column;
+    }
   }
 
   &.column {
@@ -159,8 +174,53 @@
   .feature-content {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0;
-    width: $content-width;
+
+    @media screen and (max-width: $small) {
+      flex-direction: column;
+      padding: 2em;
+
+      .title {
+        margin-bottom: 1.5em;
+
+        h3 {
+          margin-top: -1em;
+        }
+      }
+
+      .title, .description {
+        width: 100%;
+      }
+
+      .tri-small {
+        display: none;
+        visibility: hidden;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+
+    @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
+      padding: 2em;
+
+      .title, .description {
+        width: 50%;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+
+    @media screen and (min-width: ($medium + 1)) {
+      width: $content-width;
+      margin: 100px 0;
+
+      h2 {
+        font-size: 2.5em;
+      }
+    }
     
     .title {
       display: flex;
@@ -169,16 +229,11 @@
 
       h2 {
         font-family: $type-headline;
-        font-size: 2.5em;
       }
     }
 
     h2 {
       margin: 0;
-    }
-
-    .title, .description {
-      width: 50%;
     }
 
     .description {

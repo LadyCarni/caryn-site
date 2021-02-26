@@ -43,6 +43,12 @@ h1, h2 {
   width: 100%;
   align-items: center;
   display: flex;
+
+  @media screen and (max-width: $small) {
+    button {
+      margin-right: 1em;
+    }
+  }
 }
 
 .menu {
@@ -63,7 +69,7 @@ h1, h2 {
 
     a {
       &:first-child {
-        padding-left: 1em;
+        padding-left: 2em;
       }
     }
 
@@ -84,12 +90,14 @@ h1, h2 {
     text-decoration: none;
 
     @media screen and (max-width: 500px) {
+      font-size: .85em;
+
       &:first-child {
-        padding-left: 2em;
+        padding-left: 3em;
       }
 
       &:last-child {
-        padding-right: 2em;
+        padding-right: 1em;
       }
     }
 

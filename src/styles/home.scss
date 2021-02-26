@@ -45,7 +45,7 @@
     }
   }
 
-  @media screen and (min-width: $small) {
+  @media screen and (min-width: ($small + 1)) {
     h1 {
       margin-bottom: 2.5em;
     }
