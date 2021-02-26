@@ -66,9 +66,16 @@
 }
 
 .project-title {
-  height: 500px;
   overflow: hidden;
   position: relative;
+
+  @media screen and (max-width: $small) {
+    height: 30vh;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    height: 500px;
+  }
 
   img {
     height: 100%;
@@ -90,6 +97,14 @@
   padding: $std-size;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media screen and (max-width: $small) {
+    padding: ($std-size/2) $std-size;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    padding: $std-size;
+  }
 
   h3 {
     font-family: $type-content;
@@ -121,8 +136,14 @@
 }
 
 .article {
-  width: 70vw;
-  margin: $std-size auto;
+  @media screen and (max-width: $small) {
+    padding: ($std-size/2) $std-size;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    padding: $std-size;
+    width: 70vw;
+  }
 }
 
 .tags {
@@ -132,11 +153,15 @@
   list-style-type: none;
   padding: 0;
 
+  @media screen and (max-width: $small) {
+    margin-bottom: 0;
+  }
+
   li {
     font-style: italic;
     padding-bottom: 1em;
 
-    @media screen and (max-width: ($small)) {
+    @media screen and (max-width: $small) {
       display: inline-block;
       padding-right: 1em;
 
