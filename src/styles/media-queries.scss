@@ -1,6 +1,8 @@
+
 // small 767px
 // medium 992px
 // large 1200px
+
 
 @media screen and (max-width: $small) {
 
@@ -15,10 +17,7 @@
 }
 
 @media screen and (min-width: $medium) {
-  .hero {
-    height: 80vh;
-    min-height: 650px;
-  }
+
 }
 
 @media screen and (min-width: ($large + 1)) {

@@ -9,8 +9,10 @@
 }
 
 .feature-width {
-  margin-right: 50px;
-  margin-left: 50px;
+  @media screen and (min-width: $small) {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 
 .full-height {

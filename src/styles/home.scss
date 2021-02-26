@@ -87,7 +87,7 @@
     left: 5%;
   }
 
-  @media screen and (min-width: $small) { 
+  @media screen and (min-width: ($small + 1)) { 
     top: 3em;
     left: 3em;
     width: 75%;
