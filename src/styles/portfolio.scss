@@ -69,12 +69,14 @@
   overflow: hidden;
   position: relative;
 
-  @media screen and (max-width: $small) {
-    height: 30vh;
-  }
-
-  @media screen and (min-width: ($small + 1)) {
-    height: 500px;
+  .image {
+    @media screen and (max-width: $small) {
+      height: 30vh;
+    }
+  
+    @media screen and (min-width: ($small + 1)) {
+      height: 500px;
+    }
   }
 
   img {

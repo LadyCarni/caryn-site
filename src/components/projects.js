@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Route, useRouteMatch } from "react-router-dom";
+import devLondon from 'assets/portfolio/dev-london.jpg'; 
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -10,7 +11,7 @@ const Projects = ({ match }) => {
       id: 0,
     },
     { 
-      source: "https://source.unsplash.com/random?forest",
+      source: devLondon,
       title: "Dev London",
       slug: "dev-london",
       category: "Front-end Development",
@@ -134,7 +135,7 @@ const Projects = ({ match }) => {
 
   return (
     <>
-      <h1>Welcome to the greatest portfolio on this website</h1>
+      <h1>Welcome to the greatest portfolio on this site</h1>
       <Route
         exact
         path={`${path}`}
