@@ -28,6 +28,15 @@ h1, h2 {
   font-weight: 300;
 }
 
+.nav-container {
+  margin-left: -130px;
+
+  @media screen and (max-width: $small) {
+    position: absolute;
+    right: 0;
+  }
+}
+
 .nav {
   position: relative;
   overflow: hidden;
@@ -35,6 +44,12 @@ h1, h2 {
   width: 100%;
   align-items: center;
   display: flex;
+
+  @media screen and (max-width: $small) {
+    button {
+      margin-right: 1em;
+    }
+  }
 }
 
 .menu {
@@ -46,15 +61,45 @@ h1, h2 {
   margin-right: 2em;
   text-align: left;
 
+  @media screen and (max-width: $small) {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0;
+    background: white;
+    padding-top: .5em;
+    margin-left: 2em;
+
+    &.open {
+      width: 95vw;
+    }
+  }
+
   a {
     background: transparent;
+    color: $grey1;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    padding: 0 1.5em;
     transition: all 300ms ease;
     border-bottom: 4px solid transparent;
+    text-decoration: none;
+
+    @media screen and (max-width: 500px) {
+      font-size: .85em;
+
+      &:last-child {
+        padding-right: 1em;
+      }
+    }
+
+    @media screen and (max-width: 830px) {
+      padding: 0 1em;
+    }
+
+    @media screen and (min-width: 832px) {
+      padding: 0 1.5em;
+    }
 
     &:hover {
       background: rgba($primary, .3);
@@ -70,6 +115,16 @@ h1, h2 {
 
 .brand {
   font-size: 20px;
+  min-width: 130px;
+
+  @media screen and (max-width: $small) {
+    margin-left: 1em;
+  }
+
+  a {
+    color: $grey1;
+    text-decoration: none;
+  }
 }
 
 .header {
@@ -82,11 +137,6 @@ h1, h2 {
   position: sticky;
   top: 0;
   z-index: 5;
-
-  a {
-    color: $grey1;
-    text-decoration: none;
-  }
 }
 
 .container {
@@ -155,8 +205,15 @@ h1, h2 {
 
   .follow-links {
     justify-self: flex-end;
-    padding-right: 50px;
     margin-left: auto;
+
+    @media screen and (max-width: $small) {
+      padding-right: 1em;
+    }
+  
+    @media screen and (min-width: ($small + 1)) {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -167,9 +224,17 @@ h1, h2 {
   font-family: $type-content;
   font-size: .85em;
   height: 40px;
-  justify-self: center;
-  left: 45vw;
   position: sticky;
+
+  @media screen and (max-width: $small) {
+    justify-self: flex-start;
+    left: 1em;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    justify-self: center;
+    left: 45vw;
+  }
 
   &:hover {
     svg {

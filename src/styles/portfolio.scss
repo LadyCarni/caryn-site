@@ -1,7 +1,12 @@
 .portfolio {
   h1 {
     font-family: $type-content;
-    margin: 2em 0 0;
+    margin: 2em;
+
+    @media screen and (max-width: $medium) {
+      font-size: 1.75em;
+      text-align: center;
+    }
   }
 
   .gotcha {
@@ -21,8 +26,15 @@
 
   .image {
     width:100%;
-    height:300px;
     overflow:hidden;
+
+    @media screen and (max-width: $small) {
+      height: 200px;
+    }
+
+    @media screen and (min-width: ($small + 1)) {
+      height:300px;
+    }
 
     img {
       height: 100%;
@@ -54,9 +66,16 @@
 }
 
 .project-title {
-  height: 500px;
   overflow: hidden;
   position: relative;
+
+  @media screen and (max-width: $small) {
+    height: 30vh;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    height: 500px;
+  }
 
   img {
     height: 100%;
@@ -79,10 +98,32 @@
   align-items: flex-start;
   justify-content: space-between;
 
+  @media screen and (max-width: $small) {
+    padding: ($std-size/2) $std-size;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    padding: $std-size;
+  }
+
   h3 {
     font-family: $type-content;
     font-weight: 700;
     margin-top: 0;
+  }
+
+  .section {
+    @media screen and (max-width: $small) {
+      max-width: 100%;
+
+      &:last-child {
+        margin-top: 2em;
+      }
+    }
+
+    @media screen and (min-width: ($small + 1)) {
+      max-width: 50%;
+    }
   }
 
   .about {
@@ -95,8 +136,14 @@
 }
 
 .article {
-  width: 70vw;
-  margin: $std-size auto;
+  @media screen and (max-width: $small) {
+    padding: ($std-size/2) $std-size;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    padding: $std-size;
+    width: 70vw;
+  }
 }
 
 .tags {
@@ -106,9 +153,22 @@
   list-style-type: none;
   padding: 0;
 
+  @media screen and (max-width: $small) {
+    margin-bottom: 0;
+  }
+
   li {
     font-style: italic;
     padding-bottom: 1em;
+
+    @media screen and (max-width: $small) {
+      display: inline-block;
+      padding-right: 1em;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
 
     &:last-child {
       padding-bottom: 0;
@@ -120,6 +180,20 @@
   .overlay {
     text-align: center;
 
+    @media screen and (max-width: $small) {
+      padding: 0 1em;
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+
+    @media screen and (min-width: ($small + 1)) {
+      h2 {
+        font-size: 2.25em;
+      }
+    }
+
     h3 {
       font-family: $type-content;
       font-size: 1.5em;
@@ -128,7 +202,6 @@
 
     h2 {
       font-family: $type-headline;
-      font-size: 2.25em;
       line-height: 1.25em;
       max-width: 600px;
       white-space: pre-wrap;
@@ -142,8 +215,15 @@
 
 .headline-image {
   width:100%;
-  height:80vh;
   overflow:hidden;
+
+  @media screen and (max-width: $small) {
+    height:30vh;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    height:80vh;
+  }
 
   img {
     height: 100%;

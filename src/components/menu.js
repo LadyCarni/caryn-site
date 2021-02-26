@@ -9,7 +9,7 @@ const StyledNav = styled.nav`
 
 const Nav = ({ open }) => {
   return (
-    <StyledNav open={open} className="menu">
+    <StyledNav open={open} className={`menu ${open && "open"}`}>
       <NavLink to="/portfolio" aria-label="portfolio">Portfolio</NavLink>
       <NavLink to="/articles" aria-label="articles">Articles</NavLink>
       <NavLink to="/creative" aria-label="creative">Creative</NavLink>
