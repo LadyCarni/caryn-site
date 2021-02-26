@@ -215,8 +215,15 @@ h1, h2 {
 
   .follow-links {
     justify-self: flex-end;
-    padding-right: 50px;
     margin-left: auto;
+
+    @media screen and (max-width: $small) {
+      padding-right: 1em;
+    }
+  
+    @media screen and (min-width: ($small + 1)) {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -227,9 +234,17 @@ h1, h2 {
   font-family: $type-content;
   font-size: .85em;
   height: 40px;
-  justify-self: center;
-  left: 45vw;
   position: sticky;
+
+  @media screen and (max-width: $small) {
+    justify-self: flex-start;
+    left: 1em;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    justify-self: center;
+    left: 45vw;
+  }
 
   &:hover {
     svg {
