@@ -28,7 +28,7 @@ export default function Site() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/portfolio" component={Portfolio} />
+        <Route path="/portfolio" component={Portfolio} />
         <Route path="/articles">
           <Articles />
         </Route>
