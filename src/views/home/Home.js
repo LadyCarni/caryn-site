@@ -34,7 +34,7 @@ class Home extends Component {
         </div>
         <div className="section-divider"></div>
       </div>
-      <div className="light feature top feature-width feature-height">
+      <div className="light feature top feature-width">
         <div className="feature-content flex column">
           <div className="flex row">
             <div className="title">
@@ -53,7 +53,7 @@ class Home extends Component {
           </div>
         </div>
       </div>
-      <div className="dark feature center filter feature-width feature-height headline">
+      <div className="dark feature center filter feature-width headline">
         <div className="headline-image">
           <img src="https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80" alt="placeholder"/>
         </div>

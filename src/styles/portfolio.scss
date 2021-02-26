@@ -124,6 +124,20 @@
   .overlay {
     text-align: center;
 
+    @media screen and (max-width: $small) {
+      padding: 0 1em;
+
+      h2 {
+        font-size: 2em;
+      }
+    }
+
+    @media screen and (min-width: ($small + 1)) {
+      h2 {
+        font-size: 2.25em;
+      }
+    }
+
     h3 {
       font-family: $type-content;
       font-size: 1.5em;
@@ -132,7 +146,6 @@
 
     h2 {
       font-family: $type-headline;
-      font-size: 2.25em;
       line-height: 1.25em;
       max-width: 600px;
       white-space: pre-wrap;
@@ -146,8 +159,15 @@
 
 .headline-image {
   width:100%;
-  height:80vh;
   overflow:hidden;
+
+  @media screen and (max-width: $small) {
+    height:50vh;
+  }
+
+  @media screen and (min-width: ($small + 1)) {
+    height:80vh;
+  }
 
   img {
     height: 100%;
