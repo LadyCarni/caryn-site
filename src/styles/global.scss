@@ -177,3 +177,19 @@ h1, h2 {
     }
   }
 }
+
+@media screen and (max-width: $small) {
+
+}
+
+@media screen and (min-width: ($small + 1)) and (max-width: $medium) {
+
+}
+
+@media screen and (min-width: ($medium + 1)) and (max-width: $large) {
+
+}
+
+@media screen and (min-width: ($large + 1)) {
+  
+}
