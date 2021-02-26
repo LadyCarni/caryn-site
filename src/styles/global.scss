@@ -3,6 +3,7 @@
 @import 'utility.scss';
 @import 'home.scss';
 @import 'portfolio.scss';
+@import 'media-queries.scss';
 
 html, body {
   font-size: 16px;
@@ -176,20 +177,4 @@ h1, h2 {
       color: $primary;
     }
   }
-}
-
-@media screen and (max-width: $small) {
-
-}
-
-@media screen and (min-width: ($small + 1)) and (max-width: $medium) {
-
-}
-
-@media screen and (min-width: ($medium + 1)) and (max-width: $large) {
-
-}
-
-@media screen and (min-width: ($large + 1)) {
-  
 }

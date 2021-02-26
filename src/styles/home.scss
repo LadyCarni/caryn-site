@@ -1,27 +1,19 @@
 .hero {
   background-color: $primary;
   position: relative;
-  height: 80vh;
-  min-height: 650px;
   
   .content {
-    align-items: flex-end;
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: flex-end;
     margin: auto;
-    max-width: $large;
     position: absolute;
-    right: 3em;
     z-index: 2;
     
     h1 {
       color: white;
       font-family: $type-headline;
-      font-size: 4em;
       font-weight: 300;
-      margin-bottom: 2.5em;
     }
   }
 
@@ -35,6 +27,52 @@
 
   .pop {
     color: $grey1;
+  }
+
+  @media screen and (max-width: $small) {
+    height: 30vh;
+
+    h1 {
+      font-size: 2.25em;
+      margin: 0 1em;
+      text-align: center;
+    }
+
+    .content {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: $small) {
+    h1 {
+      margin-bottom: 2.5em;
+    }
+
+    .content {
+      align-items: flex-end;
+      justify-content: flex-end;
+      max-width: $large;
+      right: 3em;
+    }
+  }
+
+  @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
+    height: 40vh;
+
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  @media screen and (min-width: ($medium)) {
+    height: 80vh;
+    min-height: 650px;
+
+    h1 {
+      font-size: 4em;
+    }
   }
 }
 
