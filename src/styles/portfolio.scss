@@ -138,6 +138,20 @@
 }
 
 .article {
+  font-family: $type-content;
+
+  h3 {
+    margin-top: 2em;
+  }
+
+  ul {
+    margin-bottom: 2em;
+
+    li {
+      line-height: 1.5em;
+    }
+  }
+
   @media screen and (max-width: $small) {
     padding: ($std-size/2) $std-size;
   }

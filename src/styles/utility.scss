@@ -297,3 +297,20 @@
     }
   }
 }
+
+.external-link {
+  &::after {
+    font-family: $icon;
+    display: inline-block;
+    font-size: 1.25em;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    content: '\f178';
+    margin-left: .5em;
+    color: $primary;
+    vertical-align: middle;
+  }
+}

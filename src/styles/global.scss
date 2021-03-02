@@ -16,6 +16,12 @@ code {
     monospace;
 }
 
+a {
+  &:visited {
+    color: darken($primary, 20%);
+  }
+}
+
 a, p {
   font-family: $type-content;
 }
