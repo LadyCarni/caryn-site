@@ -1,44 +1,22 @@
 /* stylelint-disable -- These styles override PrismJS's default styles */
-code {
-   background-color: transparent !important;
-   color: $primary-dark !important;
-   padding: 0 !important;
-   font-size: 1em !important;
-   
-   pre & {
-      background-color: transparent !important;
-      font-weight: 500 !important;
-      font-size: .95em !important;
-   }
-}
-
 pre[ class *= 'language-' ] > code {
    position: relative;
    display: block;
 }
 
 .toolbar {
-   opacity: .5 !important;
+   opacity: 1 !important;
+   margin-top: .5em;
+   margin-right: .5em;
    
    &:hover {
       opacity: 1 !important;
    }
    
-   button {
-      color: white !important;
-      background: none !important;
-      border-radius: 2px !important;
-      margin: .5em !important;
-      padding: .25em 1em !important;
-      
-      &:hover {
-         background: #333 !important;
-         color: white !important;
-      }
-   }
-   
    span {
-      margin-right: 1em;
+      background: transparent !important;
+      box-shadow: none !important;
+      color: #47ebb4 !important;
       
       &:hover {
          color: white !important;
@@ -100,6 +78,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 
 /* Code blocks */
 pre[class*="language-"] {
+   border-radius: 10px;
    padding: 1em;
    margin: .5em 0;
    overflow: auto;

@@ -56,7 +56,7 @@ function DevLondon() {
           <h3>Feature: Code cleanliness</h3>
           <p>To maintain linting automatically while working on the site, the repo is equipped with a small <a href="https://github.com/typicode/husky" target="_blank" rel="noreferrer">Husky</a> pre-commit git hook for running the <a href="https://github.com/prettier/prettier" target="_blank" rel="noreferrer">Prettier</a> SCSS and Javascript linters before new code is pushed up.</p>
 
-          <pre className="line-numbers language-json"><code>
+          <pre className="language-json"><code>
           {`
             {
               "husky": {
