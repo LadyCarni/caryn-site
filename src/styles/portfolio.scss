@@ -69,12 +69,14 @@
   overflow: hidden;
   position: relative;
 
-  @media screen and (max-width: $small) {
-    height: 30vh;
-  }
-
-  @media screen and (min-width: ($small + 1)) {
-    height: 500px;
+  .image {
+    @media screen and (max-width: $small) {
+      height: 30vh;
+    }
+  
+    @media screen and (min-width: ($small + 1)) {
+      height: 500px;
+    }
   }
 
   img {
@@ -136,13 +138,38 @@
 }
 
 .article {
-  @media screen and (max-width: $small) {
-    padding: ($std-size/2) $std-size;
+  font-family: $type-content;
+  margin: 50px auto;
+
+  h3 {
+    margin-top: 2em;
   }
 
-  @media screen and (min-width: ($small + 1)) {
+  ul {
+    margin-bottom: 2em;
+
+    li {
+      line-height: 1.5em;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: $small) {
+    width: 90vw;
+  }
+
+  @media screen and (min-width: ($small + 1)) and (max-width: ($medium - 1)) {
     padding: $std-size;
     width: 70vw;
+  }
+
+  @media screen and (min-width: $medium) {
+    width: 70vw;
+    max-width: 800px;
   }
 }
 

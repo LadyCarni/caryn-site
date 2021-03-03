@@ -28,7 +28,7 @@ class Home extends Component {
             <p>Whether it's on a keyboard, at the easel, in the garden, or with a power tool in hand: I live to create. The hobbies and skills I've accumulated all share features of engagement, imagination, and a little whimsy.</p>
             <p>Professionally, I thrive on cross-functional teams, working directly with users to build elegant products that solve real problems.</p>
             <p>
-              <Link to="/about" className="arrow-link block">More about Caryn <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+              <Link to="/about" className="arrow-link block">Get to know Caryn <FontAwesomeIcon icon={faLongArrowRight} /></Link>
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ class Home extends Component {
             <div className="description">
               <p>I am a UX strategist, a UI designer, and a front-end developer. I write about practical UX, design, and product management skills. I coach teams and speak publicly about product strategy.</p>
               <p>
-                <Link to="/portfolio" className="arrow-link block">View all work <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+                <Link to="/portfolio" className="arrow-link block">View Caryn's work <FontAwesomeIcon icon={faLongArrowRight} /></Link>
               </p>
             </div>
           </div>

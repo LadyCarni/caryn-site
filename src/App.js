@@ -9,6 +9,15 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// eslint-disable-next-line
+import Prism from 'prismjs';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
+import 'prismjs/plugins/toolbar/prism-toolbar.js';
+import 'prismjs/plugins/toolbar/prism-toolbar.css';
+import 'prismjs/plugins/show-language/prism-show-language.js';
+import 'prismjs/components/prism-json';
+import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 import Home from 'views/home/Home';
 import { Portfolio } from 'views/portfolio';
 import ScrollArrow from 'components/scrollArrow';
