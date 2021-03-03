@@ -51,7 +51,13 @@ class DevLondon extends Component {
             <img src={devLondonSlack} alt="Dev London slack form"/>
             <h3>Feature: Code cleanliness</h3>
             <p>To maintain linting automatically while working on the site, the repo is equipped with a <a href="https://github.com/typicode/husky" target="_blank" rel="noreferrer">Husky</a> pre-commit git hook for running the <a href="https://github.com/prettier/prettier" target="_blank" rel="noreferrer">Prettier</a> SCSS and Javascript linters.</p>
-            <code>something</code>
+            <pre>
+              <code>
+                {`
+                  something
+                `}
+              </code>
+            </pre>
             <p>To ensure stable and consistent styling, the site also uses a <a href="https://gist.github.com/LadyCarni/0eee4b69f54c615d70597d54c075830a" target="_blank" rel="noreferrer">practical SCSS lint config</a> I have curated and maintained over the years, paired with <a href="https://github.com/stylelint/stylelint" target="_blank" rel="noreferrer">Stylelint</a>.</p>
             <h3>The results</h3>
             <p>In collaboration with the local economic development group (<a href="https://www.ledc.com/" target="_blank" rel="noreferrer">LEDC</a>), the Universities, heavy involvement on <a href="https://twitter.com/dev_ldn" target="_blank" rel="noreferrer">social media</a>, and engagement at networking events, the website saw significant traffic throughout 2018 and continued steadily through 2019 and into 2020. The slack community grew to over 800 members, and monthly events averaged 50 attendees. The community has since expanded into Discord, and remains active today.</p>
