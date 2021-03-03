@@ -4,7 +4,7 @@ import devLondonSlack from 'assets/portfolio/dev-london-slack.gif';
 import devLondonPlans from 'assets/portfolio/dev-london-plans.jpg';
 import devLondonSite from 'assets/portfolio/dev-london-site.png';
 import Prism from "prismjs";
-import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
+import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
 
 function DevLondon() {
   useEffect(() => {
@@ -56,29 +56,25 @@ function DevLondon() {
           <h3>Feature: Code cleanliness</h3>
           <p>To maintain linting automatically while working on the site, the repo is equipped with a small <a href="https://github.com/typicode/husky" target="_blank" rel="noreferrer">Husky</a> pre-commit git hook for running the <a href="https://github.com/prettier/prettier" target="_blank" rel="noreferrer">Prettier</a> SCSS and Javascript linters before new code is pushed up.</p>
 
-          <pre className="line-numbers">
-            <code className="language-json">
-              {
-                `{
-                  "husky": {
-                    "hooks": {
-                      "pre-commit": "lint-staged"
-                    }
-                  },
-                  "lint-staged": {
-                    "src/**/*.{js,jsx,json}": [
-                      "prettier --single-quote --write",
-                      "git add"
-                    ],
-                    "*.js": "eslint",
-                    "*.scss": "stylelint"
-                  }
-                }`
+          <pre className="line-numbers language-json"><code>
+          {`
+            {
+              "husky": {
+                "hooks": {
+                  "pre-commit": "lint-staged"
+                }
+              },
+              "lint-staged": {
+                "src/**/*.{js,jsx,json}": [
+                  "prettier --single-quote --write",
+                  "git add"
+                ],
+                "*.js": "eslint",
+                "*.scss": "stylelint"
               }
-            </code>
-          </pre>
-
-          {/* <Gist id="5de145616056652a628f6445d7b5c0d2" /> */}
+            }
+          `}
+          </code></pre>
 
           <p>To ensure stable and consistent styling, the site also uses a <a href="https://gist.github.com/LadyCarni/0eee4b69f54c615d70597d54c075830a" target="_blank" rel="noreferrer">practical SCSS lint config</a> I have curated and maintained over the years, paired with <a href="https://github.com/stylelint/stylelint" target="_blank" rel="noreferrer">Stylelint</a>.</p>
           <h3>The results</h3>
