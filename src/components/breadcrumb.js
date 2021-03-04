@@ -4,24 +4,24 @@ import { Link, useRouteMatch } from "react-router-dom";
 const Breadcrumb = ({ routes }) => {
   const { path } = useRouteMatch();
 
+  const filteredRoutes = routes.filter((route) => {
+    return path.includes(route.path);
+  });
+
   return (
     <div className="breadcrumb feature-width">
       <ul>
-        {routes.map((route, index) => {
-          if (path.includes(route.path)) {
-            return (
-              <li key={route.name}>
-                {index !== routes.length - 1 && path.includes(route.path) && (
-                  <Link to={route.path} aria-label="go back">
-                    {route.name}
-                  </Link>
-                )}
-                {index === routes.length - 1 && route.name}
-              </li>
-            );
-          }
-
-          return null;
+        {filteredRoutes.map((route, index) => {
+          return (
+            <li key={route.name}>
+              {index !== filteredRoutes.length - 1 && (
+                <Link to={route.path} aria-label="go back">
+                  {route.name}
+                </Link>
+              )}
+              {index === filteredRoutes.length - 1 && route.name}
+            </li>
+          );
         })}
       </ul>
     </div>

@@ -1,17 +1,14 @@
-import React, { useEffect } from "react";
-import Prism from "prismjs";
-import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
+import React from "react";
 import PortfolioHeader from "../../components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import devLondon from "assets/portfolio/dev-london.jpg";
 import devLondonSlack from "assets/portfolio/dev-london-slack.gif";
 import devLondonPlans from "assets/portfolio/dev-london-plans.jpg";
 import devLondonSite from "assets/portfolio/dev-london-site.png";
+import usePrism from "hooks/usePrism";
 
 function DevLondon() {
-  useEffect(() => {
-    Prism.highlightAll();
-  });
+  usePrism();
 
   return (
     <>

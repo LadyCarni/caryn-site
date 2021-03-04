@@ -39,7 +39,7 @@ export default function Site() {
       <Switch>
         <Route exact path="/" component={Home} />
         {PortfolioRoutes.map(({ path, component }, key) => (
-          <Route exact path={path} key={key} render={component} />
+          <Route exact path={path} key={key} component={component} />
         ))}
         <Route path="/articles">
           <Articles />
