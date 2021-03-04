@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useRouteMatch } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
 const Breadcrumb = ({ routes }) => {
   const { path } = useRouteMatch();
@@ -12,9 +12,9 @@ const Breadcrumb = ({ routes }) => {
             return (
               <li key={route.name}>
                 {index !== routes.length - 1 && path.includes(route.path) && (
-                  <NavLink to={route.path} aria-label="go back">
+                  <Link to={route.path} aria-label="go back">
                     {route.name}
-                  </NavLink>
+                  </Link>
                 )}
                 {index === routes.length - 1 && route.name}
               </li>
