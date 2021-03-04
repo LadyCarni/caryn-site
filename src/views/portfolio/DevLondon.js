@@ -1,44 +1,28 @@
-import React, { useEffect } from 'react';
-import Prism from "prismjs";
-import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js';
-import Breadcrumb from '../../components/breadcrumb';
-import devLondon from 'assets/portfolio/dev-london.jpg';
-import devLondonSlack from 'assets/portfolio/dev-london-slack.gif';
-import devLondonPlans from 'assets/portfolio/dev-london-plans.jpg';
-import devLondonSite from 'assets/portfolio/dev-london-site.png';
+import React from "react";
+import PortfolioHeader from "../../components/portfolioHeader";
+import { PortfolioRoutes } from "./index";
+import devLondon from "assets/portfolio/dev-london.jpg";
+import devLondonSlack from "assets/portfolio/dev-london-slack.gif";
+import devLondonPlans from "assets/portfolio/dev-london-plans.jpg";
+import devLondonSite from "assets/portfolio/dev-london-site.png";
+import usePrism from "hooks/usePrism";
 
 function DevLondon() {
-  useEffect(() => {
-    Prism.highlightAll();
-  });
+  usePrism();
 
   return (
     <>
-      <Breadcrumb parentUrl="/portfolio" parentTitle="Portfolio" currentTitle="Dev London" />
+      <PortfolioHeader
+        headerImage={devLondon}
+        routes={PortfolioRoutes}
+        imageAlt="a scene of a live Dev London event"
+        headerTitle="Dev London"
+        headerSubtitle="A software community group"
+        headerDescription="Dev London is a peer-to-peer group I run and operate in London, Ontario. It is designed to provide insights and inspire through leadership and networking with the local tech community."
+        headerDisciplines={["Front-end Development (React)", "Web Design"]}
+      />
       <div className="feature feature-width">
         <div className="project-content flex column">
-          <div className="project-title filter">
-            <div className="image left">
-              <img src={devLondon} alt="Dev London event"/>
-            </div>
-            <div className="title-content">
-              <h1>Dev London</h1>
-              <h2>A software community group</h2>
-            </div>
-          </div>
-          <div className="summary flex row">
-            <div className="section">
-              <h3>About</h3>
-              <p>Dev London is a peer-to-peer group I run and operate in London, Ontario. It is designed to provide insights and inspire through leadership and networking with the local tech community.</p>
-            </div>
-            <div className="section">
-              <h3>Disciplines</h3>
-              <ul className="tags">
-                <li>Front-end Development (React)</li>
-                <li>Web Design</li>
-              </ul>
-            </div>
-          </div>
           <div className="article">
             <p className="external-link"><a href="https://devldn.ca/" target="_blank" rel="noreferrer">Dev London website</a></p>
             <p className="external-link"><a href="https://github.com/DevLdn/devldn-website" target="_blank" rel="noreferrer">Dev London repo</a></p>
@@ -87,7 +71,7 @@ function DevLondon() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export default DevLondon;
