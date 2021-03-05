@@ -11,6 +11,8 @@ import knakLayoutAfter from "assets/portfolio/knak-layout-proposal.png";
 import knakColors from "assets/portfolio/knak-colors.png";
 import knakColorsUi from "assets/portfolio/knak-colors-ui.png";
 import knakTypography from "assets/portfolio/knak-type.png";
+import knakPattern1 from "assets/portfolio/knak-pattern1.png";
+import knakPattern2 from "assets/portfolio/knak-pattern2.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -138,7 +140,7 @@ function KnakCaseStudy() {
                 </code></pre>
               </div>
               <div className="fill">
-                <img src={knakColorsUi} alt="Knak color in the UI"/>
+                <img src={knakColorsUi} alt="Knak color in the UI" className="shadow"/>
                 <span className="caption">The new colors in action</span>
               </div>
             </div>
@@ -151,7 +153,7 @@ function KnakCaseStudy() {
 
             <div className="flex columns">
               <div className="fill">
-              <pre className="language-css"><code>
+                <pre className="language-css"><code>
                   {`
                     global.scss
 
@@ -176,10 +178,84 @@ function KnakCaseStudy() {
                 </code></pre>
               </div>
               <div className="fill">
-                <img src={knakTypography} alt="Knak typography example"/>
+                <img src={knakTypography} alt="Knak typography example" className="shadow"/>
                 <span className="caption">Updated typography</span>
               </div>
             </div>
+
+            <h2>Design Patterns</h2>
+            <h3>Goals: consistency, maintainability, scalability</h3>
+            <p>A strategy for ensuring consistency is creating a style guide. Without adding overhead to an already busy project, using a SCSS variables file can achieve the same purpose.</p>
+            <p>To ensure patterns were easy to find and to encourage their use, naming conventions were chosen in plain language with full words (no acronyms or shortened names).</p>
+
+            <div className="flex columns">
+              <div className="fill">
+                <pre className="language-css"><code>
+                  {`
+                    layout.scss
+
+                    .material-card {
+                      background: $white;
+                      border-radius: $radius;
+                      border: 1px solid $grey;
+                      box-shadow: $shadow;
+                      padding: $standard-space;
+
+                      .card-title {
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                      }
+
+                      .card-row {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                      }
+                    }
+                  `}
+                </code></pre>
+              </div>
+              <div className="fill">
+                <pre className="language-css"><code>
+                  {`
+                    layout.scss
+
+                    .detailed-card {
+                      .detailed-header {
+                        align-items: center;
+                        background: $grey;
+                        border: 1px solid $mid-grey;
+                        border-top-left-radius: $radius;
+                        border-top-right-radius: $radius;
+                        display: flex;
+                        justify-content: space-between;
+                      }
+
+                      .detailed-body {
+                        border-bottom-left-radius: $radius;
+                        border-bottom-right-radius: $radius;
+                      }
+                    }
+                  `}
+                </code></pre>
+              </div>
+            </div>
+
+            <p>The inspiration for the design patterns chosen for Knak were drawn from Material Design. The components for the app and their associated styles were derived from Material Design’s standards for consistent, clean, and intuitive interface elements.</p>
+
+            <div className="flex columns">
+              <div className="fill">
+                <img src={knakPattern1} alt="Knak card pattern" className="shadow"/>
+                <span className="caption">Material Card</span>
+              </div>
+              <div className="fill">
+                <img src={knakPattern2} alt="Knak detailed card pattern" className="shadow"/>
+                <span className="caption">Detailed Card</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
