@@ -15,6 +15,7 @@ import knakPattern1 from "assets/portfolio/knak-pattern1.png";
 import knakPattern2 from "assets/portfolio/knak-pattern2.png";
 import knakTax from "assets/portfolio/knak-tax.png";
 import knakNav from "assets/portfolio/knak-nav.gif";
+import knakForms from "assets/portfolio/knak-forms.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -91,7 +92,13 @@ function KnakCaseStudy() {
             <h2>Layout Redesign</h2>
             <h3>Goals: Familiar, navigable, discoverable</h3>
             <p>The first high-level issue I noted was an inconsistent layout for different parts of the app. As you can see in the simplified breakdown below, the experience for Customers (layout A) was inconsistent from Admins (layout B). This was identified as a maintainability issue that was a known area of technical debt for Knak’s tech team.</p>
+          </div>
+
+          <div className="full-width">
             <img src={knakLayout} alt="Knak app layout before the redesign"/>
+          </div>
+
+          <div className="article">
             <p>Having one layout with consistent patterns and identifiable architectural areas would give all users a consistent experience as well as enable Knak’s team to continue to create new, stable features for their customers.</p>
             <p>The redesign began with quick, simple wireframes (shown below). This pen-on-paper format allowed me to generate multiple ideas and communicate their intent with Knak’s team without investing too much time or energy into options.</p>
 
@@ -113,8 +120,14 @@ function KnakCaseStudy() {
             </div>
 
             <p>In order to create a familiar layout, I aligned both areas of the divergent design into one traditional, dashboard-style layout. This included a sticky sidebar and a scrollable content area (see below).</p>
-            <img src={knakLayoutAfter} alt="new Knak app layout proposal"/>
 
+          </div>
+
+          <div className="full-width">
+            <img src={knakLayoutAfter} alt="new Knak app layout proposal"/>
+          </div>
+
+          <div className="article">
             <h2>Color palette consistency</h2>
             <h3>Goals: recognizable, intentional</h3>
             <p>Identifying the key brand colors and the theme for the application enabled the creation of a palette of accessibility-tested and reusable colors. These identifiers in the SCSS allowed me to organize styles based on state, response, and behavior.</p>
@@ -247,6 +260,9 @@ function KnakCaseStudy() {
 
             <p>The inspiration for the design patterns chosen for Knak were drawn from Material Design. The components for the app and their associated styles were derived from Material Design’s standards for consistent, clean, and intuitive interface elements.</p>
 
+          </div>
+
+          <div className="full-width">
             <div className="flex columns">
               <div className="fill">
                 <img src={knakPattern1} alt="Knak card pattern" className="shadow"/>
@@ -257,7 +273,9 @@ function KnakCaseStudy() {
                 <span className="caption">Detailed Card</span>
               </div>
             </div>
+          </div>
 
+          <div className="article">
             <h2>Design Highlight: Navigation</h2>
             <p>The navigation in this application was originally grouped by user type (Customer and Admin). Once the layout had been consolidated into one experience, the navigation was similarly aligned.</p>
             <p>Three areas of the navigation that needed attention:</p>
@@ -281,7 +299,6 @@ function KnakCaseStudy() {
             </div>
 
             <h3>Interaction Design</h3>
-
             <div className="flex columns">
               <div className="fit">
                 <img src={knakNav} alt="Knak menu interactions" className="shadow"/>
@@ -293,6 +310,18 @@ function KnakCaseStudy() {
               </div>
             </div>
 
+            <h2>Design Highlight: Forms</h2>
+            <p>Forms are one area of an application that can be easy to overlook during an evaluation of the efficacy of the interface. In Knak’s case, the forms suffered the common pitfall of disorganization.</p>
+            <p>This lack of an organized layout resulted in the following areas of concern:</p>
+            <ul>
+              <li>Poor visibility with information grouping</li>
+              <li>Visually distracting</li>
+            </ul>
+            <p>Once the redesigned content area was finished, the final step for a polished title area was to update sub-page titles to display where in the app the user would be while viewing the form. This included state-related titles (for example, the Edit Customer sub-page, seen below), as well as clear, concise breadcrumb navigation to allow the user to return to previous views.</p>
+          </div>
+
+          <div className="full-width">
+            <img src={knakForms} alt="Knak forms redesign"/>
           </div>
         </div>
       </div>
