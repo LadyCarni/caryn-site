@@ -95,7 +95,7 @@
 }
 
 .summary {
-  background: $primary;
+  background: rgba($primary, .5);
   padding: $std-size;
   align-items: flex-start;
   justify-content: space-between;
