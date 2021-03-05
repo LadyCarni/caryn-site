@@ -110,16 +110,16 @@ function KnakCaseStudy() {
             <div className="image-collection">
               <div className="item col1">
                 <img src={knakWires1} alt="Knak layout wireframe"/>
-                <span className="caption">List view wireframe concept</span>
+                <span className="image-caption">List view wireframe concept</span>
               </div>
               <div className="item col2">
                 <div className="stacked">
                   <img src={knakWires2} alt="Knak sticky nav wireframe"/>
-                  <span className="caption">Sticky side nav wireframe</span>
+                  <span className="image-caption">Sticky side nav wireframe</span>
                 </div>
                 <div className="stacked">
                   <img src={knakWires3} alt="Knak slide behavior wireframe"/>
-                  <span className="caption">Behavior concept wireframe</span>
+                  <span className="image-caption">Behavior concept wireframe</span>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@ function KnakCaseStudy() {
               </div>
               <div className="fill">
                 <img src={knakColorsUi} alt="Knak color in the UI" className="shadow"/>
-                <span className="caption">The new colors in action</span>
+                <span className="image-caption">The new colors in action</span>
               </div>
             </div>
 
@@ -199,7 +199,7 @@ function KnakCaseStudy() {
               </div>
               <div className="fill">
                 <img src={knakTypography} alt="Knak typography example" className="shadow"/>
-                <span className="caption">Updated typography</span>
+                <span className="image-caption">Updated typography</span>
               </div>
             </div>
 
@@ -271,11 +271,11 @@ function KnakCaseStudy() {
             <div className="flex columns">
               <div className="fill">
                 <img src={knakPattern1} alt="Knak card pattern" className="shadow"/>
-                <span className="caption">Material Card</span>
+                <span className="image-caption">Material Card</span>
               </div>
               <div className="fill">
                 <img src={knakPattern2} alt="Knak detailed card pattern" className="shadow"/>
-                <span className="caption">Detailed Card</span>
+                <span className="image-caption">Detailed Card</span>
               </div>
             </div>
           </div>
@@ -295,7 +295,7 @@ function KnakCaseStudy() {
             <div className="flex columns">
               <div className="fit">
                 <img src={knakTax} alt="Knak menu organization" className="shadow"/>
-                <span className="caption">Knak's updated menu</span>
+                <span className="image-caption">Knak's updated menu</span>
               </div>
               <div className="fill">
                 <p>Taxonomies are systems used to classify and organize things. A taxonomy for web apps classifies items and features based on similarities and differences in the concepts within those features. Information is organized based on how users interpret and search for content.</p>
@@ -307,7 +307,7 @@ function KnakCaseStudy() {
             <div className="flex columns">
               <div className="fit">
                 <img src={knakNav} alt="Knak menu interactions" className="shadow"/>
-                <span className="caption">Knak's menu interactions</span>
+                <span className="image-caption">Knak's menu interactions</span>
               </div>
               <div className="fill">
                 <p>Knak’s users would be welcomed to the redesigned application with little to no tours, introductions, or hand-holding. As such, the navigation in particular needed to be predictable and easy to understand.</p>
