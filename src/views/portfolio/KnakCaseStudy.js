@@ -18,6 +18,9 @@ import knakNav from "assets/portfolio/knak-nav.gif";
 import knakForms from "assets/portfolio/knak-forms.png";
 import knakSwitch from "assets/portfolio/knak-switch.png";
 import knakExpand from "assets/portfolio/knak-expand.png";
+import knakDrag from "assets/portfolio/knak-drag.png";
+import knakDragDrop from "assets/portfolio/knak-dragdrop.gif";
+import knakPierce from "assets/portfolio/knak-pierce.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -335,7 +338,7 @@ function KnakCaseStudy() {
             <p>What looked like simple CSS styled radio inputs were actually a package brought in that contained pre-made switch components I was unable to modify with simple CSS.</p>
             <p>With the goal in mind to eliminate any unnecessary external dependencies, I removed the package and created a new Material-inspired switch.</p>
 
-            <iframe className="codepen" height="325" scrolling="no" title="Material switch" src="https://codepen.io/ladycarni/embed/BGrdzY?height=325&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            <iframe className="codepen" height="325" scrolling="no" title="Material switch" src="https://codepen.io/ladycarni/embed/BGrdzY?height=325&theme-id=dark&default-tab=css,result" frameBorder="no" loading="lazy" allowtransparency="true" allowFullScreen={true}>
               See the Pen <a href='https://codepen.io/ladycarni/pen/BGrdzY'>Material switch</a> by Caryn Farvour
               (<a href='https://codepen.io/ladycarni'>@ladycarni</a>) on <a href='https://codepen.io'>CodePen</a>.
             </iframe>
@@ -355,6 +358,54 @@ function KnakCaseStudy() {
           <div className="article">
             <p>The new design included a clear separation for the interactive header of the expandable card that also utilized our new Material-inspired on/off switch. A new set of styles for tables was created and used here that included reduced visual noise and effective use of white space for increased readability. Actions were designed to be subtle and secondary to the content of the data itself. The call to action within this feature was given visual and architectural priority to focus the intent of the feature.</p>
             <p>With the users in mind, the copy was revisited and modified to include language and actions that reflected the purpose of the feature within the users’ context. Clear, familiar titles were created to reduce confusion and cognitive load while using this feature. Verbs were added as microcopy for the table actions to accompany the icons for clarity of purpose and as accessible benchmarks for the user experience.</p>
+
+            <h2>Design Highlight: Draggable Lists</h2>
+            <p>Drag-and-drop UI elements are a relatively common feature. As such, they have had many years of iterative improvements made in usability that have created commonly understood patterns.</p>
+
+            <h3>Layout and Design</h3>
+            <p>During the initial evaluation of this feature, it was not obvious in the styling or within any accompanying copy what the intent was or how the user was to interact with the elements (see below, left). The styling aligned closer with a table of data than interactive elements, and had no indicators of a separation between each of the lines of what appeared to be read-only data.</p>
+          </div>
+
+          <div className="full-width">
+            <img src={knakDrag} alt="Knak drag and drop"/>
+          </div>
+
+          <div className="article">
+            <p>The first priority was to create separate, obviously interactive elements for each of the draggable items. I removed the borders, added a subtle background color, added an identifiable icon and updated each of the action icons to reflect secondary purpose (after the reordering drag-and-drop feature) (see above, right).</p>
+            <p>To give the entire section a clear purpose, I also included a simple action-oriented title.</p>
+
+            <h3>Interactive Design (IxD)</h3>
+            <p>Interactions with these elements required careful consideration both during the action as well as after the action was completed. The height of the active draggable element as well as the style reflected in its next potential spot in the list needed to be clear, easy to understand, and quick to manipulate (see below).</p>
+            <p>As well as creating a clear differentiation between the draggable items (seen above, right — harder to see below in the GIF), the action icons were given a subtle hover effect to enable clear visibility during interactivity of those buttons.</p>
+
+            <img src={knakDragDrop} alt="Knak drag and drop in action"/>
+
+            <p>The result of the redesign for the draggable lists was more clarity of purpose for the feature, a faster interaction, and a predictable outcome.</p>
+
+            <h2>Conclusion</h2>
+            <p>The Knak redesign included many facets of the application. From static design improvement concepts, to improved user flows, to brand new UI layouts and consolidated features. Not least of which was the considerable amount of front-end development work that was needed to pay the technical debt accrued over the course of the fast growth of the application’s user base and customer needs.</p>
+            <h3>Areas of Achievement</h3>
+            <ul>
+              <li>Consistent interfaces</li>
+              <li>Refactored front-end to pay technical debt</li>
+              <li>A library of reusable, predictable design patterns</li>
+              <li>An effective and streamlined user experience</li>
+            </ul>
+            <h3>Thoughts from the founder</h3>
+            <div className="flex columns">
+              <div className="fit">
+                <img src={knakPierce} alt="Knak founder, Pierce Ujjainwalla"/>
+              </div>
+              <div className="fill">
+                <div className="quote">
+                  <p>As our app grew, we had several different designers working on different parts of it. As a result, things were not consistent, and the navigation was way bigger than what it was ever meant for.</p>
+                  <p>We needed a better way to make everything accessible in one place and highlight the actions that our users did most often. We also wanted to free up more real estate for what our users cared about and make everything easily accessible in one place.</p>
+                  <p>I think now that we have this new UI in place, our application is best-in-class for our industry and shows that we care about clean, modern and accessible UX. I believe it much better represents the quality of our application and the value that it brings our customers.</p>
+                  <p>I’m confident our customers are going to be really happy with the new UX and make their life making emails even easier than ever before.</p>
+                  <p>— Pierce Ujjainwalla, founder</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

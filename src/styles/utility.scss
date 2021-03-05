@@ -408,3 +408,15 @@
 .codepen {
   width: 100%;
 }
+
+.quote {
+  border-left: 3px solid rgba($grey3, .5);
+  padding-left: 1em;
+  p {
+    color: $content;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
