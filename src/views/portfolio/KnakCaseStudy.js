@@ -17,6 +17,7 @@ import knakTax from "assets/portfolio/knak-tax.png";
 import knakNav from "assets/portfolio/knak-nav.gif";
 import knakForms from "assets/portfolio/knak-forms.png";
 import knakSwitch from "assets/portfolio/knak-switch.png";
+import knakExpand from "assets/portfolio/knak-expand.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -342,6 +343,18 @@ function KnakCaseStudy() {
             <p>The result reduced the necessity for external dependencies, allowed customization of the style of the switch, and enabled full control over the interactions and animations.</p>
             <img src={knakSwitch} alt="Knak switch redesign"/>
 
+            <h2>Design Highlight: Expandable Cards</h2>
+            <p>Occasionally, custom functionality is necessary for a specific feature. In this case, users could enable or disable optional rules, with further customization options once the rules were enabled. On initial inspection, the feature had several conflicting areas of visual priority (see below, left). Unsure of where the eye was intended to follow, the lack of polished focus lead to considerable distraction.</p>
+            <p>I created a modification on our Material card design pattern to include a clear UI differentiation for an expandable/collapsable card (see below, right).</p>
+          </div>
+
+          <div className="full-width">
+            <img src={knakExpand} alt="Knak expandable cards"/>
+          </div>
+
+          <div className="article">
+            <p>The new design included a clear separation for the interactive header of the expandable card that also utilized our new Material-inspired on/off switch. A new set of styles for tables was created and used here that included reduced visual noise and effective use of white space for increased readability. Actions were designed to be subtle and secondary to the content of the data itself. The call to action within this feature was given visual and architectural priority to focus the intent of the feature.</p>
+            <p>With the users in mind, the copy was revisited and modified to include language and actions that reflected the purpose of the feature within the users’ context. Clear, familiar titles were created to reduce confusion and cognitive load while using this feature. Verbs were added as microcopy for the table actions to accompany the icons for clarity of purpose and as accessible benchmarks for the user experience.</p>
           </div>
         </div>
       </div>
