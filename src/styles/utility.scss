@@ -347,3 +347,32 @@
     }
   }
 }
+
+.ah-ha {
+  &::before {
+    font-family: $icon;
+    display: inline-block;
+    font-size: 1.25em;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    content: '\f671';
+    margin-right: .5em;
+    color: $primary;
+    vertical-align: top;
+  }
+
+  i {
+    background: rgba($primary, .5);
+  }
+}
+
+.caption {
+  display: block;
+  font-size: .85em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  text-align: right;
+}

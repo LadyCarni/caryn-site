@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Route, useRouteMatch } from "react-router-dom";
-import devLondon from 'assets/portfolio/dev-london.jpg'; 
+import devLondon from "assets/portfolio/dev-london.jpg";
+import knakApp from "assets/portfolio/knak-app.jpg";
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -18,59 +19,59 @@ const Projects = ({ match }) => {
       id: 1,
     },
     { 
+      source: knakApp,
+      title: "Knak UX Case Study",
+      slug: "knak-ux-case-study",
+      category: "Product Development",
+      id: 2
+    },
+    { 
       source: "https://source.unsplash.com/random?work",
       title: "Luna Nova",
       slug: "luna-nova",
       category: "Front-end Development",
-      id: 2
+      id: 3
     },
     { 
       source: "https://source.unsplash.com/random?cafe",
       title: "Fongo Works",
       slug: "fongo-works",
       category: "Web App",
-      id: 3
+      id: 4
     },
     { 
       source: "https://source.unsplash.com/random?phone",
       title: "Financial App *",
       slug: "financial-app",
       category: "Web Design",
-      id: 4
+      id: 5
     },
     { 
       source: "https://source.unsplash.com/random?happy",
       title: "Lifestyle App *",
       slug: "lifestyle-app",
       category: "Web Design",
-      id: 5
+      id: 6
     },
     { 
       source: "https://source.unsplash.com/random?dogs",
       title: "WeDiversify",
       slug: "we-diversify",
       category: "Web Design",
-      id: 6
+      id: 7
     },
     { 
       source: "https://source.unsplash.com/random?cat",
       title: "League of Packages",
       slug: "league-of-packages",
       category: "Web Design",
-      id: 7
+      id: 8
     },
     { 
       source: "https://source.unsplash.com/random?mountain",
       title: "Practical UX",
       slug: "practical-ux",
       category: "UX Strategy",
-      id: 8
-    },
-    { 
-      source: "https://source.unsplash.com/random?bike",
-      title: "Knak UX Case Study",
-      slug: "knak-ux-case-study",
-      category: "Front-end Development",
       id: 9
     },
     { 
