@@ -16,6 +16,7 @@ import knakPattern2 from "assets/portfolio/knak-pattern2.png";
 import knakTax from "assets/portfolio/knak-tax.png";
 import knakNav from "assets/portfolio/knak-nav.gif";
 import knakForms from "assets/portfolio/knak-forms.png";
+import knakSwitch from "assets/portfolio/knak-switch.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -322,6 +323,25 @@ function KnakCaseStudy() {
 
           <div className="full-width">
             <img src={knakForms} alt="Knak forms redesign"/>
+          </div>
+
+          <div className="article">
+            <p>To address the visual disorganization of forms with categorized sections, I designed a new three-column layout for all forms. The left-most column would be dedicated to the form section titles, while the middle and right-most columns would be the consistent layout for all form fields.</p>
+            <p>These updates created a more readable, navigable experience while filling out extensive forms.</p>
+
+            <h2>Design Highlight: Switch</h2>
+            <p>Sometimes making small interface changes also impacts unseen areas of the application. Also, sometimes it happens that what seems like a small change is more complex than it initially appears.</p>
+            <p>What looked like simple CSS styled radio inputs were actually a package brought in that contained pre-made switch components I was unable to modify with simple CSS.</p>
+            <p>With the goal in mind to eliminate any unnecessary external dependencies, I removed the package and created a new Material-inspired switch.</p>
+
+            <iframe className="codepen" height="325" scrolling="no" title="Material switch" src="https://codepen.io/ladycarni/embed/BGrdzY?height=325&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+              See the Pen <a href='https://codepen.io/ladycarni/pen/BGrdzY'>Material switch</a> by Caryn Farvour
+              (<a href='https://codepen.io/ladycarni'>@ladycarni</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+
+            <p>The result reduced the necessity for external dependencies, allowed customization of the style of the switch, and enabled full control over the interactions and animations.</p>
+            <img src={knakSwitch} alt="Knak switch redesign"/>
+
           </div>
         </div>
       </div>
