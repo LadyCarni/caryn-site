@@ -8,6 +8,8 @@ import knakWires1 from "assets/portfolio/knak-wires1.jpg";
 import knakWires2 from "assets/portfolio/knak-wires2.jpg";
 import knakWires3 from "assets/portfolio/knak-wires3.jpg";
 import knakLayoutAfter from "assets/portfolio/knak-layout-proposal.png";
+import knakColors from "assets/portfolio/knak-colors.png";
+import knakColorsUi from "assets/portfolio/knak-colors-ui.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -109,6 +111,32 @@ function KnakCaseStudy() {
             <h2>Color palette consistency</h2>
             <h3>Goals: recognizable, intentional</h3>
             <p>Identifying the key brand colors and the theme for the application enabled the creation of a palette of accessibility-tested and reusable colors. These identifiers in the SCSS allowed me to organize styles based on state, response, and behavior.</p>
+            <img src={knakColors} alt="Knak color palette"/>
+            <p>Colors derived from the brand were selectively used for focused call-to-action behaviors and interactive states. While the palette of colors chosen purely for the app elements reflected a sense of consistency and predictability based on the hierarchy of the element in the interface.</p>
+
+            <div className="flex columns">
+              <div className="fill">
+                <pre className="language-css"><code>
+                  {`
+                    /* Main brand color */
+                    $brand-color: #219DFA;
+                    $brand-color2: #9ec905;
+
+                    /* Copy text color */
+                    $text-color: #59636a;
+
+                    /* Greys */
+                    $background-grey: #f2f6fa;
+                    $mid-dark-grey: #6e6e6e;
+                    $dark-grey: #444;
+                  `}
+                </code></pre>
+              </div>
+              <div className="fill">
+                <img src={knakColorsUi} alt="Knak color in the UI"/>
+                <span className="caption">The new colors in action</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
