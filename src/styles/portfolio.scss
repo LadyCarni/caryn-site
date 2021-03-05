@@ -143,6 +143,7 @@
   grid-template-columns: auto auto;
   grid-auto-rows: auto auto;
   grid-auto-flow: dense;
+  margin: 2em 0;
 
   &::before, &::after {
     box-sizing: border-box;

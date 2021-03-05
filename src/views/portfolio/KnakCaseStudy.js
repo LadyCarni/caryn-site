@@ -7,6 +7,7 @@ import knakLayout from "assets/portfolio/knak-layout.png";
 import knakWires1 from "assets/portfolio/knak-wires1.jpg";
 import knakWires2 from "assets/portfolio/knak-wires2.jpg";
 import knakWires3 from "assets/portfolio/knak-wires3.jpg";
+import knakLayoutAfter from "assets/portfolio/knak-layout-proposal.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -81,7 +82,7 @@ function KnakCaseStudy() {
             <h3>Layout Redesign</h3>
             <h4>Goals: Familiar, navigable, discoverable</h4>
             <p>The first high-level issue I noted was an inconsistent layout for different parts of the app. As you can see in the simplified breakdown below, the experience for Customers (layout A) was inconsistent from Admins (layout B). This was identified as a maintainability issue that was a known area of technical debt for Knak’s tech team.</p>
-            <img src={knakLayout} alt="Knak app layout before and after"/>
+            <img src={knakLayout} alt="Knak app layout before the redesign"/>
             <p>Having one layout with consistent patterns and identifiable architectural areas would give all users a consistent experience as well as enable Knak’s team to continue to create new, stable features for their customers.</p>
             <p>The redesign began with quick, simple wireframes (shown below). This pen-on-paper format allowed me to generate multiple ideas and communicate their intent with Knak’s team without investing too much time or energy into options.</p>
 
@@ -101,6 +102,9 @@ function KnakCaseStudy() {
                 </div>
               </div>
             </div>
+
+            <p>In order to create a familiar layout, I aligned both areas of the divergent design into one traditional, dashboard-style layout. This included a sticky sidebar and a scrollable content area (see below).</p>
+            <img src={knakLayoutAfter} alt="new Knak app layout proposal"/>
           </div>
         </div>
       </div>
