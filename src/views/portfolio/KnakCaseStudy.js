@@ -13,6 +13,8 @@ import knakColorsUi from "assets/portfolio/knak-colors-ui.png";
 import knakTypography from "assets/portfolio/knak-type.png";
 import knakPattern1 from "assets/portfolio/knak-pattern1.png";
 import knakPattern2 from "assets/portfolio/knak-pattern2.png";
+import knakTax from "assets/portfolio/knak-tax.png";
+import knakNav from "assets/portfolio/knak-nav.gif";
 
 function KnakCaseStudy() {
   usePrism();
@@ -253,6 +255,41 @@ function KnakCaseStudy() {
               <div className="fill">
                 <img src={knakPattern2} alt="Knak detailed card pattern" className="shadow"/>
                 <span className="caption">Detailed Card</span>
+              </div>
+            </div>
+
+            <h2>Design Highlight: Navigation</h2>
+            <p>The navigation in this application was originally grouped by user type (Customer and Admin). Once the layout had been consolidated into one experience, the navigation was similarly aligned.</p>
+            <p>Three areas of the navigation that needed attention:</p>
+            <ul>
+              <li>Taxonomy</li>
+              <li>Interaction Design</li>
+              <li>Usability Testing</li>
+            </ul>
+
+            <h3>Taxonomy</h3>
+
+            <div className="flex columns">
+              <div className="fit">
+                <img src={knakTax} alt="Knak menu organization" className="shadow"/>
+                <span className="caption">Knak's updated menu</span>
+              </div>
+              <div className="fill">
+                <p>Taxonomies are systems used to classify and organize things. A taxonomy for web apps classifies items and features based on similarities and differences in the concepts within those features. Information is organized based on how users interpret and search for content.</p>
+                <p>Iconography was evaluated based on patterns widely understood in modern applications. Recall and recognition were both concerns while choosing to upgrade the icons to Font Awesome’s Pro icon library.</p>
+              </div>
+            </div>
+
+            <h3>Interaction Design</h3>
+
+            <div className="flex columns">
+              <div className="fit">
+                <img src={knakNav} alt="Knak menu interactions" className="shadow"/>
+                <span className="caption">Knak's menu interactions</span>
+              </div>
+              <div className="fill">
+                <p>Knak’s users would be welcomed to the redesigned application with little to no tours, introductions, or hand-holding. As such, the navigation in particular needed to be predictable and easy to understand.</p>
+                <p>All active, passive, and interactive states were designed to follow conventional patterns of recognition for all user types. Transitions and animations were designed to be subtle, without interfering with the user's task.</p>
               </div>
             </div>
 

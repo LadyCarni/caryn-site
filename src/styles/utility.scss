@@ -151,12 +151,30 @@
   &.column {
     flex-direction: column;
 
+    .fit {
+      margin-right: 1em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media screen and (max-width: $small) {
+        margin-bottom: 1em;
+        width: 100%;
+      }
+    }
+
     .fill {
       flex: 1;
       margin-right: 1em;
 
       &:last-child {
         margin-right: 0;
+      }
+
+      @media screen and (max-width: $small) {
+        margin-bottom: 1em;
+        width: 100%;
       }
     }
   }
