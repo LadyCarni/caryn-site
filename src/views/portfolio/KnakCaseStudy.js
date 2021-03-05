@@ -86,11 +86,11 @@ function KnakCaseStudy() {
             <p>The redesign began with quick, simple wireframes (shown below). This pen-on-paper format allowed me to generate multiple ideas and communicate their intent with Knak’s team without investing too much time or energy into options.</p>
 
             <div className="image-collection">
-              <div className="item item-tall">
+              <div className="item col1">
                 <img src={knakWires1} alt="Knak layout wireframe"/>
                 <span className="caption">List view wireframe concept</span>
               </div>
-              <div className="item item-tall2">
+              <div className="item col2">
                 <div className="stacked">
                   <img src={knakWires2} alt="Knak sticky nav wireframe"/>
                   <span className="caption">Sticky side nav wireframe</span>
