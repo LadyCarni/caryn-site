@@ -10,6 +10,7 @@ import knakWires3 from "assets/portfolio/knak-wires3.jpg";
 import knakLayoutAfter from "assets/portfolio/knak-layout-proposal.png";
 import knakColors from "assets/portfolio/knak-colors.png";
 import knakColorsUi from "assets/portfolio/knak-colors-ui.png";
+import knakTypography from "assets/portfolio/knak-type.png";
 
 function KnakCaseStudy() {
   usePrism();
@@ -51,6 +52,8 @@ function KnakCaseStudy() {
 
             <pre className="language-json"><code>
             {`
+              .stylelintrc
+
               {
                 "rules": {
                   "at-rule-empty-line-before": "always",
@@ -118,6 +121,8 @@ function KnakCaseStudy() {
               <div className="fill">
                 <pre className="language-css"><code>
                   {`
+                    variables.scss
+
                     /* Main brand color */
                     $brand-color: #219DFA;
                     $brand-color2: #9ec905;
@@ -135,6 +140,44 @@ function KnakCaseStudy() {
               <div className="fill">
                 <img src={knakColorsUi} alt="Knak color in the UI"/>
                 <span className="caption">The new colors in action</span>
+              </div>
+            </div>
+
+            <h2>Typography</h2>
+            <h3>Goals: readable, usable</h3>
+            <p>The primary goal of font family choices is readability across all expected screen sizes. The naming convention chosen would match architectural choices. This meant choosing class names based on what the element is versus what it looks like. This standard of naming helps with discoverability for designers and developers to easily maintain and create styles.</p>
+            <p>Once the standards were identified for typography, each repeated interface section with prominent text (such as the title area for each content view) were evaluated, refactored into components and redesigned for reusability and consistency. This redesign occurred alongside the stylesheet refactor that happened behind-the-scenes.</p>
+            <p>Standardizing the typographic styles helped during the cleanup of the stylesheets as a means of identifying unused classes, inconsistencies for similar elements, and unnecessary specificity for non-unique text. Cleaning up the SCSS files included combining duplicate styles, removing unused classes, and simplifying unneeded complex styles.</p>
+
+            <div className="flex columns">
+              <div className="fill">
+              <pre className="language-css"><code>
+                  {`
+                    global.scss
+
+                    .title {
+                      font-size: 2.5em;
+                      font-weight: 200;
+                      color: $brand-color;
+                    }
+
+                    .breadcrumbs {
+                      list-style-type: none;
+
+                      li {
+                        display: inline-block;
+
+                        a {
+                          text-decoration: none;
+                        }
+                      }
+                    }
+                  `}
+                </code></pre>
+              </div>
+              <div className="fill">
+                <img src={knakTypography} alt="Knak typography example"/>
+                <span className="caption">Updated typography</span>
               </div>
             </div>
           </div>
