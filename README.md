@@ -1,5 +1,6 @@
 # My playground/sandbox/showcase
 
+You can see this in the wild as it grows here: [carynfarvour.design](https://carynfarvour.design/)
 ## Take 'er for a spin
 
 ### `yarn start`
