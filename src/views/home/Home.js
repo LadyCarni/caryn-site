@@ -6,7 +6,7 @@ import triangles from 'assets/tri-large.svg';
 import trismall from 'assets/tri-vert1.svg';
 import trismall2 from 'assets/tri-hor1.svg';
 import PortfolioFeatures from 'components/portfolioFeatures';
-import knakApp from 'assets/portfolio/knak-app.jpg';
+import knakWires from 'assets/portfolio/knak-wires.jpg';
 class Home extends Component {
   render() {
     return (
@@ -56,7 +56,7 @@ class Home extends Component {
       </div>
       <div className="dark feature center filter feature-width headline">
         <div className="headline-image">
-          <img src={knakApp} alt="Knak app on a laptop"/>
+          <img src={knakWires} alt="Knak app on a laptop"/>
         </div>
         <div className="headline overlay">
           <h3>Knak: A Case Study</h3>

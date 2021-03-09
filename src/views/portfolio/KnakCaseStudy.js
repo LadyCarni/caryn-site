@@ -2,6 +2,7 @@ import React from "react";
 import PortfolioHeader from "../../components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import usePrism from "hooks/usePrism";
+import knakWires from "assets/portfolio/knak-wires.jpg";
 import knakApp from "assets/portfolio/knak-app.jpg";
 import knakLayout from "assets/portfolio/knak-layout.png";
 import knakWires1 from "assets/portfolio/knak-wires1.jpg";
@@ -28,7 +29,7 @@ function KnakCaseStudy() {
   return (
     <>
       <PortfolioHeader
-        headerImage={knakApp}
+        headerImage={knakWires}
         routes={PortfolioRoutes}
         imageAlt="Knak user interface"
         headerTitle="Knak UX Case Study"
@@ -383,7 +384,14 @@ function KnakCaseStudy() {
             <p>The result of the redesign for the draggable lists was more clarity of purpose for the feature, a faster interaction, and a predictable outcome.</p>
 
             <h2>Conclusion</h2>
-            <p>The Knak redesign included many facets of the application. From static design improvement concepts, to improved user flows, to brand new UI layouts and consolidated features. Not least of which was the considerable amount of front-end development work that was needed to pay the technical debt accrued over the course of the fast growth of the application’s user base and customer needs.</p>
+            <p>The <a href="https://knak.io/" target="_blank" rel="noreferrer">Knak</a> redesign touches many areas and levels of the application. From static design improvement concepts, to improved user flows, to brand new UI layouts and consolidated features. The redesign also included a considerable amount of front-end development work. The efforts significantly reduced the technical debt accrued over the course of the fast growth of the application.</p>
+          </div>
+
+          <div className="full-width">
+            <img src={knakApp} alt="Knak application"/>
+          </div>
+
+          <div className="article">
             <h3>Areas of Achievement</h3>
             <ul>
               <li>Consistent interfaces</li>
@@ -402,7 +410,7 @@ function KnakCaseStudy() {
                   <p>We needed a better way to make everything accessible in one place and highlight the actions that our users did most often. We also wanted to free up more real estate for what our users cared about and make everything easily accessible in one place.</p>
                   <p>I think now that we have this new UI in place, our application is best-in-class for our industry and shows that we care about clean, modern and accessible UX. I believe it much better represents the quality of our application and the value that it brings our customers.</p>
                   <p>I’m confident our customers are going to be really happy with the new UX and make their life making emails even easier than ever before.</p>
-                  <p>— Pierce Ujjainwalla, founder</p>
+                  <p>— Pierce Ujjainwalla, founder of <a href="https://knak.io/" target="_blank" rel="noreferrer">Knak</a></p>
                 </div>
               </div>
             </div>

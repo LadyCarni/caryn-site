@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route, useRouteMatch } from "react-router-dom";
 import devLondon from "assets/portfolio/dev-london.jpg";
-import knakApp from "assets/portfolio/knak-app.jpg";
+import knakWires from "assets/portfolio/knak-wires.jpg";
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -19,7 +19,7 @@ const Projects = ({ match }) => {
       id: 1,
     },
     { 
-      source: knakApp,
+      source: knakWires,
       title: "Knak UX Case Study",
       slug: "knak-ux-case-study",
       category: "Product Development",
