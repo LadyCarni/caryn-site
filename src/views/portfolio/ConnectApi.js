@@ -3,7 +3,7 @@ import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "../../components/portfolioHeader";
 import usePrism from "hooks/usePrism";
 
-import connectFeature from "assets/portfolio/connect-feature.png";
+import connectFeature from "assets/portfolio/connect-cover2.jpg";
 import connectWireGuides from "assets/portfolio/connect-wires2.png";
 import connectWireDocs from "assets/portfolio/connect-wires1.png";
 import connectCover from "assets/portfolio/connect-cover.jpg";
@@ -50,14 +50,27 @@ function ConnectApi() {
             </ul>
 
             <h2>The Plan</h2>
-            <p>Using Miro (with an iPad Pro and Apple Pencil) as a virtual whiteboard, I was able to work live with my remote team while planning this project. I designed a series of wireframes and user flows to rapidly iterate over potential layouts and interaction concepts.</p>
+            <p>Using <a href="https://miro.com/" target="_blank" rel="noreferrer">Miro</a> (with an iPad Pro and Apple Pencil) as a virtual whiteboard, I was able to work live with my remote team while planning this project. I designed a series of wireframes and user flows to rapidly iterate over potential layouts and interaction concepts.</p>
+
+            <h3>Guides</h3>
+            <p>To alleviate the complexity of the integration concept, I designed a section of the docs dedicated to step-by-step walkthroughs of how the user would write their own integration.</p>
 
             <div className="flex columns">
-              <div className="fit">things</div>
+              <div className="fit">
+                <p>Features of the guides would include:</p>
+                <ul>
+                  <li>A reminder of the (required) API key</li>
+                  <li>Short, easy steps to follow</li>
+                  <li>Examples of the results</li>
+                </ul>
+              </div>
               <div className="fill">
                 <img src={connectWireGuides} alt="Connect API wireframe guides"/>
               </div>
             </div>
+
+            <h3>Docs</h3>
+            <p></p>
 
             <div className="flex columns">
               <div className="fit">wires description</div>
