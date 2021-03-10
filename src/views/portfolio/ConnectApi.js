@@ -10,6 +10,7 @@ import connectCover from "assets/portfolio/connect-cover.jpg";
 import connectMenu from "assets/portfolio/connect-menu.png";
 import connectOrder from "assets/portfolio/connect-order.png";
 import connectSticky from "assets/portfolio/connect-sticky.gif";
+import connectClipboard from "assets/portfolio/connect-clipboard.gif";
 
 function ConnectApi() {
   usePrism();
@@ -100,8 +101,9 @@ function ConnectApi() {
             <img src={connectSticky} alt="Sticky payload interaction" className="shadow"/>
 
             <h2>Feature: Custom Code Blocks</h2>
-            <p>color blind accessible syntax highlighting theme, copy to clipboard functionality</p>
-            <p>Gif</p>
+            <p>The syntax of the required payloads needed to be exact, so in order to ensure full clarity of the expected code, custom code blocks with syntax highlighting were included in the final product. The custom code blocks also included color-blind accessible language-specific syntax highlighting and a copy-to-clipboard function.</p>
+            <p></p>
+            <img src={connectClipboard} alt="Payload interactions"/>
 
             <h2>The Results</h2>
             <p>Summary of results</p>
