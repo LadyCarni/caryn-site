@@ -106,20 +106,8 @@ function ConnectApi() {
             <img src={connectClipboard} alt="Payload interactions"/>
 
             <h2>The Results</h2>
-            <p>Summary of results</p>
-            <h3>Guides</h3>
-            <div className="flex columns">
-              <div className="fit">guides results</div>
-              <div className="fill">image</div>
-            </div>
-
-            <h3>Docs</h3>
-            <div className="flex columns">
-              <div className="fit">docs results</div>
-              <div className="fill">image</div>
-            </div>
+            <p>After launch, the <a href="https://connect-api.flyt.io/" target="_blank" rel="noreferrer">Connect API</a> docs were given to three new clients within the first week. The average time to live went from 18 hours of support required to just under 6. Each new brand was able to launch on time, with accuracy, with minimal operational support needed.</p>
           </div>
-
 
           <div className="full-width">
             <img src={connectCover} alt="Connect API docs"/>
