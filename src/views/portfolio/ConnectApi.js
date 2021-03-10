@@ -7,7 +7,9 @@ import connectFeature from "assets/portfolio/connect-cover2.jpg";
 import connectWireGuides from "assets/portfolio/connect-wires2.png";
 import connectWireDocs from "assets/portfolio/connect-wires1.png";
 import connectCover from "assets/portfolio/connect-cover.jpg";
-import connectDiagram from "assets/portfolio/connect-diagram.png";
+import connectMenu from "assets/portfolio/connect-menu.png";
+import connectOrder from "assets/portfolio/connect-order.png";
+import connectSticky from "assets/portfolio/connect-sticky.gif";
 
 function ConnectApi() {
   usePrism();
@@ -90,13 +92,13 @@ function ConnectApi() {
 
             <h2>Feature: Integration Diagrams</h2>
             <p>From when a menu is ready on a Point of Sale system to the point that a customer is accepting their delivered food order, there are a number of steps involved. I put together a set of simple diagrams to illustrate the steps, and how the user of the API documentation would be involved for each part of the integration.</p>
-            <img src={connectDiagram} alt="Integration illustrated diagram" className="shadow"/>
+            <img src={connectMenu} alt="Illustrated diagram of menu integration" className="shadow"/>
+            <img src={connectOrder} alt="Illustrated diagram of order integration" className="shadow"/>
 
             <h2>Feature: Sticky Payloads</h2>
             <p>Talk about lessons with stickiness; how to start it, stop it, how to interact with the relevant content</p>
             <p>Show code block of how it was fixed?</p>
-            <p>Gif before?</p>
-            <p>Gif after?</p>
+            <img src={connectSticky} alt="Sticky payload interaction" className="shadow"/>
 
             <h2>Feature: Custom Code Blocks</h2>
             <p>color blind accessible syntax highlighting theme, copy to clipboard functionality</p>
