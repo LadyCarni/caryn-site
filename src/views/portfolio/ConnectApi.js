@@ -7,6 +7,7 @@ import connectFeature from "assets/portfolio/connect-cover2.jpg";
 import connectWireGuides from "assets/portfolio/connect-wires2.png";
 import connectWireDocs from "assets/portfolio/connect-wires1.png";
 import connectCover from "assets/portfolio/connect-cover.jpg";
+import connectDiagram from "assets/portfolio/connect-diagram.png";
 
 function ConnectApi() {
   usePrism();
@@ -59,9 +60,10 @@ function ConnectApi() {
               <div className="fit">
                 <p>Features of the guides would include:</p>
                 <ul>
-                  <li>A reminder of the (required) API key</li>
-                  <li>Short, easy steps to follow</li>
-                  <li>Examples of the results</li>
+                  <li>Prerequesite reminders</li>
+                  <li>Helpful illustrations of the concepts</li>
+                  <li>Readable, simple steps to follow</li>
+                  <li>Examples of what to expect</li>
                 </ul>
               </div>
               <div className="fill">
@@ -70,18 +72,25 @@ function ConnectApi() {
             </div>
 
             <h3>Docs</h3>
-            <p></p>
+            <p>To aim toward the ultimate goal of a self-serve experience, I designed the experience of the API documentation to pro-actively answer questions before being asked; making them as simple as posible.</p>
 
             <div className="flex columns">
-              <div className="fit">wires description</div>
+              <div className="fit">
+                <p>Features of the docs would include:</p>
+                <ul>
+                  <li>Syntax highlighted code blocks</li>
+                  <li>Sticky-scrolling payload examples</li>
+                  <li>Anchors for bookmarking</li>
+                </ul>
+              </div>
               <div className="fill">
                 <img src={connectWireDocs} alt="Connect API wireframe docs"/>
               </div>
             </div>
 
             <h2>Feature: Integration Diagrams</h2>
-            <p>Explain the complexity of what integration is and where these docs come into play</p>
-            <p>Integration illustrations explaining the flow</p>
+            <p>From when a menu is ready on a Point of Sale system to the point that a customer is accepting their delivered food order, there are a number of steps involved. I put together a set of simple diagrams to illustrate the steps, and how the user of the API documentation would be involved for each part of the integration.</p>
+            <img src={connectDiagram} alt="Integration illustrated diagram" className="shadow"/>
 
             <h2>Feature: Sticky Payloads</h2>
             <p>Talk about lessons with stickiness; how to start it, stop it, how to interact with the relevant content</p>
