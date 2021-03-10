@@ -96,8 +96,7 @@ function ConnectApi() {
             <img src={connectOrder} alt="Illustrated diagram of order integration" className="shadow"/>
 
             <h2>Feature: Sticky Payloads</h2>
-            <p>Talk about lessons with stickiness; how to start it, stop it, how to interact with the relevant content</p>
-            <p>Show code block of how it was fixed?</p>
+            <p>In order to make the payload requirements as accessible as possible, the code blocks were contained in context with the description. Interactively, this was acentuated with a <code>position: sticky</code> effect so that the user could scroll through the document and not lose the context.</p>
             <img src={connectSticky} alt="Sticky payload interaction" className="shadow"/>
 
             <h2>Feature: Custom Code Blocks</h2>
