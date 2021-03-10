@@ -3,18 +3,21 @@ import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "../../components/portfolioHeader";
 import usePrism from "hooks/usePrism";
 
+import connectFeature from "assets/portfolio/connect-feature.png";
+import connectCover from "assets/portfolio/connect-cover.jpg";
+
 function ConnectApi() {
   usePrism();
 
   return (
     <>
       <PortfolioHeader
-        headerImage="https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+        headerImage={connectFeature}
         routes={PortfolioRoutes}
         imageAlt="placeholder"
         headerTitle="Connect API"
-        headerSubtitle="Restaurant operations for the world of delivery"
-        headerDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusantium et non tenetur illo suscipit culpa iusto fuga eum est veritatis deleniti, excepturi qui, magni ea ipsa aliquid nihil autem?"
+        headerSubtitle="Restaurant delivery operations"
+        headerDescription="Connect API connects Point of Sale (POS) systems with orders, menus, and stock technology through a universal API designed for Just Eat Takeaway.com group"
         headerDisciplines={[
           "Front-end Development (Vue)",
           "Web Design",
@@ -26,10 +29,45 @@ function ConnectApi() {
           <div className="article">
             <p className="external-link"><a href="https://connect-api.flyt.io/" target="_blank" rel="noreferrer">Connect API</a></p>
             <h2>Context</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              excepturi eaque at corrupti. Debitis reprehenderit similique
-              officia neque hic odio, corrupti animi rerum minima, ex provident.
-              Aut iste porro magni.</p>
+            <p>Restaurant clients or their Point of Sale (POS) providers can choose to convert and send their restaurant data through an API that utilizes a universal menu format. This enables them to self-serve launching their business with a Just Eat Takeaway.com delivery partner (Skip the Dishes, Just Eat, etc.).</p>
+            <h2>The Goal</h2>
+            <p>The technical documents needed to include:</p>
+            <ul>
+              <li>Clear definitions of integration requirements</li>
+              <li>Step-by-step instructions for sending data</li>
+              <li>Answers to common questions and caveats</li>
+            </ul>
+            <h2>The Plan</h2>
+            <p>guide wires description</p>
+
+            <div className="flex columns">
+              <div className="fit">wires description</div>
+              <div className="fill">image</div>
+            </div>
+
+            <div className="flex columns">
+              <div className="fit">wires description</div>
+              <div className="fill">image</div>
+            </div>
+
+            <h2>The Results</h2>
+            <p>Summary of results</p>
+            <h3>Guides</h3>
+            <div className="flex columns">
+              <div className="fit">guides results</div>
+              <div className="fill">image</div>
+            </div>
+
+            <h3>Docs</h3>
+            <div className="flex columns">
+              <div className="fit">docs results</div>
+              <div className="fill">image</div>
+            </div>
+          </div>
+
+
+          <div className="full-width">
+            <img src={connectCover} alt="Connect API docs"/>
           </div>
         </div>
       </div>

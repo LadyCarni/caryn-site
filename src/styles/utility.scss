@@ -6,6 +6,10 @@
   &.dark {
     background-color: $grey3;
   }
+
+  &.pattern {
+    background: url('/assets/swirl-pattern.png');
+  }
 }
 
 .feature-height {

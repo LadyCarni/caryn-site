@@ -2,10 +2,11 @@ import React from "react";
 import { Link, Route, useRouteMatch } from "react-router-dom";
 import devLondon from "assets/portfolio/dev-london.jpg";
 import knakWires from "assets/portfolio/knak-wires.jpg";
+import connectFeature from "assets/portfolio/connect-cover.jpg";
 const Projects = ({ match }) => {
   const gallery = [
     { 
-      source: "https://source.unsplash.com/random?beach",
+      source: connectFeature,
       title: "Connect API",
       slug: "connect-api",
       category: "Front-end Development",
