@@ -1,38 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const PortfolioFeatures = () => {
+import devLondon from "assets/portfolio/dev-london.jpg";
+import connectFeature from "assets/portfolio/connect-cover.jpg";
+const PortfolioFeatures = ({ match }) => {
   const gallery = [
     { 
-      source: "https://source.unsplash.com/random?beach",
-      title: "Planning Project",
-      category: "Research & Strategy",
-      id: 'feature1',
+      source: connectFeature,
+      title: "Connect API",
+      slug: "connect-api",
+      category: "Front-end Development",
+      id: 0,
     },
     { 
-      source: "https://source.unsplash.com/random?forest",
-      title: "So UXY",
-      category: "UX Design",
-      id: 'feature2',
+      source: devLondon,
+      title: "Dev London",
+      slug: "dev-london",
+      category: "Front-end Development",
+      id: 1,
     },
-    { 
-      source: "https://source.unsplash.com/random?work",
-      title: "Sites of web",
-      category: "Website",
-      id: 'feature3'
-    }
   ];
 
   return (
     <div className="columns portfolio shadow highlights">
-      {gallery.map((project) => (
-        <div className="column filter" key={project.id}>
-          <Link to="#" >
+      {gallery.map(({id, slug, title, category, source}) =>(
+        <div className="column filter" key={id}>
+          <Link to={`/portfolio/${slug}`}>
             <div className="image bottom">
-              <img src={project.source} alt={project.title}/>
+              <img src={source} alt={title}/>
             </div>
             <div className="caption overlay">
-              <h3>{project.title}</h3>
-              <span>{project.category}</span>
+              <h3>{title}</h3>
+              <span>{category}</span>
             </div>
           </Link>
         </div>
