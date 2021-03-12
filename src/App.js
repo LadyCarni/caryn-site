@@ -2,13 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 // eslint-disable-next-line
 import Prism from "prismjs";
 import "prismjs/plugins/line-numbers/prism-line-numbers.css";
@@ -19,9 +12,9 @@ import "prismjs/plugins/show-language/prism-show-language.js";
 import "prismjs/components/prism-json";
 import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
 import Home from "views/home/Home";
-import ScrollArrow from "components/scrollArrow";
 import Menu from "components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
+import Footer from "components/footer";
 
 export default function Site() {
   return (
@@ -55,59 +48,7 @@ export default function Site() {
         </Route>
       </Switch>
 
-      <div className="footer">
-        <ScrollArrow />
-        <div className="follow-links">
-          <a
-            href="https://github.com/LadyCarni"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              alt="Caryn's GitHub profile"
-              title="GitHub"
-              className="github"
-            />
-          </a>
-          <a
-            href="https://twitter.com/LadyCarni"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faTwitter}
-              alt="Caryn's Twitter profile"
-              title="Twitter"
-              className="twitter"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/lady.carni/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              alt="Caryn's Instagram profile"
-              title="Instagram"
-              className="instagram"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/carynfarvour/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              alt="Caryn's LinkedIn profile"
-              title="LinkedIn"
-              className="linkedin"
-            />
-          </a>
-        </div>
-      </div>
+      <Footer />
     </Router>
   );
 }
