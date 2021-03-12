@@ -31,7 +31,7 @@ const ConnectApi = () => {
         ]}
       />
       <div className="feature feature-width">
-        <div className="project-content flex column">
+        <div className="content flex column">
           <div className="article">
             <p className="external-link"><a href="https://connect-api.flyt.io/" target="_blank" rel="noreferrer">Connect API</a></p>
             <h2>Context</h2>

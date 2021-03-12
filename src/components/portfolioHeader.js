@@ -6,7 +6,7 @@ function PortfolioHeader( { routes, headerImage, imageAlt, headerTitle, headerSu
     <>
       <Breadcrumb routes={routes} />
       <div className="feature feature-width">
-        <div className="project-content flex column">
+        <div className="content flex column">
           <div className="project-title filter">
             <div className="image left">
               <img src={headerImage} alt={`${imageAlt}`}/>

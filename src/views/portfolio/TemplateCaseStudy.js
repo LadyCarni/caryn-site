@@ -19,7 +19,7 @@ const CaseStudy = () => {
         ]}
       />
       <div className="feature feature-width">
-        <div className="project-content flex column">
+        <div className="content flex column">
           <div className="article">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
