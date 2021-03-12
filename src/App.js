@@ -12,11 +12,12 @@ import "prismjs/plugins/show-language/prism-show-language.js";
 import "prismjs/components/prism-json";
 import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
 import Home from "views/home/Home";
+import About from "views/about/About";
 import Menu from "components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
 import Footer from "components/footer";
 
-export default function Site() {
+const Site = () => {
   return (
     <Router>
       <ScrollToTop />
@@ -80,15 +81,6 @@ function Creative() {
   );
 }
 
-function About() {
-  return (
-    <div className="light feature feature-width full-height">
-      <h2>About</h2>
-      <p>Coming soon... existential crisis pending!</p>
-    </div>
-  );
-}
-
 function Contact() {
   return (
     <div className="light feature feature-width full-height">
@@ -97,3 +89,5 @@ function Contact() {
     </div>
   );
 }
+
+export default Site;

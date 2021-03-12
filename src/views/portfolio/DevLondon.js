@@ -7,7 +7,7 @@ import devLondonPlans from "assets/portfolio/dev-london-plans.jpg";
 import devLondonSite from "assets/portfolio/dev-london-site.png";
 import usePrism from "hooks/usePrism";
 
-function DevLondon() {
+const DevLondon = () => {
   usePrism();
 
   return (

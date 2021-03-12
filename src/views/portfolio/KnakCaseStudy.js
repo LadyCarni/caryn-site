@@ -23,7 +23,7 @@ import knakDrag from "assets/portfolio/knak-drag.png";
 import knakDragDrop from "assets/portfolio/knak-dragdrop.gif";
 import knakPierce from "assets/portfolio/knak-pierce.png";
 
-function KnakCaseStudy() {
+const KnakCaseStudy = () => {
   usePrism();
 
   return (

@@ -12,7 +12,7 @@ import connectOrder from "assets/portfolio/connect-order.png";
 import connectSticky from "assets/portfolio/connect-sticky.gif";
 import connectClipboard from "assets/portfolio/connect-clipboard.gif";
 
-function ConnectApi() {
+const ConnectApi = () => {
   usePrism();
 
   return (
