@@ -35,6 +35,17 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="timeline">
+        <h2>History</h2>
+        <div className="timeline-content">
+          <div className="path"></div>
+          <ul>
+            <li className="job">
+              <span className="date">2008</span>
+              Advertising Layout & Graphic Artist (Conestoga College)</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
