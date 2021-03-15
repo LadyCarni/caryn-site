@@ -12,7 +12,7 @@ const Home = () => {
     <>
     <div className="hero feature-width feature-height">
       <img src={triangles} alt="" className="tri-large" />
-      <div className="content">
+      <div className="hero-content">
         <h1><span className="pop">Design</span> for work,<br/>life & play</h1>
       </div>
       <FontAwesomeIcon icon={faLongArrowDown} className="scroll" alt="scroll down" />

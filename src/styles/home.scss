@@ -2,7 +2,7 @@
   background-color: $primary;
   position: relative;
   
-  .content {
+  .hero-content {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -38,7 +38,7 @@
       text-align: center;
     }
 
-    .content {
+    .hero-content {
       width: 100%;
       align-items: center;
       justify-content: center;
@@ -50,7 +50,7 @@
       margin-bottom: 2.5em;
     }
 
-    .content {
+    .hero-content {
       align-items: flex-end;
       justify-content: flex-end;
       max-width: $large;
