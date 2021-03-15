@@ -11,13 +11,37 @@
       font-family: $type-content;
       font-weight: 700;
       margin-bottom: 0;
-      margin-top: 0;
     }
 
-    .photos {
+    .gallery {
+      width: 750px;
+      height: 230px;
       display: flex;
-      flex-wrap: no-wrap;
-      max-width: 100%;
+      flex-direction: row;
+      margin-top: 2em;
+
+      .image {
+        margin-right: 1em;
+        width: 33%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+
+          &.caption {
+            margin-bottom: 1em;
+          }
+
+          &.left {
+            object-position: left;
+          }
+        }
+      }
     }
   }
 }
