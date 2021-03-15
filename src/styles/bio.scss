@@ -1,0 +1,27 @@
+.bio {
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  margin-top: 2em;
+  max-width: 1200px;
+  width: 100%;
+
+  .bio-content {
+    h1 {
+      font-family: $type-content;
+      font-weight: 700;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    .photos {
+      display: flex;
+      flex-wrap: no-wrap;
+      max-width: 100%;
+    }
+  }
+}
+
+.inline {
+  margin: 0 2em 2em 0;
+}
