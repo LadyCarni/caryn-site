@@ -42,7 +42,36 @@ const About = () => {
           <ul>
             <li className="job">
               <span className="date">2008</span>
-              Advertising Layout & Graphic Artist (Conestoga College)</li>
+              Advertising Layout & Graphic Artist (Conestoga College)
+            </li>
+            <li className="job">
+              <span className="date">2008</span>
+              Launch Design by Humphreys (freelance brand)
+            </li>
+            <li className="education">
+              <span className="date">2009</span>
+              Graduate of Advertising (Conestoga College)
+            </li>
+            <li className="job">
+              <span className="date">2009</span>
+              Digital Media Coordinator (Waterloo Regional Children's Museum)
+            </li>
+            <li className="job">
+              <span className="date">2009</span>
+              Graphic Designer (R&S Screening)
+            </li>
+            <li className="job">
+              <span className="date">2010</span>
+              Director of Marketing (Waterloo Management Education Centre)
+            </li>
+            <li className="job">
+              <span className="date">2012</span>
+              Web Designer (ChromeMedia)
+            </li>
+            <li className="community">
+              <span className="date">2013</span>
+              Attend Fluxible (Kitchener)
+            </li>
           </ul>
         </div>
       </div>

@@ -68,7 +68,7 @@
   }
 
   .path {
-    background: $primary;
+    background: rgba($grey3, .25);
     height: 100%;
     left: 1em;
     position: absolute;
@@ -88,12 +88,13 @@
         align-items: center;
         background: darken($primary, 10%);
         border-radius: 30px;
-        color: white;
+        color: $grey3;
         display: inline-flex;
         font-family: $icon;
         height: 30px;
         justify-content: center;
         margin-right: 1em;
+        margin-bottom: 1em;
         padding: .25em;
         width: 30px;
         z-index: 1;
@@ -101,8 +102,25 @@
 
       &.job {
         &::before {
-          content: '\f859';
+          background: $color1;
+          content: '\f109';
           font-weight: 700;
+        }
+      }
+
+      &.education {
+        &::before {
+          background: $color2;
+          content: '\f19d';
+          font-weight: 700;
+        }
+      }
+
+      &.community {
+        &::before {
+          background: $color3;
+          content: '\f4c3';
+          font-weight: 100;
         }
       }
 
