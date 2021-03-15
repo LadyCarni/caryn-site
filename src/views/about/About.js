@@ -19,7 +19,7 @@ const About = () => {
           <p className="help">(pronounced kuh-<i>RIN</i>; like Corinne)</p>
           <p>I'm a senior User Experience (UX) developer who is passionate about product design. I have been specializing in UX design for 9 years, and honing my front-end development and web design skills for the past 6 years. I've been leading cross-functional software teams through facilitation, coaching, and project management for 4 years. I have had training in accessibility for web, and have a formal education in business, marketing, and traditional art.</p>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)<FontAwesomeIcon icon={faLongArrowRight} /></a>
-          <div className="gallery">
+          {/* <div className="gallery">
             <div className="image">
               <img src={caryn2} alt="Caryn Farvour in the wild" className="caption"/>
               <span className="image-caption">Wireframing in the wild</span>
@@ -32,7 +32,7 @@ const About = () => {
               <img src={caryn4} alt="Caryn Farvour and her bengal, Nyx" className="caption left"/>
               <span className="image-caption">My bengal assistant, Nyx</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="timeline">
@@ -40,37 +40,118 @@ const About = () => {
         <div className="timeline-content">
           <div className="path"></div>
           <ul>
+            <li className="year">2008</li>
             <li className="job">
-              <span className="date">2008</span>
               Advertising Layout & Graphic Artist (Conestoga College)
             </li>
+            <li className="year">2009</li>
             <li className="job">
-              <span className="date">2008</span>
               Launch Design by Humphreys (freelance brand)
             </li>
             <li className="education">
-              <span className="date">2009</span>
               Graduate of Advertising (Conestoga College)
             </li>
             <li className="job">
-              <span className="date">2009</span>
               Digital Media Coordinator (Waterloo Regional Children's Museum)
             </li>
             <li className="job">
-              <span className="date">2009</span>
               Graphic Designer (R&S Screening)
             </li>
+            <li className="year">2010</li>
             <li className="job">
-              <span className="date">2010</span>
               Director of Marketing (Waterloo Management Education Centre)
             </li>
+            <li className="year">2012</li>
             <li className="job">
-              <span className="date">2012</span>
               Web Designer (ChromeMedia)
             </li>
+            <li className="year">2013</li>
             <li className="community">
-              <span className="date">2013</span>
               Attend Fluxible (Kitchener)
+            </li>
+            <li className="year">2014</li>
+            <li className="job">
+              Rebrand ChromeMedia to Vehikl
+            </li>
+            <li className="education">
+              Certification: Human Computer Interaction (UC San Diego)
+            </li>
+            <li className="job">
+              Promotion: UX Designer (Vehikl)
+            </li>
+            <li className="community">
+              Attend Laracon EU (Amsterdam)
+            </li>
+            <li className="community">
+              Attend Erie Day of Code (Erie, PA)
+            </li>
+            <li className="year">2015</li>
+            <li className="community">
+              UX Facilitative Volunteer, STEMGyrls
+            </li>
+            <li className="community">
+              Attend CanUX (Ottawa)
+            </li>
+            <li className="community">
+              Attend Fluxible (Kitchener)
+            </li>
+            <li className="community">
+              Attend Erie Day of Code (Erie, PA)
+            </li>
+            <li className="year">2016</li>
+            <li className="community">
+              Panelist, Zonta Film Festival screening of "Code: Debugging the Gender Gap"
+            </li>
+            <li className="community">
+              Contributing writer for Code Like a Girl Inc.
+            </li>
+            <li className="community">
+              Attend Codemash (Sandusky, OH)
+            </li>
+            <li className="community">
+              Attend Laracon US (Louisville)
+            </li>
+            <li className="community">
+              Speaker, Laracon EU: "Project Utopia" (Amsterdam)
+            </li>
+            <li className="community">
+              Attend Erie Day of Code (Erie, PA)
+            </li>
+            <li className="year">2017</li>
+            <li className="community">
+              Panelist, Future Female Techmakers Conference
+            </li>
+            <li className="community">
+              Attend Laracon EU (Amsterdam)
+            </li>
+            <li className="community">
+              Panelist, Future Female Techmakers Conference
+            </li>
+            <li className="community">
+              Attend Laracon EU (Amsterdam)
+            </li>
+            <li className="community">
+              UX Facilitative Volunteer, STEMGyrls
+            </li>
+            <li className="community">
+              Attend Laracon US (NYC)
+            </li>
+            <li className="year">2018</li>
+            <li className="community">
+              Attend Laracon US (Chicago)
+            </li>
+            <li className="community">
+              Launch of DevLondon
+            </li>
+            <li className="year">2019</li>
+            <li className="community">
+              Author, "Practical UX"
+            </li>
+            <li className="community">
+              Speaker, Erie Day of Code (Erie, PA)
+            </li>
+            <li className="job">
+              Product Manager: North America (Flyt; Skip the Dishes)
             </li>
           </ul>
         </div>
