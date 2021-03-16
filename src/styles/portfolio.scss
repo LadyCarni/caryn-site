@@ -53,18 +53,6 @@
   }
 }
 
-.project-content {
-  h1 {
-    font-family: $type-headline;
-    margin: .5em 0;
-  }
-
-  h2 {
-    font-family: $type-content;
-    font-weight: 500;
-  }
-}
-
 .project-title {
   overflow: hidden;
   position: relative;
@@ -199,6 +187,10 @@
 
   h2 {
     margin-top: 2em;
+
+    &.title {
+      margin-top: 0;
+    }
   }
 
   ul {
@@ -277,7 +269,7 @@
 
     @media screen and (min-width: ($small + 1)) {
       h2 {
-        font-size: 2.25em;
+        font-size: 3em;
       }
     }
 

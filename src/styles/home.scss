@@ -2,7 +2,7 @@
   background-color: $primary;
   position: relative;
   
-  .content {
+  .hero-content {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -33,12 +33,12 @@
     height: 30vh;
 
     h1 {
-      font-size: 2.25em;
+      font-size: 4em;
       margin: 0 1em;
       text-align: center;
     }
 
-    .content {
+    .hero-content {
       width: 100%;
       align-items: center;
       justify-content: center;
@@ -50,7 +50,7 @@
       margin-bottom: 2.5em;
     }
 
-    .content {
+    .hero-content {
       align-items: flex-end;
       justify-content: flex-end;
       max-width: $large;
@@ -62,7 +62,7 @@
     height: 40vh;
 
     h1 {
-      font-size: 3em;
+      font-size: 4em;
     }
   }
 
@@ -71,7 +71,7 @@
     min-height: 650px;
 
     h1 {
-      font-size: 4em;
+      font-size: 6em;
     }
   }
 }

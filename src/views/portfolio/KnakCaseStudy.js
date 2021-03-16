@@ -23,7 +23,7 @@ import knakDrag from "assets/portfolio/knak-drag.png";
 import knakDragDrop from "assets/portfolio/knak-dragdrop.gif";
 import knakPierce from "assets/portfolio/knak-pierce.png";
 
-function KnakCaseStudy() {
+const KnakCaseStudy = () => {
   usePrism();
 
   return (
@@ -38,7 +38,7 @@ function KnakCaseStudy() {
         headerDisciplines={["UX research", "Front-end Development (Vue)", "Web Design"]}
       />
       <div className="feature feature-width">
-        <div className="project-content flex column">
+        <div className="content flex column">
           <div className="article">
             <h2>The Challenge</h2>
             <p><a href="https://knak.io/" target="_blank" rel="noreferrer">Knak</a> grew and developed their platform in a rapid fashion common with successful software companies. As a result of their rapid growth, and by prioritizing customer needs, various areas of their platform were beginning to experience divergent designs among some areas of the app. In addition, they began to accumulate technical debt in their front-end code.</p>

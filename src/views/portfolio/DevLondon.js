@@ -7,7 +7,7 @@ import devLondonPlans from "assets/portfolio/dev-london-plans.jpg";
 import devLondonSite from "assets/portfolio/dev-london-site.png";
 import usePrism from "hooks/usePrism";
 
-function DevLondon() {
+const DevLondon = () => {
   usePrism();
 
   return (
@@ -22,7 +22,7 @@ function DevLondon() {
         headerDisciplines={["Front-end Development (React)", "Web Design"]}
       />
       <div className="feature feature-width">
-        <div className="project-content flex column">
+        <div className="content flex column">
           <div className="article">
             <p className="external-link"><a href="https://devldn.ca/" target="_blank" rel="noreferrer">Dev London website</a></p>
             <p className="external-link"><a href="https://github.com/DevLdn/devldn-website" target="_blank" rel="noreferrer">Dev London repo</a></p>

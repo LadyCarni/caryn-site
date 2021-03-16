@@ -30,9 +30,24 @@
   height: 100%;
 }
 
+.title {
+  margin-top: 0;
+}
+
 p > code {
   background: rgba($primary, .25);
   padding: 0 .25em;
+}
+
+.help {
+  color: $grey3;
+  font-size: 14px;
+  margin-bottom: 3em;
+  margin-top: 0;
+}
+
+.file {
+  font-size: .75em;
 }
 
 .shadow {
@@ -214,9 +229,9 @@ p > code {
   }
 
   .pop {
-    color: $primary;
-    font-family: $type-pop;
-    font-size: 1.75em;
+    color: darken($primary, 10%);
+    font-family: $type-headline;
+    font-size: 1.25em;
     font-weight: 300;
   }
 
@@ -259,7 +274,7 @@ p > code {
       }
 
       h2 {
-        font-size: 1.5em;
+        font-size: 2em;
       }
     }
 
@@ -278,7 +293,7 @@ p > code {
       margin: 50px 0;
 
       h2 {
-        font-size: 2em;
+        font-size: 3em;
       }
     }
 
@@ -288,7 +303,7 @@ p > code {
       }
 
       h2 {
-        font-size: 2em;
+        font-size: 2.5em;
       }
     }
 

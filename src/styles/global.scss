@@ -4,6 +4,7 @@
 @import 'home.scss';
 @import 'portfolio.scss';
 @import 'code.scss';
+@import 'bio.scss';
 
 html, body {
   font-size: 16px;
@@ -162,6 +163,18 @@ h1, h2 {
 .container {
   margin: 0 auto;
   max-width: $large;
+}
+
+.content {
+  h1 {
+    font-family: $type-content;
+    margin: .5em 0;
+  }
+
+  h2 {
+    font-family: $type-content;
+    font-weight: 500;
+  }
 }
 
 .arrow-link {
