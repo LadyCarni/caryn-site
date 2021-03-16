@@ -8,6 +8,46 @@ import caryn4 from 'assets/caryn4.jpg';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
 
 const About = () => {
+  const timeline1 = [
+    {
+      type: "job",
+      title: "Advertising Layout & Graphic Artist (Conestoga College)"
+    }
+  ];
+
+  const timeline2 = [
+    {
+      type: "job",
+      title: "Launch Design by Humphreys (freelance brand)"
+    },
+    {
+      type: "education",
+      title: "Graduate of Advertising (Conestoga College)"
+    },
+    {
+      type: "job",
+      title: "Digital Media Coordinator (Waterloo Regional Children's Museum)"
+    },
+    {
+      type: "job",
+      title: "Graphic Designer (R&S Screening)"
+    }
+  ];
+
+  const timeline3 = [
+    {
+      type: "job",
+      title: "Director of Marketing (Waterloo Management Education Centre)"
+    }
+  ];
+
+  const timeline4 = [
+    {
+      type: "job",
+      title: "Web Designer (ChromeMedia)"
+    }
+  ];
+
   return (
     <div className="feature feature-width">
       <div className="bio">
@@ -41,30 +81,33 @@ const About = () => {
           <div className="path"></div>
           <ul>
             <li className="year">2008</li>
-            <li className="job">
-              Advertising Layout & Graphic Artist (Conestoga College)
+            {timeline1.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
+            ))}
+
             <li className="year">2009</li>
-            <li className="job">
-              Launch Design by Humphreys (freelance brand)
+            {timeline2.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="education">
-              Graduate of Advertising (Conestoga College)
-            </li>
-            <li className="job">
-              Digital Media Coordinator (Waterloo Regional Children's Museum)
-            </li>
-            <li className="job">
-              Graphic Designer (R&S Screening)
-            </li>
+            ))}
+
             <li className="year">2010</li>
-            <li className="job">
-              Director of Marketing (Waterloo Management Education Centre)
+            {timeline3.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
+            ))}
+
             <li className="year">2012</li>
-            <li className="job">
-              Web Designer (ChromeMedia)
+            {timeline4.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
+            ))}
+
             <li className="year">2013</li>
             <li className="community">
               Attend Fluxible (Kitchener)
