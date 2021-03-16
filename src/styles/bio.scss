@@ -12,37 +12,6 @@
       font-weight: 700;
       margin-bottom: 0;
     }
-
-    .gallery {
-      width: 750px;
-      height: 230px;
-      display: flex;
-      flex-direction: row;
-      margin-top: 2em;
-
-      .image {
-        margin-right: 1em;
-        width: 33%;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-
-          &.caption {
-            margin-bottom: 1em;
-          }
-
-          &.left {
-            object-position: left;
-          }
-        }
-      }
-    }
   }
 }
 
