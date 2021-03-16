@@ -132,6 +132,14 @@
           font-weight: 100;
         }
       }
+
+      &.speaker {
+        &::before {
+          background: $color3;
+          content: '\f3c9';
+          font-weight: 700;
+        }
+      }
     }
   }
 }

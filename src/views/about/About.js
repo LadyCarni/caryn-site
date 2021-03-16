@@ -8,18 +8,18 @@ import caryn4 from 'assets/caryn4.jpg';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
 
 const About = () => {
-  const timeline1 = [
+  const timeline2008 = [
     {
       type: "job",
       title: "Advertising Layout & Graphic Artist (Conestoga College)"
-    }
-  ];
-
-  const timeline2 = [
+    },
     {
       type: "job",
       title: "Launch Design by Humphreys (freelance brand)"
     },
+  ];
+
+  const timeline2009 = [
     {
       type: "education",
       title: "Graduate of Advertising (Conestoga College)"
@@ -34,18 +34,202 @@ const About = () => {
     }
   ];
 
-  const timeline3 = [
+  const timeline2010 = [
     {
       type: "job",
       title: "Director of Marketing (Waterloo Management Education Centre)"
     }
   ];
 
-  const timeline4 = [
+  const timeline2012 = [
     {
       type: "job",
       title: "Web Designer (ChromeMedia)"
     }
+  ];
+
+  const timeline2013 = [
+    {
+      type: "community",
+      title: "Attend Fluxible (Kitchener)"
+    },
+    {
+      type: "education",
+      title: "Begin specialization in UX (ChromeMedia)"
+    },
+    {
+      type: "community",
+      title: "Join UX Waterloo community group (Waterloo)"
+    },
+    {
+      type: "community",
+      title: "Join Girl Geek Dinners WR (Waterloo)"
+    },
+    {
+      type: "speaker",
+      title: "Begin professional blog (Medium)"
+    }
+  ];
+
+  const timeline2014 = [
+    {
+      type: "job",
+      title: "Rebrand ChromeMedia to Vehikl"
+    },
+    {
+      type: "education",
+      title: "Certification: Human Computer Interaction (UC San Diego)"
+    },
+    {
+      type: "job",
+      title: "Promotion: UX Designer (Vehikl)"
+    },
+    {
+      type: "speaker",
+      title: "Speaker, UX Waterloo: \"How to Wireframe like a Boss\" (Waterloo)"
+    },
+    {
+      type: "community",
+      title: "Attend Fluxible (Kitchener)"
+    },
+    {
+      type: "community",
+      title: "Attend Laracon EU (Amsterdam)"
+    },
+    {
+      type: "community",
+      title: "Attend Erie Day of Code (Erie, PA)"
+    },
+    {
+      type: "community",
+      title: "Join Hackernest meetup (Kitchener-Waterloo)"
+    }
+  ];
+
+  const timeline2015 = [
+    {
+      type: "speaker",
+      title: "UX Facilitative Volunteer, STEMGyrls"
+    },
+    {
+      type: "community",
+      title: "Attend CanUX (Ottawa)"
+    },
+    {
+      type: "community",
+      title: "Attend Fluxible (Kitchener)"
+    },
+    {
+      type: "community",
+      title: "Attend Erie Day of Code (Erie, PA)"
+    },
+  ];
+
+  const timeline2016 = [
+    {
+      type: "speaker",
+      title: "Panelist, Zonta Film Festival screening of \"Code: Debugging the Gender Gap\""
+    },
+    {
+      type: "speaker",
+      title: "Join as contributing writer for Code Like a Girl Inc."
+    },
+    {
+      type: "community",
+      title: "Attend Codemash (Sandusky, OH)"
+    },
+    {
+      type: "community",
+      title: "Creator: Gary the Bear"
+    },
+    {
+      type: "community",
+      title: "Attend Laracon US (Louisville)"
+    },
+    {
+      type: "speaker",
+      title: "Speaker, Laracon EU: \"Project Utopia\" (Amsterdam)"
+    },
+    {
+      type: "community",
+      title: "Attend Erie Day of Code (Erie, PA)"
+    },
+    {
+      type: "speaker",
+      title: "Speaker, Ladies that UX: \"Pairing with Devs/Designers\" (London, ON)"
+    },
+  ];
+
+  const timeline2017 = [
+    {
+      type: "job",
+      title: "Promotion: UX Developer (Vehikl)"
+    },
+    {
+      type: "community",
+      title: "Join Technical Chats for Women (Kitchener)"
+    },
+    {
+      type: "speaker",
+      title: "Panelist, Future Female Techmakers Conference"
+    },
+    {
+      type: "community",
+      title: "Attend Laracon EU (Amsterdam)"
+    },
+    {
+      type: "speaker",
+      title: "UX Facilitative Volunteer, STEMGyrls"
+    },
+    {
+      type: "community",
+      title: "Attend Laracon US (NYC)"
+    },
+  ];
+
+  const timeline2018 = [
+    {
+      type: "community",
+      title: "Attend Codemash (Sandusky, OH)"
+    },
+    {
+      type: "community",
+      title: "Attend Laracon US (Chicago)"
+    },
+    {
+      type: "speaker",
+      title: "Launch of DevLondon (London, ON)"
+    },
+    {
+      type: "community",
+      title: "Join Ladies that UX (London, ON)"
+    },
+  ];
+
+  const timeline2019 = [
+    {
+      type: "speaker",
+      title: "Author, \"Practical UX\""
+    },
+    {
+      type: "speaker",
+      title: "Speaker, Erie Day of Code (Erie, PA)"
+    },
+    {
+      type: "job",
+      title: "Product Manager: North America (Flyt; Skip the Dishes)"
+    },
+    {
+      type: "community",
+      title: "Organizer, DevLondon (London, ON)"
+    },
+  ];
+
+  const timeline2020 = [
+    {
+      type: "community",
+      title: "Attend RC Show (Toronto)"
+    },
   ];
 
   return (
@@ -57,7 +241,7 @@ const About = () => {
         <div className="bio-content">
           <h1>Hi, I'm Caryn</h1>
           <p className="help">(pronounced kuh-<i>RIN</i>; like Corinne)</p>
-          <p>I'm a senior User Experience (UX) developer who is passionate about product design. I have been specializing in UX design for 9 years, and honing my front-end development and web design skills for the past 6 years. I've been leading cross-functional software teams through facilitation, coaching, and project management for 4 years. I have had training in accessibility for web, and have a formal education in business, marketing, and traditional art.</p>
+          <p>I'm a senior User Experience (UX) developer who is passionate about product design. I have been specializing in UX design for 8 years, and honing my front-end development and web design skills for the past 7 years. I've been leading cross-functional software teams through facilitation, coaching, and project management for 4 years. I have had training in accessibility for web, and have a formal education in business, marketing, and traditional art.</p>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)<FontAwesomeIcon icon={faLongArrowRight} /></a>
           {/* <div className="gallery">
             <div className="image">
@@ -81,121 +265,88 @@ const About = () => {
           <div className="path"></div>
           <ul>
             <li className="year">2008</li>
-            {timeline1.map(({id, type, title}) =>(
+            {timeline2008.map(({id, type, title}) =>(
               <li className={`${type}`}>
               {title}
             </li>
             ))}
 
             <li className="year">2009</li>
-            {timeline2.map(({id, type, title}) =>(
+            {timeline2009.map(({id, type, title}) =>(
               <li className={`${type}`}>
               {title}
             </li>
             ))}
 
             <li className="year">2010</li>
-            {timeline3.map(({id, type, title}) =>(
+            {timeline2010.map(({id, type, title}) =>(
               <li className={`${type}`}>
               {title}
             </li>
             ))}
 
             <li className="year">2012</li>
-            {timeline4.map(({id, type, title}) =>(
+            {timeline2012.map(({id, type, title}) =>(
               <li className={`${type}`}>
               {title}
             </li>
             ))}
 
             <li className="year">2013</li>
-            <li className="community">
-              Attend Fluxible (Kitchener)
+            {timeline2013.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
+            ))}
+            
             <li className="year">2014</li>
-            <li className="job">
-              Rebrand ChromeMedia to Vehikl
+            {timeline2014.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="education">
-              Certification: Human Computer Interaction (UC San Diego)
-            </li>
-            <li className="job">
-              Promotion: UX Designer (Vehikl)
-            </li>
-            <li className="community">
-              Attend Laracon EU (Amsterdam)
-            </li>
-            <li className="community">
-              Attend Erie Day of Code (Erie, PA)
-            </li>
+            ))}
+            
             <li className="year">2015</li>
-            <li className="community">
-              UX Facilitative Volunteer, STEMGyrls
+            {timeline2015.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="community">
-              Attend CanUX (Ottawa)
-            </li>
-            <li className="community">
-              Attend Fluxible (Kitchener)
-            </li>
-            <li className="community">
-              Attend Erie Day of Code (Erie, PA)
-            </li>
+            ))}
+            
             <li className="year">2016</li>
-            <li className="community">
-              Panelist, Zonta Film Festival screening of "Code: Debugging the Gender Gap"
+            {timeline2016.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="community">
-              Contributing writer for Code Like a Girl Inc.
-            </li>
-            <li className="community">
-              Attend Codemash (Sandusky, OH)
-            </li>
-            <li className="community">
-              Attend Laracon US (Louisville)
-            </li>
-            <li className="community">
-              Speaker, Laracon EU: "Project Utopia" (Amsterdam)
-            </li>
-            <li className="community">
-              Attend Erie Day of Code (Erie, PA)
-            </li>
+            ))}
+            
             <li className="year">2017</li>
-            <li className="community">
-              Panelist, Future Female Techmakers Conference
+            {timeline2017.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="community">
-              Attend Laracon EU (Amsterdam)
-            </li>
-            <li className="community">
-              Panelist, Future Female Techmakers Conference
-            </li>
-            <li className="community">
-              Attend Laracon EU (Amsterdam)
-            </li>
-            <li className="community">
-              UX Facilitative Volunteer, STEMGyrls
-            </li>
-            <li className="community">
-              Attend Laracon US (NYC)
-            </li>
+            ))}
+            
             <li className="year">2018</li>
-            <li className="community">
-              Attend Laracon US (Chicago)
+            {timeline2018.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="community">
-              Launch of DevLondon
-            </li>
+            ))}
+            
             <li className="year">2019</li>
-            <li className="community">
-              Author, "Practical UX"
+            {timeline2019.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="community">
-              Speaker, Erie Day of Code (Erie, PA)
+            ))}
+
+            <li className="year">2020</li>
+            {timeline2020.map(({id, type, title}) =>(
+              <li className={`${type}`}>
+              {title}
             </li>
-            <li className="job">
-              Product Manager: North America (Flyt; Skip the Dishes)
-            </li>
+            ))}
           </ul>
         </div>
       </div>
