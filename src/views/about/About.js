@@ -8,228 +8,314 @@ import caryn4 from 'assets/caryn4.jpg';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
 
 const About = () => {
-  const timeline2008 = [
+  const timeline = [
     {
-      type: "job",
-      title: "Advertising Layout & Graphic Artist (Conestoga College)"
+      id: 0,
+      year: "2008",
+      events: [
+        {
+          id: 1,
+          type: "job",
+          title: "Advertising Layout & Graphic Artist (Conestoga College)"
+        },
+        {
+          id: 2,
+          type: "job",
+          title: "Launch Design by Humphreys (freelance brand)"
+        },
+      ]
     },
     {
-      type: "job",
-      title: "Launch Design by Humphreys (freelance brand)"
+      id: 1,
+      year: "2009",
+      events: [
+        {
+          id: 1,
+          type: "education",
+          title: "Graduate of Advertising (Conestoga College)"
+        },
+        {
+          id: 2,
+          type: "job",
+          title: "Digital Media Coordinator (Waterloo Regional Children's Museum)"
+        },
+        {
+          id: 3,
+          type: "job",
+          title: "Graphic Designer (R&S Screening)"
+        }
+      ]
     },
-  ];
-
-  const timeline2009 = [
     {
-      type: "education",
-      title: "Graduate of Advertising (Conestoga College)"
+      id: 2,
+      year: "2010",
+      events: [
+        {
+          id: 1,
+          type: "job",
+          title: "Director of Marketing (Waterloo Management Education Centre)"
+        }
+      ]
     },
     {
-      type: "job",
-      title: "Digital Media Coordinator (Waterloo Regional Children's Museum)"
+      id: 3,
+      year: "2012",
+      events: [
+        {
+          id: 1,
+          type: "job",
+          title: "Web Designer (ChromeMedia)"
+        }
+      ]
     },
     {
-      type: "job",
-      title: "Graphic Designer (R&S Screening)"
+      id: 4,
+      year: "2013",
+      events: [
+        {
+          id: 1,
+          type: "community",
+          title: "Attend Fluxible (Kitchener)"
+        },
+        {
+          id: 2,
+          type: "education",
+          title: "Begin specialization in UX (ChromeMedia)"
+        },
+        {
+          id: 3,
+          type: "community",
+          title: "Join UX Waterloo community group (Waterloo)"
+        },
+        {
+          id: 4,
+          type: "community",
+          title: "Join Girl Geek Dinners WR (Waterloo)"
+        },
+        {
+          id: 5,
+          type: "speaker",
+          title: "Begin professional blog (Medium)"
+        }
+      ]
+    },
+    {
+      id: 5,
+      year: "2014",
+      events: [
+        {
+          id: 1,
+          type: "job",
+          title: "Rebrand ChromeMedia to Vehikl"
+        },
+        {
+          id: 2,
+          type: "education",
+          title: "Certification: Human Computer Interaction (UC San Diego)"
+        },
+        {
+          id: 3,
+          type: "job",
+          title: "Promotion: UX Designer (Vehikl)"
+        },
+        {
+          id: 4,
+          type: "speaker",
+          title: "Speaker, UX Waterloo: \"How to Wireframe like a Boss\" (Waterloo)"
+        },
+        {
+          id: 5,
+          type: "community",
+          title: "Attend Fluxible (Kitchener)"
+        },
+        {
+          id: 6,
+          type: "community",
+          title: "Attend Laracon EU (Amsterdam)"
+        },
+        {
+          id: 7,
+          type: "community",
+          title: "Attend Erie Day of Code (Erie, PA)"
+        },
+        {
+          id: 8,
+          type: "community",
+          title: "Join Hackernest meetup (Kitchener-Waterloo)"
+        }
+      ]
+    },
+    {
+      id: 6,
+      year: "2015",
+      events: [
+        {
+          id: 1,
+          type: "speaker",
+          title: "UX Facilitative Volunteer, STEMGyrls"
+        },
+        {
+          id: 2,
+          type: "community",
+          title: "Attend CanUX (Ottawa)"
+        },
+        {
+          id: 3,
+          type: "community",
+          title: "Attend Fluxible (Kitchener)"
+        },
+        {
+          id: 4,
+          type: "community",
+          title: "Attend Erie Day of Code (Erie, PA)"
+        },
+      ]
+    },
+    {
+      id: 7,
+      year: "2016",
+      events: [
+        {
+          id: 1,
+          type: "speaker",
+          title: "Panelist, Zonta Film Festival screening of \"Code: Debugging the Gender Gap\""
+        },
+        {
+          id: 2,
+          type: "speaker",
+          title: "Join as contributing writer for Code Like a Girl Inc."
+        },
+        {
+          id: 3,
+          type: "community",
+          title: "Attend Codemash (Sandusky, OH)"
+        },
+        {
+          id: 4,
+          type: "community",
+          title: "Creator: Gary the Bear"
+        },
+        {
+          id: 5,
+          type: "community",
+          title: "Attend Laracon US (Louisville)"
+        },
+        {
+          id: 6,
+          type: "speaker",
+          title: "Speaker, Laracon EU: \"Project Utopia\" (Amsterdam)"
+        },
+        {
+          id: 7,
+          type: "community",
+          title: "Attend Erie Day of Code (Erie, PA)"
+        },
+        {
+          id: 8,
+          type: "speaker",
+          title: "Speaker, Ladies that UX: \"Pairing with Devs/Designers\" (London, ON)"
+        },
+      ]
+    },
+    {
+      id: 8,
+      year: "2017",
+      events: [
+        {
+          id: 1,
+          type: "job",
+          title: "Promotion: UX Developer (Vehikl)"
+        },
+        {
+          id: 2,
+          type: "community",
+          title: "Join Technical Chats for Women (Kitchener)"
+        },
+        {
+          id: 3,
+          type: "speaker",
+          title: "Panelist, Future Female Techmakers Conference"
+        },
+        {
+          id: 4,
+          type: "community",
+          title: "Attend Laracon EU (Amsterdam)"
+        },
+        {
+          id: 5,
+          type: "speaker",
+          title: "UX Facilitative Volunteer, STEMGyrls"
+        },
+        {
+          id: 6,
+          type: "community",
+          title: "Attend Laracon US (NYC)"
+        },
+      ]
+    },
+    {
+      id: 9,
+      year: "2018",
+      events: [
+        {
+          id: 1,
+          type: "community",
+          title: "Attend Codemash (Sandusky, OH)"
+        },
+        {
+          id: 2,
+          type: "community",
+          title: "Attend Laracon US (Chicago)"
+        },
+        {
+          id: 3,
+          type: "speaker",
+          title: "Launch of DevLondon (London, ON)"
+        },
+        {
+          id: 4,
+          type: "community",
+          title: "Join Ladies that UX (London, ON)"
+        },
+      ]
+    },
+    {
+      id: 10,
+      year: "2019",
+      events: [
+        {
+          id: 1,
+          type: "speaker",
+          title: "Author, \"Practical UX\""
+        },
+        {
+          id: 2,
+          type: "speaker",
+          title: "Speaker, Erie Day of Code (Erie, PA)"
+        },
+        {
+          id: 3,
+          type: "job",
+          title: "Product Manager: North America (Flyt; Skip the Dishes)"
+        },
+        {
+          id: 4,
+          type: "community",
+          title: "Organizer, DevLondon (London, ON)"
+        },
+      ]
+    },
+    {
+      id: 11,
+      year: "2020",
+      events: [
+        {
+          id: 1,
+          type: "community",
+          title: "Attend RC Show (Toronto)"
+        },
+      ]
     }
-  ];
-
-  const timeline2010 = [
-    {
-      type: "job",
-      title: "Director of Marketing (Waterloo Management Education Centre)"
-    }
-  ];
-
-  const timeline2012 = [
-    {
-      type: "job",
-      title: "Web Designer (ChromeMedia)"
-    }
-  ];
-
-  const timeline2013 = [
-    {
-      type: "community",
-      title: "Attend Fluxible (Kitchener)"
-    },
-    {
-      type: "education",
-      title: "Begin specialization in UX (ChromeMedia)"
-    },
-    {
-      type: "community",
-      title: "Join UX Waterloo community group (Waterloo)"
-    },
-    {
-      type: "community",
-      title: "Join Girl Geek Dinners WR (Waterloo)"
-    },
-    {
-      type: "speaker",
-      title: "Begin professional blog (Medium)"
-    }
-  ];
-
-  const timeline2014 = [
-    {
-      type: "job",
-      title: "Rebrand ChromeMedia to Vehikl"
-    },
-    {
-      type: "education",
-      title: "Certification: Human Computer Interaction (UC San Diego)"
-    },
-    {
-      type: "job",
-      title: "Promotion: UX Designer (Vehikl)"
-    },
-    {
-      type: "speaker",
-      title: "Speaker, UX Waterloo: \"How to Wireframe like a Boss\" (Waterloo)"
-    },
-    {
-      type: "community",
-      title: "Attend Fluxible (Kitchener)"
-    },
-    {
-      type: "community",
-      title: "Attend Laracon EU (Amsterdam)"
-    },
-    {
-      type: "community",
-      title: "Attend Erie Day of Code (Erie, PA)"
-    },
-    {
-      type: "community",
-      title: "Join Hackernest meetup (Kitchener-Waterloo)"
-    }
-  ];
-
-  const timeline2015 = [
-    {
-      type: "speaker",
-      title: "UX Facilitative Volunteer, STEMGyrls"
-    },
-    {
-      type: "community",
-      title: "Attend CanUX (Ottawa)"
-    },
-    {
-      type: "community",
-      title: "Attend Fluxible (Kitchener)"
-    },
-    {
-      type: "community",
-      title: "Attend Erie Day of Code (Erie, PA)"
-    },
-  ];
-
-  const timeline2016 = [
-    {
-      type: "speaker",
-      title: "Panelist, Zonta Film Festival screening of \"Code: Debugging the Gender Gap\""
-    },
-    {
-      type: "speaker",
-      title: "Join as contributing writer for Code Like a Girl Inc."
-    },
-    {
-      type: "community",
-      title: "Attend Codemash (Sandusky, OH)"
-    },
-    {
-      type: "community",
-      title: "Creator: Gary the Bear"
-    },
-    {
-      type: "community",
-      title: "Attend Laracon US (Louisville)"
-    },
-    {
-      type: "speaker",
-      title: "Speaker, Laracon EU: \"Project Utopia\" (Amsterdam)"
-    },
-    {
-      type: "community",
-      title: "Attend Erie Day of Code (Erie, PA)"
-    },
-    {
-      type: "speaker",
-      title: "Speaker, Ladies that UX: \"Pairing with Devs/Designers\" (London, ON)"
-    },
-  ];
-
-  const timeline2017 = [
-    {
-      type: "job",
-      title: "Promotion: UX Developer (Vehikl)"
-    },
-    {
-      type: "community",
-      title: "Join Technical Chats for Women (Kitchener)"
-    },
-    {
-      type: "speaker",
-      title: "Panelist, Future Female Techmakers Conference"
-    },
-    {
-      type: "community",
-      title: "Attend Laracon EU (Amsterdam)"
-    },
-    {
-      type: "speaker",
-      title: "UX Facilitative Volunteer, STEMGyrls"
-    },
-    {
-      type: "community",
-      title: "Attend Laracon US (NYC)"
-    },
-  ];
-
-  const timeline2018 = [
-    {
-      type: "community",
-      title: "Attend Codemash (Sandusky, OH)"
-    },
-    {
-      type: "community",
-      title: "Attend Laracon US (Chicago)"
-    },
-    {
-      type: "speaker",
-      title: "Launch of DevLondon (London, ON)"
-    },
-    {
-      type: "community",
-      title: "Join Ladies that UX (London, ON)"
-    },
-  ];
-
-  const timeline2019 = [
-    {
-      type: "speaker",
-      title: "Author, \"Practical UX\""
-    },
-    {
-      type: "speaker",
-      title: "Speaker, Erie Day of Code (Erie, PA)"
-    },
-    {
-      type: "job",
-      title: "Product Manager: North America (Flyt; Skip the Dishes)"
-    },
-    {
-      type: "community",
-      title: "Organizer, DevLondon (London, ON)"
-    },
-  ];
-
-  const timeline2020 = [
-    {
-      type: "community",
-      title: "Attend RC Show (Toronto)"
-    },
   ];
 
   return (
@@ -264,88 +350,15 @@ const About = () => {
         <div className="timeline-content">
           <div className="path"></div>
           <ul>
-            <li className="year">2008</li>
-            {timeline2008.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-
-            <li className="year">2009</li>
-            {timeline2009.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-
-            <li className="year">2010</li>
-            {timeline2010.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-
-            <li className="year">2012</li>
-            {timeline2012.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-
-            <li className="year">2013</li>
-            {timeline2013.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-            
-            <li className="year">2014</li>
-            {timeline2014.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-            
-            <li className="year">2015</li>
-            {timeline2015.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-            
-            <li className="year">2016</li>
-            {timeline2016.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-            
-            <li className="year">2017</li>
-            {timeline2017.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-            
-            <li className="year">2018</li>
-            {timeline2018.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-            
-            <li className="year">2019</li>
-            {timeline2019.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
-            ))}
-
-            <li className="year">2020</li>
-            {timeline2020.map(({id, type, title}) =>(
-              <li className={`${type}`}>
-              {title}
-            </li>
+            {timeline.map(({id, year, events}) => (
+              <div key={id}>
+                <li className="year">{year}</li>
+                {events.map(({id, type, title}) =>(
+                  <li key={year+id} className={`${type}`}>
+                    {title}
+                  </li>
+                ))}
+              </div>
             ))}
           </ul>
         </div>
