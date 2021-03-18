@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioHeader from "../../components/portfolioHeader";
+import PortfolioHeader from "components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import devLondon from "assets/portfolio/dev-london.jpg";
 import devLondonSlack from "assets/portfolio/dev-london-slack.gif";

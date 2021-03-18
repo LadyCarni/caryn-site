@@ -3,6 +3,7 @@ import { Link, Route, useRouteMatch } from "react-router-dom";
 import devLondon from "assets/portfolio/dev-london.jpg";
 import knakWires from "assets/portfolio/knak-wires.jpg";
 import connectFeature from "assets/portfolio/connect-cover.jpg";
+import fongoCover from 'assets/portfolio/fongo-cover.png';
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -34,7 +35,7 @@ const Projects = ({ match }) => {
       id: 3
     },
     { 
-      source: "https://images.unsplash.com/photo-1598149885212-c92671611588?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=958&q=80",
+      source: fongoCover,
       title: "Fongo Works",
       slug: "fongo-works",
       category: "Web App",
