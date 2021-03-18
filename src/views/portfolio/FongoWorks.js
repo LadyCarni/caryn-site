@@ -10,6 +10,8 @@ import fongoWire3 from "assets/portfolio/fongo-wire3.jpg";
 import fongoSetup from "assets/portfolio/fongo-setup.png";
 import fongoWire4 from "assets/portfolio/fongo-wire4.jpg";
 import fongoMembers from "assets/portfolio/fongo-members.png";
+import fongoWire5 from "assets/portfolio/fongo-wire5.jpg";
+import fongoReceptionist from "assets/portfolio/fongo-receptionist.png";
 
 
 const FongoWorks = () => {
@@ -27,6 +29,7 @@ const FongoWorks = () => {
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">
+            <p className="external-link"><a href="https://www.fongoworks.com/" target="_blank" rel="noreferrer">Fongo Works</a></p>
             <h2>The Challenge</h2>
             <p>My team at Vehikl was tasked with building a greenfield, end-to-end web app. The requirements included an accessible user experience design with front and back-end development.</p>
             <h3>Primary Goals</h3>
@@ -113,12 +116,37 @@ const FongoWorks = () => {
                 </ul>
               </div>
               <div className="fill">
-              <img src={fongoWire4} alt="Fongo Works members wireframe"/>
+                <img src={fongoWire4} alt="Fongo Works members wireframe"/>
               </div>
             </div>
           </div>
           <div className="full-width">
             <img src={fongoMembers} alt="Fongo Works new members"/>
+          </div>
+
+          <div className="article">
+            <h3>Receptionist</h3>
+            <p>Sometimes, further into the design and development of an app, new information clarifies features that have previously been worked on. When this occurs, more detailed wireframes can become necessary to ensure the design and development are done accurately. Going back to quick wireframes can save time as many ideas can be iterated on quickly.</p>
+            <div className="flex columns">
+              <div className="fit">
+                <p>Features:</p>
+                <ul>
+                  <li>Transparent explanation of the technology</li>
+                  <li>Simple, guided system set up</li>
+                </ul>
+              </div>
+              <div className="fill">
+                <img src={fongoWire5} alt="Fongo Works receptionist wireframe"/>
+              </div>
+            </div>
+          </div>
+          <div className="full-width">
+            <img src={fongoReceptionist} alt="Fongo Works receptionist"/>
+          </div>
+
+          <div className="article">
+            <h2>Response</h2>
+            <p>Once the app launched, there were new customers within the first three days. Over the first month there were more than 10 teams using the virtual phone system, and over 200 new team members.</p>
           </div>
         </div>
       </div>
