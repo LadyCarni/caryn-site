@@ -8,7 +8,8 @@ import fongoWire2 from "assets/portfolio/fongo-wire2.jpg";
 import fongoQuickstart from "assets/portfolio/fongo-quickstart.png";
 import fongoWire3 from "assets/portfolio/fongo-wire3.jpg";
 import fongoSetup from "assets/portfolio/fongo-setup.png";
-
+import fongoWire4 from "assets/portfolio/fongo-wire4.jpg";
+import fongoMembers from "assets/portfolio/fongo-members.png";
 
 
 const FongoWorks = () => {
@@ -97,6 +98,27 @@ const FongoWorks = () => {
           </div>
           <div className="full-width">
             <img src={fongoSetup} alt="Fongo Works set up"/>
+          </div>
+
+          <div className="article">
+            <h3>New Team set up</h3>
+            <p>Wireframing often produces ideas for more detailed elements of the interface being designed. I will frequently sketch these ideas right beside the wireframe that sparked the idea so that I can revisit it later once I've begun coding the interface.</p>
+            <div className="flex columns">
+              <div className="fit">
+                <p>Features:</p>
+                <ul>
+                  <li>Status state (success/fail)</li>
+                  <li>Actions required; expected response</li>
+                  <li>Detailed instructions & help copy</li>
+                </ul>
+              </div>
+              <div className="fill">
+              <img src={fongoWire4} alt="Fongo Works members wireframe"/>
+              </div>
+            </div>
+          </div>
+          <div className="full-width">
+            <img src={fongoMembers} alt="Fongo Works new members"/>
           </div>
         </div>
       </div>
