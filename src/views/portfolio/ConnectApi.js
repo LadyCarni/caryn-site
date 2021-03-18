@@ -1,6 +1,6 @@
 import React from "react";
 import { PortfolioRoutes } from "./index";
-import PortfolioHeader from "../../components/portfolioHeader";
+import PortfolioHeader from "components/portfolioHeader";
 import usePrism from "hooks/usePrism";
 
 import connectFeature from "assets/portfolio/connect-cover2.jpg";

@@ -1,6 +1,6 @@
 import React from "react";
 import { PortfolioRoutes } from "./index";
-import PortfolioHeader from "../../components/portfolioHeader";
+import PortfolioHeader from "components/portfolioHeader";
 
 const CaseStudy = () => {
   return (

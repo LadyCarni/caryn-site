@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import devLondon from "assets/portfolio/dev-london.jpg";
 import connectFeature from "assets/portfolio/connect-cover.jpg";
+import fongoWorks from "assets/portfolio/fongo-cover.png";
 const PortfolioFeatures = ({ match }) => {
   const gallery = [
     { 
@@ -17,6 +18,13 @@ const PortfolioFeatures = ({ match }) => {
       slug: "dev-london",
       category: "Front-end Development",
       id: 1,
+    },
+    { 
+      source: fongoWorks,
+      title: "Fongo Works",
+      slug: "fongo-works",
+      category: "Front-end Development",
+      id: 2,
     },
   ];
 

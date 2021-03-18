@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioHeader from "../../components/portfolioHeader";
+import PortfolioHeader from "components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import usePrism from "hooks/usePrism";
 import knakWires from "assets/portfolio/knak-wires.jpg";
