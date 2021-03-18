@@ -147,6 +147,7 @@ const FongoWorks = () => {
           <div className="article">
             <h2>Response</h2>
             <p>Once the app launched, there were new customers within the first three days. Over the first month there were more than 10 teams using the virtual phone system, and over 200 new team members.</p>
+            <p>Today (in 2021), <a href="https://www.fongoworks.com/" target="_blank" rel="noreferrer">Fongo Works</a> has approximately 20,000 active teams using virtual phone systems.</p>
           </div>
         </div>
       </div>
