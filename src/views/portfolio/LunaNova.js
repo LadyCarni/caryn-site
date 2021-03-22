@@ -8,6 +8,7 @@ import lunaGalleryBehavior from "assets/portfolio/luna-photo-gallery.gif";
 import lunaAccordion from "assets/portfolio/luna-accordion.gif";
 import lunaDivider from "assets/portfolio/luna-divider.png";
 import lunaGradient from "assets/portfolio/luna-gradient.png";
+import lunaHamburger from "assets/portfolio/luna-hamburger.gif";
 
 const LunaNova = () => {
   usePrism();
@@ -321,75 +322,217 @@ const LunaNova = () => {
             `}
             </code></pre>
 
-            <h3>Design Features</h3>
-            <p><b>Custom section dividers</b> were designed to create simple, branded visual breaks.</p>
+            <h2>Design Features</h2>
+            <p>Throughout the design of the site, several custom design features were created to give the user a unique, personal experience.</p>
+            <h3>Custom section dividers</h3>
+            <p>Custom dividers give subtle, branded visual breaks.</p>
             <img src={lunaDivider} alt="Custom page divider" className="shadow"/>
-            <pre className="language-jsx"><code>
-            {`
-              // Custom page divider
 
-              <div className="divider">
-                <img src={moon} className="moon" />
+            <div className="flex columns">
+              <div className="fill">
+              <pre className="language-jsx"><code>
+                {`
+                  // Custom page divider
+
+                  <div className="divider">
+                    <img src={moon} className="moon" />
+                  </div>
+                `}
+                </code></pre>
               </div>
-            `}
-            </code></pre>
+              <div className="fill">
+              <pre className="language-scss"><code>
+                {`
+                  // Custom page divider
 
-            <pre className="language-scss"><code>
-            {`
-              // Custom page divider
+                  $brand-color: #99ced4; // blue
 
-              $brand-color: #99ced4; // blue
+                  .divider {
+                    border-bottom: 1px dashed $brand-color;
+                    height: 1px;
+                    margin: 3em 0;
+                    position: relative;
 
-              .divider {
-                border-bottom: 1px dashed $brand-color;
-                height: 1px;
-                margin: 3em 0;
-                position: relative;
+                    .moon {
+                        background: white; 
+                        height: 20px;
+                        left: 48%;
+                        padding: 10px;
+                        position: absolute;
+                        top: -18px;
+                    }
+                  }
+                `}
+                </code></pre>
+              </div>
+            </div>
 
-                .moon {
-                    background: white; 
-                    height: 20px;
-                    left: 48%;
-                    padding: 10px;
-                    position: absolute;
-                    top: -18px;
-                }
-              }
-            `}
-            </code></pre>
+            <h3>Branded gradient</h3>
+            <p>The branded gradient was used on some elements to create visual interest and inject some personality into the site design.</p>
+            <div className="flex columns">
+              <div className="fill">
+                <img src={lunaGradient} alt="Branded gradient effect" className="shadow"/>
+              </div>
+              <div className="fill">
+              <pre className="language-scss"><code>
+                {`
+                  // Branded gradient
 
-            <p>The <b>branded gradient</b> was used on some elements to create some visual interest and inject some personality into the site design.</p>
-            <img src={lunaGradient} alt="Branded gradient effect" className="shadow"/>
-            <pre className="language-scss"><code>
-            {`
-              // Branded gradient
+                  $brand-color: #99ced4; // blue
+                  $secondary-color: #fca5f1; // pink
+                  $brand-gradient: linear-gradient(45deg,
+                    rgba($secondary-color, 1) 0%,
+                    rgba($brand-color, 1) 90%);
 
-              $brand-color: #99ced4; // blue
-              $secondary-color: #fca5f1; // pink
-              $brand-gradient: linear-gradient(45deg, rgba($secondary-color, 1) 0%, rgba($brand-color, 1) 90%);
-
-              .icon-ref {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                &::before {
-                    align-items: center;
-                    background: $brand-gradient;
-                    border-radius: 30px;
-                    color: $mute-grey;
+                  .icon-ref {
                     display: flex;
-                    font-family: $icon-font;
-                    font-size: .85em;
-                    height: 15px;
-                    justify-content: center;
-                    margin-right: $sm-space;
-                    padding: $sm-space;
-                    width: 15px;
-                }
-              }
-            `}
-            </code></pre>
+                    flex-direction: row;
+                    align-items: center;
+
+                    &::before {
+                        align-items: center;
+                        background: $brand-gradient;
+                        border-radius: 30px;
+                        color: $mute-grey;
+                        display: flex;
+                        font-family: $icon-font;
+                        font-size: .85em;
+                        height: 15px;
+                        justify-content: center;
+                        margin-right: $sm-space;
+                        padding: $sm-space;
+                        width: 15px;
+                    }
+                  }
+                `}
+                </code></pre>
+              </div>
+            </div>
+
+            <h3>Custom hamburger menu</h3>
+            <p>A custom animated hamburger menu was created to add a fun little interaction for the mobile experience.</p>
+            <img src={lunaHamburger} alt="Hamburger menu animation" className="shadow"/>
+            <div className="flex columns">
+              <div className="fill">
+                  <pre className="language-jsx"><code>
+                    {`
+                    // mobile menu
+
+                    <div className="navigation" id="mobile-nav">
+                      <input type="checkbox" />
+                      <p>menu</p>
+                      <span></span> // hamburger line
+                      <span></span> // hamburger line
+                      <span></span> // hamburger line
+                      <div className="header-nav">
+                        // menu items
+                      </div>
+                    </div>
+
+                    `}
+                  </code></pre>
+              </div>
+              <div className="fill">
+                <pre className="language-scss"><code>
+                  {`
+                    // mobile nav
+
+                    #mobile-nav {
+                        @media screen and (min-width: 851px) {
+                          // hide larger than mobile
+                        }
+
+                        @media screen and (max-width: 850px) {
+                            background: transparent;
+                            display: block;
+                            position: relative;
+                            top: .25em;
+                            right: 0%;
+                            z-index: 1;
+                            -webkit-user-select: none;
+                            user-select: none;
+
+                            p {
+                                position: absolute;
+                                right: 45px;
+                                color: $white;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                font-size: .85em;
+                                line-height: 1.75em;
+                            }
+
+                            input {
+                                display: block;
+                                width: 100px;
+                                height: 32px;
+                                position: absolute;
+                                top: -7px;
+                                right: 0;
+                                margin: 0;
+                                cursor: pointer;
+                                opacity: 0;
+                                z-index: 2;
+                                -webkit-touch-callout: none;
+
+                                &:checked~div {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+
+                                &:checked~span {
+                                    opacity: 1;
+                                    transform: rotate(45deg)
+                                      translate(-2px, -1px);
+                                    background: $mid-grey;
+                                }
+
+                                &:checked~span:nth-last-child(3) {
+                                    opacity: 0;
+                                    transform: rotate(0deg)
+                                      scale(0.2, 0.2);
+                                }
+
+                                &:checked~span:nth-last-child(2) {
+                                    transform: rotate(-45deg)
+                                      translate(0, -1px);
+                                }
+                            }
+
+                            span {
+                                display: block;
+                                width: 33px;
+                                height: 4px;
+                                margin-bottom: 5px;
+                                position: relative;
+                                background: #ccc;
+                                border-radius: 3px;
+                                z-index: 1;
+                                transform-origin: 4px 0px;
+                                transition: transform 0.5s
+                                  cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                                  background 0.5s
+                                  cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                                  opacity 0.55s ease;
+
+                                &:first-child {
+                                    transform-origin: 0% 0%;
+                                }
+
+                                &:nth-last-child(2) {
+                                    transform-origin: 0% 100%;
+                                }
+                            }
+
+                            .header-nav {
+                                // mobile nav menu styles
+                            }
+                        }
+                    }
+                  `}
+                </code></pre>
+              </div>
+            </div>
           </div>
         </div>
       </div>
