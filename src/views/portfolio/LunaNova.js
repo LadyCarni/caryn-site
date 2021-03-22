@@ -9,6 +9,7 @@ import lunaAccordion from "assets/portfolio/luna-accordion.gif";
 import lunaDivider from "assets/portfolio/luna-divider.png";
 import lunaGradient from "assets/portfolio/luna-gradient.png";
 import lunaHamburger from "assets/portfolio/luna-hamburger.gif";
+import lunaScreens from "assets/portfolio/luna-nova-screens.jpg";
 
 const LunaNova = () => {
   usePrism();
@@ -37,7 +38,7 @@ const LunaNova = () => {
               <li>User-friendly</li>
             </ul>
 
-            <h2>The Results</h2>
+            <h2>Design Features</h2>
             <p>Luna Nova's site became a comprehensive informational resource not only on the dogs themselves, but also on the entire Portuguese Water Dog breed. This information included health background, estimated expectations for ownership costs, detailed data on each breeding dog, as well as several albums worth of photos documenting everything a potential adoptive owner would like to see.</p>
 
             <h3>Dog Bio & Photo Galleries</h3>
@@ -155,189 +156,196 @@ const LunaNova = () => {
             <h3>Accordions</h3>
             <p>Some of the more in-depth health information needed to be optionally available, without taking up too much screen real estate. I made the choice to put these important pieces of information in accordions, with simple, obvious interactions.</p>
             <img src={lunaAccordion} alt="Accordion behavior" className="shadow"/>
-            
-            <pre className="language-jsx"><code>
-            {`
-              // Accordion markup
-
-              ...
-              
-              <ul className="accordion">
-                <li>
-                  <input type="checkbox" defaultChecked />
-                  <i/> // open/close indicator
-                  <h3>Eye Problems</h3> // title
-                  <p>
-                    ...  // content
-                  </p>
-                </li>
-                <li>
-                  <input type="checkbox" defaultChecked />
-                  <i/>
-                  <h3>Hip Dysplasia</h3>
-                  <p>
-                    ...  // content
-                  </p>
-                </li>
-              </ul>
-            `}
-            </code></pre>
-
             <p>I was interested in creating a pure CSS accordion, and with the help of some public CodePens, I came up with this as a final solution.</p>
 
-            <pre className="language-scss"><code>
-            {`
-            // Accordion SCSS
+            <div className="flex columns">
+              <div className="fill">
+              <pre className="language-jsx"><code>
+                {`
+                  // Accordion markup
 
-            $brand-color: #99ced4; // blue
-            $dark-brand-color: darken($brand-color, 30%);
+                  ...
+                  
+                  <ul className="accordion">
+                    <li>
+                      <input type="checkbox" defaultChecked />
+                      <i/> // open/close indicator
+                      <h3>Eye Problems</h3> // title
+                      <p>
+                        ...  // content
+                      </p>
+                    </li>
+                    <li>
+                      <input type="checkbox" defaultChecked />
+                      <i/>
+                      <h3>Hip Dysplasia</h3>
+                      <p>
+                        ...  // content
+                      </p>
+                    </li>
+                  </ul>
+                `}
+                </code></pre>
+              </div>
+              <div className="fill">
+                <pre className="language-scss"><code>
+                  {`
+                  // Accordion SCSS
 
-            .accordion {
-              background: $off-white;
-              list-style: none;
-              perspective: 900;
-              padding: 0;
-              margin: 0;
-              margin-bottom: $lg-space; // utilizing variables is essential for consistency
+                  $brand-color: #99ced4; // blue
+                  $dark-brand-color: darken($brand-color, 30%);
 
-              input {
-                margin: 0;
-              }
+                  .accordion {
+                    background: $off-white;
+                    list-style: none;
+                    perspective: 900;
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: $lg-space;
 
-              p {
-                &:nth-child(2) {
-                  margin-bottom: 0;
-                }
-              }
-
-              li {
-                position: relative;
-                padding: 0;
-                margin: 0;
-                padding-top: $space;
-                border-top: 1px dashed $brand-color;
-                animation: flipdown 0.5s ease both;
-
-                &:nth-of-type(1) {
-                  animation-delay: .5s;
-                  border-top: none;
-                }
-
-                &:nth-of-type(2) {
-                  animation-delay: .75s; // increase the delay slightly for each child
-                }
-
-                &:nth-of-type(3) {
-                  animation-delay: 1s;
-                }
-
-                &:nth-of-type(4) {
-                  animation-delay: 1.25s;
-                }
-
-                &:nth-of-type(5) {
-                  animation-delay: 1.5s;
-                }
-
-                &:last-child {
-                  padding-bottom: .25em;
-                }
-
-                h3 {
-                  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-                  -webkit-touch-callout: none;
-                  user-select: none;
-                  color: $dark-brand-color;
-                  margin: 0;
-                  padding-left: $space;
-                }
-
-                p {
-                  padding: 0 $space;
-                  position: relative;
-                  overflow: hidden;
-                  max-height: 800px;
-                  transition: all 0.25s ease-in-out;
-                  opacity: 1;
-                  transform: translate(0, 0);
-                  margin-top: 14px;
-                  z-index: 2;
-                }
-
-                // this i is our cool little animated caret icon
-
-                i {
-                  position: absolute;
-                  transform: translate(-6px, 0);
-                  margin-top: .65em;
-                  right: $space;
-
-                  &::before, &::after {
-                    content: '';
-                    transition: all .25s ease-in-out;
-                    position: absolute;
-                    background-color: $dark-brand-color;
-                    width: 3px;
-                    height: 9px;
-                  }
-
-                  &::before {
-                    transform: translate(-2px, 0) rotate(45deg);
-                  }
-
-                  &::after {
-                    transform: translate(2px, 0) rotate(-45deg);
-                  }
-                }
-
-                input[ type = 'checkbox' ] {
-                  position: absolute;
-                  cursor: pointer;
-                  width: 100%;
-                  height: 100%;
-                  z-index: 1;
-                  opacity: 0;
-
-                  &:checked {
-                    &~p {
-                      margin-top: 0;
-                      max-height: 0;
-                      opacity: 0;
-                      transform: translate(0, 50%);
+                    input {
+                      margin: 0;
                     }
 
-                    &~i {
-                      &::before {
-                        transform: translate(2px, 0) rotate(45deg);
+                    p {
+                      &:nth-child(2) {
+                        margin-bottom: 0;
+                      }
+                    }
+
+                    li {
+                      position: relative;
+                      padding: 0;
+                      margin: 0;
+                      padding-top: $space;
+                      border-top: 1px dashed $brand-color;
+                      animation: flipdown 0.5s ease both;
+
+                      &:nth-of-type(1) {
+                        animation-delay: .5s;
+                        border-top: none;
                       }
 
-                      &::after {
-                        transform: translate(-2px, 0) rotate(-45deg);
+                      &:nth-of-type(2) {
+                        animation-delay: .75s;
+                      }
+
+                      &:nth-of-type(3) {
+                        animation-delay: 1s;
+                      }
+
+                      &:nth-of-type(4) {
+                        animation-delay: 1.25s;
+                      }
+
+                      &:nth-of-type(5) {
+                        animation-delay: 1.5s;
+                      }
+
+                      &:last-child {
+                        padding-bottom: .25em;
+                      }
+
+                      h3 {
+                        -webkit-tap-highlight-color: 
+                          rgba(0, 0, 0, 0);
+                        -webkit-touch-callout: none;
+                        user-select: none;
+                        color: $dark-brand-color;
+                        margin: 0;
+                        padding-left: $space;
+                      }
+
+                      p {
+                        padding: 0 $space;
+                        position: relative;
+                        overflow: hidden;
+                        max-height: 800px;
+                        transition: all 0.25s ease-in-out;
+                        opacity: 1;
+                        transform: translate(0, 0);
+                        margin-top: 14px;
+                        z-index: 2;
+                      }
+
+                      // this i is our animated caret icon
+
+                      i {
+                        position: absolute;
+                        transform: translate(-6px, 0);
+                        margin-top: .65em;
+                        right: $space;
+
+                        &::before, &::after {
+                          content: '';
+                          transition: all .25s ease-in-out;
+                          position: absolute;
+                          background-color: $dark-brand-color;
+                          width: 3px;
+                          height: 9px;
+                        }
+
+                        &::before {
+                          transform: translate(-2px, 0)
+                            rotate(45deg);
+                        }
+
+                        &::after {
+                          transform: translate(2px, 0)
+                            rotate(-45deg);
+                        }
+                      }
+
+                      input[ type = 'checkbox' ] {
+                        position: absolute;
+                        cursor: pointer;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        opacity: 0;
+
+                        &:checked {
+                          &~p {
+                            margin-top: 0;
+                            max-height: 0;
+                            opacity: 0;
+                            transform: translate(0, 50%);
+                          }
+
+                          &~i {
+                            &::before {
+                              transform: translate(2px, 0)
+                                rotate(45deg);
+                            }
+
+                            &::after {
+                              transform: translate(-2px, 0)
+                                rotate(-45deg);
+                            }
+                          }
+                        }
                       }
                     }
                   }
-                }
-              }
-            }
-            `}
-            </code></pre>
+                  `}
+                </code></pre>
+              </div>
+            </div>
 
-            <h2>Design Features</h2>
-            <p>Throughout the design of the site, several custom design features were created to give the user a unique, personal experience.</p>
             <h3>Custom section dividers</h3>
             <p>Custom dividers give subtle, branded visual breaks.</p>
             <img src={lunaDivider} alt="Custom page divider" className="shadow"/>
 
             <div className="flex columns">
               <div className="fill">
-              <pre className="language-jsx"><code>
-                {`
-                  // Custom page divider
+                <pre className="language-jsx"><code>
+                  {`
+                    // Custom page divider
 
-                  <div className="divider">
-                    <img src={moon} className="moon" />
-                  </div>
-                `}
+                    <div className="divider">
+                      <img src={moon} className="moon" />
+                    </div>
+                  `}
                 </code></pre>
               </div>
               <div className="fill">
@@ -411,28 +419,28 @@ const LunaNova = () => {
 
             <h3>Custom hamburger menu</h3>
             <p>A custom animated hamburger menu was created to add a fun little interaction for the mobile experience.</p>
-            <img src={lunaHamburger} alt="Hamburger menu animation" className="shadow"/>
             <div className="flex columns">
               <div className="fill">
-                  <pre className="language-jsx"><code>
-                    {`
-                    // mobile menu
-
-                    <div className="navigation" id="mobile-nav">
-                      <input type="checkbox" />
-                      <p>menu</p>
-                      <span></span> // hamburger line
-                      <span></span> // hamburger line
-                      <span></span> // hamburger line
-                      <div className="header-nav">
-                        // menu items
-                      </div>
-                    </div>
-
-                    `}
-                  </code></pre>
+                <img src={lunaHamburger} alt="Hamburger menu animation" className="shadow"/>
               </div>
               <div className="fill">
+              <pre className="language-jsx"><code>
+                  {`
+                  // mobile menu
+
+                  <div className="navigation" id="mobile-nav">
+                    <input type="checkbox" />
+                    <p>menu</p>
+                    <span></span> // hamburger line
+                    <span></span> // hamburger line
+                    <span></span> // hamburger line
+                    <div className="header-nav">
+                      // menu items
+                    </div>
+                  </div>
+
+                  `}
+                </code></pre>
                 <pre className="language-scss"><code>
                   {`
                     // mobile nav
@@ -533,6 +541,12 @@ const LunaNova = () => {
                 </code></pre>
               </div>
             </div>
+            <h2>Final Result</h2>
+            <p>The <a href="https://www.lunanovaportuguesewaterdogs.com/" target="_blank" rel="noreferrer">Luna Nova</a> site has seen consistent growth in traffic year over year. As of 2021, the wait list for new puppies is well over a year. Several users have commented to the owner that they were thrilled to have seen so much information provided and felt more secure and reassured by the presentation of the information and the ease of use compared to any other breeders' sites.</p>
+          </div>
+
+          <div className="full-width">
+            <img src={lunaScreens} alt="Luna Nova screens"/>
           </div>
         </div>
       </div>

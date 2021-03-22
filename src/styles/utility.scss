@@ -193,7 +193,9 @@ p > code {
       margin-right: 1em;
 
       .code-toolbar {
-        margin-top: 0;
+        &:first-child {
+          margin-top: 0;
+        }
       }
 
       &:last-child {
