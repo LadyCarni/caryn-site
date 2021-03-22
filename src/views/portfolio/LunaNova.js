@@ -7,6 +7,7 @@ import lunaGalleries from "assets/portfolio/luna-galleries.png";
 import lunaGalleryBehavior from "assets/portfolio/luna-photo-gallery.gif";
 import lunaAccordion from "assets/portfolio/luna-accordion.gif";
 import lunaDivider from "assets/portfolio/luna-divider.png";
+import lunaGradient from "assets/portfolio/luna-gradient.png";
 
 const LunaNova = () => {
   usePrism();
@@ -52,7 +53,7 @@ const LunaNova = () => {
 
             <pre className="language-jsx"><code>
             {`
-              // Freyja.jsx
+              // Freya.jsx
 
               ...
 
@@ -186,6 +187,9 @@ const LunaNova = () => {
             <pre className="language-scss"><code>
             {`
             // Accordion SCSS
+
+            $brand-color: #99ced4; // blue
+            $dark-brand-color: darken($brand-color, 30%);
 
             .accordion {
               background: $off-white;
@@ -322,7 +326,7 @@ const LunaNova = () => {
             <img src={lunaDivider} alt="Custom page divider" className="shadow"/>
             <pre className="language-jsx"><code>
             {`
-              Custom page divider
+              // Custom page divider
 
               <div className="divider">
                 <img src={moon} className="moon" />
@@ -332,7 +336,9 @@ const LunaNova = () => {
 
             <pre className="language-scss"><code>
             {`
-              Custom page divider
+              // Custom page divider
+
+              $brand-color: #99ced4; // blue
 
               .divider {
                 border-bottom: 1px dashed $brand-color;
@@ -341,12 +347,45 @@ const LunaNova = () => {
                 position: relative;
 
                 .moon {
-                    background: $white; 
+                    background: white; 
                     height: 20px;
                     left: 48%;
                     padding: 10px;
                     position: absolute;
                     top: -18px;
+                }
+              }
+            `}
+            </code></pre>
+
+            <p>The <b>branded gradient</b> was used on some elements to create some visual interest and inject some personality into the site design.</p>
+            <img src={lunaGradient} alt="Branded gradient effect" className="shadow"/>
+            <pre className="language-scss"><code>
+            {`
+              // Branded gradient
+
+              $brand-color: #99ced4; // blue
+              $secondary-color: #fca5f1; // pink
+              $brand-gradient: linear-gradient(45deg, rgba($secondary-color, 1) 0%, rgba($brand-color, 1) 90%);
+
+              .icon-ref {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &::before {
+                    align-items: center;
+                    background: $brand-gradient;
+                    border-radius: 30px;
+                    color: $mute-grey;
+                    display: flex;
+                    font-family: $icon-font;
+                    font-size: .85em;
+                    height: 15px;
+                    justify-content: center;
+                    margin-right: $sm-space;
+                    padding: $sm-space;
+                    width: 15px;
                 }
               }
             `}
