@@ -11,6 +11,7 @@ import "prismjs/plugins/toolbar/prism-toolbar.css";
 import "prismjs/plugins/show-language/prism-show-language.js";
 import "prismjs/components/prism-json";
 import "prismjs/components/prism-scss";
+import "prismjs/components/prism-jsx";
 import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
 import Home from "views/home/Home";
 import About from "views/about/About";

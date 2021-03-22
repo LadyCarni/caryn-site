@@ -6,6 +6,7 @@ import lunaCover from "assets/portfolio/luna-cover.png";
 import lunaGalleries from "assets/portfolio/luna-galleries.png";
 import lunaGalleryBehavior from "assets/portfolio/luna-photo-gallery.gif";
 import lunaAccordion from "assets/portfolio/luna-accordion.gif";
+import lunaDivider from "assets/portfolio/luna-divider.png";
 
 const LunaNova = () => {
   usePrism();
@@ -49,9 +50,9 @@ const LunaNova = () => {
           <div className="article">
             <p>Out of the box, neither the photo gallery or the lightbox package had behavior that matched what I was trying to achieve. Working with another developer, I created a component to handle the behaviors of a simple, easy to use lightbox and the carousel within it as well as the structure of the gallery itself.</p>
 
-            <pre className="language-javascript"><code>
+            <pre className="language-jsx"><code>
             {`
-              Freyja.jsx
+              // Freyja.jsx
 
               ...
 
@@ -72,9 +73,9 @@ const LunaNova = () => {
             `}
             </code></pre>
 
-            <pre className="language-javascript"><code>
+            <pre className="language-jsx"><code>
             {`
-              DogDisplayPage.jsx
+              // DogDisplayPage.jsx
 
               ...
               import Gallery from 'react-photo-gallery';
@@ -153,9 +154,9 @@ const LunaNova = () => {
             <p>Some of the more in-depth health information needed to be optionally available, without taking up too much screen real estate. I made the choice to put these important pieces of information in accordions, with simple, obvious interactions.</p>
             <img src={lunaAccordion} alt="Accordion behavior" className="shadow"/>
             
-            <pre className="language-javascript"><code>
+            <pre className="language-jsx"><code>
             {`
-              Accordion markup
+              // Accordion markup
 
               ...
               
@@ -184,7 +185,7 @@ const LunaNova = () => {
 
             <pre className="language-scss"><code>
             {`
-              Accordion SCSS
+            // Accordion SCSS
 
             .accordion {
               background: $off-white;
@@ -313,6 +314,41 @@ const LunaNova = () => {
                 }
               }
             }
+            `}
+            </code></pre>
+
+            <h3>Design Features</h3>
+            <p><b>Custom section dividers</b> were designed to create simple, branded visual breaks.</p>
+            <img src={lunaDivider} alt="Custom page divider" className="shadow"/>
+            <pre className="language-jsx"><code>
+            {`
+              Custom page divider
+
+              <div className="divider">
+                <img src={moon} className="moon" />
+              </div>
+            `}
+            </code></pre>
+
+            <pre className="language-scss"><code>
+            {`
+              Custom page divider
+
+              .divider {
+                border-bottom: 1px dashed $brand-color;
+                height: 1px;
+                margin: 3em 0;
+                position: relative;
+
+                .moon {
+                    background: $white; 
+                    height: 20px;
+                    left: 48%;
+                    padding: 10px;
+                    position: absolute;
+                    top: -18px;
+                }
+              }
             `}
             </code></pre>
           </div>
