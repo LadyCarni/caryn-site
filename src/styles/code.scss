@@ -4,6 +4,10 @@ pre[ class *= 'language-' ] > code {
    display: block;
 }
 
+.code-toolbar {
+   margin-top: 1em;
+}
+
 .toolbar {
    opacity: 1 !important;
    margin-top: .5em;

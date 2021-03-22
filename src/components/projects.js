@@ -4,13 +4,14 @@ import devLondon from "assets/portfolio/dev-london.jpg";
 import knakWires from "assets/portfolio/knak-wires.jpg";
 import connectFeature from "assets/portfolio/connect-cover.jpg";
 import fongoCover from 'assets/portfolio/fongo-cover.png';
+import lunaCover from 'assets/portfolio/luna-cover.png';
 const Projects = ({ match }) => {
   const gallery = [
     { 
       source: connectFeature,
       title: "Connect API",
       slug: "connect-api",
-      category: "Front-end Development",
+      category: "Product Design, Front-end Dev",
       id: 0,
     },
     { 
@@ -24,14 +25,14 @@ const Projects = ({ match }) => {
       source: knakWires,
       title: "Knak UX Case Study",
       slug: "knak-ux-case-study",
-      category: "Product Development",
+      category: "UX, Product Development",
       id: 2
     },
     { 
-      source: "https://images.unsplash.com/photo-1598149885212-c92671611588?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=958&q=80",
+      source: lunaCover,
       title: "Luna Nova",
       slug: "luna-nova",
-      category: "Front-end Development",
+      category: "Web Design, Front-end Dev",
       id: 3
     },
     { 

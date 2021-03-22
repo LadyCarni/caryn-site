@@ -192,6 +192,12 @@ p > code {
       flex: 1;
       margin-right: 1em;
 
+      .code-toolbar {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
       &:last-child {
         margin-right: 0;
       }
