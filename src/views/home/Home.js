@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLongArrowDown, faLongArrowRight, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat } from '@fortawesome/pro-light-svg-icons';
+import { faLongArrowDown, faLongArrowRight, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat, faHandsHeart } from '@fortawesome/pro-light-svg-icons';
 import triangles from 'assets/tri-large.svg'; 
 import trismall from 'assets/tri-vert1.svg';
 import trismall2 from 'assets/tri-hor1.svg';
@@ -73,33 +73,38 @@ const Home = () => {
         <div className="description">
           <div className="value-row">
             <div className="value">
-              <h3>Value</h3>
+              <h3>Pragmatism</h3>
               <FontAwesomeIcon icon={faShovel} />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Use tools, methods, and processes with practicality.</p>
             </div>
             <div className="value">
-              <h3>Value</h3>
+              <h3>Collaboration</h3>
               <FontAwesomeIcon icon={faPeopleCarry} />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Work on cross-functional teams to achieve success.</p>
             </div>
           </div>
           <div className="value-row">
             <div className="value">
-              <h3>Value</h3>
+              <h3>Community</h3>
               <FontAwesomeIcon icon={faUsersClass} />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Give back by volunteering, teaching, and having a voice.</p>
+            </div>
+            <div className="value">
+              <h3>Coaching</h3>
+              <FontAwesomeIcon icon={faHandsHeart} />
+              <p>Lead by encouraging and facilitating a growth mentality.</p>
             </div>
           </div>
           <div className="value-row">
             <div className="value">
-              <h3>Value</h3>
+              <h3>Transparency</h3>
               <FontAwesomeIcon icon={faDoorOpen} />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Communicate thoroughly and often to ensure shared vision.</p>
             </div>
             <div className="value">
-              <h3>Value</h3>
+              <h3>Self-Awareness</h3>
               <FontAwesomeIcon icon={faHeartbeat} />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Take time to reflect on areas of opportunity and improvement.</p>
             </div>
           </div>
         </div>
