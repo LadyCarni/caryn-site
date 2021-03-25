@@ -106,13 +106,18 @@
   justify-content: space-between;
   margin-bottom: 2em;
 
+  @media screen and (max-width: $small) {
+    &:first-child {
+      margin-top: $space;
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
 
   .value {
     flex: 1;
-    margin: 0 auto;
     max-width: 40%;
     text-align: center;
 
