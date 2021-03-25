@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLongArrowDown, faLongArrowRight } from '@fortawesome/pro-light-svg-icons';
+import { faLongArrowDown, faLongArrowRight, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat } from '@fortawesome/pro-light-svg-icons';
 import triangles from 'assets/tri-large.svg'; 
 import trismall from 'assets/tri-vert1.svg';
 import trismall2 from 'assets/tri-hor1.svg';
+import triheart from 'assets/tri-heart.svg';
 import PortfolioFeatures from 'components/portfolioFeatures';
 import knakWires from 'assets/portfolio/knak-wires.jpg';
 const Home = () => {
@@ -61,6 +62,47 @@ const Home = () => {
         <h3>Knak: A Case Study</h3>
         <h2>Architecting User Experience</h2>
         <Link to="/portfolio/knak-ux-case-study" className="arrow-link block">View case study <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+      </div>
+    </div>
+    <div className="light feature bottom feature-width feature-height">
+      <div className="feature-content">
+        <div className="title">
+          <img src={triheart} alt="" className="tri-small" />
+          <h2>What I Value</h2>
+        </div>
+        <div className="description">
+          <div className="value-row">
+            <div className="value">
+              <h3>Value</h3>
+              <FontAwesomeIcon icon={faShovel} />
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div className="value">
+              <h3>Value</h3>
+              <FontAwesomeIcon icon={faPeopleCarry} />
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div className="value-row">
+            <div className="value">
+              <h3>Value</h3>
+              <FontAwesomeIcon icon={faUsersClass} />
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div className="value-row">
+            <div className="value">
+              <h3>Value</h3>
+              <FontAwesomeIcon icon={faDoorOpen} />
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div className="value">
+              <h3>Value</h3>
+              <FontAwesomeIcon icon={faHeartbeat} />
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </>

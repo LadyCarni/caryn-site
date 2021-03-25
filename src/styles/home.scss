@@ -99,3 +99,30 @@
   max-width: 250px;
   margin-bottom: 3em;
 }
+
+.value-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .value {
+    flex: 1;
+    margin: 0 auto;
+    max-width: 40%;
+    text-align: center;
+
+    svg {
+      color: $primary;
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: .85em;
+    }
+  }
+}
