@@ -2,6 +2,9 @@ import React from 'react';
 import PortfolioHeader from "components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import lifestyleCover from "assets/portfolio/lifestyle-video.jpg";
+import lifestyleEdit from "assets/portfolio/lifestyle-video-edit.jpg";
+import lifestyleVisibility from "assets/portfolio/lifestyle-video-visibility.jpg";
+import lifestyleTags from "assets/portfolio/lifestyle-video-tags.jpg";
 
 
 const Lifestyle = () => {
@@ -29,6 +32,10 @@ const Lifestyle = () => {
             </ul>
 
             <h2>Design Features</h2>
+            <img src={lifestyleCover} alt="Features of the app videos" className="shadow"/>
+            <img src={lifestyleEdit} alt="Editing the title of a video" className="shadow"/>
+            <img src={lifestyleVisibility} alt="Editing the visibility settings" className="shadow"/>
+            <img src={lifestyleTags} alt="Viewing the tags of a video" className="shadow"/>
           </div>
         </div>
       </div>
