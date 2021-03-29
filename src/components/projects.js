@@ -5,6 +5,7 @@ import knakWires from "assets/portfolio/knak-wires.jpg";
 import connectFeature from "assets/portfolio/connect-cover.jpg";
 import fongoCover from 'assets/portfolio/fongo-cover.png';
 import lunaCover from 'assets/portfolio/luna-cover.png';
+import lifestyleCover from 'assets/portfolio/lifestyle-video.jpg';
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -43,9 +44,9 @@ const Projects = ({ match }) => {
       id: 4
     },
     { 
-      source: "https://images.unsplash.com/photo-1598149885212-c92671611588?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=958&q=80",
-      title: "Financial App *",
-      slug: "financial-app",
+      source: lifestyleCover,
+      title: "Lifestyle App *",
+      slug: "lifestyle-app",
       category: "Web Design",
       id: 5
     },
