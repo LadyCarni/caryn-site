@@ -30,6 +30,34 @@ const Articles = () => {
       summary: "A collection of tools and techniques for the pragmatic UX professional",
       id: 2,
     },
+    { 
+      title: "Practical UX: The Who and the Why",
+      link: "https://blog.prototypr.io/practical-ux-the-who-and-the-why-13e24a34ee53",
+      date: "March 4, 2019",
+      summary: "Whether you’re a developer or a designer, you need to know how to quickly define problems and how to make a plan for the solutions. With a few exceptions, we are all building software for people. As such, we must ask ourselves and our teams who those people are and why we’re building for them.",
+      id: 3,
+    },
+    { 
+      title: "Practical UX: The Perspective",
+      link: "https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d",
+      date: "January 10, 2019",
+      summary: "The core of all software, whether mobile apps or websites, all boil down to the people who you’re designing and building for. The user is the most important aspect of software. Without a good experience for the user, the product fails.",
+      id: 4,
+    },
+    { 
+      title: "Imposter Syndrome",
+      link: "https://code.likeagirl.io/imposter-syndrome-c2bdad47d88d",
+      date: "March 4, 2017",
+      summary: "Why is it, despite our success, our position, our education, our experience; despite all facts to the contrary, we still have that nagging voice in the backs of our minds taunting us with accusations of fraud, fraud, FRAUD!!",
+      id: 5,
+    },
+    { 
+      title: "Stock Photo Resources",
+      link: "https://medium.com/@LadyCarni/im-sure-you-ve-been-there-you-re-designing-a-brand-spanking-new-site-and-you-know-damned-well-fbbd8b13fe43",
+      date: "November 4, 2016",
+      summary: "Stock images today aren’t the libraries of a few years ago. Here are just a few to get you started!",
+      id: 6, 
+    },
   ];
 
   return (
