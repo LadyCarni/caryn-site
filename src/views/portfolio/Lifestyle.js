@@ -1,7 +1,8 @@
 import React from 'react';
 import PortfolioHeader from "components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
-import lifestyleCover from "assets/portfolio/lifestyle-video.jpg";
+import lifestyleCover from "assets/portfolio/lifestyle-cover.jpg";
+import lifestyleVideo from "assets/portfolio/lifestyle-video.jpg";
 import lifestyleEdit from "assets/portfolio/lifestyle-video-edit.jpg";
 import lifestyleVisibility from "assets/portfolio/lifestyle-video-visibility.jpg";
 import lifestyleTags from "assets/portfolio/lifestyle-video-tags.jpg";
@@ -50,7 +51,7 @@ const Lifestyle = () => {
             <p>While viewing a video page, the user could view the footage as well as the GPS location where the video took place. They would also be able to manage the data surrounding their videos. With this much control, the users would begin building a history of detailed video 'memories'.</p>
           </div>
           <div className="full-width">
-            <img src={lifestyleCover} alt="Features of the app videos"/>
+            <img src={lifestyleVideo} alt="Features of the app videos"/>
           </div>
 
           <div className="article">

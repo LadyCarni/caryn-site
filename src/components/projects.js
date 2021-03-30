@@ -5,7 +5,7 @@ import knakWires from "assets/portfolio/knak-wires.jpg";
 import connectFeature from "assets/portfolio/connect-cover.jpg";
 import fongoCover from 'assets/portfolio/fongo-cover.png';
 import lunaCover from 'assets/portfolio/luna-cover.png';
-import lifestyleCover from 'assets/portfolio/lifestyle-video.jpg';
+import lifestyleCover from 'assets/portfolio/lifestyle-cover.jpg';
 const Projects = ({ match }) => {
   const gallery = [
     { 
