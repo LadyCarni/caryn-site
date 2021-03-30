@@ -20,7 +20,7 @@
       background: $grey3;
       flex: 1;
       padding: $space;
-      margin: $sm-space;
+      margin-right: $sm-space;
     }
   }
 
@@ -35,7 +35,26 @@
       flex: 1;
       min-width: 35%;
       padding: $space;
-      margin: $sm-space;
+
+      &:nth-child(1) {
+        margin-bottom: $sm-space;
+        margin-right: $sm-space;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: $sm-space;
+      }
+
+      &:nth-child(3) {
+        margin-right: $sm-space;
+      }
     }
   }
+}
+
+.article-feed {
+  display: flex;
+  flex-direction: column;
+  width: $content-width;
+  margin: $std-size auto;
 }
