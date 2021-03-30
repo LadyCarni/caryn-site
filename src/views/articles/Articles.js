@@ -1,6 +1,16 @@
 import React from 'react';
 
 const Articles = () => {
+  const articles = [
+    { 
+      title: "Practical UX: The Perspective",
+      link: "https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d",
+      date: "Jan 10, 2019",
+      summary: "The core of all software, whether mobile apps or websites, all boil down to the people who you’re designing and building for. The user is the most important aspect of software. Without a good experience for the user, the product fails.",
+      id: 0,
+    },
+  ];
+
   return (
     <div className="articles full-height">
       <div className="article-features">
@@ -18,14 +28,16 @@ const Articles = () => {
       </div>
       
       <div className="article-feed">
-        <div className="article-snippet">
-          <h1>Title</h1>
-          <p className="article-meta">
-            <span className="date">Date</span>
-          </p>
-          <p className="article-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem doloribus fugit temporibus quo quis molestiae, quod sint nisi, consectetur impedit corporis iure excepturi veniam illo. Ipsum facilis sint ipsam fugit.</p>
-          <a href="#">Read the full article</a>
-        </div>
+        {articles.map(({id, title, link, date, summary}) =>(
+          <div className="article-snippet" key={id}>
+            <h1>{title}</h1>
+            <p className="article-meta">
+              <span className="date">{date}</span>
+            </p>
+            <p className="article-summary">{summary}...</p>
+            <a href={`${link}`} target="_blank" rel="noreferrer">Read the full article on Medium</a>
+          </div>
+        ))}
       </div>
     </div>
   );
