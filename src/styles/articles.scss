@@ -1,6 +1,24 @@
 .articles {
   font-family: $type-content;
-  margin: $std-size;
+  margin: $std-size 0;
+}
+
+.landmark {
+  font-weight: 700;
+  display: block;
+  margin: 0 auto $space;
+  width: 960px;
+
+  svg {
+    color: $grey3;
+    margin-right: $sm-space;
+  }
+}
+
+.article-feature-container {
+  width: 100%;
+  background: rgba($primary, .5);
+  padding: $lg-space 0 50px;
 }
 
 .article-features {
@@ -9,18 +27,56 @@
   margin: 0 auto;
   justify-content: space-between;
 
-  .main-feature {
+  .article-feature {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .article-feature-content {
+      flex: 1;
+
+      .article-image {
+        overflow: hidden;
+        width: 100%;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+
+      .article-info {
+        color: white;
+        position: absolute;
+        z-index: 2;
+        bottom: $lg-space;
+        left: $lg-space;
+
+        svg {
+          font-size: .85em;
+          margin-left: $sm-space;
+          vertical-align: baseline;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      position: relative;
+    }
+  }
+
+  .main-feature {
     min-height: 100%;
     width: 50%;
 
     .main-feature-content {
-      background: $grey3;
-      flex: 1;
-      padding: $space;
       margin-right: $sm-space;
+
+      .article-image {
+        height: 350px;
+      }
     }
   }
 
@@ -34,7 +90,16 @@
       background: $grey3;
       flex: 1;
       min-width: 35%;
-      padding: $space;
+
+      .article-image {
+        height: 171px;
+      }
+
+      .article-info {
+        h4 {
+          margin-bottom: 0;
+        }
+      }
 
       &:nth-child(1) {
         margin-bottom: $sm-space;
@@ -57,4 +122,8 @@
   flex-direction: column;
   width: $content-width;
   margin: $std-size auto;
+
+  h2 {
+    font-weight: 500;
+  }
 }
