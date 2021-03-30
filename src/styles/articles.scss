@@ -120,10 +120,20 @@
 .article-feed {
   display: flex;
   flex-direction: column;
-  width: $content-width;
+  width: 750px;
   margin: $std-size auto;
 
   h2 {
     font-weight: 500;
+  }
+}
+
+.article-snippet {
+  margin-bottom: 50px;
+
+  a {
+    svg {
+      margin-left: $sm-space;
+    }
   }
 }

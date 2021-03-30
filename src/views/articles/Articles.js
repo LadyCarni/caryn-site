@@ -10,11 +10,25 @@ import teamBuilding from "assets/articles/team-building.jpg";
 const Articles = () => {
   const articles = [
     { 
-      title: "Practical UX: The Perspective",
-      link: "https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d",
-      date: "Jan 10, 2019",
-      summary: "The core of all software, whether mobile apps or websites, all boil down to the people who you’re designing and building for. The user is the most important aspect of software. Without a good experience for the user, the product fails.",
+      title: "Saying goodbye",
+      link: "https://medium.com/@LadyCarni/saying-goodbye-99be8253b890",
+      date: "November 29, 2019",
+      summary: "After seven years and seven months, many emotionally draining conversations, and more than a few restless nights, I’ve made the choice to move on from Vehikl.",
       id: 0,
+    },
+    { 
+      title: "FontAwesome Pro for your Ionic/Angular project",
+      link: "https://medium.com/vehikl-news/fontawesome-pro-for-your-ionic-angular-project-c99c00b47c3",
+      date: "September 27, 2019",
+      summary: "This is a love story between FontAwesome’s Pro icon pack (v5) and an Ionic (v4) project using Angular (v7).",
+      id: 1,
+    },
+    { 
+      title: "Practical UX: Tools of the Trade",
+      link: "https://medium.com/@LadyCarni/practical-ux-tools-of-the-trade-5a84b9d42491",
+      date: "March 19, 2019",
+      summary: "A collection of tools and techniques for the pragmatic UX professional",
+      id: 2,
     },
   ];
 
@@ -91,7 +105,7 @@ const Articles = () => {
               <span className="date">{date}</span>
             </p>
             <p className="article-summary">{summary}...</p>
-            <a href={`${link}`} target="_blank" rel="noreferrer">Read the full article on Medium</a>
+            <a href={`${link}`} target="_blank" rel="noreferrer">Read the full article on Medium <FontAwesomeIcon icon={faExternalLink} /></a>
           </div>
         ))}
       </div>
