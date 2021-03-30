@@ -47,7 +47,7 @@ const Projects = ({ match }) => {
       source: lifestyleCover,
       title: "Lifestyle App *",
       slug: "lifestyle-app",
-      category: "Web Design",
+      category: "Web App Design",
       id: 5
     },
     // { 
