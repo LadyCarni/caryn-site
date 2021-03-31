@@ -24,7 +24,7 @@ const Site = () => {
   return (
     <Router>
       <ScrollToTop />
-      <div className="header row feature-width">
+      <div className="header row">
         <span className="brand">
           <Link to="/">Caryn Farvour</Link>
         </span>
