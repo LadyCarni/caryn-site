@@ -129,7 +129,7 @@ const Articles = () => {
                   <img src={betterProjects} alt="Example of whiteboarding"/>
                 </div>
                 <div className="article-info">
-                  <h4>Running Better Software Projects <FontAwesomeIcon icon={faExternalLink} /></h4>
+                  <h4>Better Software Projects <FontAwesomeIcon icon={faExternalLink} /></h4>
                 </div>
               </a>
             </div>
@@ -159,7 +159,7 @@ const Articles = () => {
                   <img src={wireframe} alt="Example of wireframing"/>
                 </div>
                 <div className="article-info">
-                  <h4>Your Product:<br />Design Built <FontAwesomeIcon icon={faExternalLink} /></h4>
+                  <h4>Design Built <FontAwesomeIcon icon={faExternalLink} /></h4>
                 </div>
               </a>
             </div>

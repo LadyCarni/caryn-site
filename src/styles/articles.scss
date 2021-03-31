@@ -73,8 +73,6 @@
         color: white;
         position: absolute;
         z-index: 2;
-        bottom: $lg-space;
-        left: $lg-space;
 
         svg {
           font-size: .85em;
@@ -136,6 +134,11 @@
           height: 350px;
         }
       }
+    }
+
+    .article-info {
+      bottom: $lg-space;
+      left: $lg-space;
     }
   }
 
@@ -207,6 +210,12 @@
         &:nth-child(3) {
           margin-right: $sm-space;
         }
+
+        .article-info {
+          font-size: .9em;
+          bottom: $space;
+          left: $space;
+        }
       }
     }
 
@@ -215,6 +224,9 @@
       flex: 1;
 
       .article-info {
+        bottom: $lg-space;
+        left: $lg-space;
+
         h4 {
           margin-bottom: 0;
         }
@@ -226,8 +238,15 @@
 .article-feed {
   display: flex;
   flex-direction: column;
-  width: $content-width;
   margin: $std-size auto;
+
+  @media screen and (min-width: 501px) and (max-width: ($medium - 1)) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $medium) {
+    width: $content-width;
+  }
 
   .articles {
     margin-top: 50px;
@@ -237,8 +256,19 @@
 .article-snippet {
   margin-bottom: 50px;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 501px) and (max-width: ($medium - 1)) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $medium) {
+    flex-direction: row;
+  }
 
   &:hover {
     .article-body {
@@ -274,16 +304,34 @@
   }
 
   .article-meta {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    width: 180px;
-    min-width: 180px;
-    border-top: 2px solid $primary;
-    padding-top: 1.5em;
-    margin-right: 2em;
+
+    @media screen and (max-width: 500px) {
+      color: $grey2;
+      font-size: .85em;
+      margin: 0 0 $space $space;
+    }
+  
+    @media screen and (min-width: 501px) and (max-width: ($medium - 1)) {
+      color: $grey2;
+      font-size: .85em;
+      margin: 0 0 0 1rem;
+    }
+  
+    @media screen and (min-width: $medium) {
+      border-top: 2px solid $primary;
+      display: inline-flex;
+      margin-right: 2em;
+      min-width: 180px;
+      padding-top: 1.5em;
+      width: 180px;
+    }
   }
 
   .article-body {
     padding: $space;
+  
+    @media screen and (max-width: $medium) {
+      max-width: 100%;
+    }
   }
 }
