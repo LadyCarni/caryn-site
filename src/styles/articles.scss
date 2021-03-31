@@ -119,20 +119,50 @@
 .article-feed {
   display: flex;
   flex-direction: column;
-  width: 750px;
+  width: $content-width;
   margin: $std-size auto;
 
-  h2 {
-    font-weight: 500;
+  .articles {
+    margin-top: 50px;
   }
 }
 
 .article-snippet {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  h2 {
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  p > a {
+    font-size: .85em;
+    margin-left: .5em;
+    text-decoration: underline;
+  }
 
   a {
+    text-decoration: none;
+
+    h2, p {
+      color: $content;
+    }
+
     svg {
       margin-left: $sm-space;
     }
+  }
+
+  .article-meta {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 180px;
+    min-width: 180px;
+    border-top: 2px solid $primary;
+    padding-top: 1.5em;
+    margin-right: 2em;
   }
 }

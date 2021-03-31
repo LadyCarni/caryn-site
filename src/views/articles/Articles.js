@@ -13,7 +13,7 @@ const Articles = () => {
       title: "Saying goodbye",
       link: "https://medium.com/@LadyCarni/saying-goodbye-99be8253b890",
       date: "November 29, 2019",
-      summary: "After seven years and seven months, many emotionally draining conversations, and more than a few restless nights, I’ve made the choice to move on from Vehikl.",
+      summary: "To explain why I’ve decided to move on, I’ll need to take you all the way back to early 2012; back to the beginning.",
       id: 0,
     },
     { 
@@ -27,28 +27,28 @@ const Articles = () => {
       title: "Practical UX: Tools of the Trade",
       link: "https://medium.com/@LadyCarni/practical-ux-tools-of-the-trade-5a84b9d42491",
       date: "March 19, 2019",
-      summary: "A collection of tools and techniques for the pragmatic UX professional",
+      summary: "The third in the Practical UX series; sharing a collection of tools and techniques for the pragmatic UX professional",
       id: 2,
     },
     { 
       title: "Practical UX: The Who and the Why",
       link: "https://blog.prototypr.io/practical-ux-the-who-and-the-why-13e24a34ee53",
       date: "March 4, 2019",
-      summary: "Whether you’re a developer or a designer, you need to know how to quickly define problems and how to make a plan for the solutions. With a few exceptions, we are all building software for people. As such, we must ask ourselves and our teams who those people are and why we’re building for them.",
+      summary: "The second in the Practical UX series. We build software for people. When desining and bulding, we must ask: Who are they, and what problem are we solving for them?",
       id: 3,
     },
     { 
       title: "Practical UX: The Perspective",
       link: "https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d",
       date: "January 10, 2019",
-      summary: "The core of all software, whether mobile apps or websites, all boil down to the people who you’re designing and building for. The user is the most important aspect of software. Without a good experience for the user, the product fails.",
+      summary: "The first in the Practical UX series; framing the mindset and the outlook of the pragmatic UX professional.",
       id: 4,
     },
     { 
       title: "Imposter Syndrome",
       link: "https://code.likeagirl.io/imposter-syndrome-c2bdad47d88d",
       date: "March 4, 2017",
-      summary: "Why is it, despite our success, our position, our education, our experience; despite all facts to the contrary, we still have that nagging voice in the backs of our minds taunting us with accusations of fraud, fraud, FRAUD!!",
+      summary: "Why is it, despite our success we still have that nagging voice in the backs of our minds taunting us with accusations of fraud, fraud, FRAUD!!",
       id: 5,
     },
     { 
@@ -126,16 +126,24 @@ const Articles = () => {
       </div>
       
       <div className="article-feed">
-        {articles.map(({id, title, link, date, summary}) =>(
-          <div className="article-snippet" key={id}>
-            <h2>{title}</h2>
-            <p className="article-meta">
-              <span className="date">{date}</span>
-            </p>
-            <p className="article-summary">{summary}...</p>
-            <a href={`${link}`} target="_blank" rel="noreferrer">Read the full article on Medium <FontAwesomeIcon icon={faExternalLink} /></a>
-          </div>
-        ))}
+        <div className="title">
+          <span className="landmark"><FontAwesomeIcon icon={faBookmark} /> Recent Articles</span>
+        </div>
+        <div className="articles">
+          {articles.map(({id, title, link, date, summary}) =>(
+            <div className="article-snippet" key={id}>
+              <div className="article-meta">
+                {date}
+              </div>
+              <div className="article-body">
+                <a href={`${link}`} target="_blank" rel="noreferrer">
+                  <h2>{title}</h2>
+                  <p className="article-summary">{summary}<a href={`${link}`} target="_blank" rel="noreferrer">Continue<FontAwesomeIcon icon={faExternalLink} /></a></p>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
