@@ -333,7 +333,7 @@ const About = () => {
         <div className="timeline-content">
           <div className="path"></div>
           <ul>
-            {timeline.map(({id, year, events}) => (
+            {timeline.reverse().map(({id, year, events}) => (
               <div key={id}>
                 <li className="year">{year}</li>
                 {events.map(({id, type, title}) =>(
