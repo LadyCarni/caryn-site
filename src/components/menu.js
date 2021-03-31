@@ -44,18 +44,18 @@ const StyledBurger = styled.button`
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(0)' : 'rotate(45deg)'};
       width:25px;
     }
 
     :nth-child(2) {
-      opacity: ${({ open }) => open ? '0' : '1'};
-      transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+      opacity: ${({ open }) => open ? '1' : '0'};
+      transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(25px)'};
       width:20px;
     }
 
     :nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(o)' : 'rotate(-45deg)'};
       width:25px;
     }
   }
@@ -63,7 +63,7 @@ const StyledBurger = styled.button`
 
 const Burger = ({ open, setOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger open={!open} onClick={() => setOpen(open)}>
       <span />
       <span />
       <span />
@@ -76,8 +76,8 @@ const Menu = () =>{
 
   return (
     <div className="nav">
-      <Nav open={open} setOpen={setOpen} />
-      <Burger open={open} setOpen={setOpen} />
+      <Nav open={!open} setOpen={setOpen} />
+      <Burger open={!open} setOpen={setOpen} />
     </div>
   )
 }

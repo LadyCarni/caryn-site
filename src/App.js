@@ -15,6 +15,7 @@ import "prismjs/components/prism-jsx";
 import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
 import Home from "views/home/Home";
 import About from "views/about/About";
+import Articles from 'views/articles/Articles';
 import Menu from "components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
 import Footer from "components/footer";
@@ -23,7 +24,7 @@ const Site = () => {
   return (
     <Router>
       <ScrollToTop />
-      <div className="header row feature-width">
+      <div className="header row">
         <span className="brand">
           <Link to="/">Caryn Farvour</Link>
         </span>
@@ -66,14 +67,6 @@ function ScrollToTop() {
   return null;
 }
 
-function Articles() {
-  return (
-    <div className="light feature feature-width full-height">
-      <h2>Articles</h2>
-      <p>Coming soon for your reading pleasure!</p>
-    </div>
-  );
-}
 function Creative() {
   return (
     <div className="light feature feature-width full-height">
