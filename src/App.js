@@ -19,6 +19,7 @@ import Articles from 'views/articles/Articles';
 import Menu from "components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
 import Footer from "components/footer";
+import Contact from "views/contact/Contact";
 
 const Site = () => {
   return (
@@ -72,15 +73,6 @@ function Creative() {
     <div className="light feature feature-width full-height">
       <h2>Creative</h2>
       <p>Coming soon for your inspiration!</p>
-    </div>
-  );
-}
-
-function Contact() {
-  return (
-    <div className="light feature feature-width full-height">
-      <h2>Contact</h2>
-      <p>Coming soon! Contact me somewhere else!</p>
     </div>
   );
 }

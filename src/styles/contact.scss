@@ -1,0 +1,19 @@
+.contact-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    flex: 1;
+    padding: 2em;
+  }
+
+  .contact-prefs {
+    
+  }
+
+  .contact-summary {
+    background: rgba($primary, .2);
+  }
+}

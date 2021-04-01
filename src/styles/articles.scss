@@ -303,6 +303,13 @@
     margin-bottom: 0;
   }
 
+  .continue {
+    color: $primary-dark;
+    margin-left: .5em;
+    text-decoration: underline;
+    font-size: .85em;
+  }
+
   .article-meta {
 
     @media screen and (max-width: 500px) {
