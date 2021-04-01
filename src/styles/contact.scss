@@ -1,11 +1,23 @@
 .contact-page {
   margin: 0 auto;
+  height: 90vh;
 }
 
 .contact-header {
   width: 100vw;
   margin: 0 auto 2em;
   max-width: 1200px;
+
+  .header-image {
+    display: block;
+    height: 300px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
 
   .contact-image {
     display: block;
@@ -15,6 +27,8 @@
   .contact-headline {
     font-family: $type-content;
     text-align: center;
+    margin-top: 2em;
+    padding: 0 1em;
   
     .pop {
       font-family: $type-headline;
@@ -25,6 +39,7 @@
   p {
     max-width: 500px;
     margin: 0 auto;
+    padding: 0 1em;
   }
 }
 
@@ -34,6 +49,10 @@
   display: flex;
   justify-content: space-between;
   font-family: $type-content;
+
+  @media screen and (max-width: $medium) {
+    flex-direction: column;
+  }
 
 
   > div {

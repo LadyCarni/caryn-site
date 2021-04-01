@@ -8,7 +8,9 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact-header">
-        <img src={office} alt="Caryn's home office" className="contact-image"/>
+        <div className="header-image">
+         <img src={office} alt="Caryn's home office"/>
+        </div>
         <h1 className="contact-headline">Let's make something <span className="pop">great</span></h1>
         <p>If you're interested in finding out more about the type of work I do, don't forget to check out my <Link to="/portfolio">portfolio</Link>. I also have a few handy posts on <a href="https://codepen.io/ladycarni" target="_blank" rel="noreferrer">CodePen</a> if that's more your jam.</p>
       </div>
