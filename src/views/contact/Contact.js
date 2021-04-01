@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithubAlt, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpenText } from '@fortawesome/pro-light-svg-icons';
 import office from 'assets/office.jpg';
 import { Link } from 'react-router-dom';
@@ -21,13 +21,13 @@ const Contact = () => {
           <ul>
             <li>
               <a href="https://github.com/LadyCarni" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faGithubAlt} />
                 GitHub
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/carynfarvour/" target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon icon={faLinkedinIn} />
                 LinkedIn
               </a>
             </li>
@@ -46,13 +46,13 @@ const Contact = () => {
             <li>
               <a href="https://www.instagram.com/lady.carni/" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
-                Personal
+                Instagram
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/our_workbench/" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
-                DIY
+                #DIY
               </a>
             </li>
             <li>
