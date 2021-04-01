@@ -217,7 +217,8 @@ h1, h2 {
   color: $grey3;
   bottom: 0;
   z-index: 5;
-  position: sticky;
+  position: fixed;
+  width: 100%;
 
   svg {
     margin-left: .75em;

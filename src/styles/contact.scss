@@ -1,6 +1,5 @@
 .contact-page {
   margin: 0 auto;
-  height: 90vh;
 }
 
 .contact-header {
@@ -45,7 +44,7 @@
 
 .contact-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 4em;
   display: flex;
   justify-content: space-between;
   font-family: $type-content;

@@ -24,7 +24,16 @@
   margin: 0 2em 0 0;
 
   @media screen and (max-width: $small) {
-    margin: 2em auto;
+    margin: 0 auto 2em;
+    width: 100%;
+    max-width: 100%;
+
+    img {
+      height: 200px;
+      object-position: 0 -100px;
+      object-fit: cover;
+      width: 100%;
+    }
   }
 }
 
