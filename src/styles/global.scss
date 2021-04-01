@@ -6,12 +6,18 @@
 @import 'code.scss';
 @import 'bio.scss';
 @import 'articles.scss';
+@import 'contact.scss';
 
 html, body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 code {

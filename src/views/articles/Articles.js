@@ -180,7 +180,7 @@ const Articles = () => {
               <div className="article-body">
                 <a href={`${link}`} target="_blank" rel="noreferrer">
                   <h2>{title}</h2>
-                  <p className="article-summary">{summary}<a href={`${link}`} target="_blank" rel="noreferrer">Continue<FontAwesomeIcon icon={faExternalLink} /></a></p>
+                  <p className="article-summary">{summary}<span className="continue">Continue<FontAwesomeIcon icon={faExternalLink} /></span></p>
                 </a>
               </div>
             </div>
