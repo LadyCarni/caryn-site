@@ -1,19 +1,92 @@
+.contact-page {
+  margin: 0 auto;
+}
+
+.contact-header {
+  width: 100vw;
+  margin: 0 auto 2em;
+  max-width: 1200px;
+
+  .contact-image {
+    display: block;
+    width: 100%;
+  }
+  
+  .contact-headline {
+    font-family: $type-content;
+    text-align: center;
+  
+    .pop {
+      font-family: $type-headline;
+      color: $primary;
+    }
+  }
+
+  p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
 .contact-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  font-family: $type-content;
+
 
   > div {
     flex: 1;
     padding: 2em;
-  }
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
-  .contact-prefs {
-    
-  }
+    h2 {
+      font-weight: 500;
+    }
 
-  .contact-summary {
-    background: rgba($primary, .2);
+    p {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 3em;
+
+      li {
+        display: inline-block;
+        margin-right: 3em;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        
+        a {
+          color: $primary-dark;
+          align-items: center;
+          display: inline-flex;
+          flex-direction: column;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: 700;
+
+            svg {
+              color: $primary;
+            }
+          }
+        }
+
+        svg {
+          color: $grey3;
+          font-size: 3em;
+          margin-bottom: .25em;
+        }
+      }
+    }
   }
 }
