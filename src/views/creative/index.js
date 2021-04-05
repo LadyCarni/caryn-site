@@ -6,5 +6,5 @@ export const CreativeRoutes = [
   { path: "/creative/crafts", name: "Crafts", component: Placeholder },
   { path: "/creative/recipes", name: "Recipes", component: Placeholder },
   { path: "/creative/diy", name: "DIY", component: Placeholder },
-  { path: "/creative/photography", name: "photography", component: Placeholder },
+  { path: "/creative/photography", name: "Photography", component: Placeholder },
 ];

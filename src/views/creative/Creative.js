@@ -1,24 +1,16 @@
 import React from 'react';
 import header from 'assets/creative/creative-header.jpg';
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCameraRetro, faHammer, faHatChef, faPalette } from '@fortawesome/pro-light-svg-icons';
+import CreativeHeader from 'components/creativeHeader';
 
 const Creative = () => {
   return (
     <div className="creative full-height">
-      <div className="creative-header">
-        <div className="header-image">
-          <img src={header} alt="Blueberry lemon cake"/>
-        </div>
-        <h1><span className="pop">Creativity</span> in the wild</h1>
-        <ul>
-          <li><Link to={`/creative/crafts`}>Crafts</Link></li>
-          <li><Link to={`/creative/recipes`}>Recipes</Link></li>
-          <li><Link to={`/creative/diy`}>DIY</Link></li>
-          <li><Link to={`/creative/photography`}>Photography</Link></li>
-        </ul>
-      </div>
+      <CreativeHeader
+        headerImage={header}
+        imageAlt="Lemon blueberry pie"
+      />
       <div className="creative-features">
         <span className="landmark"><FontAwesomeIcon icon={faBookmark} /> Featured Projects</span>
 

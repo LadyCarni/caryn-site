@@ -91,3 +91,14 @@
     }
   }
 }
+
+.creative-body-container {
+  width: 1200px;
+  margin: 0 auto;
+
+  .creative-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

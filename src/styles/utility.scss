@@ -384,6 +384,11 @@ p > code {
   font-family: $type-content;
   color: $content;
   font-size: .85em;
+
+  &.creative {
+    background: transparent;
+    padding: 0;
+  }
   
   ul {
     list-style-type: none;
