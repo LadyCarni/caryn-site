@@ -1,0 +1,38 @@
+.creative {
+  font-family: $type-content;
+}
+
+.creative-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+  .header-image {
+    display: block;
+    height: 300px;
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    color: $grey1;
+    margin: 2em auto .5em;
+
+    .pop {
+      color: $primary;
+      font-family: $type-headline;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline-flex;
+    width: 600px;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
