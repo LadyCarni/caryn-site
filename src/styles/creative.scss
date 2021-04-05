@@ -4,8 +4,8 @@
 }
 
 .creative-header {
-  max-width: 1200px;
   margin: 0 auto 50px;
+  max-width: 1200px;
   text-align: center;
 
   .header-image {
@@ -13,8 +13,8 @@
     height: 300px;
 
     img {
-      object-fit: cover;
       height: 100%;
+      object-fit: cover;
       width: 100%;
     }
   }
@@ -30,11 +30,11 @@
   }
 
   ul {
-    list-style-type: none;
     display: inline-flex;
-    width: 600px;
     justify-content: space-between;
+    list-style-type: none;
     padding: 0;
+    width: 600px;
 
     a {
       color: $grey1;
@@ -49,42 +49,42 @@
 }
 
 .creative-features {
-  width: 960px;
   margin: 0 auto;
+  width: 960px;
 
   .featured-project {
     display: flex;
     margin-top: 3em;
 
     .image {
-      width: 400px;
-      min-width: 400px;
       height: 200px;
       margin-right: 2em;
+      min-width: 400px;
+      width: 400px;
 
       img {
         height: 100%;
-        width: 100%;
         object-fit: cover;
+        width: 100%;
       }
     }
 
     .feature-summary {
       .title {
+        align-items: center;
         display: flex;
         flex-direction: row;
-        width: 100%;
         justify-content: space-between;
-        align-items: center;
+        width: 100%;
 
         h2 {
           margin: 0;
         }
 
         .tag {
+          color: $primary-dark;
           font-size: .85em;
           font-weight: 700;
-          color: $primary-dark;
         }
       }
 
