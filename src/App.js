@@ -20,6 +20,7 @@ import Menu from "components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
 import Footer from "components/footer";
 import Contact from "views/contact/Contact";
+import { CreativeRoutes } from "./views/creative/index";
 
 const Site = () => {
   return (
@@ -42,9 +43,9 @@ const Site = () => {
         <Route path="/articles">
           <Articles />
         </Route>
-        <Route path="/creative">
-          <Creative />
-        </Route>
+        {CreativeRoutes.map(({ path, component }, key) => (
+          <Route exact path={path} key={key} component={component} />
+        ))}
         <Route path="/about">
           <About />
         </Route>
@@ -66,15 +67,6 @@ function ScrollToTop() {
   }, [pathname]);
 
   return null;
-}
-
-function Creative() {
-  return (
-    <div className="light feature feature-width full-height">
-      <h2>Creative</h2>
-      <p>Coming soon for your inspiration!</p>
-    </div>
-  );
 }
 
 export default Site;
