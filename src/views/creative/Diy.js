@@ -1,11 +1,11 @@
 import React from "react";
-import header from 'assets/creative/craft-header.jpg';
+import header from 'assets/creative/diy-header.jpg';
 import CreativeHeader from 'components/creativeHeader';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "./index";
 
 
-const Crafts = () => {
+const Diy = () => {
   return (
     <div className="creative full-height">
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
@@ -16,41 +16,56 @@ const Crafts = () => {
       <div className="creative-body-container">
         <div className="creative-body">
           <div className="creative-thumbs">
-            <div className="item large-square">
-              <p>String Art</p>
-            </div>
-            <div className="item">
-              <p>UV Painting</p>
-            </div>
-            <div className="item">
-              <p>Vinyl Elephant</p>
-            </div>
             <div className="item rectangle">
-              <p>Branded Swag</p>
+              <p>Buffet Refurbish</p>
             </div>
             <div className="item">
-              <p>Sewing Math Mat</p>
-            </div>
-            <div className="item">
-              <p>Dollhouse Bricks</p>
-            </div>
-            <div className="item">
-              <p>Taylored Shirts</p>
+              <p>Floating Desk</p>
             </div>
             <div className="item large-square">
-              <p>Vinyl Room Signs</p>
-            </div>
-            <div className="item">
-              <p>Vinyl Wine Label</p>
-            </div>
-            <div className="item">
-              <p>Quilt Stencil</p>
+              <p>Gardening</p>
             </div>
             <div className="item rectangle">
-              <p>Blue Quilt</p>
+              <p>Bookshelf Update</p>
             </div>
             <div className="item">
-              <p>Vinyl Studio</p>
+              <p>Air Conditioner Cover</p>
+            </div>
+            <div className="item">
+              <p>Antique Chair Refurbish</p>
+            </div>
+            <div className="item">
+              <p>Side Table Update</p>
+            </div>
+            <div className="item">
+              <p>Coffee Table Update</p>
+            </div>
+            <div className="item large-square">
+              <p>Stairs Refinish</p>
+            </div>
+            <div className="item">
+              <p>Tree Garden</p>
+            </div>
+            <div className="item rectangle">
+              <p>Planter</p>
+            </div>
+            <div className="item">
+              <p>Modern Paint</p>
+            </div>
+            <div className="item">
+              <p>Solar Light Update</p>
+            </div>
+            <div className="item rectangle">
+              <p>Loft Bed</p>
+            </div>
+            <div className="item">
+              <p>Vanity Update</p>
+            </div>
+            <div className="item rectangle">
+              <p>Antique Table Refurbish</p>
+            </div>
+            <div className="item">
+              <p>Workbench</p>
             </div>
           </div>
         </div>
@@ -59,4 +74,4 @@ const Crafts = () => {
   );
 };
 
-export default Crafts;
+export default Diy;
