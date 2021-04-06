@@ -8,12 +8,12 @@ import { CreativeRoutes } from "./index";
 const Placeholder = () => {
   return (
     <div className="creative full-height">
+      <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <CreativeHeader
         headerImage={header}
         imageAlt="Sewing project"
       />
       <div className="creative-body-container">
-        <Breadcrumb routes={CreativeRoutes} className="creative" />
         <div className="creative-body">
           <div className="creative-nav">
             <ul>
