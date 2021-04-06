@@ -26,19 +26,19 @@ const Placeholder = () => {
             <div className="item">
               <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-            <div className="item span-2">
+            <div className="item rectangle">
               <p>2 Lorem ipsum dolor adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente sunt riores accusantium vitae reiciendis qui deserunt natus, minima.</p>
             </div>
             <div className="item">
               <p>3 Lorem ipsum dolor</p>
             </div>
-            <div className="item span-2">
+            <div className="item rectangle">
               <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam adipisci commodi esse, rem mollitia doloribus velit neque.</p>
             </div>
             <div className="item">
               <p>5 Lorem ipsum dolor</p>
             </div>
-            <div className="item span-2-tall">
+            <div className="item large-square">
               <p>6 Lorem ipsum dolor sit amet, ccimus, fuga itaque accusamus voluptate consequuntur, temporibus reiciendis! Dolore neque, molestias.</p>
               <ul>
                 <li>Lorem</li>
@@ -55,7 +55,7 @@ const Placeholder = () => {
             <div className="item">
               <p>7 Lorem ipsum dolor sit amet.</p>
             </div>
-            <div className="item span-2-tall">
+            <div className="item large-square">
               <p>8 Lorem ipsum dolor sit amet, ccimus, fuga itaque accusamus voluptate consequuntur, temporibus reiciendis! Dolore neque, molestias.</p>
               <ul>
                 <li>Lorem</li>
@@ -69,7 +69,7 @@ const Placeholder = () => {
                 <li>Et</li>
               </ul>
             </div>
-            <div className="item span-3">
+            <div className="item rectangle">
               <p>9 Lorem ipsum dolor sit amet, lit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eriores accusantium vitae reiciendis qui deserunt natus, minima.</p>
             </div>
             <div className="item">
@@ -86,6 +86,9 @@ const Placeholder = () => {
             </div>
             <div className="item">
               <p>14 Lorem ipsum dolor sit</p>
+            </div>
+            <div className="item rectangle">
+              <p>9 Lorem ipsum dolor sit amet, lit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eriores accusantium vitae reiciendis qui deserunt natus, minima.</p>
             </div>
           </div>
         </div>
