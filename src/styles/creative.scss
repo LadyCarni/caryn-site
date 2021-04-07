@@ -160,15 +160,55 @@
     grid-row-end: span 2;
   }
 
+    .item {
+      &:hover {
+        .photo-info {
+          opacity: 1;
+          transition: opacity 200ms ease;
+        }
+      }
+    }
+
   .item {
     background: $primary;
     box-sizing: border-box;
     display: block;
-    padding: $space;
+    position: relative;
     width: 100%;
 
-    p {
-      margin: 0;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
+
+    .photo-info {
+      background-color: rgba($grey1, .85);
+      color: white;
+      padding: .75em $space;
+      font-size: .85em;
+      position: absolute;
+      width: -webkit-fill-available;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 200ms ease;
+
+      p {
+        margin: 0 0 .25em;
+      }
+
+      a {
+        color: lighten($primary, 20%);
+        display: block;
+        font-size: .85em;
+
+        svg {
+          margin-left: .5em;
+        }
+      }
+    }
+
   }
 }

@@ -3,111 +3,85 @@ import header from 'assets/creative/photography-header.jpg';
 import CreativeHeader from 'components/creativeHeader';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "./index";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLink } from '@fortawesome/pro-light-svg-icons';
 
 
 const Photography = () => {
+  const photos = [
+    { 
+      title: "Front view",
+      image: "https://live.staticflickr.com/65535/50365003501_a5a7b08c3c_w.jpg",
+      link: "https://flic.kr/p/2jJzNRk",
+      album: "New Home Adventures",
+      thumb: "item rectangle",
+      id: 0,
+    },
+    { 
+      title: "Back view",
+      image: "https://live.staticflickr.com/65535/50364308133_6787c9422e_w.jpg",
+      link: "https://flic.kr/p/2jJwf9e",
+      album: "New Home Adventure",
+      thumb: "item rectangle",
+      id: 1,
+    },
+    { 
+      title: "Front Porch",
+      image: "https://live.staticflickr.com/65535/50365003581_7845256fbb_w.jpg",
+      link: "https://flic.kr/p/2jJzNSH",
+      album: "New Home Adventure",
+      thumb: "item",
+      id: 2,
+    },
+    { 
+      title: "Back yard",
+      image: "https://live.staticflickr.com/65535/50365004406_bb0e165e71_w.jpg",
+      link: "https://flic.kr/p/2jJzP7W",
+      album: "New Home Adventure",
+      thumb: "item rectangle",
+      id: 3,
+    },
+    { 
+      title: "Gravel pit",
+      image: "https://live.staticflickr.com/65535/50364307808_e8411b4a6f_w.jpg",
+      link: "https://flic.kr/p/2jJwf3C",
+      album: "New Home Adventure",
+      thumb: "item rectangle",
+      id: 4,
+    },
+    { 
+      title: "Caterpillar",
+      image: "https://live.staticflickr.com/65535/50365003926_fd0959e4bd_w.jpg",
+      link: "https://flic.kr/p/2jJzNYE",
+      album: "New Home Adeventure",
+      thumb: "item",
+      id: 5,
+    }
+  ]
   return (
     <div className="creative full-height">
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <CreativeHeader
         headerImage={header}
-        imageAlt="Sewing project"
+        imageAlt="Jellyfish"
       />
       <div className="creative-body-container">
         <div className="creative-body">
           <div className="creative-nav">
             <ul>
               <li>New Home Adventures</li>
-              <li>London UK 2019</li>
-              <li>Costa Rica 2018</li>
-              <li>Hawaii 2018</li>
-              <li>Fall 2017</li>
-              <li>Laracon US 2017</li>
-              <li>2017 Detroit Auto Show</li>
-              <li>Amsterdam 2016</li>
-              <li>Gaylord Opryland July 2016</li>
-              <li>Nashville</li>
-              <li>519 Meets</li>
-              <li>Toronto Zoo 2016</li>
-              <li>Ripley's Aquarium 2016</li>
-              <li>Detroit International Auto Show 2016</li>
-              <li>November 2015</li>
-              <li>Fall 2015</li>
-              <li>August 2015</li>
-              <li>Amsterdam</li>
-              <li>August 2013</li>
-              <li>July 2012</li>
-              <li>New York City</li>
             </ul>
           </div>
-          <div className="creative-thumbs">
-            <div className="item">
-              <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div className="item rectangle">
-              <p>2 Lorem ipsum dolor adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sapiente sunt riores accusantium vitae reiciendis qui deserunt natus, minima.</p>
-            </div>
-            <div className="item">
-              <p>3 Lorem ipsum dolor</p>
-            </div>
-            <div className="item rectangle">
-              <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam adipisci commodi esse, rem mollitia doloribus velit neque.</p>
-            </div>
-            <div className="item">
-              <p>5 Lorem ipsum dolor</p>
-            </div>
-            <div className="item large-square">
-              <p>6 Lorem ipsum dolor sit amet, ccimus, fuga itaque accusamus voluptate consequuntur, temporibus reiciendis! Dolore neque, molestias.</p>
-              <ul>
-                <li>Lorem</li>
-                <li>ipsum</li>
-                <li>dolor</li>
-                <li>sit</li>
-                <li>amet</li>
-                <li>consectetur</li>
-                <li>adipisicing</li>
-                <li>elit</li>
-                <li>Et</li>
-              </ul>
-            </div>
-            <div className="item">
-              <p>7 Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="item large-square">
-              <p>8 Lorem ipsum dolor sit amet, ccimus, fuga itaque accusamus voluptate consequuntur, temporibus reiciendis! Dolore neque, molestias.</p>
-              <ul>
-                <li>Lorem</li>
-                <li>ipsum</li>
-                <li>dolor</li>
-                <li>sit</li>
-                <li>amet</li>
-                <li>consectetur</li>
-                <li>adipisicing</li>
-                <li>elit</li>
-                <li>Et</li>
-              </ul>
-            </div>
-            <div className="item rectangle">
-              <p>9 Lorem ipsum dolor sit amet, lit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eriores accusantium vitae reiciendis qui deserunt natus, minima.</p>
-            </div>
-            <div className="item">
-              <p>10 Lorem ipsum dolor sit amet, consecutetur admlg no scope</p>
-            </div>
-            <div className="item">
-              <p>11 Lorem ipsum dolor sit amet,</p>
-            </div>
-            <div className="item">
-              <p>12 Lorem ipsum dolor</p>
-            </div>
-            <div className="item">
-              <p>13 Lorem ipsum dolor sit amet,. Et odit, esse. Officiis, </p>
-            </div>
-            <div className="item">
-              <p>14 Lorem ipsum dolor sit</p>
-            </div>
-            <div className="item rectangle">
-              <p>9 Lorem ipsum dolor sit amet, lit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eriores accusantium vitae reiciendis qui deserunt natus, minima.</p>
-            </div>
+          <div className="creative-thumbs photos">
+            {photos.map(({id, title, thumb, image, link, album}) =>(
+              <div className={thumb} key={id}>
+                <img src={image} alt={title}/>
+                <div className="photo-info">
+                  <p>{title}</p>
+                  <a href={link} target="_blank" rel="noreferrer">View original<FontAwesomeIcon icon={faExternalLink} /></a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

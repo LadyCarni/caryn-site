@@ -1,4 +1,4 @@
-import Placeholder from './Placeholder';
+// import Placeholder from './Placeholder';
 import Creative from "./Creative";
 import Crafts from "./Crafts";
 import Diy from "./Diy";

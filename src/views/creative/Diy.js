@@ -11,7 +11,7 @@ const Diy = () => {
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <CreativeHeader
         headerImage={header}
-        imageAlt="Sewing project"
+        imageAlt="Refinished table"
       />
       <div className="creative-body-container">
         <div className="creative-body">
