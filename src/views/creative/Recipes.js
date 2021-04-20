@@ -270,7 +270,8 @@ const Recipes = () => {
             <ul>
               {categories.map(({id, name, value}) => (
                 <li key={id} onClick={() => setFilter(value)} className={`${filter === value ? 'active' : '' }`}>
-                  {name} ({allRecipes.filter(recipe => value ? recipe.category === value : true).length})
+                  {name}
+                  {/* ({allRecipes.filter(recipe => value ? recipe.category === value : true).length}) */}
                 </li>
               ))}
             </ul>
