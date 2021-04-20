@@ -56,7 +56,55 @@ const Photography = () => {
       album: "New Home Adeventure",
       thumb: "item",
       id: 5,
-    }
+    },
+    { 
+      title: "Toucan",
+      image: "https://live.staticflickr.com/4851/46306584591_1a6a198af3_w.jpg",
+      link: "https://flic.kr/p/2dxXmiv",
+      album: "Costa Rica 2018",
+      thumb: "item",
+      id: 6,
+    },
+    { 
+      title: "Jungle",
+      image: "https://live.staticflickr.com/4835/31453834057_90dcd25bee_w.jpg",
+      link: "https://flic.kr/p/PVt82K",
+      album: "Costa Rica 2018",
+      thumb: "item",
+      id: 7,
+    },
+    { 
+      title: "Frogs",
+      image: "https://live.staticflickr.com/4881/45394044895_879be68a3b_w.jpg",
+      link: "https://flic.kr/p/2cajm3t",
+      album: "Costa Rica 2018",
+      thumb: "item",
+      id: 8,
+    },
+    { 
+      title: "Lizard",
+      image: "https://live.staticflickr.com/4841/32434743668_bf1157ff7b_w.jpg",
+      link: "https://flic.kr/p/Rq9xhq",
+      album: "Costa Rica 2018",
+      thumb: "item",
+      id: 9,
+    },
+    { 
+      title: "Morning Mist",
+      image: "https://live.staticflickr.com/4916/32434745468_ae87922187_w.jpg",
+      link: "https://flic.kr/p/Rq9xPs",
+      album: "Costa Rica 2018",
+      thumb: "item rectangle",
+      id: 10,
+    },
+    { 
+      title: "Sunset",
+      image: "https://live.staticflickr.com/4866/32434744838_6a18d213cc_w.jpg",
+      link: "https://flic.kr/p/Rq9xCA",
+      album: "Costa Rica 2018",
+      thumb: "item rectangle",
+      id: 11,
+    },
   ]
   return (
     <div className="creative full-height">
@@ -70,6 +118,7 @@ const Photography = () => {
           <div className="creative-nav">
             <ul>
               <li>New Home Adventures</li>
+              <li>Costa Rica 2018</li>
             </ul>
           </div>
           <div className="creative-thumbs photos">
