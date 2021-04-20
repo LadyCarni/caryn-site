@@ -145,7 +145,6 @@
 
         &.active {
           color: $primary-dark;
-          font-weight: 700;
         }
       }
     }
@@ -168,6 +167,7 @@
   .large-square {
     grid-column-end: span 2;
     grid-row-end: span 2;
+    max-height: 100% !important;
   }
 
     .item {
