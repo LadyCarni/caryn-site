@@ -173,12 +173,10 @@ class Photography extends React.Component {
             <div className="creative-nav">
               <ul>
                 {albums.map(({id, name, value}) => (
-                  <li key={id}>
-                    <button value={value} onClick={this.handleClick.bind(this, name)}>{name}</button>
+                  <li key={id} value={value} onClick={this.handleClick.bind(this, name)}>
+                    {name}
                   </li>
                 ))}
-                <li>New Home Adventures</li>
-                <li>Costa Rica 2018</li>
               </ul>
             </div>
             <div className="creative-thumbs photos">
