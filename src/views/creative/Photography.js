@@ -6,7 +6,6 @@ import { CreativeRoutes } from "./index";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLink } from '@fortawesome/pro-light-svg-icons';
 
-
 const albums = [
   {
     name: "All",
