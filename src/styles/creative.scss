@@ -220,6 +220,39 @@
         }
       }
     }
+  }
+}
 
+.recipe-body {
+  flex: 1;
+}
+
+.recipe-card {
+  background: rgba($primary, .10);
+  border: 1px solid $primary;
+  padding: $space;
+  border-radius: 10px;
+  width: 350px;
+
+  h2 {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.prep-info {
+  display: flex;
+
+  .prep-info-detail {
+    margin-right: $lg-space;
+
+    strong {
+      color: $primary-dark;
+    }
+
+    p {
+      margin: $sm-space 0;
+    }
   }
 }

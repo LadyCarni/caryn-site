@@ -1,5 +1,5 @@
 import React from 'react';
-import header from 'assets/creative/creative-header.jpg';
+import RecipeHeader from 'assets/creative/creative-header.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCameraRetro, faHammer, faHatChef, faPalette } from '@fortawesome/pro-light-svg-icons';
 import CreativeHeader from 'components/creativeHeader';
@@ -9,7 +9,7 @@ const Creative = () => {
   return (
     <div className="creative full-height">
       <CreativeHeader
-        headerImage={header}
+        headerImage={RecipeHeader}
         imageAlt="Lemon blueberry pie"
       />
       <div className="creative-features">

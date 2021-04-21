@@ -78,7 +78,7 @@ const allRecipes = [
   { 
     title: "World's Best Cheesecake",
     image: Cheesecake,
-    link: "#",
+    link: "/creative/recipes/cheesecake",
     category: "Desserts",
     thumb: "item rectangle",
     id: 23,
@@ -261,7 +261,7 @@ const Recipes = () => {
       <img src={recipe.image} alt={recipe.title}/>
       <div className="photo-info">
         <p>{recipe.title}</p>
-        <a href={recipe.link} target="_blank" rel="noreferrer">View original<FontAwesomeIcon icon={faHatChef} /></a>
+        <a href={recipe.link}>View recipe<FontAwesomeIcon icon={faHatChef} /></a>
       </div>
     </div>
   ));
