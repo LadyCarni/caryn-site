@@ -108,6 +108,10 @@
           color: $primary-dark;
           font-size: .85em;
           font-weight: 700;
+
+          a {
+            text-decoration: none;
+          }
         }
       }
     }

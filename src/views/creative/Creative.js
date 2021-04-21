@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import RecipeHeader from 'assets/creative/creative-header.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCameraRetro, faHammer, faHatChef, faPalette } from '@fortawesome/pro-light-svg-icons';
@@ -22,9 +23,10 @@ const Creative = () => {
           <div className="feature-summary">
             <div className="title">
               <h2>Signature Cheesecake</h2>
-              <div className="tag"><FontAwesomeIcon icon={faHatChef} /> Recipe</div>
+              <div className="tag"><Link to="/creative/recipes"><FontAwesomeIcon icon={faHatChef} /> Recipe</Link></div>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates facilis ducimus modi libero reiciendis doloribus at omnis nihil quae debitis, culpa, placeat sapiente. At aliquid vero ratione exercitationem numquam!</p>
+            <p>As a self-professed cheesecake aficionado, this recipe is the culmination of over 20 years of experimentation and exploration. It has a soft, light consistency and a delicate, rich flavor. Give this a shot and you'll never make another recipe!</p>
+            <Link to="/creative/recipes/cheesecake" className="arrow-link block">View recipe</Link>
           </div>
         </div>
 
@@ -35,7 +37,7 @@ const Creative = () => {
           <div className="feature-summary">
             <div className="title">
               <h2>Mixed softwood pipe desk</h2>
-              <div className="tag"><FontAwesomeIcon icon={faHammer} /> DIY</div>
+              <div className="tag"><Link to="/creative/diy"><FontAwesomeIcon icon={faHammer} /> DIY</Link></div>
             </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates facilis ducimus modi libero reiciendis doloribus at omnis nihil quae debitis, culpa, placeat sapiente. At aliquid vero ratione exercitationem numquam!</p>
           </div>
@@ -48,7 +50,7 @@ const Creative = () => {
           <div className="feature-summary">
             <div className="title">
               <h2>Sarah's Choice king size quilt</h2>
-              <div className="tag"><FontAwesomeIcon icon={faPalette} /> Craft</div>
+              <div className="tag"><Link to="/creative/crafts"><FontAwesomeIcon icon={faPalette} /> Craft</Link></div>
             </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates facilis ducimus modi libero reiciendis doloribus at omnis nihil quae debitis, culpa, placeat sapiente. At aliquid vero ratione exercitationem numquam!</p>
           </div>
@@ -61,7 +63,7 @@ const Creative = () => {
           <div className="feature-summary">
             <div className="title">
               <h2>The Highline, NYC</h2>
-              <div className="tag"><FontAwesomeIcon icon={faCameraRetro} /> Photography</div>
+              <div className="tag"><Link to="/creative/photography"><FontAwesomeIcon icon={faCameraRetro} /> Photography</Link></div>
             </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates facilis ducimus modi libero reiciendis doloribus at omnis nihil quae debitis, culpa, placeat sapiente. At aliquid vero ratione exercitationem numquam!</p>
           </div>
