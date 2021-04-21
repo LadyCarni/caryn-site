@@ -19,23 +19,65 @@ const Cheesecake = () => {
               </div>
               <div className="prep-info-detail">
                 <strong>Cook Time</strong>
-                <p>50 minutes</p>
+                <p>60 - 72 minutes</p>
+              </div>
+              <div className="prep-info-detail">
+                <strong>Wait Time</strong>
+                <p>4 hours</p>
               </div>
               <div className="prep-info-detail">
                 <strong>Total Time</strong>
-                <p>65 minutes</p>
+                <p>5 hours</p>
               </div>
               <div className="prep-info-detail">
                 <strong>Serves</strong>
                 <p>12-16</p>
               </div>
             </div>
+
             <div className="recipe-cover">
               <img src={cheesecakeCover} alt="cheesecake"/>
             </div>
+
+            <div className="recipe-instructions">
+              <h2>Instructions</h2>
+              <p><span className="instruction-step prep-step">Step 1.</span> Preheat oven to 475°F. Place a cookie sheet or pan filled with 1/2 inch water in oven.</p>
+              
+              <p><span className="instruction-step stir-step">Step 2.</span>Make crust: Mix graham cracker crumbs and cinnamon; add butter. Press crust onto bottom and up the sides of a 9-inch springform pan lined with parchment. Wrap a large piece of foil around bottom of the outside of the pan. Freeze until filling is prepared.</p>
+              
+              <p><span className="instruction-step stir-step">Step 3.</span>Make filling: Use an electric mixer or stand mixer to mix cream cheese, sugar, sour cream and vanilla. Blend until smooth and creamy. Scrape down sides of bowl. Whisk eggs in a bowl; add to cream cheese mixture. Blend just until eggs are incorporated.</p>
+              
+              <p><span className="instruction-step cook-step">Step 4.</span>Remove crust from freezer and pour in filling. Carefully place cheesecake into preheated water bath. Bake for 12 minutes; turn oven to 350°F and bake until top of cheesecake turns golden, 50 to 60 minutes. Remove cake to a wire rack to cool.</p>
+              
+              <p><span className="instruction-step decorate-step">Step 5.</span>Make topping: Combine sour cream and sugar; spread over cake. Cover and refrigerate at least 4 hours.</p>
+
+              <p><span className="instruction-step serve-step">Step 6.</span>Cut into 12-16 pieces with a wet knife to prevent crumbling. Serve chilled.</p>
+            </div>
           </div>
+
           <div className="recipe-card sticky">
             <h2>Ingredients</h2>
+            <h3>Crust</h3>
+            <ul>
+              <li><span className="amount">3 cups</span>graham cracker crumbs</li>
+              <li><span className="amount">1/2 tsp</span>ground cinnamon</li>
+              <li><span className="amount">2/3 cup</span>unsalted butter, melted</li>
+            </ul>
+
+            <h3>Filling</h3>
+            <ul>
+              <li><span className="amount">4 (8oz) packages</span> cream cheese, softened</li>
+              <li><span className="amount">1 1/4 cups</span>granulated sugar</li>
+              <li><span className="amount">1/2 cup</span>sour cream</li>
+              <li><span className="amount">2 tsp</span>vanilla extract</li>
+              <li><span className="amount">5</span>large eggs</li>
+            </ul>
+
+            <h3>Topping</h3>
+            <ul>
+              <li><span className="amount">1/2 cup</span>sour cream</li>
+              <li><span className="amount">2 tsp</span>granulated sugar</li>
+            </ul>
           </div>
         </div>
       </div>

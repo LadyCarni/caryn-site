@@ -260,8 +260,10 @@ const Recipes = () => {
     <div className={recipe.thumb} key={recipe.id}>
       <img src={recipe.image} alt={recipe.title}/>
       <div className="photo-info">
-        <p>{recipe.title}</p>
-        <a href={recipe.link}>View recipe<FontAwesomeIcon icon={faHatChef} /></a>
+        <a href={recipe.link}>
+          <p>{recipe.title}</p>
+          <span className="link-text">View recipe</span><FontAwesomeIcon icon={faHatChef} />
+        </a>
       </div>
     </div>
   ));
