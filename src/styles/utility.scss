@@ -39,6 +39,19 @@ p > code {
   padding: 0 .25em;
 }
 
+.soon {
+  &:after {
+    display: block;
+    content: 'Coming Soon!';
+    font-size: .85em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $primary;
+    padding: .5em;
+  }
+}
+
 .help {
   color: $grey3;
   font-size: 14px;

@@ -60,22 +60,6 @@ const categories = [
 
 const allRecipes = [
   { 
-    title: "Bailey's Fudge",
-    image: BaileysFudge,
-    link: "#",
-    category: "Desserts",
-    thumb: "item",
-    id: 0,
-  },
-  { 
-    title: "Banana Bread French Toast",
-    image: FrenchToast,
-    link: "#",
-    category: "Main Dishes",
-    thumb: "item rectangle",
-    id: 1,
-  },
-  { 
     title: "World's Best Cheesecake",
     image: Cheesecake,
     link: "/creative/recipes/cheesecake",
@@ -84,11 +68,27 @@ const allRecipes = [
     id: 23,
   },
   { 
+    title: "Bailey's Fudge",
+    image: BaileysFudge,
+    link: "#",
+    category: "Desserts",
+    thumb: "item soon",
+    id: 0,
+  },
+  { 
+    title: "Banana Bread French Toast",
+    image: FrenchToast,
+    link: "#",
+    category: "Main Dishes",
+    thumb: "item rectangle soon",
+    id: 1,
+  },
+  { 
     title: "Twice Baked Potatoes",
     image: TwicePotatoes,
     link: "#",
     category: "Appetizers",
-    thumb: "item large-square",
+    thumb: "item large-square soon",
     id: 2,
   },
   { 
@@ -96,7 +96,7 @@ const allRecipes = [
     image: Bitterballen,
     link: "#",
     category: "Appetizers",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 3,
   },
   { 
@@ -104,7 +104,7 @@ const allRecipes = [
     image: Tortellini,
     link: "#",
     category: "Main Dishes",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 4,
   },
   { 
@@ -112,7 +112,7 @@ const allRecipes = [
     image: SweetPotatoCasserole,
     link: "#",
     category: "Appetizers",
-    thumb: "item",
+    thumb: "item soon",
     id: 5,
   },
   { 
@@ -120,7 +120,7 @@ const allRecipes = [
     image: CampingShrimp,
     link: "#",
     category: "Main Dishes",
-    thumb: "item",
+    thumb: "item soon",
     id: 6,
   },
   { 
@@ -128,7 +128,7 @@ const allRecipes = [
     image: BlueberryLemon,
     link: "#",
     category: "Desserts",
-    thumb: "item large-square",
+    thumb: "item large-square soon",
     id: 7,
   },
   { 
@@ -136,7 +136,7 @@ const allRecipes = [
     image: WhiteChili,
     link: "#",
     category: "Main Dishes",
-    thumb: "item",
+    thumb: "item soon",
     id: 8,
   },
   { 
@@ -144,7 +144,7 @@ const allRecipes = [
     image: Cardamom,
     link: "#",
     category: "Desserts",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 9,
   },
   { 
@@ -152,7 +152,7 @@ const allRecipes = [
     image: ChocolateOrange,
     link: "#",
     category: "Desserts",
-    thumb: "item",
+    thumb: "item soon",
     id: 10,
   },
   { 
@@ -160,7 +160,7 @@ const allRecipes = [
     image: RainbowCake,
     link: "#",
     category: "Desserts",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 11,
   },
   { 
@@ -168,7 +168,7 @@ const allRecipes = [
     image: Snickerdoodle,
     link: "#",
     category: "Desserts",
-    thumb: "item",
+    thumb: "item soon",
     id: 12,
   },
   { 
@@ -176,7 +176,7 @@ const allRecipes = [
     image: Charcuterie,
     link: "#",
     category: "Appetizers",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 13,
   },
   { 
@@ -184,7 +184,7 @@ const allRecipes = [
     image: Ceasar,
     link: "#",
     category: "Misc",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 14,
   },
   { 
@@ -192,7 +192,7 @@ const allRecipes = [
     image: Rugalach,
     link: "#",
     category: "Desserts",
-    thumb: "item large-square",
+    thumb: "item large-square soon",
     id: 15,
   },
   { 
@@ -200,7 +200,7 @@ const allRecipes = [
     image: Donuts,
     link: "#",
     category: "Desserts",
-    thumb: "item",
+    thumb: "item soon",
     id: 16,
   },
   { 
@@ -208,7 +208,7 @@ const allRecipes = [
     image: DripCake,
     link: "#",
     category: "Desserts",
-    thumb: "item large-square",
+    thumb: "item large-square soon",
     id: 17,
   },
   { 
@@ -216,7 +216,7 @@ const allRecipes = [
     image: ThemeCake,
     link: "#",
     category: "Desserts",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 18,
   },
   { 
@@ -224,7 +224,7 @@ const allRecipes = [
     image: Linzer,
     link: "#",
     category: "Desserts",
-    thumb: "item",
+    thumb: "item soon",
     id: 19,
   },
   { 
@@ -232,7 +232,7 @@ const allRecipes = [
     image: PumpkinPie,
     link: "#",
     category: "Desserts",
-    thumb: "item",
+    thumb: "item soon",
     id: 20,
   },
   { 
@@ -240,14 +240,14 @@ const allRecipes = [
     image: LocoMoco,
     link: "#",
     category: "Desserts",
-    thumb: "item rectangle",
+    thumb: "item rectangle soon",
     id: 21,
   },    { 
     title: "Buffalo Chicken Taquitos",
     image: Taquitos,
     link: "#",
     category: "Appetizers",
-    thumb: "item",
+    thumb: "item soon",
     id: 22,
   },
 ];
