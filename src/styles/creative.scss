@@ -276,13 +276,14 @@
 
     img {
       max-width: 100%;
+      margin-bottom: 1em;
     }
 
     .tip {
       padding: 1em;
       background: rgba($primary, .1);
       width: 80%;
-      margin: 1em auto;
+      margin: 1em auto 2em;
 
       &:before {
         display: inline-block;

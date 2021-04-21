@@ -47,7 +47,7 @@ p > code {
     position: absolute;
     top: 0;
     left: 0;
-    background: $primary;
+    background: lighten($primary, 10%);
     padding: .5em;
   }
 }
