@@ -3,6 +3,7 @@ import header from 'assets/creative/creative-header.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCameraRetro, faHammer, faHatChef, faPalette } from '@fortawesome/pro-light-svg-icons';
 import CreativeHeader from 'components/creativeHeader';
+import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg'
 
 const Creative = () => {
   return (
@@ -16,7 +17,7 @@ const Creative = () => {
 
         <div className="featured-project">
           <div className="image">
-            <img src="https://images.squarespace-cdn.com/content/v1/59dbb8f880bd5e687ee3d7de/1588816525649-CYMUETYKKIS9G69UUYJO/ke17ZwdGBToddI8pDm48kMtiXMEMZ8ID8MVhA-T_Qc9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIfy9uRsqnknGrsPwiW8VdnsJxMq6FvgYbxptNsO-6IOIKMshLAGzx4R3EDFOm1kBS/cheesecake.jpg?format=1500w" alt="cheesecake"/>
+            <img src={Cheesecake} alt="cheesecake"/>
           </div>
           <div className="feature-summary">
             <div className="title">

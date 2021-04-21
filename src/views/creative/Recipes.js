@@ -28,6 +28,7 @@ import Linzer from 'assets/creative/recipes/recipe-linzer.jpg';
 import PumpkinPie from 'assets/creative/recipes/recipe-pumpkin-pie.jpg';
 import LocoMoco from 'assets/creative/recipes/recipe-loco-moco.jpg';
 import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
+import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg'
 
 const categories = [
   {
@@ -73,6 +74,14 @@ const allRecipes = [
     category: "Main Dishes",
     thumb: "item rectangle",
     id: 1,
+  },
+  { 
+    title: "World's Best Cheesecake",
+    image: Cheesecake,
+    link: "#",
+    category: "Desserts",
+    thumb: "item rectangle",
+    id: 23,
   },
   { 
     title: "Twice Baked Potatoes",
