@@ -1,6 +1,8 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
+import cheesecakeCover from 'assets/creative/recipes/recipe-cheesecake4.jpg'
+
 
 const Cheesecake = () => {
   return (
@@ -27,6 +29,9 @@ const Cheesecake = () => {
                 <strong>Serves</strong>
                 <p>12-16</p>
               </div>
+            </div>
+            <div className="recipe-cover">
+              <img src={cheesecakeCover} alt="cheesecake"/>
             </div>
           </div>
           <div className="recipe-card sticky">
