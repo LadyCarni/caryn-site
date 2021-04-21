@@ -46,13 +46,13 @@ const Cheesecake = () => {
               <h2>Instructions</h2>
               <p><span className="instruction-step prep-step">Step 1.</span> Preheat oven to 475°F. Place a cookie sheet or pan filled with 1/2 inch water in oven on the center rack.</p>
 
-              <p className="tip">Place the pan in the oven, then fill with water using a large measuring cup or pitcher. This will prevent spilling while carrying the pan to the oven with water in it.</p>
+              <p className="tip">For a spill-proof water bath, place the pan in the oven, then fill with water using a large measuring cup or pitcher.</p>
 
               <p><span className="instruction-step stir-step">Step 2.</span>Make crust: Mix graham cracker crumbs and cinnamon; add butter. Press crust onto bottom and up the sides of a 9-inch springform pan lined with parchment. Wrap a large piece of foil around bottom of the outside of the pan. Freeze until filling is prepared.</p>
 
               <img src={cheesecake1} alt="cheesecake"/>
 
-              <p className="tip">Use a straight-edged cup or a muddler to uniformly press the crust into the pan.</p>
+              <p className="tip">To achieve an easy, uniform crust, use a straight-edged cup or a muddler to press the crust into the pan.</p>
 
               <img src={cheesecake2} alt="cheesecake"/>
               

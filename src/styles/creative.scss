@@ -278,6 +278,20 @@
       max-width: 100%;
     }
 
+    .tip {
+      padding: 1em;
+      background: rgba($primary, .1);
+      width: 80%;
+      margin: 1em auto;
+
+      &:before {
+        display: inline-block;
+        margin-right: .5em;
+        content: 'Tip';
+        font-weight: 700;
+      }
+    }
+
     .instruction-step {
       color: $primary-dark;
       display: block;
