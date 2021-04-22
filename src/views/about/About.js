@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLongArrowRight } from '@fortawesome/pro-light-svg-icons';
 import caryn1 from 'assets/caryn1.jpg';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
 

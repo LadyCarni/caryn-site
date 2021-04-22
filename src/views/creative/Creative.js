@@ -4,7 +4,8 @@ import RecipeHeader from 'assets/creative/creative-header.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCameraRetro, faHammer, faHatChef, faPalette } from '@fortawesome/pro-light-svg-icons';
 import CreativeHeader from 'components/creativeHeader';
-import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg'
+import cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg'
+import vinylElephant from 'assets/creative/crafts/vinyl-elephant.jpg'
 
 const Creative = () => {
   return (
@@ -18,7 +19,7 @@ const Creative = () => {
 
         <div className="featured-project">
           <div className="image">
-            <img src={Cheesecake} alt="cheesecake"/>
+            <img src={cheesecake} alt="cheesecake"/>
           </div>
           <div className="feature-summary">
             <div className="title">
@@ -45,27 +46,29 @@ const Creative = () => {
 
         <div className="featured-project">
           <div className="image">
-            <img src="https://images.squarespace-cdn.com/content/v1/59dbb8f880bd5e687ee3d7de/1510511987014-I6UOJZF7QGMXAY6ABIGA/ke17ZwdGBToddI8pDm48kC4YO-AgoJ4CLiMFvV9c6g17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USguj-ur38mIUjcR5WrYhgha9wwejTYectckOiFl0kAp9oMN8WBWKhxSju5IDWCMMA/Completed+block?format=750w" alt="craft"/>
+            <img src={vinylElephant} alt="vinyl elephant craft"/>
           </div>
           <div className="feature-summary">
             <div className="title">
-              <h2>Sarah's Choice king size quilt</h2>
+              <h2>Vinyl Elephant</h2>
               <div className="tag"><Link to="/creative/crafts"><FontAwesomeIcon icon={faPalette} /> Craft</Link></div>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates facilis ducimus modi libero reiciendis doloribus at omnis nihil quae debitis, culpa, placeat sapiente. At aliquid vero ratione exercitationem numquam!</p>
+            <p>A quick afternoon project that adds something fun to the wall. This project requires a few specialized tools, and a fair bit of patience!</p>
+            <Link to="/creative/crafts/vinyl-elephant" className="arrow-link block">View craft</Link>
           </div>
         </div>
 
         <div className="featured-project">
           <div className="image">
-            <img src="https://live.staticflickr.com/3893/15141775965_6b5d4c40ec_k.jpg" alt="craft"/>
+            <img src="https://live.staticflickr.com/4916/32434745468_ae87922187_w.jpg" alt="Costa Rica Jungle"/>
           </div>
           <div className="feature-summary">
             <div className="title">
-              <h2>The Highline, NYC</h2>
+              <h2>Photography</h2>
               <div className="tag"><Link to="/creative/photography"><FontAwesomeIcon icon={faCameraRetro} /> Photography</Link></div>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates facilis ducimus modi libero reiciendis doloribus at omnis nihil quae debitis, culpa, placeat sapiente. At aliquid vero ratione exercitationem numquam!</p>
+            <p>As an avid hobbyist photographer, I enjoy going on adventures and capturing both the visual and emotional scene with composition and some fun post-process editing. Have fun!</p>
+            <Link to="/creative/photography" className="arrow-link block">View photos</Link>
           </div>
         </div>
       </div>

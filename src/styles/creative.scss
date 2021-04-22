@@ -240,26 +240,15 @@
   }
 }
 
+.craft-body {
+  img {
+    max-width: 100%;
+  }
+}
+
 .recipe-body {
   flex: 1;
   margin-right: $lg-space;
-
-  .prep-info {
-    display: flex;
-    margin-bottom: $lg-space;
-  
-    .prep-info-detail {
-      margin-right: 50px;
-  
-      strong {
-        color: $primary-dark;
-      }
-  
-      p {
-        margin: $sm-space 0;
-      }
-    }
-  }
 
   .recipe-cover {
     display: block;
@@ -297,64 +286,134 @@
       }
     }
 
-    .instruction-step {
-      color: $primary-dark;
-      display: block;
-      font-size: 1.25em;
-      font-weight: 500;
-      margin-bottom: .25em;
-
-      &:before {
-        color: rgba($primary-dark, .65);
-        display: inline-block;
-        font-family: $icon;
-        font-weight: 700;
-        margin-right: .5em;
-        width: 25px;
-        text-align: center;
-      }
-
-      &.prep-step {
-        &:before {
-          content: '\f5ce';
-        }
-      }
-
-      &.stir-step {
-        &:before {
-          content: '\f5a7';
-        }
-      }
-
-      &.cook-step {
-        &:before {
-          content: '\f769';
-        }
-      }
-
-      &.decorate-step {
-        &:before {
-          content: '\f79d';
-        }
-      }
-
-      &.wait-step {
-        &:before {
-          content: '\f2f2';
-        }
-      }
-
-      &.serve-step {
-        &:before {
-          content: '\f2e6';
-        }
-      }
-    }
-
     p {
       color: $content;
       font-weight: 500;
       margin-bottom: 2em;
+    }
+  }
+}
+
+.prep-info {
+  display: flex;
+  margin-bottom: $lg-space;
+
+  .prep-info-detail {
+    margin-right: 50px;
+
+    strong {
+      color: $primary-dark;
+    }
+
+    p {
+      margin: $sm-space 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: $sm-space 0;
+
+      li {
+        background: rgba($primary, .2);
+        padding: .75em 1em;
+        font-size: .85em;
+        line-height: .85em;
+        display: inline-block;
+        margin-right: 1em;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.instruction-step {
+  color: $primary-dark;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-bottom: .25em;
+
+  &:before {
+    color: rgba($primary-dark, .65);
+    display: inline-block;
+    font-family: $icon;
+    font-weight: 700;
+    margin-right: .5em;
+    width: 25px;
+    text-align: center;
+  }
+
+  &.prep-step {
+    &:before {
+      content: '\f5ce';
+    }
+  }
+
+  &.stir-step {
+    &:before {
+      content: '\f5a7';
+    }
+  }
+
+  &.cook-step {
+    &:before {
+      content: '\f769';
+    }
+  }
+
+  &.decorate-step {
+    &:before {
+      content: '\f79d';
+    }
+  }
+
+  &.wait-step {
+    &:before {
+      content: '\f2f2';
+    }
+  }
+
+  &.serve-step {
+    &:before {
+      content: '\f2e6';
+    }
+  }
+}
+
+.materials {
+  width: 300px;
+}
+
+.diy-materials {
+  background: rgba($primary, .10);
+  border: 1px solid $primary;
+  border-radius: 10px;
+  display: block;
+  height: fit-content;
+  padding: $space;
+  margin-bottom: 1em;
+
+  h3 {
+    border-bottom: 1px solid rgba($primary, .3);
+    color: $primary-dark;
+    font-size: 1em;
+    padding-bottom: .5em;
+    margin-top: .5em;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0 0 2em .5em;
+    padding: 0;
+
+    li {
+      margin-bottom: 1em;
+
+      .amount {
+        font-weight: 700;
+        margin-right: .5em;
+      }
     }
   }
 }

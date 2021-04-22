@@ -22,10 +22,17 @@ import tanQuilt from 'assets/creative/crafts/tan-quilt1.jpg';
 const Crafts = () => {
   const allCrafts = [
     { 
+      title: "Vinyl Elephant",
+      image: vinylElephant,
+      link: "/creative/crafts/vinyl-elephant",
+      thumb: "item rectangle",
+      id: 2,
+    },
+    { 
       title: "String Art",
       image: stringArt,
       link: "#",
-      thumb: "item large-square soon",
+      thumb: "item soon",
       id: 0,
     },
     { 
@@ -34,13 +41,6 @@ const Crafts = () => {
       link: "#",
       thumb: "item soon",
       id: 1,
-    },
-    { 
-      title: "Vinyl Elephant",
-      image: vinylElephant,
-      link: "#",
-      thumb: "item rectangle soon",
-      id: 2,
     },
     { 
       title: "Sewing Math Mat",
@@ -60,7 +60,7 @@ const Crafts = () => {
       title: "Dollhouse Bricks",
       image: dollhouseBricks,
       link: "#",
-      thumb: "item rectangle soon",
+      thumb: "item soon",
       id: 5,
     },
     { 
@@ -81,7 +81,7 @@ const Crafts = () => {
       title: "Quilt Stencil",
       image: quiltStencil,
       link: "#",
-      thumb: "item soon",
+      thumb: "item rectangle soon",
       id: 8,
     },
     { 
@@ -95,7 +95,7 @@ const Crafts = () => {
       title: "Blue Quilt",
       image: blueQuilt,
       link: "#",
-      thumb: "item rectangle soon",
+      thumb: "item soon",
       id: 10,
     },
     { 
@@ -106,7 +106,7 @@ const Crafts = () => {
       id: 11,
     },
     { 
-      title: "Tan Quilt",
+      title: "Sarah's Choice quilt",
       image: tanQuilt,
       link: "#",
       thumb: "item rectangle soon",
