@@ -111,15 +111,6 @@
   @media screen and (max-width: $medium) {
     width: 100%;
     max-width: 95vw;
-
-    .featured-project {
-      flex-direction: column;
-      width: 90vw;
-
-      .image {
-        margin-bottom: 2em;
-      }
-    }
   }
 
   @media screen and (min-width: ($medium + 1)) {
@@ -135,11 +126,30 @@
     display: flex;
     margin-top: 3em;
 
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: $medium) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: $medium) {
+      flex-direction: column;
+
+      .image {
+        margin-bottom: 2em;
+      }
+    }
+
     .image {
       height: 200px;
-      margin-right: 2em;
-      min-width: 400px;
-      width: 400px;
+
+      @media screen and (min-width: ($medium + 1)) {
+        min-width: 400px;
+        width: 400px;
+        margin-right: 2em;
+      }
 
       img {
         height: 100%;
@@ -199,34 +209,8 @@
     justify-content: space-between;
     position: relative;
 
-    @media screen and (max-width: 500px) {
-      .creative-nav {
-        width: 100%;
-      }
-    }
-
-    @media screen and (min-width: 501px) and (max-width: $medium) {
-      .creative-nav {
-        width: 90%;
-        margin: 0 auto;
-      }
-    }
-
     @media screen and (max-width: $medium) {
       flex-direction: column;
-
-      .creative-nav {
-        ul {
-          display: flex;
-          justify-content: space-around;
-        }
-
-        ul > li {
-          display: inline-block;
-          flex: 1;
-          text-align: center;
-        }
-      }
     }
 
     @media screen and (min-width: ($medium + 1)) {
@@ -262,6 +246,28 @@
   .creative-nav {
     width: 220px;
     margin-right: $space;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: $medium) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: $medium) {
+      ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          display: inline-block;
+          flex: 1;
+          text-align: center;
+        }
+      }
+    }
 
     ul {
       list-style-type: none;
@@ -305,32 +311,6 @@
     height: 100% !important;
   }
 
-    .item {
-      &:hover {
-        .photo-info {
-          opacity: 1;
-          transition: opacity 200ms ease;
-
-          p {
-            color: white;
-          }
-
-          a {
-            text-decoration: none;
-
-            p {
-              color: white;
-            }
-
-            .link-text {
-              color: lighten($primary, 10%);
-              text-decoration: underline;
-            }
-          }
-        }
-      }
-    }
-
   .item {
     background: $primary;
     box-sizing: border-box;
@@ -339,6 +319,30 @@
     width: 100%;
     max-height: 330px;
     height: 330px;
+
+    &:hover {
+      .photo-info {
+        opacity: 1;
+        transition: opacity 200ms ease;
+
+        p {
+          color: white;
+        }
+
+        a {
+          text-decoration: none;
+
+          p {
+            color: white;
+          }
+
+          .link-text {
+            color: lighten($primary, 10%);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
 
     img {
       height: 100%;
@@ -384,12 +388,18 @@
 
 .diy-body {
   flex: 1;
-  margin-right: 2em;
+
+  @media screen and (min-width: $medium) {
+    margin-right: 2em;
+  }
 }
 
 .recipe-body {
   flex: 1;
-  margin-right: $lg-space;
+
+  @media screen and (min-width: $medium) {
+    margin-right: $lg-space;
+  }
 
   .recipe-cover {
     display: block;
@@ -411,11 +421,13 @@
 }
 
 .prep-info {
+  flex-wrap: wrap;
   display: flex;
   margin-bottom: $lg-space;
 
   .prep-info-detail {
     margin-right: 50px;
+    margin-bottom: 1em;
 
     strong {
       color: $primary-dark;
@@ -499,7 +511,23 @@
 }
 
 .materials {
-  width: 350px;
+  &.mobile {
+    @media screen and (min-width: ($medium + 1)) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &.desktop {
+    @media screen and (max-width: $medium) {
+      display: none;
+      visibility: hidden;
+    }
+
+    @media screen and (min-width: ($medium + 1)) {
+      width: 350px;
+    }
+  }
 }
 
 .diy-materials {
