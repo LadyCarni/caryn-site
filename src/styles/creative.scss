@@ -246,6 +246,11 @@
   }
 }
 
+.diy-body {
+  flex: 1;
+  margin-right: 2em;
+}
+
 .recipe-body {
   flex: 1;
   margin-right: $lg-space;
@@ -423,8 +428,31 @@
   border: 1px solid $primary;
   border-radius: 10px;
   height: fit-content;
+  max-height: 70vh;
+  overflow-y: scroll;
   padding: $space;
   width: 350px;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primary-dark; 
+  }
 
   &.sticky {
     position: sticky;

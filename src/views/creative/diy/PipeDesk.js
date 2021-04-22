@@ -24,6 +24,10 @@ const PipeDesk = () => {
             </div>
             <img src={pipeDesk} alt="pipe desk"/>
 
+            <div className="diy-instructions">
+              <p><span className="instruction-step">Step 1.</span> Cut your wood lengths based on a pattern you like to be placed on a base layer for your desk top. We used a Russian Birch plywood for the 3/4" tongue and groove hardwood flooring we found at Timeless Materials. The base would give us needed stability and structural integrity.</p>
+            </div>
+
           </div>
           <div className="materials">
             <div className="diy-materials">
