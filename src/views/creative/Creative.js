@@ -40,7 +40,8 @@ const Creative = () => {
               <h2>Mixed softwood pipe desk</h2>
               <div className="tag"><Link to="/creative/diy"><FontAwesomeIcon icon={faHammer} /> DIY</Link></div>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum voluptates facilis ducimus modi libero reiciendis doloribus at omnis nihil quae debitis, culpa, placeat sapiente. At aliquid vero ratione exercitationem numquam!</p>
+            <p>A simple desk created by hand with repurposed tongue-and-groove flooring over a plumbing pipe desk frame. A few additional features like epoxy knots and routered edges make this a beautiful project that anybody can pull off!</p>
+            <Link to="/creative/diy/pipe-desk" className="arrow-link block">View project</Link>
           </div>
         </div>
 
