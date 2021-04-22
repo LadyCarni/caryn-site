@@ -1,10 +1,11 @@
 .creative {
   font-family: $type-content;
+  margin-bottom: 100px;
 }
 
 .creative-header {
+  margin: 0 auto 50px;
   max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
 
   .header-image {
@@ -12,8 +13,8 @@
     height: 300px;
 
     img {
-      object-fit: cover;
       height: 100%;
+      object-fit: cover;
       width: 100%;
     }
   }
@@ -29,10 +30,469 @@
   }
 
   ul {
-    list-style-type: none;
     display: inline-flex;
-    width: 600px;
     justify-content: space-between;
+    list-style-type: none;
     padding: 0;
+    width: 600px;
+
+    a {
+      color: $grey1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      padding-bottom: 1em;
+      width: 100px;
+      height: 60px;
+      transition: transform 200ms ease;
+
+      &.active {
+        border-bottom: 2px solid $primary;
+      }
+
+      &:hover {
+        font-weight: 700;
+        transform: scale(1.1);
+        transition: transform 200ms ease;
+      }
+
+      svg {
+        color: $primary;
+        margin-bottom: .5em;
+      }
+    }
+  }
+}
+
+.creative-features {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 90vw;
+
+  .landmark {
+    margin-left: 0;
+  }
+
+  .featured-project {
+    display: flex;
+    margin-top: 3em;
+
+    .image {
+      height: 200px;
+      margin-right: 2em;
+      min-width: 400px;
+      width: 400px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    .feature-summary {
+      .title {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        h2 {
+          margin: 0;
+        }
+
+        .tag {
+          color: $primary-dark;
+          font-size: .85em;
+          font-weight: 700;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.creative-body-container {
+  width: 1200px;
+  max-width: 90vw;
+  margin: 0 auto;
+
+  .creative-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    p {
+      color: $content;
+      font-weight: 500;
+      margin-bottom: 2em;
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 1em;
+    }
+
+    .tip {
+      padding: 1em;
+      background: rgba($primary, .1);
+      width: 80%;
+      margin: 1em auto 2em;
+
+      &:before {
+        display: inline-block;
+        margin-right: .5em;
+        content: 'Tip';
+        font-weight: 700;
+      }
+    }
+  }
+
+  .creative-nav {
+    width: 220px;
+    margin-right: $space;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+        margin-bottom: .5em;
+        padding: .5em;
+
+        &:hover {
+          background: rgba($primary, .10);
+        }
+
+        &.active {
+          color: $primary-dark;
+        }
+      }
+    }
+  }
+}
+
+.creative-thumbs {
+  display: grid;
+  grid-gap: $space;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, 1fr);
+  grid-auto-flow: dense;
+  width: 100%;
+
+  .rectangle {
+    grid-column-end: span 2;
+    grid-row-end: span 1;
+  }
+
+  .large-square {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+    max-height: 100% !important;
+    height: 100% !important;
+  }
+
+    .item {
+      &:hover {
+        .photo-info {
+          opacity: 1;
+          transition: opacity 200ms ease;
+
+          p {
+            color: white;
+          }
+
+          a {
+            text-decoration: none;
+
+            p {
+              color: white;
+            }
+
+            .link-text {
+              color: lighten($primary, 10%);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+  .item {
+    background: $primary;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    max-height: 330px;
+    height: 330px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .photo-info {
+      background-color: rgba($grey1, .85);
+      color: white;
+      padding: .75em $space;
+      font-size: .85em;
+      position: absolute;
+      width: -webkit-fill-available;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 200ms ease;
+
+      p {
+        margin: 0 0 .25em;
+      }
+
+      a {
+        color: lighten($primary, 20%);
+        display: block;
+        font-size: .85em;
+
+        svg {
+          margin-left: .5em;
+        }
+      }
+    }
+  }
+}
+
+.craft-body {
+  img {
+    max-width: 100%;
+  }
+}
+
+.diy-body {
+  flex: 1;
+  margin-right: 2em;
+}
+
+.recipe-body {
+  flex: 1;
+  margin-right: $lg-space;
+
+  .recipe-cover {
+    display: block;
+    height: 400px;
+    margin-bottom: $lg-space;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .recipe-instructions {
+    h2 {
+      font-weight: 500;
+    }
+  }
+}
+
+.prep-info {
+  display: flex;
+  margin-bottom: $lg-space;
+
+  .prep-info-detail {
+    margin-right: 50px;
+
+    strong {
+      color: $primary-dark;
+    }
+
+    p {
+      margin: $sm-space 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: $sm-space 0;
+
+      li {
+        background: rgba($primary, .2);
+        padding: .75em 1em;
+        font-size: .85em;
+        line-height: .85em;
+        display: inline-block;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.instruction-step {
+  color: $primary-dark;
+  display: block;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-bottom: .25em;
+
+  &:before {
+    color: rgba($primary-dark, .65);
+    display: inline-block;
+    font-family: $icon;
+    font-weight: 700;
+    margin-right: .5em;
+    width: 25px;
+    text-align: center;
+  }
+
+  &.prep-step {
+    &:before {
+      content: '\f5ce';
+    }
+  }
+
+  &.stir-step {
+    &:before {
+      content: '\f5a7';
+    }
+  }
+
+  &.cook-step {
+    &:before {
+      content: '\f769';
+    }
+  }
+
+  &.decorate-step {
+    &:before {
+      content: '\f79d';
+    }
+  }
+
+  &.wait-step {
+    &:before {
+      content: '\f2f2';
+    }
+  }
+
+  &.serve-step {
+    &:before {
+      content: '\f2e6';
+    }
+  }
+}
+
+.materials {
+  width: 350px;
+}
+
+.diy-materials {
+  background: rgba($primary, .10);
+  border: 1px solid $primary;
+  border-radius: 10px;
+  display: block;
+  height: fit-content;
+  padding: $space;
+  margin-bottom: 1em;
+
+  h3 {
+    border-bottom: 1px solid rgba($primary, .3);
+    color: $primary-dark;
+    font-size: 1em;
+    padding-bottom: .5em;
+    margin-top: .5em;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0 0 2em .5em;
+    padding: 0;
+
+    li {
+      margin-bottom: 1em;
+
+      .amount {
+        font-weight: 700;
+        margin-right: .5em;
+      }
+    }
+  }
+}
+
+.recipe-card {
+  background: rgba($primary, .10);
+  border: 1px solid $primary;
+  border-radius: 10px;
+  height: fit-content;
+  max-height: 70vh;
+  overflow-y: scroll;
+  padding: $space;
+  width: 350px;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primary-dark; 
+  }
+
+  &.sticky {
+    position: sticky;
+    top: 70px;
+  }
+
+  h2 {
+    color: $content;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  h3 {
+    border-bottom: 1px solid rgba($primary, .3);
+    color: $primary-dark;
+    font-size: 1em;
+    padding-bottom: .5em;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0 0 2em .5em;
+    padding: 0;
+
+    li {
+      margin-bottom: 1em;
+
+      .amount {
+        font-weight: 700;
+        margin-right: .5em;
+      }
+    }
   }
 }

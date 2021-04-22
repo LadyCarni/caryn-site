@@ -195,17 +195,27 @@ h1, h2 {
   font-weight: 500;
   color: $content;
 
+  &:after {
+    content: '\f178';
+    display: inline-block;
+    padding-left: .25em;
+    color: $primary;
+    font-size: 1.5em;
+    font-family: $icon;
+    vertical-align: middle;
+  }
+
   &.block {
     display: block;
     margin-top: 2em;
   }
 
-  svg {
-    font-size: 1.5em;
-    vertical-align: middle;
-    padding-left: .25em;
-    color: $primary;
-  }
+  // svg {
+  //   font-size: 1.5em;
+  //   vertical-align: middle;
+  //   padding-left: .25em;
+  //   color: $primary;
+  // }
 }
 
 .footer {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 
-const Breadcrumb = ({ routes }) => {
+function Breadcrumb ({ routes, className }) {
   const { path } = useRouteMatch();
 
   const filteredRoutes = routes.filter((route) => {
@@ -9,7 +9,7 @@ const Breadcrumb = ({ routes }) => {
   });
 
   return (
-    <div className="breadcrumb feature-width">
+    <div className={`${className} breadcrumb`}>
       <ul>
         {filteredRoutes.map((route, index) => {
           return (

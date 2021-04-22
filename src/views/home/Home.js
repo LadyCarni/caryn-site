@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLongArrowDown, faLongArrowRight, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat, faHandsHeart } from '@fortawesome/pro-light-svg-icons';
+import { faLongArrowDown, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat, faHandsHeart } from '@fortawesome/pro-light-svg-icons';
 import triangles from 'assets/tri-large.svg'; 
 import trismall from 'assets/tri-vert1.svg';
 import trismall2 from 'assets/tri-hor1.svg';
@@ -29,7 +29,7 @@ const Home = () => {
           <p>Whether it's on a keyboard, at the easel, in the garden, or with a power tool in hand: I live to create. My hobbies and skills play with engagement, imagination, and a little whimsy.</p>
           <p>Professionally, I thrive on cross-functional teams, working directly with users to build elegant products that solve real problems.</p>
           <p>
-            <Link to="/about" className="arrow-link block">Get to know Caryn <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+            <Link to="/about" className="arrow-link block">Get to know Caryn</Link>
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ const Home = () => {
           <div className="description">
             <p>I am a UX strategist, a UI designer, and a front-end developer. I write about practical UX, design, and product management skills. I coach teams and speak publicly about product strategy.</p>
             <p>
-              <Link to="/portfolio" className="arrow-link block">View Caryn's work <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+              <Link to="/portfolio" className="arrow-link block">View Caryn's work</Link>
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Home = () => {
       <div className="headline overlay">
         <h3>Knak: A Case Study</h3>
         <h2>Architecting User Experience</h2>
-        <Link to="/portfolio/knak-ux-case-study" className="arrow-link block">View case study <FontAwesomeIcon icon={faLongArrowRight} /></Link>
+        <Link to="/portfolio/knak-ux-case-study" className="arrow-link block">View case study</Link>
       </div>
     </div>
     <div className="light feature bottom feature-width feature-height">

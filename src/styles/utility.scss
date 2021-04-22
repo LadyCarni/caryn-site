@@ -39,6 +39,19 @@ p > code {
   padding: 0 .25em;
 }
 
+.soon {
+  &:after {
+    display: block;
+    content: 'Coming Soon!';
+    font-size: .85em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: lighten($primary, 10%);
+    padding: .5em;
+  }
+}
+
 .help {
   color: $grey3;
   font-size: 14px;
@@ -136,7 +149,6 @@ p > code {
     }
   
     &.left {
-      
       &::after {
         background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
         height: 100%;
@@ -384,6 +396,14 @@ p > code {
   font-family: $type-content;
   color: $content;
   font-size: .85em;
+
+  &.creative-view {
+    background: transparent;
+    width: 1200px;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 1.5em 0;
+  }
   
   ul {
     list-style-type: none;

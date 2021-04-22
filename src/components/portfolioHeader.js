@@ -1,10 +1,10 @@
 import React from 'react';
 import Breadcrumb from './breadcrumb';
 
-function PortfolioHeader( { routes, headerImage, imageAlt, headerTitle, headerSubtitle, headerDescription, headerDisciplines } ) {
+function PortfolioHeader({ routes, headerImage, imageAlt, headerTitle, headerSubtitle, headerDescription, headerDisciplines }) {
   return (
     <>
-      <Breadcrumb routes={routes} />
+      <Breadcrumb routes={routes} className="feature-width" />
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="project-title filter">
