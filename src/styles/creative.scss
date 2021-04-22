@@ -8,19 +8,29 @@
   max-width: 1200px;
   text-align: center;
 
-  @media screen and (max-width: $medium) {
-    max-width: 100%;
-
-    .header-image {
-      height: 200px;
+  @media screen and (max-width: 500px) {
+    ul {
+      width: 100%;
     }
+  }
 
+  @media screen and (max-width: $medium) {
     ul {
       width: 90vw;
 
       li {
         flex: 1;
+        display: flex;
+        justify-content: center;
       }
+    }
+  }
+
+  @media screen and (min-width: 501px) and (max-width: $medium) {
+    max-width: 100%;
+
+    .header-image {
+      height: 200px;
     }
   }
 
@@ -71,6 +81,11 @@
       width: 100px;
       height: 60px;
       transition: transform 200ms ease;
+
+      @media screen and (max-width: 500px) {
+        width: auto;
+        padding: 0 .5em;
+      }
 
       &.active {
         border-bottom: 2px solid $primary;
@@ -140,7 +155,11 @@
         flex-direction: row;
         width: 100%;
 
-        @media screen and (max-width: $medium) {
+        @media screen and (max-width: 500px) {
+          justify-content: space-between;
+        }
+
+        @media screen and (min-width: 501px) and (max-width: $medium) {
           justify-content: flex-start;
 
           .tag {
@@ -180,13 +199,23 @@
     justify-content: space-between;
     position: relative;
 
+    @media screen and (max-width: 500px) {
+      .creative-nav {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 501px) and (max-width: $medium) {
+      .creative-nav {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
     @media screen and (max-width: $medium) {
       flex-direction: column;
 
       .creative-nav {
-        margin: 0 auto 1em;
-        width: 90%;
-
         ul {
           display: flex;
           justify-content: space-around;
@@ -194,6 +223,8 @@
 
         ul > li {
           display: inline-block;
+          flex: 1;
+          text-align: center;
         }
       }
     }

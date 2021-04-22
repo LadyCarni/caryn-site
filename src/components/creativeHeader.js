@@ -14,7 +14,7 @@ function CreativeHeader( { headerImage, imageAlt } ) {
         <li><NavLink to={`/creative/crafts`}><FontAwesomeIcon icon={faPalette} />Crafts</NavLink></li>
         <li><NavLink to={`/creative/diy`}><FontAwesomeIcon icon={faHammer} />DIY</NavLink></li>
         <li><NavLink to={`/creative/recipes`}><FontAwesomeIcon icon={faHatChef} />Recipes</NavLink></li>
-        <li><NavLink to={`/creative/photography`}><FontAwesomeIcon icon={faCameraRetro} />Photography</NavLink></li>
+        <li><NavLink to={`/creative/photography`}><FontAwesomeIcon icon={faCameraRetro} />Photos</NavLink></li>
       </ul>
     </div>
   )
