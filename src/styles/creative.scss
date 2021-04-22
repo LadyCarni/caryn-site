@@ -128,6 +128,31 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+
+    p {
+      color: $content;
+      font-weight: 500;
+      margin-bottom: 2em;
+    }
+
+    img {
+      max-width: 100%;
+      margin-bottom: 1em;
+    }
+
+    .tip {
+      padding: 1em;
+      background: rgba($primary, .1);
+      width: 80%;
+      margin: 1em auto 2em;
+
+      &:before {
+        display: inline-block;
+        margin-right: .5em;
+        content: 'Tip';
+        font-weight: 700;
+      }
+    }
   }
 
   .creative-nav {
@@ -182,9 +207,16 @@
           opacity: 1;
           transition: opacity 200ms ease;
 
-          a {
+          p {
             color: white;
+          }
+
+          a {
             text-decoration: none;
+
+            p {
+              color: white;
+            }
 
             .link-text {
               color: lighten($primary, 10%);
@@ -271,31 +303,6 @@
     h2 {
       font-weight: 500;
     }
-
-    img {
-      max-width: 100%;
-      margin-bottom: 1em;
-    }
-
-    .tip {
-      padding: 1em;
-      background: rgba($primary, .1);
-      width: 80%;
-      margin: 1em auto 2em;
-
-      &:before {
-        display: inline-block;
-        margin-right: .5em;
-        content: 'Tip';
-        font-weight: 700;
-      }
-    }
-
-    p {
-      color: $content;
-      font-weight: 500;
-      margin-bottom: 2em;
-    }
   }
 }
 
@@ -326,6 +333,7 @@
         line-height: .85em;
         display: inline-block;
         margin-right: 1em;
+        margin-bottom: 1em;
         border-radius: 20px;
       }
     }
@@ -387,7 +395,7 @@
 }
 
 .materials {
-  width: 300px;
+  width: 350px;
 }
 
 .diy-materials {
