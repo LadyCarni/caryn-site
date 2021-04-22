@@ -6,6 +6,34 @@ import cheesecake1 from 'assets/creative/recipes/recipe-cheesecake1.jpg'
 import cheesecake2 from 'assets/creative/recipes/recipe-cheesecake2.jpg'
 import cheesecake3 from 'assets/creative/recipes/recipe-cheesecake3.jpg'
 
+const Ingredients = ( {media} ) => {
+  return (
+    <div className={`${media} recipe-card`}>
+      <h2>Ingredients</h2>
+      <h3>Crust</h3>
+      <ul>
+        <li><span className="amount">3 cups</span>graham cracker crumbs</li>
+        <li><span className="amount">1/2 tsp</span>ground cinnamon</li>
+        <li><span className="amount">2/3 cup</span>unsalted butter, melted</li>
+      </ul>
+
+      <h3>Filling</h3>
+      <ul>
+        <li><span className="amount">4 (8oz) packages</span> cream cheese, softened</li>
+        <li><span className="amount">1 1/4 cups</span>granulated sugar</li>
+        <li><span className="amount">1/2 cup</span>sour cream</li>
+        <li><span className="amount">2 tsp</span>vanilla extract</li>
+        <li><span className="amount">5</span>large eggs</li>
+      </ul>
+
+      <h3>Topping</h3>
+      <ul>
+        <li><span className="amount">1/2 cup</span>sour cream</li>
+        <li><span className="amount">2 tsp</span>granulated sugar</li>
+      </ul>
+    </div>
+  )
+};
 
 const Cheesecake = () => {
   return (
@@ -42,6 +70,8 @@ const Cheesecake = () => {
               <img src={cheesecakeCover} alt="cheesecake"/>
             </div>
 
+            <Ingredients media="mobile" />
+
             <div className="recipe-instructions">
               <h2>Instructions</h2>
               <p><span className="instruction-step prep-step">Step 1.</span> Preheat oven to 475°F. Place a cookie sheet or pan filled with 1/2 inch water in oven on the center rack.</p>
@@ -70,30 +100,7 @@ const Cheesecake = () => {
             </div>
           </div>
 
-          <div className="recipe-card sticky">
-            <h2>Ingredients</h2>
-            <h3>Crust</h3>
-            <ul>
-              <li><span className="amount">3 cups</span>graham cracker crumbs</li>
-              <li><span className="amount">1/2 tsp</span>ground cinnamon</li>
-              <li><span className="amount">2/3 cup</span>unsalted butter, melted</li>
-            </ul>
-
-            <h3>Filling</h3>
-            <ul>
-              <li><span className="amount">4 (8oz) packages</span> cream cheese, softened</li>
-              <li><span className="amount">1 1/4 cups</span>granulated sugar</li>
-              <li><span className="amount">1/2 cup</span>sour cream</li>
-              <li><span className="amount">2 tsp</span>vanilla extract</li>
-              <li><span className="amount">5</span>large eggs</li>
-            </ul>
-
-            <h3>Topping</h3>
-            <ul>
-              <li><span className="amount">1/2 cup</span>sour cream</li>
-              <li><span className="amount">2 tsp</span>granulated sugar</li>
-            </ul>
-          </div>
+          <Ingredients media="desktop sticky" />
         </div>
       </div>
     </div>
