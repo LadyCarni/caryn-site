@@ -339,7 +339,7 @@ const About = () => {
                 <div key={id}>
                   <li className="year">{year}</li>
                   {events.map(({id, type, title}) =>(
-                    <li key={year+id} className={`${type} ${detail === true ? "detail" : ""}`}>
+                    <li key={year+id} className={`${type}`}>
                       <div className="event">
                         {title}
                       </div>

@@ -37,6 +37,16 @@
   }
 }
 
+@keyframes highlight {
+  0% {
+    width: 30px;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -135,6 +145,7 @@
       flex-wrap: nowrap;
       line-height: 1.5em;
       margin-bottom: 1em;
+      position: relative;
 
       &.active {
         background: rgba($primary, .20);
@@ -149,16 +160,33 @@
 
       &.more-info {
         &::after {
-          color: $primary;
-          content: '\f4b0';
-          cursor: pointer;
-          display: block;
-          font-family: $icon;
-          margin-left: 1em;
+          // color: $primary;
+          // content: '\f4b0';
+          // cursor: pointer;
+          // display: block;
+          // font-family: $icon;
+          // margin-left: 1em;
         }
 
         &:hover {
+          cursor: pointer;
 
+          &::after {
+            animation: highlight 300ms linear;
+            // color: $primary;
+            // content: '\f4b0';
+            // cursor: pointer;
+            // display: block;
+            // font-family: $icon;
+            // margin-left: 1em;
+            background: rgba($primary, .20);
+            border-radius: 30px;
+            display: block;
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+          }
         }
       }
 
