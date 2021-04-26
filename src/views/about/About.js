@@ -1,6 +1,7 @@
 import React from 'react';
 import caryn1 from 'assets/caryn1.jpg';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
+import PracticalUx from 'assets/about/practicalux.png';
 
 const About = () => {
   const timeline = [
@@ -280,8 +281,10 @@ const About = () => {
       events: [
         {
           id: 1,
-          type: "speaker",
-          title: "Author, \"Practical UX\""
+          type: "speaker more-info",
+          title: "Author, \"Practical UX\"",
+          image: PracticalUx,
+          description: "Together, with five experienced UX professionals, designers, and authors, this series explores some favorite tools and habits for applying usability in everyday work. It includes a set of free downloadable worksheets and posters."
         },
         {
           id: 2,
@@ -329,21 +332,28 @@ const About = () => {
       <div className="timeline">
         <h2>History</h2>
         <div className="timeline-content">
-          <div className="path"></div>
-          <ul>
-            {timeline.reverse().map(({id, year, events}) => (
-              <div key={id}>
-                <li className="year">{year}</li>
-                {events.map(({id, type, title}) =>(
-                  <li key={year+id} className={`${type}`}>
-                    <div className="event">
-                      {title}
-                    </div>
-                  </li>
-                ))}
-              </div>
-            ))}
-          </ul>
+          <div className="timeline">
+            <div className="path"></div>
+            <ul>
+              {timeline.reverse().map(({id, year, events, detail}) => (
+                <div key={id}>
+                  <li className="year">{year}</li>
+                  {events.map(({id, type, title}) =>(
+                    <li key={year+id} className={`${type} ${detail === true ? "detail" : ""}`}>
+                      <div className="event">
+                        {title}
+                      </div>
+                    </li>
+                  ))}
+                </div>
+              ))}
+            </ul>
+          </div>
+          <div className="detail">
+            <h3>Practical UX (2020)</h3>
+            <img src={PracticalUx} alt="detail"/>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil temporibus numquam laboriosam aliquam omnis quidem expedita possimus accusantium, minus explicabo, alias iusto consequuntur deserunt perferendis. Deserunt, veritatis voluptatem. Autem, nisi.</p>
+          </div>
         </div>
       </div>
     </div>

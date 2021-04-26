@@ -43,9 +43,9 @@
   font-family: $type-content;
   justify-content: flex-start;
   margin-top: 2em;
+  max-width: 1200px;
   position: relative;
   width: 100%;
-  max-width: 1200px;
 
   @media screen and (max-width: $small) {
     width: 90vw;
@@ -56,7 +56,61 @@
   }
 
   .timeline-content {
+    display: flex;
     position: relative;
+  }
+
+  .detail {
+    background: rgba($primary, .20);
+    border-radius: 10px;
+    border: 1px solid $primary;
+    height: fit-content;
+    margin-left: 1em;
+    margin-top: 2em;
+    max-height: 65vh;
+    min-width: 600px;
+    overflow-y: scroll;
+    overflow-y: scroll;
+    padding: $space;
+    position: sticky;
+    top: 80px;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $primary;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $primary-dark; 
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      color: $content;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      height: 300px;
+    }
   }
 
   .path {
@@ -81,6 +135,32 @@
       flex-wrap: nowrap;
       line-height: 1.5em;
       margin-bottom: 1em;
+
+      &.active {
+        background: rgba($primary, .20);
+        border-radius: 30px;
+
+        &.more-info {
+          &::after {
+            color: $primary-dark;
+          }
+        }
+      }
+
+      &.more-info {
+        &::after {
+          color: $primary;
+          content: '\f4b0';
+          cursor: pointer;
+          display: block;
+          font-family: $icon;
+          margin-left: 1em;
+        }
+
+        &:hover {
+
+        }
+      }
 
       &::before {
         align-items: center;
