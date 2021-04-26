@@ -5,6 +5,7 @@ import Diy from "./Diy";
 import Recipes from "./Recipes";
 import Photography from "./Photography";
 import Cheesecake from "./recipes/Cheesecake";
+import Lasagna from "./recipes/Lasagna";
 import VinylElephant from "./crafts/VinylElephant";
 import PipeDesk from "./diy/PipeDesk";
 
@@ -14,6 +15,7 @@ export const CreativeRoutes = [
   { path: "/creative/crafts/vinyl-elephant", name: "Vinyl Elephant", component: VinylElephant },
   { path: "/creative/recipes", name: "Recipes", component: Recipes },
   { path: "/creative/recipes/cheesecake", name: "Cheesecake", component: Cheesecake },
+  { path: "/creative/recipes/lasagna", name: "Chicken Lasagna", component: Lasagna },
   { path: "/creative/diy", name: "DIY", component: Diy },
   { path: "/creative/diy/pipe-desk", name: "Pipe Desk", component: PipeDesk },
   { path: "/creative/photography", name: "Photography", component: Photography },
