@@ -28,7 +28,8 @@ import Linzer from 'assets/creative/recipes/recipe-linzer.jpg';
 import PumpkinPie from 'assets/creative/recipes/recipe-pumpkin-pie.jpg';
 import LocoMoco from 'assets/creative/recipes/recipe-loco-moco.jpg';
 import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
-import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg'
+import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg';
+import Lasagna from 'assets/creative/recipes/lasagna9.jpg';
 
 const categories = [
   {
@@ -66,6 +67,14 @@ const allRecipes = [
     category: "Desserts",
     thumb: "item rectangle",
     id: 23,
+  },
+  { 
+    title: "Chicken Lasagna",
+    image: Lasagna,
+    link: "/creative/recipes/lasagna",
+    category: "Mains",
+    thumb: "item rectangle",
+    id: 24,
   },
   { 
     title: "Bailey's Fudge",
