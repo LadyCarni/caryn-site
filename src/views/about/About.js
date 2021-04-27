@@ -430,8 +430,8 @@ const About = () => {
             <div className="path"></div>
             <ul>
               {timeline.reverse().map(({id, year, events}) => (
-                <div key={id}>
-                  <li className="year">{year}</li>
+                <div className="year-section" key={id}>
+                  <li className="year-title">{year}</li>
                   {events.map(({id, type, title, description}) =>(
                     <li key={year+id} className={`${type}`}>
                       <div className="event">
