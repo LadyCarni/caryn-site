@@ -1,5 +1,7 @@
 import React from 'react';
 import caryn1 from 'assets/caryn1.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCommentLines } from '@fortawesome/pro-light-svg-icons';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
 import PracticalUx from 'assets/about/practicalux.png';
 
@@ -12,12 +14,16 @@ const About = () => {
         {
           id: 1,
           type: "job",
-          title: "Advertising Layout & Graphic Artist (Conestoga College)"
+          title: "Advertising Layout & Graphic Artist (Conestoga College)",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "job",
-          title: "Launch Design by Humphreys (freelance brand)"
+          title: "Launch Design by Humphreys (freelance brand)",
+          image: "",
+          description: ""
         },
       ]
     },
@@ -28,17 +34,23 @@ const About = () => {
         {
           id: 1,
           type: "education",
-          title: "Graduate of Advertising (Conestoga College)"
+          title: "Graduate of Advertising (Conestoga College)",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "job",
-          title: "Digital Media Coordinator (Waterloo Regional Children's Museum)"
+          title: "Digital Media Coordinator (Waterloo Regional Children's Museum)",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "job",
-          title: "Graphic Designer (R&S Screening)"
+          title: "Graphic Designer (R&S Screening)",
+          image: "",
+          description: ""
         }
       ]
     },
@@ -49,7 +61,9 @@ const About = () => {
         {
           id: 1,
           type: "job",
-          title: "Director of Marketing (Waterloo Management Education Centre)"
+          title: "Director of Marketing (Waterloo Management Education Centre)",
+          image: "",
+          description: ""
         }
       ]
     },
@@ -60,7 +74,9 @@ const About = () => {
         {
           id: 1,
           type: "job",
-          title: "Web Designer (ChromeMedia)"
+          title: "Web Designer (ChromeMedia)",
+          image: "",
+          description: ""
         }
       ]
     },
@@ -71,27 +87,37 @@ const About = () => {
         {
           id: 1,
           type: "community",
-          title: "Attend Fluxible (Kitchener)"
+          title: "Attend Fluxible (Kitchener)",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "education",
-          title: "Begin specialization in UX (ChromeMedia)"
+          title: "Begin specialization in UX (ChromeMedia)",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "community",
-          title: "Join UX Waterloo community group (Waterloo)"
+          title: "Join UX Waterloo community group (Waterloo)",
+          image: "",
+          description: ""
         },
         {
           id: 4,
           type: "community",
-          title: "Join Girl Geek Dinners WR (Waterloo)"
+          title: "Join Girl Geek Dinners WR (Waterloo)",
+          image: "",
+          description: ""
         },
         {
           id: 5,
           type: "speaker",
-          title: "Begin professional blog (Medium)"
+          title: "Begin professional blog (Medium)",
+          image: "",
+          description: ""
         }
       ]
     },
@@ -102,42 +128,58 @@ const About = () => {
         {
           id: 1,
           type: "job",
-          title: "Rebrand ChromeMedia to Vehikl"
+          title: "Rebrand ChromeMedia to Vehikl",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "education",
-          title: "Certification: Human Computer Interaction (UC San Diego)"
+          title: "Certification: Human Computer Interaction (UC San Diego)",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "job",
-          title: "Promotion: UX Designer (Vehikl)"
+          title: "Promotion: UX Designer (Vehikl)",
+          image: "",
+          description: ""
         },
         {
           id: 4,
           type: "speaker",
-          title: "Speaker, UX Waterloo: \"How to Wireframe like a Boss\" (Waterloo)"
+          title: "Speaker, UX Waterloo: \"How to Wireframe like a Boss\" (Waterloo)",
+          image: "",
+          description: ""
         },
         {
           id: 5,
           type: "community",
-          title: "Attend Fluxible (Kitchener)"
+          title: "Attend Fluxible (Kitchener)",
+          image: "",
+          description: ""
         },
         {
           id: 6,
           type: "community",
-          title: "Attend Laracon EU (Amsterdam)"
+          title: "Attend Laracon EU (Amsterdam)",
+          image: "",
+          description: ""
         },
         {
           id: 7,
           type: "community",
-          title: "Attend Erie Day of Code (Erie, PA)"
+          title: "Attend Erie Day of Code (Erie, PA)",
+          image: "",
+          description: ""
         },
         {
           id: 8,
           type: "community",
-          title: "Join Hackernest meetup (Kitchener-Waterloo)"
+          title: "Join Hackernest meetup (Kitchener-Waterloo)",
+          image: "",
+          description: ""
         }
       ]
     },
@@ -148,22 +190,30 @@ const About = () => {
         {
           id: 1,
           type: "speaker",
-          title: "UX Facilitative Volunteer, STEMGyrls"
+          title: "UX Facilitative Volunteer, STEMGyrls",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "community",
-          title: "Attend CanUX (Ottawa)"
+          title: "Attend CanUX (Ottawa)",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "community",
-          title: "Attend Fluxible (Kitchener)"
+          title: "Attend Fluxible (Kitchener)",
+          image: "",
+          description: ""
         },
         {
           id: 4,
           type: "community",
-          title: "Attend Erie Day of Code (Erie, PA)"
+          title: "Attend Erie Day of Code (Erie, PA)",
+          image: "",
+          description: ""
         },
       ]
     },
@@ -174,42 +224,58 @@ const About = () => {
         {
           id: 1,
           type: "speaker",
-          title: "Panelist, Zonta Film Festival screening of \"Code: Debugging the Gender Gap\""
+          title: "Panelist, Zonta Film Festival screening of \"Code: Debugging the Gender Gap\"",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "speaker",
-          title: "Join as contributing writer for Code Like a Girl Inc."
+          title: "Join as contributing writer for Code Like a Girl Inc.",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "community",
-          title: "Attend Codemash (Sandusky, OH)"
+          title: "Attend Codemash (Sandusky, OH)",
+          image: "",
+          description: ""
         },
         {
           id: 4,
           type: "community",
-          title: "Creator: Gary the Bear"
+          title: "Creator: Gary the Bear",
+          image: "",
+          description: ""
         },
         {
           id: 5,
           type: "community",
-          title: "Attend Laracon US (Louisville)"
+          title: "Attend Laracon US (Louisville)",
+          image: "",
+          description: ""
         },
         {
           id: 6,
           type: "speaker",
-          title: "Speaker, Laracon EU: \"Project Utopia\" (Amsterdam)"
+          title: "Speaker, Laracon EU: \"Project Utopia\" (Amsterdam)",
+          image: "",
+          description: ""
         },
         {
           id: 7,
           type: "community",
-          title: "Attend Erie Day of Code (Erie, PA)"
+          title: "Attend Erie Day of Code (Erie, PA)",
+          image: "",
+          description: ""
         },
         {
           id: 8,
           type: "speaker",
-          title: "Speaker, Ladies that UX: \"Pairing with Devs/Designers\" (London, ON)"
+          title: "Speaker, Ladies that UX: \"Pairing with Devs/Designers\" (London, ON)",
+          image: "",
+          description: ""
         },
       ]
     },
@@ -220,32 +286,44 @@ const About = () => {
         {
           id: 1,
           type: "job",
-          title: "Promotion: UX Developer (Vehikl)"
+          title: "Promotion: UX Developer (Vehikl)",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "community",
-          title: "Join Technical Chats for Women (Kitchener)"
+          title: "Join Technical Chats for Women (Kitchener)",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "speaker",
-          title: "Panelist, Future Female Techmakers Conference"
+          title: "Panelist, Future Female Techmakers Conference",
+          image: "",
+          description: ""
         },
         {
           id: 4,
           type: "community",
-          title: "Attend Laracon EU (Amsterdam)"
+          title: "Attend Laracon EU (Amsterdam)",
+          image: "",
+          description: ""
         },
         {
           id: 5,
           type: "speaker",
-          title: "UX Facilitative Volunteer, STEMGyrls"
+          title: "UX Facilitative Volunteer, STEMGyrls",
+          image: "",
+          description: ""
         },
         {
           id: 6,
           type: "community",
-          title: "Attend Laracon US (NYC)"
+          title: "Attend Laracon US (NYC)",
+          image: "",
+          description: ""
         },
       ]
     },
@@ -256,22 +334,30 @@ const About = () => {
         {
           id: 1,
           type: "community",
-          title: "Attend Codemash (Sandusky, OH)"
+          title: "Attend Codemash (Sandusky, OH)",
+          image: "",
+          description: ""
         },
         {
           id: 2,
           type: "community",
-          title: "Attend Laracon US (Chicago)"
+          title: "Attend Laracon US (Chicago)",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "speaker",
-          title: "Launch of DevLondon (London, ON)"
+          title: "Launch of DevLondon (London, ON)",
+          image: "",
+          description: ""
         },
         {
           id: 4,
           type: "community",
-          title: "Join Ladies that UX (London, ON)"
+          title: "Join Ladies that UX (London, ON)",
+          image: "",
+          description: ""
         },
       ]
     },
@@ -289,17 +375,23 @@ const About = () => {
         {
           id: 2,
           type: "speaker",
-          title: "Speaker, Erie Day of Code (Erie, PA)"
+          title: "Speaker, Erie Day of Code (Erie, PA)",
+          image: "",
+          description: ""
         },
         {
           id: 3,
           type: "job",
-          title: "Product Manager: North America (Flyt; Skip the Dishes)"
+          title: "Product Manager: North America (Flyt; Skip the Dishes)",
+          image: "",
+          description: ""
         },
         {
           id: 4,
           type: "community",
-          title: "Organizer, DevLondon (London, ON)"
+          title: "Organizer, DevLondon (London, ON)",
+          image: "",
+          description: ""
         },
       ]
     },
@@ -310,7 +402,9 @@ const About = () => {
         {
           id: 1,
           type: "community",
-          title: "Attend RC Show (Toronto)"
+          title: "Attend RC Show (Toronto)",
+          image: "",
+          description: ""
         },
       ]
     }
@@ -335,14 +429,19 @@ const About = () => {
           <div className="timeline">
             <div className="path"></div>
             <ul>
-              {timeline.reverse().map(({id, year, events, detail}) => (
+              {timeline.reverse().map(({id, year, events}) => (
                 <div key={id}>
                   <li className="year">{year}</li>
-                  {events.map(({id, type, title}) =>(
+                  {events.map(({id, type, title, description}) =>(
                     <li key={year+id} className={`${type}`}>
                       <div className="event">
                         {title}
                       </div>
+
+                      { description ? 
+                       (<div className="more">
+                        <FontAwesomeIcon icon={faCommentLines} />
+                      </div>) : null }
                     </li>
                   ))}
                 </div>

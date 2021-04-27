@@ -158,27 +158,26 @@
         }
       }
 
-      &.more-info {
-        &::after {
-          // color: $primary;
-          // content: '\f4b0';
-          // cursor: pointer;
-          // display: block;
-          // font-family: $icon;
-          // margin-left: 1em;
-        }
+      .more {
+        color: $primary-dark;
+        margin-left: auto;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 1em;
+        transition: font-size 100ms ease;
+      }
 
+      &.more-info {
         &:hover {
           cursor: pointer;
 
+          .more {
+            font-size: 1.25em;
+            transition: font-size 100ms ease;
+          }
+
           &::after {
             animation: highlight 300ms linear;
-            // color: $primary;
-            // content: '\f4b0';
-            // cursor: pointer;
-            // display: block;
-            // font-family: $icon;
-            // margin-left: 1em;
             background: rgba($primary, .20);
             border-radius: 30px;
             display: block;
