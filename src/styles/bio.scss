@@ -85,6 +85,7 @@
     padding: $space;
     position: sticky;
     top: 80px;
+    width: 600px;
 
     /* width */
     &::-webkit-scrollbar {
@@ -105,6 +106,35 @@
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
       background: $primary-dark; 
+    }
+
+    button {
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      color: $primary-dark;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      opacity: .75;
+      padding: .5em 1em;
+      position: absolute;
+      right: 0;
+      top: .5em;
+
+      svg {
+        font-size: 1.25em;
+        padding-left: .25em;
+      }
+      
+      &:hover {
+        background-color: rgba($primary, .30);
+        opacity: 1;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
 
     h3 {
@@ -141,8 +171,10 @@
   ul {
     list-style-type: none;
     margin: 0;
+    max-width: 430px;
     padding: 0;
     z-index: 1;
+    width: 430px;
 
     li {
       align-items: baseline;
