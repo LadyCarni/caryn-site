@@ -358,7 +358,7 @@ const About = () => {
                 <div className="year-section" key={id}>
                   <li className="year-title">{year}</li>
                   {events.map(({id, type, title, description}) =>(
-                    <li key={year+id} className={`${type} ${description ? "more-info" : "" }`} onClick={() => setSelectedItemId(id)}>
+                    <li key={year+id} className={`${type} ${description ? "more-info" : "" }`} onClick={() => description ? setSelectedItemId(id) : null}>
                       <div className="event">
                         {title}
                       </div>
