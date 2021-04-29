@@ -238,6 +238,9 @@ const About = () => {
           id: 'e0b6bd30-4ba3-45fc-99bf-997bff06de53',
           type: 'speaker',
           title: 'Panelist, Future Female Techmakers Conference',
+          image: null,
+          description: 'I was invited to speak on a panel of women from varying STEM fields for an audience of grade 9 - 12 high school and undergraduate students. The panel included a 60 minute discussion and a 20 minute Q&A from audience members.<br/><br/>The annual Future Female Techmakers Conference (FFTC) aims to teach women how to be effective mentors, provides female role models to young women interested in the tech industry, and creates lasting meaningful connections that will support all of the participants in their journey towards becoming female techmakers.',
+          year: '2017'
         },
         {
           id: '8ecc1d62-afaa-41a9-a30f-f6b1296464cc',
@@ -379,10 +382,14 @@ const About = () => {
                 <div className="year-section" key={id}>
                   <li className="year-title">{year}</li>
                   {events.map(({id, type, title, description}) => {
+
                     const lineClass = `${type} ${description ? "more-info" : ""} ${detailItem && selectedItemId === id ? "active" : ""}`
-                    
+
                     return (
-                      <li key={year+id} className={lineClass} onClick={() => description ? setSelectedItemId(id) : null}>
+                      <li 
+                        key={year+id}
+                        className={lineClass}
+                        onClick={() => description ? setSelectedItemId(id) : null}>
                         <div className="event">
                           {title}
                         </div>
@@ -402,7 +409,9 @@ const About = () => {
             <div className="detail">
               <button onClick={() => setSelectedItemId(null)}>close <FontAwesomeIcon icon={faTimes} /></button>
               <h3>{detailItem.title} ({detailItem.year})</h3>
-              <img src={detailItem.image} alt={detailItem.title}/>
+              { detailItem.image ? (
+                <img src={detailItem.image} alt={detailItem.title}/>) : null
+              }
               <p dangerouslySetInnerHTML={{__html: detailItem.description}}></p>
             </div>
           }
