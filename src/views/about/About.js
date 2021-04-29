@@ -9,6 +9,9 @@ import devLondon from 'assets/portfolio/dev-london.jpg';
 import codemash from 'assets/about/codemash.jpg';
 import uxCentreStage from 'assets/about/ux-center-stage.jpg';
 import laraconChicago from 'assets/about/laracon-chicago.jpg';
+import laraconEu2017 from 'assets/about/laracon-eu-2017.jpg';
+import stemGyrls2017 from 'assets/about/stem-gyrls-2017.jpg';
+import laraconUs2017 from 'assets/about/laracon-us-2017.jpg';
 
 const About = () => {
   const timeline = [
@@ -246,16 +249,29 @@ const About = () => {
           id: '8ecc1d62-afaa-41a9-a30f-f6b1296464cc',
           type: 'community',
           title: 'Attend Laracon EU (Amsterdam)',
+          image: laraconEu2017,
+          description: 'This was my third time attending this conference, as a representative of Vehikl; a loyal sponsor of the conference. This conference gave me the opportunity to meet up with our Laravel counterparts in Europe that wouldn\'t be able to make the trip to Laracon US every year.<br /><br />This year I\'d made a <a href="https://twitter.com/LadyCarni/status/902211456283930629" target="_blank" rel="noreferrer">meme</a> out of the celebrity status of Taylor Otwell (the creator of Laravel), so I spent the sponsor dinner <a href="https://www.instagram.com/p/BYdF75FjbeJ/" target="_blank" rel="noreferrer">pretending to be paparazzi</a>. This community is always up for a good laugh.',
+          year: '2017'
+        },
+        {
+          id: '621f4832-fc0d-4296-8945-5bd87a1b888a',
+          type: 'community',
+          title: 'Attend UX Centre Stag (London, ON)',
         },
         {
           id: 'd225b207-a3fc-4ed2-9545-f1bf2e470916',
           type: 'speaker',
           title: 'UX Facilitative Volunteer, STEMGyrls',
+          image: stemGyrls2017,
+          description: 'I was invited to return to this year\'s STEM Gyrls mini-con where I ran a booth on teaching girls the basics about User Experience design. I had activities that taught the attendees how to wireframe their ideas, and how to storyboard to come up with a way to tell a story about the ideas they have.',
+          year: '2017'
         },
         {
           id: 'dcea0422-3b66-4d0a-be45-8d68cf2b11a1',
           type: 'community',
           title: 'Attend Laracon US (NYC)',
+          image: laraconUs2017,
+          description: 'Another year, another great Laracon US. This year the conference was in New York City, at a venue that couldn\'t be beat. Good talks from seasoned speakers, great engaging crowd, and another year of fun and games amongst the sponsors and supporters.'
         },
       ]
     },
