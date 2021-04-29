@@ -263,7 +263,8 @@ const About = () => {
           type: "community",
           title: "Attend Codemash (Sandusky, OH)",
           image: codemash,
-          description: "Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it's impossible to get bored during this event. When you aren't buzzing with excitement from the last talk you watched, you're looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America's largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place."
+          description: "Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it's impossible to get bored during this event. When you aren't buzzing with excitement from the last talk you watched, you're looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America's largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place.",
+          year: "2018"
         },
         {
           id: "d57e61c2-2887-4ad7-9a7c-ef8c342cfe03",
@@ -313,7 +314,8 @@ const About = () => {
           type: "community",
           title: "Organizer, DevLondon (London, ON)",
           image: devLondon,
-          description: "I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. Dev London is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community."
+          description: "I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. Dev London is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community.",
+          year: "2019"
         },
       ]
     },
