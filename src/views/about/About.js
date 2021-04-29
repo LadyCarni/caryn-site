@@ -263,7 +263,7 @@ const About = () => {
           type: "community",
           title: "Attend Codemash (Sandusky, OH)",
           image: codemash,
-          description: "Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it's impossible to get bored during this event. When you aren't buzzing with excitement from the last talk you watched, you're looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America's largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place.",
+          description: "Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it's impossible to get bored during this event.<br />When you aren't buzzing with excitement from the last talk you watched, you're looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America's largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place.",
           year: "2018"
         },
         {
@@ -314,7 +314,7 @@ const About = () => {
           type: "community",
           title: "Organizer, DevLondon (London, ON)",
           image: devLondon,
-          description: "I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. Dev London is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community.",
+          description: "I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. <a href=\"https://devldn.ca/\" target=\"_blank\" rel=\"noreferrer\">Dev London</a> is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community.",
           year: "2019"
         },
       ]
@@ -365,18 +365,22 @@ const About = () => {
               {timeline.reverse().map(({id, year, events}) => (
                 <div className="year-section" key={id}>
                   <li className="year-title">{year}</li>
-                  {events.map(({id, type, title, description}) =>(
-                    <li key={year+id} className={`${type} ${description ? "more-info" : "" }`} onClick={() => description ? setSelectedItemId(id) : null}>
-                      <div className="event">
-                        {title}
-                      </div>
+                  {events.map(({id, type, title, description}) => {
+                    const lineClass = `${type} ${description ? "more-info" : ""} ${detailItem && selectedItemId === id ? "active" : ""}`
+                    
+                    return (
+                      <li key={year+id} className={lineClass} onClick={() => description ? setSelectedItemId(id) : null}>
+                        <div className="event">
+                          {title}
+                        </div>
 
-                      { description ? 
-                       (<div className="more">
-                        <FontAwesomeIcon icon={faCommentLines} />
-                      </div>) : null }
-                    </li>
-                  ))}
+                        { description ? 
+                        (<div className="more">
+                          <FontAwesomeIcon icon={faCommentLines} />
+                        </div>) : null }
+                      </li>
+                    )
+                  })}
                 </div>
               ))}
             </ul>
@@ -386,7 +390,7 @@ const About = () => {
               <button onClick={() => setSelectedItemId(null)}>close <FontAwesomeIcon icon={faTimes} /></button>
               <h3>{detailItem.title} ({detailItem.year})</h3>
               <img src={detailItem.image} alt={detailItem.title}/>
-              <p>{detailItem.description}</p>
+              <p dangerouslySetInnerHTML={{__html: detailItem.description}}></p>
             </div>
           }
         </div>
