@@ -20,6 +20,7 @@ import stemGyrls2015 from 'assets/about/stem-gyrls-2015.jpg';
 import canUx from 'assets/about/canUx.jpg';
 import fluxible from 'assets/about/fluxible-goat-check.jpg';
 import laraconUs2015 from 'assets/about/laracon-us-2015.jpg';
+import devDesign from 'assets/about/dev-design-pair.jpg';
 
 const About = () => {
   const timeline = [
@@ -257,6 +258,9 @@ const About = () => {
           id: 'bf53df7c-12e0-4e04-a0b6-8330c6f8c080',
           type: 'speaker',
           title: 'Speaker, Ladies that UX: "Pairing with Devs/Designers" (London, ON)',
+          image: devDesign,
+          description: 'At a local UX meetup, I gave <a href="https://youtu.be/jKjPE0hG5oU?t=1802" target="_blank" rel="noreferrer">a brief talk</a> on how to pair program for developers and designers. The concept of cross-functional teams can be controversial in general, but the concept of the two disciplines actually working alongside one another has ruffled a few feathers in the community over the years. This talk was designed to shed light on how to break down the walls between the disciplines so that the product you\'re both designing and building ends up better.',
+          year: '2016'
         },
       ]
     },
