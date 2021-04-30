@@ -16,6 +16,7 @@ import garyBear from 'assets/about/gary-bear.jpg';
 import zonta from 'assets/about/zonta.jpg';
 import laraconUs2016 from 'assets/about/laracon-us-2016.jpg';
 import laraconEu2016 from 'assets/caryn6.jpg';
+import stemGyrls2015 from 'assets/about/stem-gyrls-2015.jpg';
 
 const About = () => {
   const timeline = [
@@ -163,6 +164,9 @@ const About = () => {
           id: 'a972907e-312e-40bc-93b8-623c0c40d2e5',
           type: 'speaker',
           title: 'UX Facilitative Volunteer, STEMGyrls',
+          image: stemGyrls2015,
+          description: 'I was thrilled to be asked to share my UX skills for the first time at this mini-con hosted by the YWCA in Cambridge, Ontario. As the oldest sister of 6 girls, I\'ve had a passion for encouraging and inspiring young girls to get interested in and follow a STEM path. It was a treat to get to see the girls\' faces light up when they realized that some of the most essential artistic UX skills were skills they already possessed! This was certainly one of the most rewarding little events I\'d participated in.',
+          year: '2015'
         },
         {
           id: 'ed92e512-b7c3-4670-a581-808470c0ef15',
