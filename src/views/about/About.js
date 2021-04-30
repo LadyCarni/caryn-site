@@ -17,6 +17,9 @@ import zonta from 'assets/about/zonta.jpg';
 import laraconUs2016 from 'assets/about/laracon-us-2016.jpg';
 import laraconEu2016 from 'assets/caryn6.jpg';
 import stemGyrls2015 from 'assets/about/stem-gyrls-2015.jpg';
+import canUx from 'assets/about/canUx.jpg';
+import fluxible from 'assets/about/fluxible-goat-check.jpg';
+import laraconUs2015 from 'assets/about/laracon-us-2015.jpg';
 
 const About = () => {
   const timeline = [
@@ -165,18 +168,40 @@ const About = () => {
           type: 'speaker',
           title: 'UX Facilitative Volunteer, STEMGyrls',
           image: stemGyrls2015,
-          description: 'I was thrilled to be asked to share my UX skills for the first time at this mini-con hosted by the YWCA in Cambridge, Ontario. As the oldest sister of 6 girls, I\'ve had a passion for encouraging and inspiring young girls to get interested in and follow a STEM path. It was a treat to get to see the girls\' faces light up when they realized that some of the most essential artistic UX skills were skills they already possessed! This was certainly one of the most rewarding little events I\'d participated in.',
+          description: 'I was thrilled to be asked to share my UX skills for the first time at this mini-con hosted by the YWCA in Cambridge, Ontario. As the oldest sister of 6 girls, I\'ve had a passion for encouraging and inspiring young girls to get interested in and follow a STEM path. It was a treat to get to see the girls\' faces light up when they realized that some of the most essential artistic UX skills were skills <a href="https://twitter.com/LadyCarni/status/655469926040383488" target="_blank" rel="noreferrer">they already possessed</a>! This was certainly one of the most rewarding little events I\'d participated in.',
           year: '2015'
         },
         {
           id: 'ed92e512-b7c3-4670-a581-808470c0ef15',
           type: 'community',
           title: 'Attend CanUX (Ottawa)',
+          image: canUx,
+          description: 'Hosted in Ottawa, this UX conference had Aaron Draplin as its keynote speaker. This was my first big UX conference, and the connections I made among the speakers and attendees were invaluable to my career.',
+          year: '2015'
         },
         {
           id: '997cda67-f02b-4bdc-aa24-a8c7a89a1f84',
           type: 'community',
           title: 'Attend Fluxible (Kitchener)',
+          image: fluxible,
+          description: 'A locally run UX conference in Kitchener-Waterloo, Fluxible invited designers, strategists, authors, and product managers from Southwestern Ontario to this two day, single-track event. The event was the first to host a \'goat check\' (aka coat check) that featured real, live goats!',
+          year: '2015'
+        },
+        {
+          id: '0d34a55b-ebeb-4098-9ced-fb249b80b091',
+          type: 'community',
+          title: 'Creator: Gary the Bear',
+          image: garyBear,
+          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own <a href="https://twitter.com/bearwithgary" target="_blank" rel="noreferrer">Twitter account</a>, and posed as his own personality online.<br /><br />Gary was <a href="https://twitter.com/bearwithgary/status/1022276833205731330/photo/1" target="_blank" rel="noreferrer">adopted</a> by <a href="https://twitter.com/bearwithgary/status/889851070436044800/photo/1" target="_blank" rel="noreferrer">a few friends</a>, and ended up being passed around throughout the conference, and started an unofficial, <a href="https://twitter.com/bearwithgary/status/889630236224008192/photo/1" target="_blank" rel="noreferrer">annual tradition</a> at Laracon, and <a href="https://twitter.com/bearwithgary/status/1022882695817256960/photo/1" target="_blank" rel="noreferrer">always</a> brought <a href="https://twitter.com/bearwithgary/status/1154088952120381442/photo/1" target="_blank" rel="noreferrer">lots of laughs</a>.',
+          year: '2015'
+        },
+        {
+          id: '0ffa15a3-6c26-4eae-ab3f-a2512ec574d7',
+          type: 'community',
+          title: 'Attend Laracon US (Louisville)',
+          image: laraconUs2015,
+          description: 'Hosted in Louisville, Laracon US was as eventful as ever. This year I introduced Gary the Bear to the attendees. I used Gary as a means to break the ice and get the wallflowers excited about networking and enjoying themselves between the talks.',
+          year: '2015'
         },
         {
           id: 'da8266cd-9545-464d-a87d-6863e1f16717',
@@ -208,19 +233,11 @@ const About = () => {
           title: 'Attend Codemash (Sandusky, OH)',
         },
         {
-          id: '0d34a55b-ebeb-4098-9ced-fb249b80b091',
-          type: 'community',
-          title: 'Creator: Gary the Bear',
-          image: garyBear,
-          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own <a href="https://twitter.com/bearwithgary" target="_blank" rel="noreferrer">Twitter account</a>, and posed as his own personality online.',
-          year: '2016'
-        },
-        {
           id: 'aa2f2c09-0cea-4fcf-920b-7783f01b67e1',
           type: 'community',
           title: 'Attend Laracon US (Louisville)',
           image: laraconUs2016,
-          description: 'Hosted in Louisville, Laracon US was as eventful as ever. This year I introduced Gary the Bear to the attendees. I used Gary as a means to break the ice and get the wallflowers excited about networking and enjoying themselves between the talks. Gary was adopted by a few friends, and ended up being passed around throughout the conference, and started an unofficial tradition at Laracon.',
+          description: 'Hosted in Louisville for the another year, Laracon US was a smash hit. Great talks all around, and, as always, a great turnout from the community. Attendees returning to Louisville got to see a little more of the area around the venue, and took advantage of the great after party to network and have fun with colleagues.',
           year: '2016'
         },
         {
