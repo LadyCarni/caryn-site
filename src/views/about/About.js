@@ -12,6 +12,10 @@ import laraconChicago from 'assets/about/laracon-chicago.jpg';
 import laraconEu2017 from 'assets/about/laracon-eu-2017.jpg';
 import stemGyrls2017 from 'assets/about/stem-gyrls-2017.jpg';
 import laraconUs2017 from 'assets/about/laracon-us-2017.jpg';
+import garyBear from 'assets/about/gary-bear.jpg';
+import zonta from 'assets/about/zonta.jpg';
+import laraconUs2016 from 'assets/about/laracon-us-2016.jpg';
+import laraconEu2016 from 'assets/caryn6.jpg';
 
 const About = () => {
   const timeline = [
@@ -185,6 +189,9 @@ const About = () => {
           id: 'd5732ab5-6318-4027-a403-c439e7957943',
           type: 'speaker',
           title: 'Panelist, Zonta Film Festival screening of "Code: Debugging the Gender Gap"',
+          image: zonta,
+          description: 'I spoke on a panel of women after the screening of a documentary about women in tech. The Princess Cinema in Waterloo partnered up with the Zonta Film Festival to show the documentary "Code: Debugging the Gender Gap". This film examines the reasons behind the lack of women and girls choosing computer science as a vocation in the United States, despite thousands of available jobs and the desperate need for qualified programmers and engineers.',
+          year: '2016'
         },
         {
           id: 'a68b8fdf-68a0-45ee-a030-302ee8a8bb77',
@@ -200,16 +207,25 @@ const About = () => {
           id: '0d34a55b-ebeb-4098-9ced-fb249b80b091',
           type: 'community',
           title: 'Creator: Gary the Bear',
+          image: garyBear,
+          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own <a href="https://twitter.com/bearwithgary" target="_blank" rel="noreferrer">Twitter account</a>, and posed as his own personality online.',
+          year: '2016'
         },
         {
           id: 'aa2f2c09-0cea-4fcf-920b-7783f01b67e1',
           type: 'community',
           title: 'Attend Laracon US (Louisville)',
+          image: laraconUs2016,
+          description: 'Hosted in Louisville, Laracon US was as eventful as ever. This year I introduced Gary the Bear to the attendees. I used Gary as a means to break the ice and get the wallflowers excited about networking and enjoying themselves between the talks. Gary was adopted by a few friends, and ended up being passed around throughout the conference, and started an unofficial tradition at Laracon.',
+          year: '2016'
         },
         {
           id: '204edb3d-4257-4eb9-9350-644da4b70d2f',
           type: 'speaker',
           title: 'Speaker, Laracon EU: "Project Utopia" (Amsterdam)',
+          image: laraconEu2016,
+          description: 'This was my first big <a href="https://www.youtube.com/watch?v=WARtjv330mg" target="_blank" rel="noreferrer">conference talk</a>. The talk was jointly given with Jesse O\'Brien on a topic we called Project Utopia; how to run a successful software project. We had been successfully running software projects for several years, and had also seen several mistakes others would make, that we felt we could help alleviate with a few practical and applicable tips. This talk was recreated and published on Medium as <a href="https://medium.com/vehikl-news/running-better-software-projects-c589f017c63f" target="_blank" rel="noreferrer">an article</a> for those who didn\'t see the talk.',
+          year: '2016'
         },
         {
           id: '5a8e817e-a391-4f9d-a075-275d0e4e1109',
@@ -271,7 +287,8 @@ const About = () => {
           type: 'community',
           title: 'Attend Laracon US (NYC)',
           image: laraconUs2017,
-          description: 'Another year, another great Laracon US. This year the conference was in New York City, at a venue that couldn\'t be beat. Good talks from seasoned speakers, great engaging crowd, and another year of fun and games amongst the sponsors and supporters.'
+          description: 'Another year, another great Laracon US. This year the conference was in New York City, at a venue that couldn\'t be beat. Good talks from seasoned speakers, great engaging crowd, and another year of fun and games amongst the sponsors and supporters.',
+          year: '2017'
         },
       ]
     },
