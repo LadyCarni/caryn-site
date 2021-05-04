@@ -21,6 +21,8 @@ import canUx from 'assets/about/canUx.jpg';
 import fluxible from 'assets/about/fluxible-goat-check.jpg';
 import laraconUs2015 from 'assets/about/laracon-us-2015.jpg';
 import devDesign from 'assets/about/dev-design-pair.jpg';
+import arcticWolf from 'assets/about/arctic-wolf-caryn.jpg';
+import hackernest from 'assets/about/hackernest.jpg';
 
 const About = () => {
   const timeline = [
@@ -157,6 +159,9 @@ const About = () => {
           id: 'e9d9f89f-5b37-48b8-a394-796985e8c8ed',
           type: 'community',
           title: 'Join Hackernest meetup (Kitchener-Waterloo)',
+          image: hackernest,
+          description: 'Hackernest is a monthly social and networking event for the local tech community. It is a not-for-profit with chapters around the world. Attendees include staff and students from around the region, which makes for a busy networking evening with many varied people.',
+          year: '2014'
         }
       ]
     },
@@ -401,6 +406,25 @@ const About = () => {
           id: '7a25d1ca-700a-4a40-a488-09656e1270f4',
           type: 'community',
           title: 'Attend RC Show (Toronto)',
+        },
+        {
+          id: 'be658b70-9d28-4392-a681-d701e7b6970f',
+          type: 'education',
+          title: 'SMART Goal Setting course',
+        },
+      ]
+    },
+    {
+      id: '90724e2b-f611-4fdb-a3c9-e222819cfeeb',
+      year: '2021',
+      events: [
+        {
+          id: 'd8a5c6c3-a4c3-46ed-8242-01855f44340b',
+          type: 'job',
+          title: 'Design Tech Lead (Waterloo, ON)',
+          image: arcticWolf,
+          description: 'This role starts a new chapter in my career, as a tech lead within the design sphere. Arctic Wolf is an IT security company with a growing team set to continue expanding its team and reach.',
+          year: '2021'
         },
       ]
     }
