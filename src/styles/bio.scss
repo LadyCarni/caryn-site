@@ -72,7 +72,7 @@
   }
 
   .detail {
-    background: rgba($primary, .20);
+    background: lighten($primary, 50%);
     border-radius: 10px;
     border: 1px solid $primary;
     height: fit-content;
@@ -86,6 +86,20 @@
     position: sticky;
     top: 80px;
     width: 600px;
+
+    @media screen and (max-width: $small) {
+      position: fixed;
+      z-index: 99;
+      margin: 0;
+      width: 80vw;
+      min-width: 80vw;
+      max-width: 80vw;
+    }
+
+    @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
+      width: 40vw;
+      min-width: 40vw;
+    }
 
     /* width */
     &::-webkit-scrollbar {
@@ -139,6 +153,7 @@
 
     h3 {
       margin-top: 0;
+      max-width: 85%;
     }
 
     p {
@@ -151,6 +166,11 @@
 
     img {
       height: 300px;
+
+      @media screen and (max-width: $small) {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -175,6 +195,14 @@
     padding: 0;
     z-index: 1;
     width: 430px;
+
+    @media screen and (max-width: $small) {
+      width: 90vw;
+    }
+
+    @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
+      max-width: 40vw;
+    }
 
     li {
       align-items: baseline;

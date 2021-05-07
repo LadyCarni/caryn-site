@@ -127,6 +127,8 @@ const About = () => {
           id: '45cde8e3-f1d8-4ff8-91e0-c156f342003f',
           type: 'job',
           title: 'Rebrand ChromeMedia to Vehikl',
+          description: 'When ChromeMedia decided to pivot the company in a more long-term strategic direction, I helped build the face of the new brand. With the new logo and icon came new swag, new social media presence, new website, and an all new approach to building software.',
+          year: '2014'
         },
         {
           id: '18dc2aa3-7c71-4f69-aafd-e20320819976',
@@ -137,20 +139,24 @@ const About = () => {
           id: '0c1adfc4-b550-4a43-9e9f-bc610dcd363d',
           type: 'job',
           title: 'Promotion: UX Designer (Vehikl)',
+          description: 'As I continued to expand and hone my skills as a designer, I branched out from the \'web designer\' role and began being identified as a more holistic UX Designer as a result. This shift came on the heels of a strategic company rebrand and a new direction that we would take as a team for how we approached building software.',
+          year: '2014'
         },
         {
           id: 'c18d16ee-e5a3-4389-a6ab-e77b567155d9',
           type: 'speaker',
           title: 'Speaker, UX Waterloo: "How to Wireframe like a Boss" (Waterloo)',
           image: uxWaterloo2014,
-          description: 'My first public speaking engagement was at a UX Waterloo event where I taught a hands-on wireframing workshop. Attendees were given a quick rundown of some essential UX knowledge and warmed up with some practice wireframe elements, then were rewarded with being able to create rough wireframes for some fun app ideas.'
+          description: 'My first public speaking engagement was at a UX Waterloo event where I taught a hands-on wireframing workshop. Attendees were given a quick rundown of some essential UX knowledge and warmed up with some practice wireframe elements, then were rewarded with being able to create rough wireframes for some fun app ideas.',
+          year: '2014'
         },
         {
           id: '3d342566-4036-4bff-bd2e-e7248592db75',
           type: 'community',
           title: 'Attend Fluxible (Kitchener)',
           image: fluxible2014,
-          description: 'My second Fluxible. Organized by the peer-2-peer group UX Waterloo with attendees from all over Southwestern Ontario, this local UX conference brought together speakers from all different UX disciplines to share their knowledge.'
+          description: 'My second Fluxible. Organized by the peer-2-peer group UX Waterloo with attendees from all over Southwestern Ontario, this local UX conference brought together speakers from all different UX disciplines to share their knowledge.',
+          year: '2014'
         },
         {
           id: '24084961-a3a6-41ad-be15-1104cc8adb45',
