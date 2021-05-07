@@ -23,6 +23,7 @@ import laraconUs2015 from 'assets/about/laracon-us-2015.jpg';
 import devDesign from 'assets/about/dev-design-pair.jpg';
 import arcticWolf from 'assets/about/arctic-wolf-caryn.jpg';
 import hackernest from 'assets/about/hackernest.jpg';
+import laraconEu2014 from 'assets/about/laracon-eu-2014.jpg';
 
 const About = () => {
   const timeline = [
@@ -149,11 +150,9 @@ const About = () => {
           id: '24084961-a3a6-41ad-be15-1104cc8adb45',
           type: 'community',
           title: 'Attend Laracon EU (Amsterdam)',
-        },
-        {
-          id: 'f83a3160-9cdf-4ee8-9bd0-a83cfd1f1130',
-          type: 'community',
-          title: 'Attend Erie Day of Code (Erie, PA)',
+          image: laraconEu2014,
+          description: 'This was my first time attending Laracon EU; the European version of the conference focused around the PHP framework Laravel (our framework of choice at Vehikl).',
+          year: '2014'
         },
         {
           id: 'e9d9f89f-5b37-48b8-a394-796985e8c8ed',
