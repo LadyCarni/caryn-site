@@ -37,15 +37,26 @@
   }
 }
 
+@keyframes highlight {
+  0% {
+    width: 30px;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
   font-family: $type-content;
   justify-content: flex-start;
   margin-top: 2em;
+  margin-bottom: 4em;
+  max-width: 1200px;
   position: relative;
   width: 100%;
-  max-width: 1200px;
 
   @media screen and (max-width: $small) {
     width: 90vw;
@@ -56,7 +67,111 @@
   }
 
   .timeline-content {
+    display: flex;
     position: relative;
+  }
+
+  .detail {
+    background: lighten($primary, 50%);
+    border-radius: 10px;
+    border: 1px solid $primary;
+    height: fit-content;
+    margin-left: 1em;
+    margin-top: 2em;
+    max-height: 65vh;
+    min-width: 600px;
+    overflow-y: scroll;
+    overflow-y: scroll;
+    padding: $space;
+    position: sticky;
+    top: 80px;
+    width: 600px;
+
+    @media screen and (max-width: $small) {
+      position: fixed;
+      z-index: 99;
+      margin: 0;
+      width: 80vw;
+      min-width: 80vw;
+      max-width: 80vw;
+    }
+
+    @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
+      width: 40vw;
+      min-width: 40vw;
+    }
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: transparent; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $primary;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $primary-dark; 
+    }
+
+    button {
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      color: $primary-dark;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      opacity: .75;
+      padding: .5em 1em;
+      position: absolute;
+      right: 0;
+      top: .5em;
+
+      svg {
+        font-size: 1.25em;
+        padding-left: .25em;
+      }
+      
+      &:hover {
+        background-color: rgba($primary, .30);
+        opacity: 1;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+      max-width: 85%;
+    }
+
+    p {
+      color: $content;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      height: 300px;
+
+      @media screen and (max-width: $small) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .path {
@@ -69,21 +184,81 @@
     z-index: -1;
   }
 
+  .year-section {
+    margin-bottom: 2em;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
+    max-width: 430px;
     padding: 0;
     z-index: 1;
+    width: 430px;
+
+    @media screen and (max-width: $small) {
+      width: 90vw;
+    }
+
+    @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
+      max-width: 40vw;
+    }
 
     li {
-      align-items: center;
+      align-items: baseline;
       display: flex;
       flex-wrap: nowrap;
       line-height: 1.5em;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
+      position: relative;
+
+      &.active {
+        background: rgba($primary, .20);
+        border-radius: 30px;
+
+        &.more-info {
+          &::after {
+            color: $primary-dark;
+          }
+        }
+      }
+
+      .more {
+        align-self: center;
+        color: $primary-dark;
+        margin-left: auto;
+        padding-top: 5px;
+        padding-right: 10px;
+        text-align: center;
+        transform: scale(1);
+        transition: transform 200ms ease;
+      }
+
+      &.more-info {
+        &:hover {
+          cursor: pointer;
+
+          .more {
+            transform: scale(1.3);
+            transition: transform 200ms ease;
+          }
+
+          &::after {
+            animation: highlight 300ms linear;
+            background: rgba($primary, .20);
+            border-radius: 30px;
+            display: block;
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
 
       &::before {
         align-items: center;
+        align-self: center;
         background: darken($primary, 10%);
         border-radius: 30px;
         color: $grey3;
@@ -92,6 +267,7 @@
         height: 30px;
         justify-content: center;
         margin-right: 1em;
+        min-width: 30px;
         padding: .25em;
         width: 30px;
         z-index: 1;
@@ -99,9 +275,11 @@
 
       .event {
         display: inline-block;
+        max-width: 300px;
+        align-self: center;
       }
 
-      &.year {
+      &.year-title {
         font-size: 1.25em;
         font-weight: 700;
         margin-bottom: .5em;

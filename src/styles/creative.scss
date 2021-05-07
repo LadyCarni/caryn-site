@@ -352,16 +352,16 @@
 
     .photo-info {
       background-color: rgba($grey1, .85);
-      color: white;
-      padding: .75em $space;
-      font-size: .85em;
-      position: absolute;
-      width: -webkit-fill-available;
       bottom: 0;
+      color: white;
+      font-size: .85em;
       left: 0;
-      right: 0;
       opacity: 0;
+      padding: .75em $space;
+      position: absolute;
+      right: 0;
       transition: opacity 200ms ease;
+      width: -webkit-fill-available;
 
       p {
         margin: 0 0 .25em;
@@ -445,13 +445,13 @@
 
       li {
         background: rgba($primary, .2);
-        padding: .75em 1em;
+        border-radius: 20px;
+        display: inline-block;
         font-size: .85em;
         line-height: .85em;
-        display: inline-block;
-        margin-right: 1em;
         margin-bottom: 1em;
-        border-radius: 20px;
+        margin-right: 1em;
+        padding: .75em 1em;
       }
     }
   }
@@ -470,8 +470,8 @@
     font-family: $icon;
     font-weight: 700;
     margin-right: .5em;
-    width: 25px;
     text-align: center;
+    width: 25px;
   }
 
   &.prep-step {
@@ -533,19 +533,19 @@
 
 .diy-materials {
   background: rgba($primary, .10);
-  border: 1px solid $primary;
   border-radius: 10px;
+  border: 1px solid $primary;
   display: block;
   height: fit-content;
-  padding: $space;
   margin-bottom: 1em;
+  padding: $space;
 
   h3 {
     border-bottom: 1px solid rgba($primary, .3);
     color: $primary-dark;
     font-size: 1em;
-    padding-bottom: .5em;
     margin-top: .5em;
+    padding-bottom: .5em;
   }
 
   ul {
@@ -566,8 +566,8 @@
 
 .recipe-card {
   background: rgba($primary, .10);
-  border: 1px solid $primary;
   border-radius: 10px;
+  border: 1px solid $primary;
   height: fit-content;
   max-height: 70vh;
   overflow-y: scroll;

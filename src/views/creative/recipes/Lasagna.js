@@ -1,7 +1,7 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
-import Lasagna1 from 'assets/creative/recipes/lasagna1.jpg';
+// import Lasagna1 from 'assets/creative/recipes/lasagna1.jpg';
 import Lasagna2 from 'assets/creative/recipes/lasagna2.jpg';
 import Lasagna3 from 'assets/creative/recipes/lasagna3.jpg';
 import Lasagna4 from 'assets/creative/recipes/lasagna4.jpg';
