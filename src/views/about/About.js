@@ -24,6 +24,8 @@ import devDesign from 'assets/about/dev-design-pair.jpg';
 import arcticWolf from 'assets/about/arctic-wolf-caryn.jpg';
 import hackernest from 'assets/about/hackernest.jpg';
 import laraconEu2014 from 'assets/about/laracon-eu-2014.jpg';
+import fluxible2014 from 'assets/about/fluxible2014.jpg';
+import uxWaterloo2014 from 'assets/about/ux-waterloo-2014.jpg';
 
 const About = () => {
   const timeline = [
@@ -140,11 +142,15 @@ const About = () => {
           id: 'c18d16ee-e5a3-4389-a6ab-e77b567155d9',
           type: 'speaker',
           title: 'Speaker, UX Waterloo: "How to Wireframe like a Boss" (Waterloo)',
+          image: uxWaterloo2014,
+          description: 'My first public speaking engagement was at a UX Waterloo event where I taught a hands-on wireframing workshop. Attendees were given a quick rundown of some essential UX knowledge and warmed up with some practice wireframe elements, then were rewarded with being able to create rough wireframes for some fun app ideas.'
         },
         {
           id: '3d342566-4036-4bff-bd2e-e7248592db75',
           type: 'community',
           title: 'Attend Fluxible (Kitchener)',
+          image: fluxible2014,
+          description: 'My second Fluxible. Organized by the peer-2-peer group UX Waterloo with attendees from all over Southwestern Ontario, this local UX conference brought together speakers from all different UX disciplines to share their knowledge.'
         },
         {
           id: '24084961-a3a6-41ad-be15-1104cc8adb45',
