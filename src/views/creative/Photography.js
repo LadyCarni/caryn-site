@@ -36,7 +36,12 @@ const albums = [
     name: "Hawaii",
     value: "Hawaii",
     id: 'fbc025a7-6e12-4595-a70e-2d0c1ef4e0c9',
-  }
+  },
+  {
+    name: "Ontario Fall",
+    value: "Ontario Fall",
+    id: '5c4dca1b-cc3d-421f-8fc5-3192491b62d7',
+  },
 ];
 
 const allPhotos = [
@@ -263,6 +268,46 @@ const allPhotos = [
     album: "Hawaii",
     thumb: "item",
     id: '25de43ca-fe46-43df-9513-1cc026a94475',
+  },
+  { 
+    title: "Fall road",
+    image: "https://live.staticflickr.com/4445/37822190536_35218af963_w.jpg",
+    link: "https://flic.kr/p/ZCdBxo",
+    album: "Ontario Fall",
+    thumb: "item rectangle",
+    id: '692a7c3e-45ff-414f-bc57-810607fe1be2',
+  },
+  { 
+    title: "Abandoned house",
+    image: "https://live.staticflickr.com/4498/24018049248_15cd2087ba_w.jpg",
+    link: "https://flic.kr/p/CAoMgo",
+    album: "Ontario Fall",
+    thumb: "item rectangle",
+    id: '726b962c-7523-44c2-99ad-45be63583fec',
+  },
+  { 
+    title: "Abandoned house",
+    image: "https://live.staticflickr.com/4506/37871024561_55666627f1_w.jpg",
+    link: "https://flic.kr/p/ZGwUck",
+    album: "Ontario Fall",
+    thumb: "item",
+    id: 'bfdf2d3f-32e7-4b82-8584-61cf1a52b372',
+  },
+  { 
+    title: "Caterpillar",
+    image: "https://live.staticflickr.com/4452/37822593276_bf91eaf833_w.jpg",
+    link: "https://flic.kr/p/ZCfFgb",
+    album: "Ontario Fall",
+    thumb: "item",
+    id: '95b2316a-ffd1-4139-8817-ed5fae38b489',
+  },
+  { 
+    title: "Gone",
+    image: "https://live.staticflickr.com/4456/24018046288_7b8c67473d_w.jpg",
+    link: "https://flic.kr/p/CAoLom",
+    album: "Ontario Fall",
+    thumb: "item rectangle",
+    id: '318f8597-11fd-46e1-8a7f-cfc339c91622',
   },
 ];
 
