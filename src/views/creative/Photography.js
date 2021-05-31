@@ -42,6 +42,11 @@ const albums = [
     value: "Ontario Fall",
     id: '5c4dca1b-cc3d-421f-8fc5-3192491b62d7',
   },
+  {
+    name: "Detroit Auto Show",
+    value: "Detroit Auto Show",
+    id: '419da2a9-9b0e-4a62-b10a-d5e549ffe236',
+  },
 ];
 
 const allPhotos = [
@@ -308,6 +313,46 @@ const allPhotos = [
     album: "Ontario Fall",
     thumb: "item rectangle",
     id: '318f8597-11fd-46e1-8a7f-cfc339c91622',
+  },
+  { 
+    title: "Car show",
+    image: "https://live.staticflickr.com/737/32061341180_6e5c039737.jpg",
+    link: "https://flic.kr/p/QR9LtA",
+    album: "Detroit Auto Show",
+    thumb: "item rectangle",
+    id: '79e4b9d7-6ea5-4d03-9744-c17f54cf8d3e',
+  },
+  { 
+    title: "Car show",
+    image: "https://live.staticflickr.com/423/32399384826_5b9a51e80b.jpg",
+    link: "https://flic.kr/p/Rn2jkd",
+    album: "Detroit Auto Show",
+    thumb: "item",
+    id: 'af26c606-3b8a-4f8a-8627-08f0776c7ec5',
+  },
+  { 
+    title: "Car show",
+    image: "https://live.staticflickr.com/507/32061265490_173187e42b.jpg",
+    link: "https://flic.kr/p/QR9neu",
+    album: "Detroit Auto Show",
+    thumb: "item rectangle",
+    id: 'a3d57063-64b0-445b-aa18-6b021f58fa22',
+  },
+  { 
+    title: "Car show",
+    image: "https://live.staticflickr.com/417/32061256190_da19b60673.jpg",
+    link: "https://flic.kr/p/QR9jt9",
+    album: "Detroit Auto Show",
+    thumb: "item",
+    id: '8afa9139-c39c-457d-a633-75443042c6cf',
+  },
+  { 
+    title: "Car show",
+    image: "https://live.staticflickr.com/737/31595960934_67744af097.jpg",
+    link: "https://flic.kr/p/Q92yp9",
+    album: "Detroit Auto Show",
+    thumb: "item rectangle",
+    id: '50dcbb00-43a0-43fe-9dc7-3647232c57e2',
   },
 ];
 
