@@ -47,6 +47,11 @@ const albums = [
     value: "Detroit Auto Show",
     id: '419da2a9-9b0e-4a62-b10a-d5e549ffe236',
   },
+  {
+    name: "Amsterdam 2016",
+    value: "Amsterdam 2016",
+    id: '098eab20-22c8-499c-8464-388910dbfa4b',
+  },
 ];
 
 const allPhotos = [
@@ -353,6 +358,54 @@ const allPhotos = [
     album: "Detroit Auto Show",
     thumb: "item rectangle",
     id: '50dcbb00-43a0-43fe-9dc7-3647232c57e2',
+  },
+  { 
+    title: "Amsterdam",
+    image: "https://live.staticflickr.com/8324/29348731605_833b0f322b.jpg",
+    link: "https://flic.kr/p/LHrVpT",
+    album: "Amsterdam 2016",
+    thumb: "item",
+    id: '44765cac-bf3f-4983-98f1-ac8937865d3c',
+  },
+  { 
+    title: "Amsterdam",
+    image: "https://live.staticflickr.com/7751/28725714104_8342d7c44d.jpg",
+    link: "https://flic.kr/p/KLoN1Q",
+    album: "Amsterdam 2016",
+    thumb: "item",
+    id: '2c9710f8-09b8-4765-afc6-9eddd4aa786e',
+  },
+  { 
+    title: "Amsterdam",
+    image: "https://live.staticflickr.com/8278/29269984371_ffc31d73dc.jpg",
+    link: "https://flic.kr/p/LAujAX",
+    album: "Amsterdam 2016",
+    thumb: "item rectangle",
+    id: '634a378b-bae6-4af7-b82a-4e223cfa3bd0',
+  },
+  { 
+    title: "Amsterdam",
+    image: "https://live.staticflickr.com/8096/29348198465_3d379ae350.jpg",
+    link: "https://flic.kr/p/LHpbVP",
+    album: "Amsterdam 2016",
+    thumb: "item rectangle",
+    id: '6d6e7858-092c-4efe-bf1b-95f519dce881',
+  },
+  { 
+    title: "Amsterdam",
+    image: "https://live.staticflickr.com/8534/28725248264_1739f575f5.jpg",
+    link: "https://flic.kr/p/KLmpx7",
+    album: "Amsterdam 2016",
+    thumb: "item",
+    id: '51a0c010-620e-4ba0-b4e9-027aaacd0e8e',
+  },
+  { 
+    title: "Amsterdam",
+    image: "https://live.staticflickr.com/8250/29240460542_466ccab282.jpg",
+    link: "https://flic.kr/p/LxT1cq",
+    album: "Amsterdam 2016",
+    thumb: "item",
+    id: '266a3a7d-4c1c-45c1-83a1-a7a5fd6c3a55',
   },
 ];
 
