@@ -67,6 +67,16 @@ const albums = [
     value: "Ripley's Aquarium",
     id: 'ef7e35d9-9eb3-4976-804d-0e46ea36efd1',
   },
+  {
+    name: "August",
+    value: "August",
+    id: '137c08f0-2e95-45fe-8d08-ab0e77e04700',
+  },
+  {
+    name: "Amsterdam 2014",
+    value: "Amsterdam 2014",
+    id: '4e748cbf-e7aa-43c0-969c-30e7d980fdfc',
+  },
 ];
 
 const allPhotos = [
@@ -542,6 +552,62 @@ const allPhotos = [
     thumb: "item rectangle",
     id: 'f4fa26d1-d88b-4bbb-babb-6d40c59f6b7f',
   },
+  { 
+    title: "August",
+    image: "https://live.staticflickr.com/402/20053926269_ed97a57425.jpg",
+    link: "https://flic.kr/p/wy6BBt",
+    album: "August",
+    thumb: "item rectangle",
+    id: 'ae1b2fd9-41d9-45c5-8143-15b865eff005',
+  },
+  { 
+    title: "August",
+    image: "https://live.staticflickr.com/406/20240483425_e65f0b6b22.jpg",
+    link: "https://flic.kr/p/wQzLya",
+    album: "August",
+    thumb: "item rectangle",
+    id: '7e2b999d-dcd7-4019-a58b-0cb204c51e6d',
+  },
+  { 
+    title: "August",
+    image: "https://live.staticflickr.com/366/20240463845_506cf59d1d.jpg",
+    link: "https://flic.kr/p/wQzEJz",
+    album: "August",
+    thumb: "item",
+    id: '25deadbc-f8a3-43be-a9a7-56cbc96efaa7',
+  },
+  { 
+    title: "August",
+    image: "https://live.staticflickr.com/517/20240455295_ba7376ee87.jpg",
+    link: "https://flic.kr/p/wQzCca",
+    album: "August",
+    thumb: "item rectangle",
+    id: 'ad0299a3-55db-4548-b8a2-13bdf195a2f5',
+  },
+  { 
+    title: "August",
+    image: "https://live.staticflickr.com/3762/20232202342_6e157965e9.jpg",
+    link: "https://flic.kr/p/wPRjSS",
+    album: "August",
+    thumb: "item",
+    id: '4029df4b-cc77-4ca7-a08a-cd46eb6f8a48',
+  },
+  { 
+    title: "August",
+    image: "https://live.staticflickr.com/255/20052443328_defbbd4d1a.jpg",
+    link: "https://flic.kr/p/wxY1Mw",
+    album: "August",
+    thumb: "item rectangle",
+    id: '92e07b34-533d-417f-a6fc-965fa82f73dd',
+  },
+  { 
+    title: "Amsterdam 2014",
+    image: "https://live.staticflickr.com/3875/14955435750_ef5f301b54.jpg",
+    link: "https://flic.kr/p/oMyw1w",
+    album: "Amsterdam 2014",
+    thumb: "item rectangle",
+    id: '5c7d4e16-872c-4682-948d-f207428a4aaa',
+  },
 ];
 
 const Photography = () => {
@@ -567,7 +633,7 @@ const Photography = () => {
       <div className="creative-body-container">
         <div className="creative-body">
           <div className="creative-nav">
-            <ul>
+            <ul className="sticky-side">
               {albums.map(({id, name, value}) => (
                 <li key={id} onClick={() => setFilter(value)} className={`${filter === value ? 'active' : '' }`}>
                   {name}

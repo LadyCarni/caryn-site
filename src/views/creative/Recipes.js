@@ -287,7 +287,7 @@ const Recipes = () => {
       <div className="creative-body-container">
         <div className="creative-body">
           <div className="creative-nav">
-            <ul>
+            <ul className="sticky-side">
               {categories.map(({id, name, value}) => (
                 <li key={id} onClick={() => setFilter(value)} className={`${filter === value ? 'active' : '' }`}>
                   {name}
