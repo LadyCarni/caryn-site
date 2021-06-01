@@ -608,6 +608,46 @@ const allPhotos = [
     thumb: "item rectangle",
     id: '5c7d4e16-872c-4682-948d-f207428a4aaa',
   },
+  { 
+    title: "Amsterdam 2014",
+    image: "https://live.staticflickr.com/5589/14955431080_4904e8c940.jpg",
+    link: "https://flic.kr/p/oMyuC1",
+    album: "Amsterdam 2014",
+    thumb: "item rectangle",
+    id: '9d527f70-02ab-4faa-bf79-675a3fde3a98',
+  },
+  { 
+    title: "Amsterdam 2014",
+    image: "https://live.staticflickr.com/3846/15141673892_3030b86d1e.jpg",
+    link: "https://flic.kr/p/p5237Y",
+    album: "Amsterdam 2014",
+    thumb: "item",
+    id: '084d204e-5b07-4d0b-aeea-7c31ffa0fdf6',
+  },
+  { 
+    title: "Amsterdam 2014",
+    image: "https://live.staticflickr.com/3854/15141665892_ba0a368e53.jpg",
+    link: "https://flic.kr/p/p51ZK3",
+    album: "Amsterdam 2014",
+    thumb: "item",
+    id: '78c8b53e-168a-4d01-b011-d54fef8eee98',
+  },
+  { 
+    title: "Amsterdam 2014",
+    image: "https://live.staticflickr.com/5564/14955355309_e096bddc8f.jpg",
+    link: "https://flic.kr/p/oMy76B",
+    album: "Amsterdam 2014",
+    thumb: "item",
+    id: 'a2b54f47-2586-44f0-8602-43f6a86af93f',
+  },
+  { 
+    title: "Amsterdam 2014",
+    image: "https://live.staticflickr.com/5593/14955459247_4dcbe3c72f.jpg",
+    link: "https://flic.kr/p/oMyCZD",
+    album: "Amsterdam 2014",
+    thumb: "item",
+    id: 'b5b1edc2-512c-4d10-95f4-819c70f7c344',
+  },
 ];
 
 const Photography = () => {
