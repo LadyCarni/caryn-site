@@ -79,9 +79,9 @@ const allRecipes = [
   { 
     title: "Bailey's Fudge",
     image: BaileysFudge,
-    link: "#",
+    link: "/creative/recipes/fudge",
     category: "Desserts",
-    thumb: "item soon",
+    thumb: "item",
     id: 0,
   },
   { 
