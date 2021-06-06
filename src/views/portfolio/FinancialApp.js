@@ -13,7 +13,7 @@ const FongoWorks = () => {
         imageAlt="Financial app"
         headerTitle="Financial app"
         headerSubtitle="Web app for the financial industry"
-        headerDescription="Fongo Works is a cloud-based phone system designed to replace physical phones for small teams."
+        headerDescription="Some description..."
         headerDisciplines={["Front-end Development (Angular)", "UX Research & Design"]}
       />
       <div className="feature feature-width">
