@@ -87,9 +87,9 @@ const allRecipes = [
   { 
     title: "Banana Bread French Toast",
     image: FrenchToast,
-    link: "#",
+    link: "/creative/recipes/french-toast",
     category: "Mains",
-    thumb: "item rectangle soon",
+    thumb: "item rectangle",
     id: 1,
   },
   { 
