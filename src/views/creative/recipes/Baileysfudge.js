@@ -13,7 +13,7 @@ const Ingredients = ( {media} ) => {
         <li><span className="amount">1 cup</span>sweetened condensed milk</li>
         <li><span className="amount">1/4 cup</span>Bailey's</li>
         <li><span className="amount">1 tsp</span>vanilla extract</li>
-        <li><span className="amount">1/2 cup</span> candy topping (e.g. butterscotch chips)</li>
+        <li><span className="amount">1/2 cup</span>candy topping (e.g. butterscotch chips)</li>
       </ul>
     </div>
   )
