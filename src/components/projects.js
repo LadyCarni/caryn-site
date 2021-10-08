@@ -5,6 +5,7 @@ import knakWires from "assets/portfolio/knak-wires.jpg";
 import connectFeature from "assets/portfolio/connect-cover.jpg";
 import fongoCover from 'assets/portfolio/fongo-cover.png';
 import lunaCover from 'assets/portfolio/luna-cover.png';
+import financialCover from 'assets/portfolio/financial-cover.png';
 import lifestyleCover from 'assets/portfolio/lifestyle-cover.jpg';
 const Projects = ({ match }) => {
   const gallery = [
@@ -44,11 +45,18 @@ const Projects = ({ match }) => {
       id: '1fe98b31-a32a-4cef-872e-b6a08ea533aa'
     },
     { 
-      source: lifestyleCover,
+      source: financialCover,
       title: "Financial App *",
       slug: "financial-app",
       category: "Web App Design",
       id: 'f50ed972-30e3-41d2-99b2-e58442245fc6'
+    },
+    { 
+      source: lifestyleCover,
+      title: "Lifestyle App *",
+      slug: "lifestyle-app",
+      category: "Web App Design",
+      id: '260b072f-6ff6-4b4e-84b6-3ccfce49c145'
     },
     // { 
     //   source: "https://images.unsplash.com/photo-1598149885212-c92671611588?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=958&q=80",
