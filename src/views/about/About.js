@@ -26,6 +26,7 @@ import hackernest from 'assets/about/hackernest.jpg';
 import laraconEu2014 from 'assets/about/laracon-eu-2014.jpg';
 import fluxible2014 from 'assets/about/fluxible2014.jpg';
 import uxWaterloo2014 from 'assets/about/ux-waterloo-2014.jpg';
+import wireframe2017 from 'assets/about/wireframe.png';
 
 const About = () => {
   const timeline = [
@@ -311,6 +312,19 @@ const About = () => {
           year: '2017'
         },
         {
+          id: '9c143f3e-8657-4825-8107-dfb6f32b8691',
+          type: 'community',
+          title: 'SheHacks Facilitator (London, ON)',
+          image: wireframe2017,
+          description: 'I was asked to facilitate a wireframing workshop for Western University as a part of the SheHacks event. Attendees were taught some essential UX knowledge and got to use the concepts with some practice wireframe elements, then were rewarded with being able to create rough wireframes for some fun app ideas.',
+          year: '2017'
+        },
+        {
+          id: '1b3ae9d8-da30-4d1d-bf4d-a10863dd71c5',
+          type: 'community',
+          title: 'Join Ladies that UX (London, ON)',
+        },
+        {
           id: '621f4832-fc0d-4296-8945-5bd87a1b888a',
           type: 'community',
           title: 'Attend UX Centre Stag (London, ON)',
@@ -357,11 +371,6 @@ const About = () => {
           id: 'c2e240e5-34cf-4801-9684-b9a370811828',
           type: 'speaker',
           title: 'Launch of DevLondon (London, ON)',
-        },
-        {
-          id: '1b3ae9d8-da30-4d1d-bf4d-a10863dd71c5',
-          type: 'community',
-          title: 'Join Ladies that UX (London, ON)',
         },
         {
           id: '86999fe4-7ccb-4b2c-bbcf-803261242872',
