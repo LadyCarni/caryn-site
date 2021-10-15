@@ -2,9 +2,6 @@ import React from "react";
 import PortfolioHeader from "components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import wireframeHeader from "assets/caryn5.jpg";
-import devLondonSlack from "assets/portfolio/dev-london-slack.gif";
-import devLondonPlans from "assets/portfolio/dev-london-plans.jpg";
-import devLondonSite from "assets/portfolio/dev-london-site.png";
 import usePrism from "hooks/usePrism";
 
 const WireframeCoaching = () => {
