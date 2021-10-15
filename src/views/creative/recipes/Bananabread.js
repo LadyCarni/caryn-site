@@ -40,7 +40,7 @@ const Ingredients = ( {media} ) => {
   )
 };
 
-const Cheesecake = () => {
+const BananaBread = () => {
   return (
     <div className="creative full-height">
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
@@ -112,4 +112,4 @@ const Cheesecake = () => {
   )
 }
 
-export default Cheesecake;
+export default BananaBread;
