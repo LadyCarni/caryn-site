@@ -126,13 +126,13 @@ const Crafts = () => {
           <div className="creative-thumbs">
             {allCrafts.map(({id, title, image, link, thumb}) => (
               <div className={thumb} key={id}>
+              <a href={link}>
                 <img src={image} alt={title}/>
                 <div className="photo-info">
-                  <a href={link}>
-                    <p>{title}</p>
-                    <span className="link-text">View craft</span><FontAwesomeIcon icon={faPalette} />
-                  </a>
+                  <p>{title}</p>
+                  <span className="link-text">View craft</span><FontAwesomeIcon icon={faPalette} />
                 </div>
+                </a>
               </div>
             ))}
           </div>

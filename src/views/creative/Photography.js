@@ -790,11 +790,13 @@ const Photography = () => {
 
   const renderAll = allPhotos.filter(photo => filter ? photo.album === filter : true).map(photo => (
     <div className={photo.thumb} key={photo.id}>
-      <img src={photo.image} alt={photo.title}/>
-      <div className="photo-info">
-        <p>{photo.title}</p>
-        <a href={photo.link} target="_blank" rel="noreferrer">View original<FontAwesomeIcon icon={faExternalLink} /></a>
-      </div>
+      <a href={photo.link} target="_blank" rel="noreferrer">
+        <img src={photo.image} alt={photo.title}/>
+        <div className="photo-info">
+          <p>{photo.title}</p>
+          View original<FontAwesomeIcon icon={faExternalLink} />
+        </div>
+      </a>
     </div>
   ));
 
