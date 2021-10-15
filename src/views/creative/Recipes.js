@@ -30,6 +30,7 @@ import LocoMoco from 'assets/creative/recipes/recipe-loco-moco.jpg';
 import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
 import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg';
 import Lasagna from 'assets/creative/recipes/lasagna9.jpg';
+import DryRub from 'assets/creative/recipes/dry-rub.jpg';
 
 const categories = [
   {
@@ -66,7 +67,7 @@ const allRecipes = [
     link: "/creative/recipes/cheesecake",
     category: "Desserts",
     thumb: "item rectangle",
-    id: 23,
+    id: '781759a9-bc6b-4204-a53c-e3131cb72683',
   },
   { 
     title: "Chicken Lasagna",
@@ -74,7 +75,7 @@ const allRecipes = [
     link: "/creative/recipes/lasagna",
     category: "Mains",
     thumb: "item rectangle",
-    id: 24,
+    id: '175af412-fe01-43f2-ac2b-cea0ddd9e168',
   },
   { 
     title: "Bailey's Fudge",
@@ -82,7 +83,15 @@ const allRecipes = [
     link: "/creative/recipes/fudge",
     category: "Desserts",
     thumb: "item",
-    id: 0,
+    id: '268b49ac-879c-46d1-b268-fe21897c7596',
+  },
+  { 
+    title: "Best-Ever Dry Rub",
+    image: DryRub,
+    link: "/creative/recipes/dry-rub",
+    category: "Misc",
+    thumb: "item",
+    id: 'e6f538eb-39f0-45a0-b9df-b807117cb9a8',
   },
   { 
     title: "Banana Bread French Toast",
@@ -90,7 +99,7 @@ const allRecipes = [
     link: "/creative/recipes/french-toast",
     category: "Mains",
     thumb: "item rectangle",
-    id: 1,
+    id: '991eeb7f-7437-486d-8472-3bc4c1dc1b28',
   },
   { 
     title: "Twice Baked Potatoes",
@@ -267,13 +276,13 @@ const Recipes = () => {
 
   const renderAll = allRecipes.filter(recipe => filter ? recipe.category === filter : true).map(recipe => (
     <div className={recipe.thumb} key={recipe.id}>
-      <img src={recipe.image} alt={recipe.title}/>
-      <div className="photo-info">
-        <a href={recipe.link}>
-          <p>{recipe.title}</p>
-          <span className="link-text">View recipe</span><FontAwesomeIcon icon={faHatChef} />
-        </a>
-      </div>
+      <a href={recipe.link}>
+        <img src={recipe.image} alt={recipe.title}/>
+        <div className="photo-info">
+            <p>{recipe.title}</p>
+            <span className="link-text">View recipe</span><FontAwesomeIcon icon={faHatChef} />
+        </div>
+      </a>
     </div>
   ));
 

@@ -151,13 +151,13 @@ const Diy = () => {
           <div className="creative-thumbs">
             {allDiy.map(({id, title, image, link, thumb}) => (
               <div className={thumb} key={id}>
+                <a href={link}>
                 <img src={image} alt={title}/>
-                <div className="photo-info">
-                  <a href={link}>
+                  <div className="photo-info">
                     <p>{title}</p>
                     <span className="link-text">View project</span><FontAwesomeIcon icon={faHammer} />
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
             ))}
           </div>

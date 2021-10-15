@@ -353,7 +353,7 @@
     .photo-info {
       background-color: rgba($grey1, .85);
       bottom: 0;
-      color: white;
+      color: lighten($primary, 20%);
       font-size: .85em;
       left: 0;
       opacity: 0;
@@ -363,19 +363,13 @@
       transition: opacity 200ms ease;
       width: -webkit-fill-available;
 
-      p {
-        margin: 0 0 .25em;
+      svg {
+        margin-left: .5em;
       }
 
-      a {
-        color: lighten($primary, 20%);
-        display: block;
-        font-size: .85em;
-        text-decoration: none;
-
-        svg {
-          margin-left: .5em;
-        }
+      p {
+        font-weight: 500;
+        margin: 0 0 .25em;
       }
     }
   }
