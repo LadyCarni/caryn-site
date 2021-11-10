@@ -26,11 +26,11 @@ const WireframeCoaching = () => {
             <h2>Coaching Workshops</h2>
             <p>Wireframing is one of those simple but great skills to have on any software team, regardless of role or responsibility. Over the years I've run my wireframing workshop for small teams in an intimate setting, large teams over the course of an afternoon, at Universities for students studying HCI, and at various software user groups.</p>
             
-            <h2>Why does it matter?</h2>
+            <h2>Why wireframe?</h2>
             <h3>Communication, collaboration, efficient planning</h3>
-            <p>Wireframing is the part of the UX process where you begin to visualize the landscape of the interface you’ll be designing. Being able to quickly sketch out ideas will help you come up with ideas as well as communicate those ideas more effectively to other people.</p>
+            <p>Wireframing is the part of the UX process where you begin to visualize the landscape of the interface you’ll be designing. You can quickly craft ideas and communicate them to others by sketching them out in a wireframe.</p>
 
-            <p>Wireframing answers key questions before a design begins:</p>
+            <p>Wireframing answers important questions before a design begins:</p>
 
             <ul>
               <li>How will the pieces of the interface be structured and work together?</li>
@@ -41,10 +41,10 @@ const WireframeCoaching = () => {
             </ul>
 
             <h2>Getting started</h2>
-            <h3>Mindset and clear language</h3>
+            <h3>Mindset and terminology</h3>
             <p>The most popular response to the idea of wireframing is: <i>"But I can't draw!"</i> To which I always respond: <i>"You don't need to be able to draw to wireframe."</i>.</p>
 
-            <p>To get participants comfortable with UX as a whole, I start each workshop going through some basic UX terminology and jargon UX professionals like to use. This is intended to break down some of the barriers around UX that makes it seem magical and out of reach.</p>
+            <p>To get participants comfortable with UX as a whole, I start each workshop going through some basic UX terminology and jargon UX professionals like to use. This is intended to break down some of the barriers around UX that makes it seem mysterious or out of reach.</p>
 
             <p><b>Wireframe:</b> A plan for how an interface is put together</p>
             <p><b>Hi-fidelity:</b> High detail, often referring to prototyping; interactive and as close to the visuals of the real app as possible</p>
@@ -58,23 +58,71 @@ const WireframeCoaching = () => {
             <p><b>Copywriting:</b> Writing the content using intentional language, tone, and sentence structure, including <i>microcopy</i>; the wording used in buttons, labels, titles, etc.</p>
 
             <h2>What tools are needed?</h2>
-            <h3>Pen and paper</h3>
 
             <div className="flex columns">
               <div className="fill">
-                <img src={wireframeTools} alt="pen and paper" className="shadow"/>
+                <p>For each workshop, participants are provided with everything they need:</p>
+                <ul>
+                  <li>sticky notes</li>
+                  <li>graph paper</li>
+                  <li>pens</li>
+                  <li>markers</li>
+                </ul>
+                <p>It's explained that if you use a pencil for temporary things like wireframing you’ll be tempted to erase mistakes. Using a pen forces you to get used to how disposable these are intended to be.</p>
               </div>
               <div className="fill">
-                <p>For each workshop, participants are provided with everything they need: sticky notes, graph paper, pens, and markers.</p>
-                <p>I explain that if you use a pencil for temporary things like wireframing you’ll be tempted to erase mistakes. Using a pen forces you to get used to how disposable these are intended to be.</p>
+                <img src={wireframeTools} alt="pen and paper" className="shadow"/>
               </div>
             </div>
 
             <h2>Wireframing basics</h2>
             <h3>Boxes and lines</h3>
-            <p>At its core, wireframing can be done with simple boxes and lines. It's for this reason that graph paper can be such a help.</p>
+            <p>At its core, wireframing can be done with simple boxes and lines. It's for this reason that graph paper can be such a help. Just about everything needed for wireframing can be achieved with these simple shapes.</p>
 
-            
+            <p>Examples</p>
+
+            <h2>Concept set up</h2>
+            <h3>Time to pick and idea and start drawing</h3>
+            <p>To bring some fun to the workshop, I offer the participants three fictional app idea options to choose from. I give them some basic concepts, the media (web or mobile) that it will be designed for, and a few key requirements to get the ideas flowing.</p>
+
+            <h3>Option 1: Troll Food</h3>
+            <p>Platform: web and/or mobile</p>
+            <p>Description: A random polarizing topic generator to assist in starting online debates.</p>
+            <p>Requirements:</p>
+            <ul>
+              <li>Pre-generates hashtags</li>
+              <li>Passive aggressive tone settings</li>
+              <li>Generates tweets</li>
+            </ul>
+
+            <h3>Option 2: GeriaTricks</h3>
+            <p>Platform: mobile</p>
+            <p>Description: Siri but for IT support. For people whose parents can't figure out why their computer is 'broken'.</p>
+            <p>Requirements:</p>
+            <ul>
+              <li>Voice prompt is customizable to their kid's name</li>
+              <li>Pre-loaded problems and solutions</li>
+              <li>Remote access to restart PC</li>
+            </ul>
+
+            <h3>Option 3: Road Rate</h3>
+            <p>Platform: mobile</p>
+            <p>Description: Up-voting/Down-voting other drivers</p>
+            <p>Requirements:</p>
+            <ul>
+              <li>App has access to and displays closest 5 vehicles</li>
+              <li>Actions for up-vote/down-vote</li>
+              <li>Displays your driver rating</li>
+            </ul>
+
+            <h2>Planning the app</h2>
+            <p>Once participants choose which app idea they're going to design, they're asked to follow a series of steps.</p>
+
+            <h3>Step 1: Brainstorm</h3>
+            <p>Participants are given 5 minutes to use the sticky notes provided to brainstorm some features of the main requirements for their app.</p>
+
+            <h3>Step 2: Prioritize features</h3>
+            <p></p>
           </div>
         </div>
       </div>
