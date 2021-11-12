@@ -3,6 +3,9 @@ import PortfolioHeader from "components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import wireframeHeader from "assets/caryn5.jpg";
 import wireframeTools from "assets/portfolio/wireframe-tools.jpg";
+import trollfood from "assets/portfolio/troll-food.png";
+import roadrate from "assets/portfolio/road-rate.png";
+import geriatricks from "assets/portfolio/geria-tricks.png";
 import usePrism from "hooks/usePrism";
 
 const WireframeCoaching = () => {
@@ -86,34 +89,54 @@ const WireframeCoaching = () => {
             <p>To bring some fun to the workshop, I offer the participants three fictional app idea options to choose from. I give them some basic concepts, the media (web or mobile) that it will be designed for, and a few key requirements to get the ideas flowing.</p>
 
             <h3>Option 1: Troll Food</h3>
-            <p>Platform: web and/or mobile</p>
-            <p>Description: A random polarizing topic generator to assist in starting online debates.</p>
-            <p>Requirements:</p>
-            <ul>
-              <li>Pre-generates hashtags</li>
-              <li>Passive aggressive tone settings</li>
-              <li>Generates tweets</li>
-            </ul>
+            <div className="flex columns">
+              <div className="fill">
+                <img src={trollfood} alt="Troll Food logo"/>
+              </div>
+              <div className="fit">
+                <p><b>Platform:</b> web and/or mobile</p>
+                <p><b>Description:</b> A random polarizing topic generator to assist in starting online debates.</p>
+                <p><b>Requirements:</b></p>
+                <ul>
+                  <li>Pre-generates hashtags</li>
+                  <li>Passive aggressive tone settings</li>
+                  <li>Generates tweets</li>
+                </ul>
+              </div>
+            </div>
 
             <h3>Option 2: GeriaTricks</h3>
-            <p>Platform: mobile</p>
-            <p>Description: Siri but for IT support. For people whose parents can't figure out why their computer is 'broken'.</p>
-            <p>Requirements:</p>
-            <ul>
-              <li>Voice prompt is customizable to their kid's name</li>
-              <li>Pre-loaded problems and solutions</li>
-              <li>Remote access to restart PC</li>
-            </ul>
+            <div className="flex columns">
+              <div className="fit">
+                <img src={geriatricks} alt="GeriaTricks logo"/>
+              </div>
+              <div className="fill">
+                <p><b>Platform:</b> mobile</p>
+                <p><b>Description:</b> For people to hand off troubleshooting their parent's computer issues to an app.</p>
+                <p><b>Requirements:</b></p>
+                <ul>
+                  <li>Common problems and solution suggestions</li>
+                  <li>Remote access to restart PC</li>
+                </ul>
+              </div>
+            </div>
 
             <h3>Option 3: Road Rate</h3>
-            <p>Platform: mobile</p>
-            <p>Description: Up-voting/Down-voting other drivers</p>
-            <p>Requirements:</p>
-            <ul>
-              <li>App has access to and displays closest 5 vehicles</li>
-              <li>Actions for up-vote/down-vote</li>
-              <li>Displays your driver rating</li>
-            </ul>
+            <div className="flex columns">
+              <div className="fit">
+                <img src={roadrate} alt="Road Rate logo"/>
+              </div>
+              <div className="fill">
+                <p><b>Platform:</b> mobile</p>
+                <p><b>Description:</b> Up-voting/Down-voting other drivers</p>
+                <p><b>Requirements:</b></p>
+                <ul>
+                  <li>App has access to and displays closest 5 vehicles</li>
+                  <li>Actions for up-vote/down-vote</li>
+                  <li>Displays your driver rating</li>
+                </ul>
+              </div>
+            </div>
 
             <h2>Planning the app</h2>
             <p>Once participants choose which app idea they're going to design, they're asked to follow a series of steps.</p>
