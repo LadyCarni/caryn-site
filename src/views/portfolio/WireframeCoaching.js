@@ -150,7 +150,8 @@ const WireframeCoaching = () => {
             <h3>Step 3: Prepare the wireframes</h3>
             <p>Participants get started on their first wireframes by taking some time to sketch out the media screens (mobile, web, etc.) that will frame their design ideas.</p>
 
-            
+            <h3>Step 4: Dive in!</h3>
+            <p></p>
           </div>
         </div>
       </div>
