@@ -142,10 +142,15 @@ const WireframeCoaching = () => {
             <p>Once participants choose which app idea they're going to design, they're asked to follow a series of steps.</p>
 
             <h3>Step 1: Brainstorm</h3>
-            <p>Participants are given 5 minutes to use the sticky notes provided to brainstorm some features of the main requirements for their app.</p>
+            <p>Participants are given a set amount of time to brainstorm some features of the main requirements for their app on some sticky notes.</p>
 
             <h3>Step 2: Prioritize features</h3>
-            <p></p>
+            <p>A few minutes are spent rearranging the stickies into groups, then stacked by most valuable priority.</p>
+
+            <h3>Step 3: Prepare the wireframes</h3>
+            <p>Participants get started on their first wireframes by taking some time to sketch out the media screens (mobile, web, etc.) that will frame their design ideas.</p>
+
+            
           </div>
         </div>
       </div>
