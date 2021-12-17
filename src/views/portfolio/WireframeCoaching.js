@@ -3,9 +3,13 @@ import PortfolioHeader from "components/portfolioHeader";
 import { PortfolioRoutes } from "./index";
 import wireframeHeader from "assets/caryn5.jpg";
 import wireframeTools from "assets/portfolio/wireframe-tools.jpg";
+import wireframeBasics from "assets/portfolio/wireframe-basics.jpg";
+import stickies from "assets/portfolio/stickies.jpg";
+import stickygroups from "assets/portfolio/grouped-stickies.jpg";
 import trollfood from "assets/portfolio/troll-food.png";
 import roadrate from "assets/portfolio/road-rate.png";
 import geriatricks from "assets/portfolio/geria-tricks.png";
+import uxWaterloo2014 from 'assets/about/ux-waterloo-2014.jpg';
 import usePrism from "hooks/usePrism";
 
 const WireframeCoaching = () => {
@@ -28,6 +32,8 @@ const WireframeCoaching = () => {
             <p className="external-link"><a href="http://slides.com/ladycarni/how-to-wireframe" target="_blank" rel="noreferrer">Wireframe coaching deck</a></p>
             <h2>Coaching Workshops</h2>
             <p>Wireframing is one of those simple but great skills to have on any software team, regardless of role or responsibility. Over the years I've run my wireframing workshop for small teams in an intimate setting, large teams over the course of an afternoon, at Universities for students studying HCI, and at various software user groups.</p>
+
+            <img src={uxWaterloo2014} alt="wireframe workshop" className="shadow"/>
             
             <h2>Why wireframe?</h2>
             <h3>Communication, collaboration, efficient planning</h3>
@@ -71,7 +77,7 @@ const WireframeCoaching = () => {
                   <li>pens</li>
                   <li>markers</li>
                 </ul>
-                <p>It's explained that if you use a pencil for temporary things like wireframing you’ll be tempted to erase mistakes. Using a pen forces you to get used to how disposable these are intended to be.</p>
+                <p>It's explained that if you use a pencil for temporary things like wireframing you'll be tempted to erase mistakes. Using a pen forces you to get used to how disposable these are intended to be.</p>
               </div>
               <div className="fill">
                 <img src={wireframeTools} alt="pen and paper" className="shadow"/>
@@ -82,7 +88,7 @@ const WireframeCoaching = () => {
             <h3>Boxes and lines</h3>
             <p>At its core, wireframing can be done with simple boxes and lines. It's for this reason that graph paper can be such a help. Just about everything needed for wireframing can be achieved with these simple shapes.</p>
 
-            <p>Examples</p>
+            <img src={wireframeBasics} alt="essential wireframe patterns" className="shadow"/>
 
             <h2>Concept set up</h2>
             <h3>Time to pick and idea and start drawing</h3>
@@ -144,8 +150,12 @@ const WireframeCoaching = () => {
             <h3>Step 1: Brainstorm</h3>
             <p>Participants are given a set amount of time to brainstorm some features of the main requirements for their app on some sticky notes.</p>
 
+            <img src={stickies} alt="sticky notes" className="shadow"/>
+
             <h3>Step 2: Prioritize features</h3>
             <p>A few minutes are spent rearranging the stickies into groups, then stacked by most valuable priority.</p>
+
+            <img src={stickygroups} alt="sticky groups" className="shadow"/>
 
             <h3>Step 3: Prepare the wireframes</h3>
             <p>Participants get started on their first wireframes by taking some time to sketch out the media screens (mobile, web, etc.) that will frame their design ideas.</p>
