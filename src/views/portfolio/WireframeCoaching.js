@@ -161,7 +161,11 @@ const WireframeCoaching = () => {
             <p>Participants get started on their first wireframes by taking some time to sketch out the media screens (mobile, web, etc.) that will frame their design ideas.</p>
 
             <h3>Step 4: Dive in!</h3>
-            <p></p>
+            <p>During this phase of the workshop, participants are given a longer period of time to start working through their wireframes. I spend this time going around to each person and talking through their ideas, their direction, and answer any questions anyone has. It's often during this phase, working alongside neighbors, that everyone has the most ideas and starts to achieve the 'ah-ha!' moments that make this workshop really click for people.</p>
+
+            <h2>Results</h2>
+            <p>Once the set time has run out, everyone is given the chance to share their ideas and walk the group through their wireframes.</p>
+            <p>Learning to wireframe teaches skills beyond simple drawings. This workshop teaches the ability to organize, visualize, and to communicate ideas.</p>
           </div>
         </div>
       </div>
