@@ -7,6 +7,8 @@ import fongoCover from 'assets/portfolio/fongo-cover.png';
 import lunaCover from 'assets/portfolio/luna-cover.png';
 import financialCover from 'assets/portfolio/financial-cover.png';
 import lifestyleCover from 'assets/portfolio/lifestyle-cover.jpg';
+import wireframeCover from 'assets/caryn5.jpg';
+
 const Projects = ({ match }) => {
   const gallery = [
     { 
@@ -58,6 +60,13 @@ const Projects = ({ match }) => {
       category: "Web App Design",
       id: '260b072f-6ff6-4b4e-84b6-3ccfce49c145'
     },
+    { 
+      source: wireframeCover,
+      title: "Wireframe coaching",
+      slug: "wireframe-coaching",
+      category: "Coaching",
+      id: '05fbc81d-8c7a-49b0-b523-415a01a9f7af'
+    },
     // { 
     //   source: "https://images.unsplash.com/photo-1598149885212-c92671611588?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=958&q=80",
     //   title: "WeDiversify",
@@ -78,13 +87,6 @@ const Projects = ({ match }) => {
     //   slug: "practical-ux",
     //   category: "UX Strategy",
     //   id: 9
-    // },
-    // { 
-    //   source: "https://images.unsplash.com/photo-1598149885212-c92671611588?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=958&q=80",
-    //   title: "Wireframe workshop",
-    //   slug: "wireframe-workshop",
-    //   category: "Coaching",
-    //   id: 10
     // },
     // { 
     //   source: "https://images.unsplash.com/photo-1598149885212-c92671611588?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=958&q=80",

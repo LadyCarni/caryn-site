@@ -7,6 +7,7 @@ import FongoWorks from "./FongoWorks";
 import LunaNova from "./LunaNova";
 import Lifestyle from "./Lifestyle";
 import Financial from "./FinancialApp";
+import Wireframe from "./WireframeCoaching";
 
 export const PortfolioRoutes = [
   { path: "/portfolio", name: "Portfolio", component: Portfolio, exact: true },
@@ -17,4 +18,5 @@ export const PortfolioRoutes = [
   { path: "/portfolio/fongo-works", name: "Fongo Works", component: FongoWorks },
   { path: "/portfolio/lifestyle-app", name: "Lifestyle App", component: Lifestyle },
   { path: "/portfolio/financial-app", name: "Financial App", component: Financial },
+  { path: "/portfolio/wireframe-coaching", name: "Wireframe coaching", component: Wireframe },
 ];

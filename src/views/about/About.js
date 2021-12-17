@@ -441,9 +441,9 @@ const About = () => {
         {
           id: 'd8a5c6c3-a4c3-46ed-8242-01855f44340b',
           type: 'job',
-          title: 'Design Tech Lead (Waterloo, ON)',
+          title: 'UX Design Tech Lead (Arctic Wolf)',
           image: arcticWolf,
-          description: 'This role starts a new chapter in my career, as a tech lead within the design sphere. Arctic Wolf is an IT security company with a growing team set to continue expanding its team and reach.',
+          description: 'This role starts a new chapter in my career, as a tech lead within the design sphere. This role also marks my first experience in the cybersecurity industry.',
           year: '2021'
         },
       ]
