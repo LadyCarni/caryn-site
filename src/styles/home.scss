@@ -30,7 +30,7 @@
   }
 
   @media screen and (max-width: $small) {
-    height: 30vh;
+    height: 40vh;
 
     h1 {
       font-size: 4em;
@@ -42,6 +42,11 @@
       width: 100%;
       align-items: center;
       justify-content: center;
+    }
+
+    .scroll {
+      display: none;
+      visibility: hidden;
     }
   }
 
