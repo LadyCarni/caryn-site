@@ -67,11 +67,13 @@ const Shortbread = () => {
 
               <p><span className="instruction-step decorate-step">Step 6.</span> Either use your favorite cookie press or make balls two inches round and place 2 inches apart on the sheet. Press down on the balls with a fork or flatten using the bottom of a cup. Add sprinkles if you want before placing in the oven.</p>
 
-              <p className="tip">This is the cookie press I use: <a target="_blank" href="https://www.amazon.ca/gp/product/B00ABH0PYI" rel="noreferrer">https://www.amazon.ca/gp/product/B00ABH0PYI</a></p>
+              <p className="tip">These cookies can be decorated with sprinkles, or adorned with chocolate kisses, glace cherries, or any other of your favorite cookie toppings!</p>
 
               <p><span className="instruction-step cook-step">Step 7.</span> Bake for 7-10 minutes or until the edges of the cookies start to turn a golden color on the edges.</p>
 
               <p><span className="instruction-step prep-step">Step 8.</span> Remove from oven and cool on a wire rack. Once cooled, cookies may be stored in an air-tight container up to 1 week, or frozen to last longer!</p>
+
+              <p className="tip">This is the cookie press I use: <a target="_blank" href="https://www.amazon.ca/gp/product/B00ABH0PYI" rel="noreferrer">https://www.amazon.ca/gp/product/B00ABH0PYI</a></p>
             </div>
           </div>
 
