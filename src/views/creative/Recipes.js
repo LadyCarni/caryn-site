@@ -119,6 +119,14 @@ const allRecipes = [
     id: 'bb14bb7d-f169-4dfd-829a-263aa7e585f1',
   },
   { 
+    title: "Sparkly Pumpkin Pie",
+    image: PumpkinPie,
+    link: "/creative/recipes/pumpkin-pie",
+    category: "Desserts",
+    thumb: "item",
+    id: 'f76d5449-7bfa-40b2-a55a-109fd957c9c7',
+  },
+  { 
     title: "Twice Baked Potatoes",
     image: TwicePotatoes,
     link: "#",
@@ -253,14 +261,6 @@ const allRecipes = [
     category: "Desserts",
     thumb: "item soon",
     id: 19,
-  },
-  { 
-    title: "Sparkly Pumpkin Pie",
-    image: PumpkinPie,
-    link: "#",
-    category: "Desserts",
-    thumb: "item soon",
-    id: 20,
   },
   { 
     title: "Loco Moco",
