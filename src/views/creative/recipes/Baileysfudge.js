@@ -19,7 +19,7 @@ const Ingredients = ( {media} ) => {
   )
 };
 
-const Lasagna = () => {
+const Fudge = () => {
   return (
     <div className="creative full-height">
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
@@ -71,4 +71,4 @@ const Lasagna = () => {
   )
 }
 
-export default Lasagna;
+export default Fudge;

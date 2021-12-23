@@ -31,6 +31,7 @@ import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
 import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg';
 import Lasagna from 'assets/creative/recipes/lasagna9.jpg';
 import DryRub from 'assets/creative/recipes/dry-rub.jpg';
+import Shortbread from 'assets/creative/recipes/recipe-shortbread.jpg';
 
 const categories = [
   {
@@ -106,8 +107,16 @@ const allRecipes = [
     image: ChocolateOrange,
     link: "/creative/recipes/chocolate-orange-swirl",
     category: "Desserts",
-    thumb: "item",
+    thumb: "item rectangle",
     id: 'abc442c1-6aef-487b-9ccf-45e62a53e471',
+  },
+  { 
+    title: "Shortbread Cookies",
+    image: Shortbread,
+    link: "/creative/recipes/shortbread",
+    category: "Desserts",
+    thumb: "item",
+    id: 'bb14bb7d-f169-4dfd-829a-263aa7e585f1',
   },
   { 
     title: "Twice Baked Potatoes",
