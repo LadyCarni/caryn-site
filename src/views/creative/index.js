@@ -9,6 +9,7 @@ import Lasagna from "./recipes/Lasagna";
 import DryRub from "./recipes/DryRub";
 import BananaBread from "./recipes/Bananabread";
 import Fudge from "./recipes/Baileysfudge";
+import ChocolateOrange from "./recipes/OrangeChocolateSwirl";
 import VinylElephant from "./crafts/VinylElephant";
 import PipeDesk from "./diy/PipeDesk";
 
@@ -21,6 +22,7 @@ export const CreativeRoutes = [
   { path: "/creative/recipes/lasagna", name: "Chicken Lasagna", component: Lasagna },
   { path: "/creative/recipes/dry-rub", name: "Best-Ever Dry Rub", component: DryRub },
   { path: "/creative/recipes/fudge", name: "Bailey's Fudge", component: Fudge },
+  { path: "/creative/recipes/chocolate-orange-swirl", name: "Chocolate Orange Swirl cookies", component: ChocolateOrange },
   { path: "/creative/recipes/french-toast", name: "Banana Bread French Toast", component: BananaBread },
   { path: "/creative/diy", name: "DIY", component: Diy },
   { path: "/creative/diy/pipe-desk", name: "Pipe Desk", component: PipeDesk },
