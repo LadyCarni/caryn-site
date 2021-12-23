@@ -11,7 +11,7 @@ const Ingredients = ( {media} ) => {
       <ul>
         <li><span className="amount">1 1/3 cups</span>all purpose flour</li>
         <li><span className="amount">3 Tbsp</span>cornstarch</li>
-        <li><span className="amount">1 cup</span>saled butter, softened</li>
+        <li><span className="amount">1 cup</span>salted butter, softened</li>
         <li><span className="amount">3/4 cup</span>icing sugar</li>
         <li><span className="amount">2 Tbsp</span>milk</li>
         <li><span className="amount">1 tsp</span>vanilla extract</li>

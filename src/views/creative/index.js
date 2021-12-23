@@ -13,6 +13,7 @@ import ChocolateOrange from "./recipes/OrangeChocolateSwirl";
 import VinylElephant from "./crafts/VinylElephant";
 import PipeDesk from "./diy/PipeDesk";
 import Shortbread from "./recipes/Shortbread";
+import PumpkinPie from "./recipes/PumpkinPie";
 
 export const CreativeRoutes = [
   { path: "/creative", name: "Creative", component: Creative, exact: true },
@@ -24,6 +25,7 @@ export const CreativeRoutes = [
   { path: "/creative/recipes/dry-rub", name: "Best-Ever Dry Rub", component: DryRub },
   { path: "/creative/recipes/fudge", name: "Bailey's Fudge", component: Fudge },
   { path: "/creative/recipes/shortbread", name: "Shortbread cookies", component: Shortbread },
+  { path: "/creative/recipes/pumpkin-pie", name: "Sparkly Pumpkin Pie", component: PumpkinPie },
   { path: "/creative/recipes/chocolate-orange-swirl", name: "Chocolate Orange Swirl cookies", component: ChocolateOrange },
   { path: "/creative/recipes/french-toast", name: "Banana Bread French Toast", component: BananaBread },
   { path: "/creative/diy", name: "DIY", component: Diy },
