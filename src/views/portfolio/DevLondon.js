@@ -24,7 +24,6 @@ const DevLondon = () => {
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">
-            <p className="external-link"><a href="https://devldn.ca/" target="_blank" rel="noreferrer">Dev London website</a></p>
             <p className="external-link"><a href="https://github.com/DevLdn/devldn-website" target="_blank" rel="noreferrer">Dev London repo</a></p>
             <h2>Context</h2>
             <p>In September of 2018, I volunteered to take over the events of a local community group that had become quiet and relatively inactive in London, Ontario. With the branding of the Slack community I was already an active member in, I decided to create a fresh face for the group with a new website and a new voice.</p>
