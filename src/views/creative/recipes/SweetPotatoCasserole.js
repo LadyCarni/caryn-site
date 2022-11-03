@@ -1,94 +1,88 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
-import SparklyPumpkin from 'assets/creative/recipes/recipe-pumpkin-pie.jpg';
+import Casserole from 'assets/creative/recipes/recipe-sweet-potato-casserole1.jpg';
 
 const Ingredients = ( {media} ) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
-      <h3>Pie filling</h3>
+      <h3>Casserole</h3>
       <ul>
+        <li><span className="amount">4 1/2 pounds</span>sweet potatoes</li>
+        <li><span className="amount">1 cup</span>granulated sugar</li>
+        <li><span className="amount">1/2 cup</span>butter, softened</li>
+        <li><span className="amount">1/4 cup</span>milk</li>
         <li><span className="amount">2</span>large eggs</li>
-        <li><span className="amount">1</span>large egg yolk</li>
-        <li><span className="amount">1/2 cup</span>packed dark brown sugar</li>
-        <li><span className="amount">1/3 cup</span>white sugar</li>
-        <li><span className="amount">1/2 tsp</span>salt</li>
-        <li><span className="amount">2 tsp</span>cinammon</li>
-        <li><span className="amount">1 tsp</span>ground ginger</li>
-        <li><span className="amount">1/4 tsp</span>ground nutmeg</li>
-        <li><span className="amount">1/4 tsp</span>ground cloves</li>
-        <li><span className="amount">1/8 tsp</span>cardamom</li>
-        <li><span className="amount">1/2 tsp</span>finely grated lemon zest</li>
-        <li><span className="amount">2 cups</span>pumpkin puree from a sugar pumpkin OR 1 (15oz can) pumpkin puree.</li>
-        <li><span className="amount">1.5 cups</span>heavy cream OR 1 (12oz) can evaporated milk</li>
+        <li><span className="amount">1 tsp</span>vanilla extract</li>
+        <li><span className="amount">1/4 tsp</span>salt</li>
       </ul>
-      <h3>Crust</h3>
+      <h3>Topping</h3>
       <ul>
-        <li><span className="amount">1</span>homemade pie crust, chilled or frozen, or 2 pre-made pie shells (plus extra for optional crust decorations).</li>
+        <li><span className="amount">1 1/4 cups</span>cornflakes cereal, crushed</li>
+        <li><span className="amount">1/4 cup</span>chopped pecans</li>
+        <li><span className="amount">1 Tbsp</span>brown sugar</li>
+        <li><span className="amount">1 Tbsp</span>butter, melted</li>
+        <li><span className="amount">1 1/2 cups</span>miniature marshmallows</li>
       </ul>
     </div>
   )
 };
 
-const PumpkinPie = () => {
+const SweetPotatoCasserole = () => {
   return (
     <div className="creative full-height">
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">
           <div className="recipe-body">
-            <h1>Sparkly Pumpkin Pie</h1>
+            <h1>Sweet Potato Casserole</h1>
             <div className="prep-info">
               <div className="prep-info-detail">
                 <strong>Prep Time</strong>
-                <p>10 minutes</p>
+                <p>20 minutes</p>
               </div>
               <div className="prep-info-detail">
                 <strong>Cook Time</strong>
-                <p>60 minutes</p>
+                <p>2 hours 20 minutes</p>
               </div>
               <div className="prep-info-detail">
                 <strong>Total Time</strong>
-                <p>70 minutes</p>
+                <p>2 hours 40 minutes</p>
               </div>
               <div className="prep-info-detail">
                 <strong>Servings</strong>
                 <p>8-12 servings</p>
               </div>
-              <div className="prep-info-detail">
-                <strong>Yield</strong>
-                <p>1 deep dish pie, or 2 shallow pies baked in pre-made crusts</p>
-              </div>
             </div>
 
             <div className="recipe-cover">
-              <img src={SparklyPumpkin} alt="shortbread cookies"/>
+              <img src={Casserole} alt="sweet potato casserole"/>
             </div>
 
             <Ingredients media="mobile" />
 
             <div className="recipe-instructions">
-              <p><b>Note:</b> This recipe makes a generous amount of filling. Use either one homemade deep-dish crust, or two shallow or frozen premade pie shells.</p>
+              <p><b>Note:</b> The base of this casserole can be made up to two days ahead, then reheated before adding the topping.</p>
 
               <h2>Instructions</h2>
-              <p><span className="instruction-step prep-step">Step 1.</span> Preheat the oven to 425°F.</p>
+              <p><span className="instruction-step prep-step">Step 1.</span> Preheat the oven to 400°F.</p>
 
-              <p><span className="instruction-step stir-step">Step 2.</span> Beat the eggs in a large bowl, or stand mixer. Mix in the brown sugar, white sugar, salt, and spices (cinnamon, ground ginger, nutmeg, ground cloves, cardamom, and lemon zest).</p>
+              <p><span className="instruction-step cook-step">Step 2.</span> Bake sweet potatoes at 400°F for 1 hour or until tender. Let stand until cool to touch (about 20 minutes); peel and mash sweet potatoes. Reduce oven temperature to 350°.</p>
 
-              <p><span className="instruction-step stir-step">Step 3.</span> Mix in the pumpkin puree. Stir in the cream. Beat together until everything is well mixed.</p>
+              <p><span className="instruction-step stir-step">Step 3.</span> Beat mashed sweet potatoes, granulated sugar, butter, milk, eggs, vanilla, and salt at medium speed with a hand or stand mixer until smooth. Spoon potato mixture into a greased 11 x 7 inch baking dish.</p>
 
-              <p><span className="instruction-step cook-step">Step 4.</span> Pour the filling into an uncooked chilled or frozen pie shell. Bake at a high temperature of 425°F for 15 minutes.</p>
+              <p><span className="instruction-step stir-step">Step 4.</span> Prep the topping. Combine cornflakes, pecans, brown sugar, and butter in a small bowl.</p>
 
-              <p className="tip">To add some fun to your pie, use extra pie crust to cut out shapes for the top of your pie!</p>
+              <p><span className="instruction-step prep-step">Step 5.</span> Sprinkle cereal mixture over the casserole in diagonal rows two inches apart.</p>
 
-              <p><span className="instruction-step cook-step">Step 5.</span> After 15 minutes, lower the temperature to 350°F. Bake for 45-55 minutes more. You'll know when the pie is done when a tooth pick or knife tip inserted in the center comes out wet but relatively clean. The center should be just barely jiggly.</p>
+              <p><span className='instruction-step cook-step'>Step 6.</span> Bake at 350° for 30 minutes.</p>
 
-              <p className="tip">About half way through baking, check on the edges of the pie crust for browning too quickly. You can slow down the browning by putting foil around the crust or using your favorite silicone pie protector (like <a href="https://www.amazon.ca/gp/product/B005FYC9XM" target="_blank" rel="noreferrer">this one</a>).</p>
+              <p><span className='instruction-step prep-step'>Step 7.</span> Remove from oven; let stand 10 minutes.</p>
 
-              <p><b>Note:</b> The pumpkin will come out of the oven puffed up (you can see this slightly in the image above). This is expected! It will flatten as it cools.</p>
+              <p><span className='instruction-step prep-step'>Step 8.</span>Sprinkle marshmallows in alternate rows between cornflake mixture; bake 10 minutes.</p>
 
-              <p className='instruction-step serve-step'>Cool the pie on a wire rack for 2 hours. Serve with whipped cream.</p>
+              <p><span className='instruction-step serve-step'>Step 9.</span> Let stand 10 minutes before serving.</p>
             </div>
           </div>
 
@@ -99,4 +93,4 @@ const PumpkinPie = () => {
   )
 }
 
-export default PumpkinPie;
+export default SweetPotatoCasserole;
