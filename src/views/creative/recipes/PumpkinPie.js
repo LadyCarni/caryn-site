@@ -14,7 +14,7 @@ const Ingredients = ( {media} ) => {
         <li><span className="amount">1/2 cup</span>packed dark brown sugar</li>
         <li><span className="amount">1/3 cup</span>white sugar</li>
         <li><span className="amount">1/2 tsp</span>salt</li>
-        <li><span className="amount">2 tsp</span>cinammon</li>
+        <li><span className="amount">2 tsp</span>cinnamon</li>
         <li><span className="amount">1 tsp</span>ground ginger</li>
         <li><span className="amount">1/4 tsp</span>ground nutmeg</li>
         <li><span className="amount">1/4 tsp</span>ground cloves</li>
@@ -63,7 +63,7 @@ const PumpkinPie = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={SparklyPumpkin} alt="shortbread cookies"/>
+              <img src={SparklyPumpkin} alt="pumpkin pie"/>
             </div>
 
             <Ingredients media="mobile" />

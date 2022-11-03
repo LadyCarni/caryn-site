@@ -127,6 +127,14 @@ const allRecipes = [
     id: 'f76d5449-7bfa-40b2-a55a-109fd957c9c7',
   },
   { 
+    title: "Sweet Potato Casserole",
+    image: SweetPotatoCasserole,
+    link: "/creative/recipes/sweet-potato-casserole",
+    category: "Mains",
+    thumb: "item",
+    id: '57416f61-67fe-4204-aa0d-77956e34d36e',
+  },
+  { 
     title: "Twice Baked Potatoes",
     image: TwicePotatoes,
     link: "#",
@@ -149,14 +157,6 @@ const allRecipes = [
     category: "Mains",
     thumb: "item rectangle soon",
     id: 4,
-  },
-  { 
-    title: "Sweet Potato Casserole",
-    image: SweetPotatoCasserole,
-    link: "#",
-    category: "Appetizers",
-    thumb: "item soon",
-    id: 5,
   },
   { 
     title: "Campfire Shrimp",
