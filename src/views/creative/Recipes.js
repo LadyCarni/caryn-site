@@ -135,6 +135,14 @@ const allRecipes = [
     id: '57416f61-67fe-4204-aa0d-77956e34d36e',
   },
   { 
+    title: "Buffalo Chicken Taquitos",
+    image: Taquitos,
+    link: "/creative/recipes/buffalo-chicken-taquitos",
+    category: "Appetizers",
+    thumb: "item",
+    id: '8bee53df-db27-4678-82ea-37f076d8ec2a',
+  },
+  { 
     title: "Twice Baked Potatoes",
     image: TwicePotatoes,
     link: "#",
@@ -269,13 +277,6 @@ const allRecipes = [
     category: "Desserts",
     thumb: "item rectangle soon",
     id: 21,
-  },    { 
-    title: "Buffalo Chicken Taquitos",
-    image: Taquitos,
-    link: "#",
-    category: "Appetizers",
-    thumb: "item soon",
-    id: 22,
   },
 ];
 
