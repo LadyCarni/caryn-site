@@ -439,12 +439,31 @@ const About = () => {
       year: '2021',
       events: [
         {
+          id: 'ce19e51f-a73a-405b-ad87-1591ac0a6124',
+          type: 'job',
+          title: 'Lead UX Designer',
+          year: '2021'
+        },
+        {
           id: 'd8a5c6c3-a4c3-46ed-8242-01855f44340b',
           type: 'job',
           title: 'UX Design Tech Lead (Arctic Wolf)',
           image: arcticWolf,
           description: 'This role starts a new chapter in my career, as a tech lead within the design sphere. This role also marks my first experience in the cybersecurity industry.',
           year: '2021'
+        }
+      ]
+    },
+    {
+      id: '37ce47d5-7666-4633-bb1f-aee41212836a',
+      year: '2022',
+      events: [
+        {
+          id: '439cdee2-9d2c-479a-9a67-d72fce28d158',
+          type: 'job',
+          title: 'UX Manager (Arctic Wolf)',
+          description: 'As the manager of the UX team, my goals include raising the overall UX literacy of the organization, improving collaborative processes between design and development, and coaching others to make educated, self-sufficient, usable design decisions.',
+          year: '2022'
         },
       ]
     }

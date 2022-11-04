@@ -3,16 +3,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowDown, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat, faHandsHeart } from '@fortawesome/pro-light-svg-icons';
 import triangles from 'assets/tri-large.svg'; 
-import trismall from 'assets/tri-vert1.svg';
-import trismall2 from 'assets/tri-hor1.svg';
-import triheart from 'assets/tri-heart.svg';
 import PortfolioFeatures from 'components/portfolioFeatures';
 import knakWires from 'assets/portfolio/knak-wires.jpg';
 const Home = () => {
   return (
     <>
     <div className="hero feature-width feature-height">
-      <img src={triangles} alt="" className="tri-large" />
       <div className="hero-content">
         <h1><span className="pop">Design</span> for work,<br/>life & play</h1>
       </div>
@@ -21,12 +17,11 @@ const Home = () => {
     <div className="light feature bottom feature-width feature-height">
       <div className="feature-content">
         <div className="title">
-          <img src={trismall} alt="" className="tri-small" />
           <h2>Who I am</h2>
         </div>
         <div className="description">
           <h3>I <span className="pop">design</span> experiences</h3>
-          <p>Whether it's on a keyboard, at the easel, in the garden, or with a power tool in hand: I live to create. My hobbies and skills play with engagement, imagination, and a little whimsy.</p>
+          <p>Whether it's on a keyboard, at the easel, in the garden, or with a power tool in hand: I live to create. My hobbies and skills all include creativity, imagination, with a little flavor of whimsy.</p>
           <p>Professionally, I thrive on cross-functional teams, working directly with users to build elegant products that solve real problems.</p>
           <p>
             <Link to="/about" className="arrow-link block">Get to know Caryn</Link>
@@ -39,7 +34,6 @@ const Home = () => {
       <div className="feature-content flex column">
         <div className="flex row">
           <div className="title">
-            <img src={trismall2} alt="" className="tri-small" />
             <h2>What I do</h2>
           </div>
           <div className="description">
@@ -67,7 +61,6 @@ const Home = () => {
     <div className="light feature bottom feature-width feature-height">
       <div className="feature-content">
         <div className="title">
-          <img src={triheart} alt="" className="tri-small" />
           <h2>What I Value</h2>
         </div>
         <div className="description">
