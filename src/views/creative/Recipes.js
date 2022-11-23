@@ -143,6 +143,14 @@ const allRecipes = [
     id: '8bee53df-db27-4678-82ea-37f076d8ec2a',
   },
   { 
+    title: "Snickerdoodle Cookies",
+    image: Snickerdoodle,
+    link: "/creative/recipes/snickerdoodle",
+    category: "Desserts",
+    thumb: "item",
+    id: "bce43d05-cea1-410e-9811-aff7246e8d97",
+  },
+  { 
     title: "Twice Baked Potatoes",
     image: TwicePotatoes,
     link: "#",
@@ -207,14 +215,6 @@ const allRecipes = [
     id: 11,
   },
   { 
-    title: "Snickerdoodle Cookies",
-    image: Snickerdoodle,
-    link: "#",
-    category: "Desserts",
-    thumb: "item soon",
-    id: 12,
-  },
-  { 
     title: "Charcuterie Boards",
     image: Charcuterie,
     link: "#",
@@ -274,7 +274,7 @@ const allRecipes = [
     title: "Loco Moco",
     image: LocoMoco,
     link: "#",
-    category: "Desserts",
+    category: "Mains",
     thumb: "item rectangle soon",
     id: 21,
   },
