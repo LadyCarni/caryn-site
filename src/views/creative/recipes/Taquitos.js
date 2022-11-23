@@ -49,7 +49,7 @@ const TaquitoRecipe = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={Taquitos} alt="sweet potato casserole"/>
+              <img src={Taquitos} alt="finished buffalo chicken taquitos"/>
             </div>
 
             <Ingredients media="mobile" />
