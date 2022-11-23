@@ -17,6 +17,7 @@ import PumpkinPie from "./recipes/PumpkinPie";
 import SweetPotatoCasserole from "./recipes/SweetPotatoCasserole";
 import TaquitoRecipe from "./recipes/Taquitos";
 import SnickerdoodleCookie from "./recipes/Snickerdoodle";
+import BourbonMolassesCookie from "./recipes/BourbonMolasses";
 
 export const CreativeRoutes = [
   { path: "/creative", name: "Creative", component: Creative, exact: true },
@@ -34,6 +35,7 @@ export const CreativeRoutes = [
   { path: "/creative/recipes/chocolate-orange-swirl", name: "Chocolate Orange Swirl cookies", component: ChocolateOrange },
   { path: "/creative/recipes/french-toast", name: "Banana Bread French Toast", component: BananaBread },
   { path: "/creative/recipes/snickerdoodle", name: "Snickerdoodle Cookies", component: SnickerdoodleCookie },
+  { path: "/creative/recipes/bourbon-molasses-cookie", name: "Bourbon Molasses Cookies", component: BourbonMolassesCookie },
   { path: "/creative/diy", name: "DIY", component: Diy },
   { path: "/creative/diy/pipe-desk", name: "Pipe Desk", component: PipeDesk },
   { path: "/creative/photography", name: "Photography", component: Photography },

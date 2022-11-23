@@ -32,6 +32,7 @@ import Cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg';
 import Lasagna from 'assets/creative/recipes/lasagna9.jpg';
 import DryRub from 'assets/creative/recipes/dry-rub.jpg';
 import Shortbread from 'assets/creative/recipes/recipe-shortbread.jpg';
+import BourbonMolasses from 'assets/creative/recipes/bourbon-molasses-done.jpg';
 
 const categories = [
   {
@@ -85,6 +86,14 @@ const allRecipes = [
     category: "Desserts",
     thumb: "item",
     id: '268b49ac-879c-46d1-b268-fe21897c7596',
+  },
+  { 
+    title: "Bourbon Molasses Cookies",
+    image: BourbonMolasses,
+    link: "/creative/recipes/bourbon-molasses-cookie",
+    category: "Desserts",
+    thumb: "item rectangle",
+    id: "5097e68d-637f-435d-b48d-36fdf1ef9ee1",
   },
   { 
     title: "Best-Ever Dry Rub",
