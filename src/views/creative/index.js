@@ -16,6 +16,7 @@ import Shortbread from "./recipes/Shortbread";
 import PumpkinPie from "./recipes/PumpkinPie";
 import SweetPotatoCasserole from "./recipes/SweetPotatoCasserole";
 import TaquitoRecipe from "./recipes/Taquitos";
+import SnickerdoodleCookie from "./recipes/Snickerdoodle";
 
 export const CreativeRoutes = [
   { path: "/creative", name: "Creative", component: Creative, exact: true },
@@ -32,6 +33,7 @@ export const CreativeRoutes = [
   { path: "/creative/recipes/buffalo-chicken-taquitos", name: "Buffalo Chicken Taquitos", component: TaquitoRecipe },
   { path: "/creative/recipes/chocolate-orange-swirl", name: "Chocolate Orange Swirl cookies", component: ChocolateOrange },
   { path: "/creative/recipes/french-toast", name: "Banana Bread French Toast", component: BananaBread },
+  { path: "/creative/recipes/snickerdoodle", name: "Snickerdoodle Cookies", component: SnickerdoodleCookie },
   { path: "/creative/diy", name: "DIY", component: Diy },
   { path: "/creative/diy/pipe-desk", name: "Pipe Desk", component: PipeDesk },
   { path: "/creative/photography", name: "Photography", component: Photography },
