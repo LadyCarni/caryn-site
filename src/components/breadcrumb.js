@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Breadcrumb ({ routes, className }) {
-  const { path } = useRouteMatch();
 
+  const path = 'FIXME';
   const filteredRoutes = routes.filter((route) => {
     return path.includes(route.path);
   });

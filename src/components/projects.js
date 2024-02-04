@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, useRouteMatch } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import devLondon from "assets/portfolio/dev-london.jpg";
 import knakWires from "assets/portfolio/knak-wires.jpg";
 import connectFeature from "assets/portfolio/connect-cover.jpg";
@@ -138,12 +138,12 @@ const Projects = ({ match }) => {
     //   id: 17
     // },
   ];
-
-  const { path } = useRouteMatch();
+const path = 'FIXME';
 
   return (
     <>
       <h1>Welcome to the greatest portfolio on this site</h1>
+      <Routes>
       <Route
         exact
         path={`${path}`}
@@ -165,6 +165,7 @@ const Projects = ({ match }) => {
           </div>
         )}
       />
+      </Routes>
       <span className="gotcha">* To protect the privacy of the client, this project's identity has been hidden</span>
     </>
   );

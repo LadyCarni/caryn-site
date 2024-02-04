@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
-import './styles/global.scss';
+import ReactDOM from 'react-dom';import './styles/global.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,9 +8,7 @@ ReactGA.initialize('UA-190600893-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+    <App />,
   document.getElementById("root")
 );
 

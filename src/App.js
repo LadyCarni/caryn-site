@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 // eslint-disable-next-line
@@ -21,6 +21,8 @@ import { PortfolioRoutes } from "./views/portfolio/index";
 import Footer from "components/footer";
 import Contact from "views/contact/Contact";
 import { CreativeRoutes } from "./views/creative/index";
+import Creative from "views/creative/Creative";
+import Portfolio from "views/portfolio/Portfolio";
 
 const Site = () => {
   return (
@@ -35,24 +37,19 @@ const Site = () => {
         </div>
       </div>
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        {PortfolioRoutes.map(({ path, component }, key) => (
-          <Route exact path={path} key={key} component={component} />
-        ))}
-        <Route path="/articles">
-          <Articles />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        
+        <Route path="/portfolio" element={<Portfolio />}>
+          {/* <Route path=":id" element={<Portfolio />} /> */}
         </Route>
-        {CreativeRoutes.map(({ path, component }, key) => (
-          <Route exact path={path} key={key} component={component} />
-        ))}
-        <Route path="/about">
-          <About />
+        <Route path="/articles" element={<Articles />}/>
+        <Route path="/creative" element={<Creative />}>
+          {/* <Route path=":id" element={<Creative />} /> */}
         </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-      </Switch>
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
 
       <Footer />
     </Router>

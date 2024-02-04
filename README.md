@@ -22,3 +22,8 @@ This project uses:
 - PrismJS
 - FontAwesome
 - Google fonts Gravitas, Just Me Again Down Here, Josefin
+
+
+## TODO
+
+- Upgrade routes to https://reactrouter.com/en/main/upgrading/v5#upgrade-all-switch-elements-to-routes
