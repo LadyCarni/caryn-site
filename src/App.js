@@ -22,6 +22,7 @@ import Contact from "./views/contact/Contact";
 import Footer from "./components/footer";
 import Menu from "./components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
+import { CreativeRoutes } from "./views/creative/index";
 // import ScrollToTop from "./components/ScrollToTop";
 
 const Site = () => {
@@ -50,6 +51,14 @@ const Site = () => {
         ))}
         <Route path="/articles" element={<Articles />}/>
         <Route path="/creative" element={<Creative />}/>
+        {CreativeRoutes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={<route.component />}
+            exact={route.exact}
+          />
+        ))}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NoMatch />} />
