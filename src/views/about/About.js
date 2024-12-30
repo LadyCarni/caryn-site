@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import caryn1 from 'assets/caryn-portrait.jpg';
+import caryn1 from 'assets/about/caryn-portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentLines, faTimes } from '@fortawesome/pro-light-svg-icons';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
