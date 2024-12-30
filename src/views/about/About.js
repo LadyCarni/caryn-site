@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import caryn1 from 'assets/caryn1.jpg';
+import caryn1 from 'assets/about/caryn-portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentLines, faTimes } from '@fortawesome/pro-light-svg-icons';
 import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
@@ -462,8 +462,8 @@ const About = () => {
           id: '439cdee2-9d2c-479a-9a67-d72fce28d158',
           type: 'job',
           title: 'UX Manager (Arctic Wolf)',
-          description: 'As the manager of the UX team, my goals include raising the overall UX literacy of the organization, improving collaborative processes between design and development, and coaching others to make educated, self-sufficient, usable design decisions.',
-          year: '2022'
+          description: 'I am the principal strategist overseeing UX integration in organization-wide planning endeavors. As the UX lead, I orchestrate the planning, design, and implementation of our internal design system, serving both designers and developers. Additionally, I mentor the UX team, fostering skill enhancement and advocating for their professional growth. I excel in identifying process enhancement opportunities and implementing streamlined solutions through cross-departmental collaboration. I am the lead responsible for Information Architecture. The champion for organizational UX maturity through coaching and knowledge sharing. The UX coach for development teams; teaching developers to embrace user-driven thinking while fostering faster feedback cycles and empowering teams to make informed decisions autonomously. Amplification of best practices, tips for user-first thinking, problem definitions, workshop facilitation, etc. UX due diligence through documentation of user flow breakdowns, screenshots, product/feature relationships, and terminology definitions; ensuring a broad understanding of the entire product suite and increased alignment among all team members from all departments. Implementation of practical UX strategies; enhancing efficiency, transparency, and accountability within the team. Collaborator with Process Architects to include UX criteria in the end-to-end results of the software design process; improving consistency and quality throughout the design and implementation of new features.',
+          year: '2022 - Current'
         },
       ]
     }
@@ -489,7 +489,7 @@ const About = () => {
         <div className="bio-content">
           <h1>Hi, I'm Caryn</h1>
           <p className="help">(pronounced kuh-<i>RIN</i>; like Corinne)</p>
-          <p>I'm a senior User Experience (UX) developer who is passionate about product design. I have been specializing in UX design for 8 years, and honing my front-end development and web design skills for the past 7 years. I've been leading cross-functional software teams through facilitation, coaching, and project management for 4 years. I have had training in accessibility for web, and have a formal education in business, marketing, and traditional art.</p>
+          <p>As a dedicated leader of cross-functional teams, I'm passionate about collaborating with users to craft elegant solutions that address tangible needs. I firmly believe that effective UX and UI design demands a strong grasp of front-end development and a high level of collaboration between disciplines. Beyond honing my skills, I find joy in delving into the realms of behavioral cognition, neuroscience, and psychology. Outside of work, you'll often find me actively engaged in skills-based volunteering, community initiatives, and advocating for STEM education.</p>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)</a>
         </div>
       </div>

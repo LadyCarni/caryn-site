@@ -1,5 +1,5 @@
 import React from "react";
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "components/portfolioHeader";
 import usePrism from "hooks/usePrism";
 
@@ -19,7 +19,7 @@ const ConnectApi = () => {
     <>
       <PortfolioHeader
         headerImage={connectFeature}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="placeholder"
         headerTitle="Connect API"
         headerSubtitle="Restaurant delivery operations"

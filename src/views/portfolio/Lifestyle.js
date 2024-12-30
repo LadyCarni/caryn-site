@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioHeader from "components/portfolioHeader";
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import lifestyleCover from "assets/portfolio/lifestyle-cover.jpg";
 import lifestyleVideo from "assets/portfolio/lifestyle-video.jpg";
 import lifestyleEdit from "assets/portfolio/lifestyle-video-edit.jpg";
@@ -16,7 +16,7 @@ const Lifestyle = () => {
     <>
       <PortfolioHeader
         headerImage={lifestyleCover}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="Design for a lifestyle app"
         headerTitle="Lifestyle app"
         headerSubtitle="Greenfield app design"

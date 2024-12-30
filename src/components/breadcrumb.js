@@ -1,25 +1,18 @@
-import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import React from 'react';
+import { useLocation, Link } from 'react-router-dom';
 
-function Breadcrumb ({ routes, className }) {
-  const { path } = useRouteMatch();
-
-  const filteredRoutes = routes.filter((route) => {
-    return path.includes(route.path);
-  });
+const Breadcrumb = () => {
+  const location = useLocation();
+  const pathnames = location.pathname.split('/').filter(x => x);
 
   return (
-    <div className={`${className} breadcrumb`}>
+    <div className="breadcrumb">
       <ul>
-        {filteredRoutes.map((route, index) => {
+        {pathnames.map((value, index) => {
+          const to = `/${pathnames.slice(0, index + 1).join('/')}`;
           return (
-            <li key={route.name}>
-              {index !== filteredRoutes.length - 1 && (
-                <Link to={route.path} aria-label="go back">
-                  {route.name}
-                </Link>
-              )}
-              {index === filteredRoutes.length - 1 && route.name}
+            <li key={to}>
+              <Link to={to}>{value}</Link>
             </li>
           );
         })}

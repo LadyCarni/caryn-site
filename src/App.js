@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 // eslint-disable-next-line
@@ -13,14 +13,17 @@ import "prismjs/components/prism-json";
 import "prismjs/components/prism-scss";
 import "prismjs/components/prism-jsx";
 import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
-import Home from "views/home/Home";
-import About from "views/about/About";
-import Articles from 'views/articles/Articles';
-import Menu from "components/menu";
+import Home from "./views/home/Home";
+import Portfolio from "./views/portfolio/Portfolio";
+import Articles from "./views/articles/Articles";
+import Creative from "./views/creative/Creative";
+import About from "./views/about/About";
+import Contact from "./views/contact/Contact";
+import Footer from "./components/footer";
+import Menu from "./components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
-import Footer from "components/footer";
-import Contact from "views/contact/Contact";
 import { CreativeRoutes } from "./views/creative/index";
+// import ScrollToTop from "./components/ScrollToTop";
 
 const Site = () => {
   return (
@@ -35,24 +38,31 @@ const Site = () => {
         </div>
       </div>
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        {PortfolioRoutes.map(({ path, component }, key) => (
-          <Route exact path={path} key={key} component={component} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/portfolio/*" element={<Portfolio />}/>
+        {PortfolioRoutes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={<route.component />}
+            exact={route.exact}
+          />
         ))}
-        <Route path="/articles">
-          <Articles />
-        </Route>
-        {CreativeRoutes.map(({ path, component }, key) => (
-          <Route exact path={path} key={key} component={component} />
+        <Route path="/articles" element={<Articles />}/>
+        <Route path="/creative" element={<Creative />}/>
+        {CreativeRoutes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={<route.component />}
+            exact={route.exact}
+          />
         ))}
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-      </Switch>
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
 
       <Footer />
     </Router>
@@ -67,6 +77,15 @@ function ScrollToTop() {
   }, [pathname]);
 
   return null;
+}
+
+function NoMatch() {
+  return (
+    <div>
+      <h2>Nothing to see here!</h2>
+      <Link to="/">Go to Home</Link>
+    </div>
+  );
 }
 
 export default Site;

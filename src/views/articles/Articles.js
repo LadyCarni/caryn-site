@@ -10,24 +10,31 @@ import teamBuilding from "assets/articles/team-building.jpg";
 const Articles = () => {
   const articles = [
     { 
+      title: "UX Resources",
+      link: "https://medium.com/@LadyCarni/ux-resources-235248952303",
+      date: "February 14 2024",
+      summary: "Maybe you're interested in getting started in User Experience (UX), or maybe you're just keen to brush up your existing skills. Here are a list of basic resources I've found to be helpful for various scenarios.",
+      id: 0,
+    },
+    { 
       title: "Remote Team Building",
       link: "https://medium.com/@LadyCarni/remote-team-building-7c2a03570703",
       date: "June 23, 2020",
-      summary: "When you’re ready to take a break and have some fun with your team, you likely want to go beyond some of the more traditional corporate team building exercises.",
+      summary: "When you're ready to take a break and have some fun with your team, you likely want to go beyond some of the more traditional corporate team building exercises.",
       id: 0,
     },
     { 
       title: "Saying goodbye",
       link: "https://medium.com/@LadyCarni/saying-goodbye-99be8253b890",
       date: "November 29, 2019",
-      summary: "To explain why I’ve decided to move on, I’ll need to take you all the way back to early 2012; back to the beginning.",
+      summary: "To explain why I've decided to move on, I'll need to take you all the way back to early 2012; back to the beginning.",
       id: 1,
     },
     { 
       title: "FontAwesome Pro for your Ionic/Angular project",
       link: "https://medium.com/vehikl-news/fontawesome-pro-for-your-ionic-angular-project-c99c00b47c3",
       date: "September 27, 2019",
-      summary: "This is a love story between FontAwesome’s Pro icon pack (v5) and an Ionic (v4) project using Angular (v7).",
+      summary: "This is a love story between FontAwesome's Pro icon pack (v5) and an Ionic (v4) project using Angular (v7).",
       id: 2,
     },
     { 
@@ -76,7 +83,7 @@ const Articles = () => {
       title: "Stock Photo Resources",
       link: "https://medium.com/@LadyCarni/im-sure-you-ve-been-there-you-re-designing-a-brand-spanking-new-site-and-you-know-damned-well-fbbd8b13fe43",
       date: "November 4, 2016",
-      summary: "Stock images today aren’t the libraries of a few years ago. Here are just a few to get you started!",
+      summary: "Stock images today aren't the libraries of a few years ago. Here are just a few to get you started!",
       id: 9, 
     },
     { 

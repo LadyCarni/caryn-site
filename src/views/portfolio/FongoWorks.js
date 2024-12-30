@@ -1,5 +1,5 @@
 import React from 'react';
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "components/portfolioHeader";
 import fongoCover from "assets/portfolio/fongo-cover.png";
 import fongoWire1 from "assets/portfolio/fongo-wire1.jpg";
@@ -19,7 +19,7 @@ const FongoWorks = () => {
     <>
       <PortfolioHeader
         headerImage={fongoCover}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="Fongo Works web app"
         headerTitle="Fongo Works"
         headerSubtitle="A mobile-friendly web app"
