@@ -1,6 +1,6 @@
 import React from 'react';
 import PortfolioHeader from "components/portfolioHeader";
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import usePrism from "hooks/usePrism";
 import lunaCover from "assets/portfolio/luna-cover.png";
 import lunaGalleries from "assets/portfolio/luna-galleries.png";
@@ -18,7 +18,7 @@ const LunaNova = () => {
     <>
       <PortfolioHeader
         headerImage={lunaCover}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="Luna Nova website"
         headerTitle="Luna Nova"
         headerSubtitle="An approachable dog breeder website"

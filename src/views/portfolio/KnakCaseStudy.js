@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioHeader from "components/portfolioHeader";
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import usePrism from "hooks/usePrism";
 import knakWires from "assets/portfolio/knak-wires.jpg";
 import knakApp from "assets/portfolio/knak-app.jpg";
@@ -30,7 +30,7 @@ const KnakCaseStudy = () => {
     <>
       <PortfolioHeader
         headerImage={knakWires}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="Knak user interface"
         headerTitle="Knak UX Case Study"
         headerSubtitle="A UX evaluation, interface redesign, and front-end refactor"
@@ -56,7 +56,7 @@ const KnakCaseStudy = () => {
             </ul>
 
             <h2>Usability</h2>
-            <p>As an ongoing part of the interface updates for Knak’s platform, I tested each new feature against a set of <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noreferrer">usability heuristics</a> as defined by Neilson Norman Group. To assist with this work, I used the browser extension <a href="http://www.uxcheck.co/" target="_blank" rel="noreferrer">UX Check</a> to evaluate each area as well as the <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">aXe browser extension</a> to test against <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noreferrer">WCAG</a> usability compliance requirements.</p>
+            <p>As an ongoing part of the interface updates for Knak's platform, I tested each new feature against a set of <a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noreferrer">usability heuristics</a> as defined by Neilson Norman Group. To assist with this work, I used the browser extension <a href="http://www.uxcheck.co/" target="_blank" rel="noreferrer">UX Check</a> to evaluate each area as well as the <a href="https://www.deque.com/axe/" target="_blank" rel="noreferrer">aXe browser extension</a> to test against <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noreferrer">WCAG</a> usability compliance requirements.</p>
 
             <h2>Code Quality</h2>
             <p>Writing good code helps ensure maintainability as well as scalability for the future. As a part of the refactoring work I did, I chose to apply a strict CSS Linter through <a href="https://stylelint.io/" target="_blank" rel="noreferrer">stylelint.io</a>, using a <a href="https://gist.github.com/LadyCarni/0eee4b69f54c615d70597d54c075830a" target="_blank" rel="noreferrer">custom configuration</a> designed for readability, consistency, and rapid writing of styles (example shown below).</p>

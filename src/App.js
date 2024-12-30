@@ -13,16 +13,16 @@ import "prismjs/components/prism-json";
 import "prismjs/components/prism-scss";
 import "prismjs/components/prism-jsx";
 import "prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.js";
-import Home from "views/home/Home";
-import About from "views/about/About";
-import Articles from 'views/articles/Articles';
-import Menu from "components/menu";
+import Home from "./views/home/Home";
+import Portfolio from "./views/portfolio/Portfolio";
+import Articles from "./views/articles/Articles";
+import Creative from "./views/creative/Creative";
+import About from "./views/about/About";
+import Contact from "./views/contact/Contact";
+import Footer from "./components/footer";
+import Menu from "./components/menu";
 import { PortfolioRoutes } from "./views/portfolio/index";
-import Footer from "components/footer";
-import Contact from "views/contact/Contact";
-import { CreativeRoutes } from "./views/creative/index";
-import Creative from "views/creative/Creative";
-import Portfolio from "views/portfolio/Portfolio";
+// import ScrollToTop from "./components/ScrollToTop";
 
 const Site = () => {
   return (
@@ -39,16 +39,20 @@ const Site = () => {
 
       <Routes>
         <Route exact path="/" element={<Home />} />
-        
-        <Route path="/portfolio" element={<Portfolio />}>
-          {/* <Route path=":id" element={<Portfolio />} /> */}
-        </Route>
+        <Route path="/portfolio/*" element={<Portfolio />}/>
+        {PortfolioRoutes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            element={<route.component />}
+            exact={route.exact}
+          />
+        ))}
         <Route path="/articles" element={<Articles />}/>
-        <Route path="/creative" element={<Creative />}>
-          {/* <Route path=":id" element={<Creative />} /> */}
-        </Route>
+        <Route path="/creative" element={<Creative />}/>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NoMatch />} />
       </Routes>
 
       <Footer />
@@ -64,6 +68,15 @@ function ScrollToTop() {
   }, [pathname]);
 
   return null;
+}
+
+function NoMatch() {
+  return (
+    <div>
+      <h2>Nothing to see here!</h2>
+      <Link to="/">Go to Home</Link>
+    </div>
+  );
 }
 
 export default Site;

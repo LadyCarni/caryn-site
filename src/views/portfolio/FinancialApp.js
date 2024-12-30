@@ -1,5 +1,5 @@
 import React from 'react';
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "components/portfolioHeader";
 import financialCover from "assets/portfolio/financial-cover.png";
 import financialCart from "assets/portfolio/financial-cart.png";
@@ -13,7 +13,7 @@ const Financial = () => {
     <>
       <PortfolioHeader
         headerImage={financialCover}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="Financial app"
         headerTitle="Financial app"
         headerSubtitle="An approachable app for a complex industry"

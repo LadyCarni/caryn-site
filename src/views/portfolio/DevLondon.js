@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioHeader from "components/portfolioHeader";
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import devLondon from "assets/portfolio/dev-london.jpg";
 import devLondonSlack from "assets/portfolio/dev-london-slack.gif";
 import devLondonPlans from "assets/portfolio/dev-london-plans.jpg";
@@ -14,7 +14,7 @@ const DevLondon = () => {
     <>
       <PortfolioHeader
         headerImage={devLondon}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="a scene of a live Dev London event"
         headerTitle="Dev London"
         headerSubtitle="A software community group"

@@ -1,6 +1,6 @@
 import React from "react";
 import PortfolioHeader from "components/portfolioHeader";
-import { PortfolioRoutes } from "./index";
+// import { PortfolioRoutes } from "./index";
 import wireframeHeader from "assets/caryn5.jpg";
 import wireframeTools from "assets/portfolio/wireframe-tools.jpg";
 import wireframeBasics from "assets/portfolio/wireframe-basics.jpg";
@@ -19,7 +19,7 @@ const WireframeCoaching = () => {
     <>
       <PortfolioHeader
         headerImage={wireframeHeader}
-        routes={PortfolioRoutes}
+        // routes={PortfolioRoutes}
         imageAlt="a scene of a live Dev London event"
         headerTitle="Wireframe coaching"
         headerSubtitle="Getting just comfortable enough to throw it away!"
