@@ -6,6 +6,7 @@ import devLondonSlack from "assets/portfolio/dev-london-slack.gif";
 import devLondonPlans from "assets/portfolio/dev-london-plans.jpg";
 import devLondonSite from "assets/portfolio/dev-london-site.png";
 import usePrism from "hooks/usePrism";
+import { Helmet } from "react-helmet";
 
 const DevLondon = () => {
   usePrism();
@@ -21,6 +22,14 @@ const DevLondon = () => {
         headerDescription="Dev London is a peer-to-peer group I run and operate in London, Ontario. It is designed to provide insights and inspire through leadership and networking with the local tech community."
         headerDisciplines={["Front-end Development (React)", "Web Design"]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={devLondon} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/dev-london" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">
