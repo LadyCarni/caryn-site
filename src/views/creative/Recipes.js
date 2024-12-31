@@ -33,6 +33,7 @@ import Lasagna from 'assets/creative/recipes/lasagna9.jpg';
 import DryRub from 'assets/creative/recipes/dry-rub.jpg';
 import Shortbread from 'assets/creative/recipes/recipe-shortbread.jpg';
 import BourbonMolasses from 'assets/creative/recipes/bourbon-molasses-done.jpg';
+import CinnamonRolls from 'assets/creative/recipes/cinnamon-rolls-frosted.jpg';
 
 const categories = [
   {
@@ -70,6 +71,14 @@ const allRecipes = [
     category: "Desserts",
     thumb: "item rectangle",
     id: '781759a9-bc6b-4204-a53c-e3131cb72683',
+  },
+  { 
+    title: "Cinnamon Rolls",
+    image: CinnamonRolls,
+    link: "/creative/recipes/cinnamon-rolls",
+    category: "Desserts",
+    thumb: "item rectangle",
+    id: '7153a2e6-30a4-4b6b-b0c1-f551790265d2',
   },
   { 
     title: "Chicken Lasagna",
