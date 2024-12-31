@@ -1,13 +1,14 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
+import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
-import ShortbreadCookie from 'assets/creative/recipes/recipe-shortbread.jpg';
+import SpritzCookie from 'assets/creative/recipes/recipe-shortbread.jpg';
 
 const Ingredients = ( {media} ) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
-      <h3>Shortbread ingredients</h3>
+      <h3>Spritz cookies ingredients</h3>
       <ul>
         <li><span className="amount">1 1/3 cups</span>all purpose flour</li>
         <li><span className="amount">3 Tbsp</span>cornstarch</li>
@@ -20,14 +21,22 @@ const Ingredients = ( {media} ) => {
   )
 };
 
-const Shortbread = () => {
+const Spritz = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Spritz Cookies Recipe</title>
+        <meta property="og:title" content="Spritz Cookies Recipe" />
+        <meta property="og:description" content="Spritz cookies recipe." />
+        <meta property="og:image" content={SpritzCookie} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/spritz-cookies" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">
           <div className="recipe-body">
-            <h1>Shortbread cookies</h1>
+            <h1>Spritz cookies</h1>
             <div className="prep-info">
               <div className="prep-info-detail">
                 <strong>Prep Time</strong>
@@ -48,7 +57,7 @@ const Shortbread = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={ShortbreadCookie} alt="shortbread cookies"/>
+              <img src={SpritzCookie} alt="spritz cookies"/>
             </div>
 
             <Ingredients media="mobile" />
@@ -84,4 +93,4 @@ const Shortbread = () => {
   )
 }
 
-export default Shortbread;
+export default Spritz;

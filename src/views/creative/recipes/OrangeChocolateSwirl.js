@@ -1,5 +1,6 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
+import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 import ChocolateOrange from 'assets/creative/recipes/recipe-chocolate-orange1.jpg';
 import ChocolateOrange2 from 'assets/creative/recipes/recipe-chocolate-orange2.jpg';
@@ -28,6 +29,14 @@ const Ingredients = ( {media} ) => {
 const ChocolateOrangeSwirl = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Chocolate Orange Swirl Cookies Recipe</title>
+        <meta property="og:title" content="Chocolate Orange Swirl Cookies Recipe" />
+        <meta property="og:description" content="Step by step chocolate orange swirl cookies recipe." />
+        <meta property="og:image" content={ChocolateOrange} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/chocolate-orange-swirl" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

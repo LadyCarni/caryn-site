@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
 import dryRub from 'assets/creative/recipes/dry-rub.jpg'
+import { Helmet } from 'react-helmet';
 
 const Ingredients = ( {media} ) => {
   return (
@@ -26,6 +27,14 @@ const Ingredients = ( {media} ) => {
 const DryRub = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Dry Rub Recipe</title>
+        <meta property="og:title" content="Dry Rub Recipe" />
+        <meta property="og:description" content="Step by step all-purpose dry rub recipe." />
+        <meta property="og:image" content={dryRub} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/dry-rub" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

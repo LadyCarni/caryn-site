@@ -1,5 +1,6 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
+import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 import SparklyPumpkin from 'assets/creative/recipes/recipe-pumpkin-pie.jpg';
 
@@ -34,6 +35,14 @@ const Ingredients = ( {media} ) => {
 const PumpkinPie = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Sparkly Pumpkin Pie Recipe</title>
+        <meta property="og:title" content="Sparkly Pumpkin Pie Recipe" />
+        <meta property="og:description" content="Sparkly pumpkin pie recipe." />
+        <meta property="og:image" content={SparklyPumpkin} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/pumpkin-pie" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">
