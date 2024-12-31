@@ -1,5 +1,6 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
+import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 // import Lasagna1 from 'assets/creative/recipes/lasagna1.jpg';
 import Lasagna2 from 'assets/creative/recipes/lasagna2.jpg';
@@ -46,6 +47,14 @@ const Ingredients = ( {media} ) => {
 const Lasagna = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Chicken Lasagna Recipe</title>
+        <meta property="og:title" content="Chicken Lasagna Recipe" />
+        <meta property="og:description" content="Step by step chicken lasagna recipe." />
+        <meta property="og:image" content={Lasagna9} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/lasagna" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

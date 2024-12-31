@@ -4,6 +4,7 @@ import { CreativeRoutes } from "../index";
 import bananaBread1 from 'assets/creative/recipes/banana-bread1.jpg'
 import bananaBread2 from 'assets/creative/recipes/banana-bread2.jpg'
 import bananaBread3 from 'assets/creative/recipes/banana-bread3.jpg'
+import { Helmet } from 'react-helmet';
 
 const Ingredients = ( {media} ) => {
   return (
@@ -43,6 +44,14 @@ const Ingredients = ( {media} ) => {
 const BananaBread = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Banana Bread French Toast Recipe</title>
+        <meta property="og:title" content="Banana Bread French Toast Recipe" />
+        <meta property="og:description" content="Step by step banana bread french toast recipe." />
+        <meta property="og:image" content={bananaBread1} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/french-toast" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

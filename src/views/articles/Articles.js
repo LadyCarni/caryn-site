@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Helmet } from 'react-helmet';
 import { faExternalLink, faBookmark } from '@fortawesome/pro-light-svg-icons';
 import practicalUX from "assets/articles/practical-ux-cover.jpg";
 import howToTalk from "assets/articles/how-to-talk.jpg";
@@ -111,6 +112,14 @@ const Articles = () => {
 
   return (
     <div className="articles full-height">
+      <Helmet>
+        <title>Caryn Farvour</title>
+        <meta property="og:title" content="Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio showcasing industry insights, creative projects, hobbies, and recipes, blending design expertise with personal passion." />
+        <meta property="og:image" content="%PUBLIC_URL%/assets/about/caryn-portrait.jpg" />
+        <meta property="og:url" content="https://carynfarvour.design" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="article-feature-container">
         <span className="landmark"><FontAwesomeIcon icon={faBookmark} /> Top Articles</span>
 

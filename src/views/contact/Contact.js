@@ -4,9 +4,18 @@ import { faGithubAlt, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/
 import { faEnvelopeOpenText } from '@fortawesome/pro-light-svg-icons';
 import office from 'assets/office.jpg';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 const Contact = () => {
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Caryn Farvour</title>
+        <meta property="og:title" content="Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio showcasing industry insights, creative projects, hobbies, and recipes, blending design expertise with personal passion." />
+        <meta property="og:image" content="%PUBLIC_URL%/assets/about/caryn-portrait.jpg" />
+        <meta property="og:url" content="https://carynfarvour.design" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="contact-header">
         <div className="header-image">
          <img src={office} alt="Caryn's home office"/>

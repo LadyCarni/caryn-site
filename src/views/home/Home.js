@@ -3,11 +3,20 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowDown, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat, faHandsHeart } from '@fortawesome/pro-light-svg-icons';
 import triangles from 'assets/tri-large.svg'; 
+import { Helmet } from 'react-helmet';
 import PortfolioFeatures from 'components/portfolioFeatures';
 import knakWires from 'assets/portfolio/knak-wires.jpg';
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Caryn Farvour</title>
+        <meta property="og:title" content="Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio showcasing industry insights, creative projects, hobbies, and recipes, blending design expertise with personal passion." />
+        <meta property="og:image" content="%PUBLIC_URL%/assets/about/caryn-portrait.jpg" />
+        <meta property="og:url" content="https://carynfarvour.design" />
+        <meta property="og:type" content="article" />
+      </Helmet>
     <div className="hero feature-width feature-height">
       <div className="hero-content">
         <h1><span className="pop">Design</span> for work,<br/>life & play</h1>

@@ -2,6 +2,7 @@ import React from "react";
 // import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "components/portfolioHeader";
 import usePrism from "hooks/usePrism";
+import { Helmet } from "react-helmet";
 
 import connectFeature from "assets/portfolio/connect-cover2.jpg";
 import connectWireGuides from "assets/portfolio/connect-wires2.png";
@@ -30,6 +31,14 @@ const ConnectApi = () => {
           "UX",
         ]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={connectFeature} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/connect-api" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">

@@ -5,6 +5,7 @@ import cheesecakeCover from 'assets/creative/recipes/recipe-cheesecake4.jpg'
 import cheesecake1 from 'assets/creative/recipes/recipe-cheesecake1.jpg'
 import cheesecake2 from 'assets/creative/recipes/recipe-cheesecake2.jpg'
 import cheesecake3 from 'assets/creative/recipes/recipe-cheesecake3.jpg'
+import { Helmet } from 'react-helmet';
 
 const Ingredients = ( {media} ) => {
   return (
@@ -38,6 +39,14 @@ const Ingredients = ( {media} ) => {
 const Cheesecake = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Cheesecake Recipe</title>
+        <meta property="og:title" content="Cheesecake Recipe" />
+        <meta property="og:description" content="Step by step classic New York cheesecake recipe." />
+        <meta property="og:image" content={cheesecakeCover} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/cheesecake" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

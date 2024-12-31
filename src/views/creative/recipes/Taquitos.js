@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
 import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
+import { Helmet } from 'react-helmet';
 
 const Ingredients = ( {media} ) => {
   return (
@@ -24,6 +25,14 @@ const Ingredients = ( {media} ) => {
 const TaquitoRecipe = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Buffalo Chicken Taquitos Recipe</title>
+        <meta property="og:title" content="Buffalo Chicken Taquitos Recipe" />
+        <meta property="og:description" content="Step-by-step buffalo chicken taquito recipe." />
+        <meta property="og:image" content={Taquitos} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/buffalo-chicken-taquitos" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

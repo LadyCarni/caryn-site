@@ -1,5 +1,6 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
+import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 import Casserole from 'assets/creative/recipes/recipe-sweet-potato-casserole1.jpg';
 
@@ -32,6 +33,14 @@ const Ingredients = ( {media} ) => {
 const SweetPotatoCasserole = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Sweet Potato Casserole Recipe</title>
+        <meta property="og:title" content="Sweet Potato Casserole Recipe" />
+        <meta property="og:description" content="Step-by-step sweet potato casserole recipe." />
+        <meta property="og:image" content={Casserole} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/sweet-potato-casserole" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

@@ -11,6 +11,7 @@ import roadrate from "assets/portfolio/road-rate.png";
 import geriatricks from "assets/portfolio/geria-tricks.png";
 import uxWaterloo2014 from 'assets/about/ux-waterloo-2014.jpg';
 import usePrism from "hooks/usePrism";
+import { Helmet } from "react-helmet";
 
 const WireframeCoaching = () => {
   usePrism();
@@ -26,6 +27,14 @@ const WireframeCoaching = () => {
         headerDescription="With just a pen and paper, anybody can learn to wireframe. This simple skill will enable you to visualize a feature or interface and communicate it to others."
         headerDisciplines={["Coaching & Mentorship", "Community"]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={wireframeHeader} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/wireframe-coaching" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">

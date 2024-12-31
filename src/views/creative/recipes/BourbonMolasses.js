@@ -1,5 +1,6 @@
 import React from 'react';
 import Breadcrumb from 'components/breadcrumb';
+import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 import BourbonMolassesDone from 'assets/creative/recipes/bourbon-molasses-done.jpg';
 import BourbonMolassesPrep from 'assets/creative/recipes/bourbon-molasses-prep.jpg';
@@ -34,6 +35,14 @@ const Ingredients = ( {media} ) => {
 const BourbonMolassesCookie = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Bourbon Molasses Cookies Recipe</title>
+        <meta property="og:title" content="Bourbon Molasses Cookies Recipe" />
+        <meta property="og:description" content="Step by step bourbon molasses cookies recipe." />
+        <meta property="og:image" content={BourbonMolassesDone} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/bourbon-molasses-cookie" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

@@ -7,6 +7,7 @@ import financialCheckout from "assets/portfolio/financial-checkout.jpg";
 import financialMarketPrice from "assets/portfolio/financial-market-price.png";
 import financialPayment from "assets/portfolio/financial-payment-options.png";
 import financialVault from "assets/portfolio/financial-vault.png";
+import { Helmet } from 'react-helmet';
 
 const Financial = () => {
   return (
@@ -20,6 +21,14 @@ const Financial = () => {
         headerDescription="An application designed to make the complexities of trading in precious metals user-friendly and simple."
         headerDisciplines={["UX Research & Planning", "Web App Design"]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={financialCover} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/financial-app" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">
