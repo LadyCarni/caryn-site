@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
 import CinnamonRollFrosted from 'assets/creative/recipes/cinnamon-rolls-frosted.jpg';
@@ -41,6 +42,14 @@ const Ingredients = ( {media} ) => {
 const CinnamonRolls = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Cinnamon Rolls Recipe</title>
+        <meta property="og:title" content="Cinnamon Rolls Recipe" />
+        <meta property="og:description" content="Delicious homemade cinnamon rolls recipe." />
+        <meta property="og:image" content={CinnamonRollFrosted} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/cinnamon-rolls" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">
