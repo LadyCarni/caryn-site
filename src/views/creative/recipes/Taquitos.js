@@ -6,8 +6,7 @@ import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
 const Ingredients = ( {media} ) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3></h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">1 8oz package</span>cream cheese, softened</li>
         <li><span className="amount">1/2 cup</span>ranch dressing</li>

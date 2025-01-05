@@ -7,8 +7,7 @@ import BourbonMolassesPrep from 'assets/creative/recipes/bourbon-molasses-prep.j
 const Ingredients = ( {media} ) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3></h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">4 2/3 cups</span>all-purpose flour</li>
         <li><span className="amount">1 Tbsp</span>baking soda</li>

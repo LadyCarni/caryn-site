@@ -7,8 +7,7 @@ import SnickerdoodlePrep from 'assets/creative/recipes/recipe-snickerdoodle2.jpg
 const Ingredients = ( {media} ) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3></h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">2 3/4 cups</span>sifted all-purpose flour</li>
         <li><span className="amount">2 tsp</span>cream of tartar</li>

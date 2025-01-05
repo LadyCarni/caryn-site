@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLongArrowDown, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faHeartbeat, faHandsHeart } from '@fortawesome/pro-light-svg-icons';
-import triangles from 'assets/tri-large.svg'; 
+// import triangles from 'assets/tri-large.svg'; 
 import PortfolioFeatures from 'components/portfolioFeatures';
 import knakWires from 'assets/portfolio/knak-wires.jpg';
 const Home = () => {

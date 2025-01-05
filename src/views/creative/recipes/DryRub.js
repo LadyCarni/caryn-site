@@ -6,8 +6,7 @@ import dryRub from 'assets/creative/recipes/dry-rub.jpg'
 const Ingredients = ( {media} ) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3>Portions</h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">8 Tbsp</span>light brown sugar, tightly packed</li>
         <li><span className="amount">3 Tbsp</span>kosher salt</li>
