@@ -3,7 +3,8 @@
 }
 
 .landmark {
-  font-weight: 700;
+  color: white;
+  font-weight: 500;
   display: block;
   margin: 0 auto $space;
 
@@ -16,14 +17,14 @@
   }
 
   svg {
-    color: $grey3;
+    color: white;
     margin-right: $sm-space;
   }
 }
 
 .article-feature-container {
   width: 100%;
-  background: rgba($primary, .5);
+  background: $grey0;
   padding: $lg-space 0 50px;
 }
 

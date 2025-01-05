@@ -1,5 +1,7 @@
 .hero {
-  background-color: $primary;
+  // background-color: $primary;
+  background-image: url('/assets/background-gradient.png');
+  background-size: cover;
   position: relative;
   
   .hero-content {

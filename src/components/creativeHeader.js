@@ -11,6 +11,7 @@ function CreativeHeader( { headerImage, imageAlt } ) {
       </div>
       <h1><span className="pop">Creativity</span> in the wild</h1>
       <ul>
+        <li><NavLink to={`/creative`}><FontAwesomeIcon icon={faPalette} />All Creative</NavLink></li>
         <li><NavLink to={`/creative/crafts`}><FontAwesomeIcon icon={faPalette} />Crafts</NavLink></li>
         <li><NavLink to={`/creative/diy`}><FontAwesomeIcon icon={faHammer} />DIY</NavLink></li>
         <li><NavLink to={`/creative/recipes`}><FontAwesomeIcon icon={faHatChef} />Recipes</NavLink></li>

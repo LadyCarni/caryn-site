@@ -4,12 +4,15 @@ import RecipeHeader from 'assets/creative/creative-header.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark, faCameraRetro, faHammer, faHatChef, faPalette } from '@fortawesome/pro-light-svg-icons';
 import CreativeHeader from 'components/creativeHeader';
+import Breadcrumb from 'components/breadcrumb';
+import { CreativeRoutes } from "./index";
 import cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg'
 import vinylElephant from 'assets/creative/crafts/vinyl-elephant.jpg'
 
 const Creative = () => {
   return (
     <div className="creative full-height">
+      <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <CreativeHeader
         headerImage={RecipeHeader}
         imageAlt="Lemon blueberry pie"

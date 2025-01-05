@@ -391,10 +391,10 @@ p > code {
 }
 
 .breadcrumb {
-  background: #eee;
+  background: $grey0;
   padding: 1.5em;
   font-family: $type-content;
-  color: $content;
+  color: $primary;
   font-size: .85em;
 
   &.creative-view {
@@ -420,12 +420,20 @@ p > code {
       }
 
       &:last-child {
-        font-weight: 700;
+        font-weight: 500;
+
+        a {
+          text-decoration: none;
+        }
 
         &::after {
           display: none;
           visibility: hidden;
         }
+      }
+
+      a {
+        color: $primary;
       }
     }
   }
