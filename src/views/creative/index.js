@@ -1,6 +1,4 @@
-// import Placeholder from './Placeholder';
 import Creative from "./Creative";
-import Crafts from "./Crafts";
 import Diy from "./Diy";
 import Recipes from "./Recipes";
 import Photography from "./Photography";
@@ -12,13 +10,16 @@ import Fudge from "./recipes/Baileysfudge";
 import ChocolateOrange from "./recipes/OrangeChocolateSwirl";
 import VinylElephant from "./crafts/VinylElephant";
 import PipeDesk from "./diy/PipeDesk";
-import Shortbread from "./recipes/Shortbread";
+// import Spritz from "./recipes/Spritz";
 import PumpkinPie from "./recipes/PumpkinPie";
 import SweetPotatoCasserole from "./recipes/SweetPotatoCasserole";
 import TaquitoRecipe from "./recipes/Taquitos";
 import SnickerdoodleCookie from "./recipes/Snickerdoodle";
 import BourbonMolassesCookie from "./recipes/BourbonMolasses";
 import CinnamonRolls from "./recipes/CinnamonRolls";
+
+// Import Crafts last to avoid circular dependency
+import Crafts from "./Crafts";
 
 export const CreativeRoutes = [
   { path: "/creative", name: "Creative", component: Creative, exact: true },
@@ -29,7 +30,7 @@ export const CreativeRoutes = [
   { path: "/creative/recipes/lasagna", name: "Chicken Lasagna", component: Lasagna },
   { path: "/creative/recipes/dry-rub", name: "Best-Ever Dry Rub", component: DryRub },
   { path: "/creative/recipes/fudge", name: "Bailey's Fudge", component: Fudge },
-  { path: "/creative/recipes/shortbread", name: "Shortbread cookies", component: Shortbread },
+  // { path: "/creative/recipes/spritz-cookies", name: "Spritz cookies", component: Spritz },
   { path: "/creative/recipes/pumpkin-pie", name: "Sparkly Pumpkin Pie", component: PumpkinPie },
   { path: "/creative/recipes/sweet-potato-casserole", name: "Sweet Potato Casserole", component: SweetPotatoCasserole },
   { path: "/creative/recipes/buffalo-chicken-taquitos", name: "Buffalo Chicken Taquitos", component: TaquitoRecipe },
