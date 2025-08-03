@@ -70,7 +70,7 @@ const ConnectApi = () => {
                 </ul>
               </div>
               <div className="fill">
-                <img src={connectWireGuides} alt="Connect API wireframe guides"/>
+                <img src={connectWireGuides} alt="Connect API wireframe guides" />
               </div>
             </div>
 
@@ -87,30 +87,29 @@ const ConnectApi = () => {
                 </ul>
               </div>
               <div className="fill">
-                <img src={connectWireDocs} alt="Connect API wireframe docs"/>
+                <img src={connectWireDocs} alt="Connect API wireframe docs" />
               </div>
             </div>
 
             <h2>Feature: Integration Diagrams</h2>
             <p>From when a menu is ready on a Point of Sale system to the point that a customer is accepting their delivered food order, there are a number of steps involved. I put together a set of simple diagrams to illustrate the steps, and how the user of the API documentation would be involved for each part of the integration.</p>
-            <img src={connectMenu} alt="Illustrated diagram of menu integration" className="shadow"/>
-            <img src={connectOrder} alt="Illustrated diagram of order integration" className="shadow"/>
+            <img src={connectMenu} alt="Illustrated diagram of menu integration" className="shadow" />
+            <img src={connectOrder} alt="Illustrated diagram of order integration" className="shadow" />
 
             <h2>Feature: Sticky Payloads</h2>
             <p>In order to make the payload requirements as accessible as possible, the code blocks were contained in context with the description. Interactively, this was acentuated with a <code>position: sticky</code> effect so that the user could scroll through the document and not lose the context.</p>
-            <img src={connectSticky} alt="Sticky payload interaction" className="shadow"/>
+            <img src={connectSticky} alt="Sticky payload interaction" className="shadow" />
 
             <h2>Feature: Custom Code Blocks</h2>
             <p>The syntax of the required payloads needed to be exact, so in order to ensure full clarity of the expected code, custom code blocks with syntax highlighting were included in the final product. The custom code blocks also included color-blind accessible language-specific syntax highlighting and a copy-to-clipboard function.</p>
             <p></p>
-            <img src={connectClipboard} alt="Payload interactions"/>
+            <img src={connectClipboard} alt="Payload interactions" />
 
             <h2>The Results</h2>
             <p>After launch, the <a href="https://connect-api.flyt.io/" target="_blank" rel="noreferrer">Connect API</a> docs were given to three new clients within the first week. The average time to live went from 18 hours of support required to just under 6. Each new brand was able to launch on time, with accuracy, with minimal operational support needed.</p>
           </div>
-
-          <div className="full-width">
-            <img src={connectCover} alt="Connect API docs"/>
+          <div className="full-width conclusion">
+            <img src={connectCover} alt="Connect API docs" />
           </div>
         </div>
       </div>

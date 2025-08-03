@@ -1,4 +1,3 @@
-@import-normalize;
 @import 'variables.scss';
 @import 'utility.scss';
 @import 'home.scss';
@@ -9,7 +8,9 @@
 @import 'creative.scss';
 @import 'contact.scss';
 
-html, body, #root {
+html,
+body,
+#root {
   font-size: 16px;
   height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +34,8 @@ a {
   }
 }
 
-a, p {
+a,
+p {
   font-family: $type-content;
 }
 
@@ -41,7 +43,8 @@ p {
   line-height: $lg-space;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 300;
 }
 
@@ -63,6 +66,8 @@ h1, h2 {
   display: flex;
 
   @media screen and (max-width: $small) {
+    background: $grey0;
+
     button {
       margin-right: 1em;
     }
@@ -91,11 +96,11 @@ h1, h2 {
     display: flex;
     justify-content: space-around;
     margin-right: 0;
-    background: white;
     padding-top: .5em;
   }
 
   @media screen and (min-width: 501px) and (max-width: $small) {
+
     margin-left: 2em;
 
     &.open {
@@ -109,7 +114,8 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
+    justify-content: flex-end;
+    line-height: 2em;
     transition: all 300ms ease;
     border-bottom: 4px solid transparent;
     text-decoration: none;
@@ -132,7 +138,8 @@ h1, h2 {
     }
 
     &:hover {
-      background: darken($grey1, 4%);;
+      background: darken($grey1, 4%);
+      ;
       transition: all 300ms ease;
     }
 
@@ -157,20 +164,9 @@ h1, h2 {
   }
 }
 
-.header-pop {
-  background-image: url('/assets/background-gradient.png');
-  background-size: cover;
-  position: relative;
-  padding-top: 4px;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-}
-
 .header {
   align-items: center;
-  background: $grey1;
+  background: $grey0;
   display: flex;
   font-family: $type-content;
   height: 50px;
@@ -230,7 +226,7 @@ h1, h2 {
 }
 
 .footer {
-  background: $grey1;
+  background: $synth4;
   display: flex;
   flex-direction: row;
   height: 50px;
@@ -248,25 +244,17 @@ h1, h2 {
 
   a {
     svg {
-      color: $grey3;
+      color: $synth2;
       transition: all 300ms ease;
     }
 
     &:hover {
-      .github {
-        color: $github;
-      }
 
-      .twitter {
-        color: $twitter;
-      }
-
-      .instagram {
-        color: $instagram;
-      }
-
+      .github,
+      .twitter,
+      .instagram,
       .linkedin {
-        color: $linkedin;
+        color: $synth3;
       }
     }
   }
@@ -278,7 +266,7 @@ h1, h2 {
     @media screen and (max-width: $small) {
       padding-right: 1em;
     }
-  
+
     @media screen and (min-width: ($small + 1)) {
       padding-right: 50px;
     }
@@ -287,7 +275,7 @@ h1, h2 {
 
 .top-scroll {
   align-items: center;
-  color: $content;
+  color: $synth3;
   cursor: pointer;
   font-family: $type-content;
   font-size: .85em;

@@ -34,7 +34,7 @@
   margin-top: 0;
 }
 
-p > code {
+p>code {
   background: rgba($primary, .25);
   padding: 0 .25em;
 }
@@ -64,7 +64,7 @@ p > code {
 }
 
 .shadow {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
   @media screen and (max-width: $small) {
     box-shadow: none;
@@ -141,13 +141,13 @@ p > code {
         @media screen and (max-width: ($small - 1)) {
           height: 50%;
         }
-  
+
         @media screen and (min-width: $small) {
           height: 120px;
         }
       }
     }
-  
+
     &.left {
       &::after {
         background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -159,7 +159,7 @@ p > code {
         }
       }
     }
-  
+
     &::after {
       display: block;
       content: '';
@@ -282,7 +282,8 @@ p > code {
         }
       }
 
-      .title, .description {
+      .title,
+      .description {
         width: 100%;
       }
 
@@ -316,7 +317,9 @@ p > code {
     }
 
     @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
-      .title, .description {
+
+      .title,
+      .description {
         width: 50%;
       }
 
@@ -336,7 +339,7 @@ p > code {
     @media screen and (min-width: ($large + 1)) {
       width: 90%;
     }
-    
+
     .title {
       display: flex;
       flex-direction: column;
@@ -385,16 +388,16 @@ p > code {
     font-weight: 100;
     content: '\f178';
     margin-left: .5em;
-    color: $primary;
+    color: $synth2;
     vertical-align: middle;
   }
 }
 
 .breadcrumb {
-  background: $grey0;
+  background: $synth4;
   padding: 1.5em;
   font-family: $type-content;
-  color: $primary;
+  color: $synth3;
   font-size: .85em;
 
   &.creative-view {
@@ -404,7 +407,7 @@ p > code {
     margin: 0 auto;
     padding: 1.5em 0;
   }
-  
+
   ul {
     list-style-type: none;
     padding: 0;
@@ -433,7 +436,7 @@ p > code {
       }
 
       a {
-        color: $primary;
+        color: $synth2
       }
     }
   }
@@ -476,6 +479,7 @@ p > code {
 .quote {
   border-left: 3px solid rgba($grey3, .5);
   padding-left: 1em;
+
   p {
     color: $content;
 

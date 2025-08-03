@@ -1,9 +1,14 @@
 .hero {
   // background-color: $primary;
-  background-image: url('/assets/background-gradient.png');
+  background: #c31432;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #240b36, #c31432);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   position: relative;
-  
+
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -11,11 +16,12 @@
     margin: auto;
     position: absolute;
     z-index: 2;
-    
+
     h1 {
       color: white;
       font-family: $type-headline;
-      font-weight: 300;
+      font-weight: 400;
+      font-style: normal;
     }
   }
 
@@ -94,7 +100,7 @@
     left: 5%;
   }
 
-  @media screen and (min-width: ($small + 1)) { 
+  @media screen and (min-width: ($small + 1)) {
     top: 3em;
     left: 3em;
     width: 75%;

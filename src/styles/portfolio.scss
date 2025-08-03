@@ -32,15 +32,15 @@
   }
 
   .image {
-    width:100%;
-    overflow:hidden;
+    width: 100%;
+    overflow: hidden;
 
     @media screen and (max-width: $small) {
       height: 200px;
     }
 
     @media screen and (min-width: ($small + 1)) {
-      height:300px;
+      height: 300px;
     }
 
     img {
@@ -60,6 +60,14 @@
   }
 }
 
+.swanky-border {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background: $synth2;
+  background: linear-gradient(90deg, rgba($synth1, 1) 0%, rgba($synth2, 1) 100%);
+}
+
 .project-title {
   overflow: hidden;
   position: relative;
@@ -68,7 +76,7 @@
     @media screen and (max-width: $small) {
       height: 30vh;
     }
-  
+
     @media screen and (min-width: ($small + 1)) {
       height: 500px;
     }
@@ -90,8 +98,7 @@
 }
 
 .summary {
-  background: rgba($primary, .5);
-  padding: $std-size;
+  padding: 40px 0;
   align-items: flex-start;
   justify-content: space-between;
 
@@ -100,7 +107,7 @@
   }
 
   @media screen and (min-width: ($small + 1)) {
-    padding: $std-size;
+    padding: 40px 0 20x;
   }
 
   h3 {
@@ -140,7 +147,8 @@
   grid-auto-flow: dense;
   margin: 2em 0;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     box-sizing: border-box;
   }
 
@@ -297,22 +305,23 @@
       white-space: pre-wrap;
     }
 
-    a, svg {
+    a,
+    svg {
       color: white;
     }
   }
 }
 
 .headline-image {
-  width:100%;
-  overflow:hidden;
+  width: 100%;
+  overflow: hidden;
 
   @media screen and (max-width: $small) {
-    height:30vh;
+    height: 30vh;
   }
 
   @media screen and (min-width: ($small + 1)) {
-    height:80vh;
+    height: 80vh;
   }
 
   img {
@@ -320,4 +329,8 @@
     object-fit: cover;
     width: 100%;
   }
+}
+
+.conclusion {
+  margin-bottom: $std-size;
 }

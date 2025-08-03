@@ -9,7 +9,7 @@ function PortfolioHeader({ routes, headerImage, imageAlt, headerTitle, headerSub
         <div className="content flex column">
           <div className="project-title filter">
             <div className="image left">
-              <img src={headerImage} alt={`${imageAlt}`}/>
+              <img src={headerImage} alt={`${imageAlt}`} />
             </div>
             <div className="title-content">
               <h1>{headerTitle}</h1>
@@ -24,10 +24,11 @@ function PortfolioHeader({ routes, headerImage, imageAlt, headerTitle, headerSub
             <div className="section">
               <h3>Disciplines</h3>
               <ul className="tags">
-                {headerDisciplines.map( discipline => (<li key={discipline}>{discipline}</li>))}
+                {headerDisciplines.map(discipline => (<li key={discipline}>{discipline}</li>))}
               </ul>
             </div>
           </div>
+          <div class="swanky-border"></div>
         </div>
       </div>
     </>
