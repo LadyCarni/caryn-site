@@ -1,6 +1,10 @@
 .creative {
   font-family: $type-content;
-  margin-bottom: 100px;
+
+  &.full-height {
+    height: fit-content;
+    padding-bottom: 100px;
+  }
 }
 
 .creative-header {
@@ -36,6 +40,10 @@
   @media screen and (min-width: ($medium + 1)) {
     .header-image {
       height: 300px;
+
+      &.main {
+        height: 360px;
+      }
     }
 
     ul {
@@ -70,8 +78,6 @@
     padding: 0;
 
     a {
-      background: rgba($primary, .1);
-      border-radius: 4px;
       color: $grey1;
       display: flex;
       flex-direction: column;
@@ -88,7 +94,7 @@
       }
 
       &.active {
-        border-bottom: 2px solid $primary-dark;
+        border-bottom: 2px solid $synth3;
       }
 
       &:hover {
@@ -189,7 +195,7 @@
           font-weight: 700;
 
           a {
-            color: $primary-dark;
+            color: $synth2;
             text-decoration: none;
           }
         }
@@ -591,9 +597,9 @@
 
   /* Track */
   &::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
   }
-  
+
   /* Handle */
   &::-webkit-scrollbar-thumb {
     background: $primary;
@@ -602,7 +608,7 @@
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    background: $primary-dark; 
+    background: $primary-dark;
   }
 
   &.sticky {
