@@ -8,7 +8,7 @@ import knakWires from 'assets/portfolio/knak-wires.jpg';
 const Home = () => {
   return (
     <>
-      <div className="hero feature-height">
+      <div className="hero gradient-pop feature-height">
         <div className="hero-content">
           <h1>UX Leader<br />Strategic Thinker</h1>
         </div>

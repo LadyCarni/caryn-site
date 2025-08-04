@@ -38,6 +38,7 @@
 
     @media screen and (max-width: $small) {
       height: 200px;
+      width: 100vw;
     }
 
     @media screen and (min-width: ($small + 1)) {

@@ -148,7 +148,7 @@ const Projects = ({ match }) => {
 
   return (
     <>
-      <h1>Crafting Exceptional Experiences: A UX Portfolio</h1>
+      <h1>Where Strategy Meets Execution</h1>
       <div className="feature-content columns portfolio">
         {gallery.map(({ id, slug, title, category, source }) => (
           <div className="column shadow filter" key={id}>
