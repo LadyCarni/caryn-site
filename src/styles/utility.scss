@@ -418,8 +418,9 @@ p>code {
   background: $synth4;
   padding: 1.5em;
   font-family: $type-content;
-  color: $synth3;
   font-size: .85em;
+  color: $synth3;
+  margin-top: 50px;
 
   &.creative-view {
     background: transparent;
@@ -464,23 +465,28 @@ p>code {
 }
 
 .ah-ha {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+
   &::before {
+    flex-shrink: 0;
     font-family: $icon;
-    display: inline-block;
+    color: $primary;
+    content: '\f671';
     font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
-    content: '\f671';
-    margin-right: .5em;
-    color: $primary;
-    vertical-align: top;
+    margin-right: 1rem;
+    margin-top: 0.125rem;
   }
 
   i {
-    background: rgba($primary, .5);
+    background: rgba($synth2, .5);
   }
 }
 

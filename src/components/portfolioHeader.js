@@ -5,7 +5,7 @@ function PortfolioHeader({ routes, headerImage, imageAlt, headerTitle, headerSub
   return (
     <>
       <Breadcrumb routes={routes} className="feature-width" />
-      <div className="feature feature-width">
+      <div className="feature">
         <div className="content flex column">
           <div className="project-title filter">
             <div className="image left">
@@ -16,7 +16,7 @@ function PortfolioHeader({ routes, headerImage, imageAlt, headerTitle, headerSub
               <h2>{headerSubtitle}</h2>
             </div>
           </div>
-          <div className="summary flex row">
+          <div className="summary feature-width flex row">
             <div className="section">
               <h3>About</h3>
               <p>{headerDescription}</p>
@@ -28,7 +28,7 @@ function PortfolioHeader({ routes, headerImage, imageAlt, headerTitle, headerSub
               </ul>
             </div>
           </div>
-          <div class="swanky-border"></div>
+          <div className="swanky-border"></div>
         </div>
       </div>
     </>
