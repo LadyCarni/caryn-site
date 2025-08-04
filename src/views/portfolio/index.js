@@ -1,4 +1,5 @@
 // import Placeholder from './Placeholder';
+import DesignSystem from "./DesignSystem";
 import ConnectApi from "./ConnectApi";
 import DevLondon from "./DevLondon";
 import Portfolio from "./Portfolio";
@@ -11,6 +12,7 @@ import Wireframe from "./WireframeCoaching";
 
 export const PortfolioRoutes = [
   { path: "/portfolio", name: "Portfolio", component: Portfolio, exact: true },
+  { path: "/portfolio/design-system", name: "Design System", component: DesignSystem },
   { path: "/portfolio/connect-api", name: "Connect API", component: ConnectApi },
   { path: "/portfolio/dev-london", name: "Dev London", component: DevLondon },
   { path: "/portfolio/knak-ux-case-study", name: "Knak Case Study", component: KnakCaseStudy },

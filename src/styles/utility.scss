@@ -264,6 +264,7 @@ p>code {
     justify-content: space-between;
 
     &.portfolio {
+      gap: 16px;
       margin-top: 0;
 
       @media screen and (max-width: $small) {
