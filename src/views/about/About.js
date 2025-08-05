@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 import caryn1 from 'assets/about/caryn-portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentLines, faTimes } from '@fortawesome/pro-light-svg-icons';
@@ -27,6 +28,14 @@ import laraconEu2014 from 'assets/about/laracon-eu-2014.jpg';
 import fluxible2014 from 'assets/about/fluxible2014.jpg';
 import uxWaterloo2014 from 'assets/about/ux-waterloo-2014.jpg';
 import wireframe2017 from 'assets/about/wireframe.png';
+
+const CustomLink = ({ href, children }) => {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  );
+};
 
 const About = () => {
   const timeline = [
@@ -186,7 +195,7 @@ const About = () => {
           type: 'speaker',
           title: 'UX Facilitative Volunteer, STEMGyrls',
           image: stemGyrls2015,
-          description: 'I was thrilled to be asked to share my UX skills for the first time at this mini-con hosted by the YWCA in Cambridge, Ontario. As the oldest sister of 6 girls, I\'ve had a passion for encouraging and inspiring young girls to get interested in and follow a STEM path. It was a treat to get to see the girls\' faces light up when they realized that some of the most essential artistic UX skills were skills <a href="https://twitter.com/LadyCarni/status/655469926040383488" target="_blank" rel="noreferrer">they already possessed</a>! This was certainly one of the most rewarding little events I\'d participated in.',
+          description: 'I was thrilled to be asked to share my UX skills for the first time at this mini-con hosted by the YWCA in Cambridge, Ontario. As the oldest sister of 6 girls, I\'ve had a passion for encouraging and inspiring young girls to get interested in and follow a STEM path. It was a treat to get to see the girls\' faces light up when they realized that some of the most essential artistic UX skills were skills [they already possessed](https://twitter.com/LadyCarni/status/655469926040383488)! This was certainly one of the most rewarding little events I\'d participated in.',
           year: '2015'
         },
         {
@@ -210,7 +219,7 @@ const About = () => {
           type: 'community',
           title: 'Creator: Gary the Bear',
           image: garyBear,
-          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own <a href="https://twitter.com/bearwithgary" target="_blank" rel="noreferrer">Twitter account</a>, and posed as his own personality online.<br /><br />Gary was <a href="https://twitter.com/bearwithgary/status/1022276833205731330/photo/1" target="_blank" rel="noreferrer">adopted</a> by <a href="https://twitter.com/bearwithgary/status/889851070436044800/photo/1" target="_blank" rel="noreferrer">a few friends</a>, and ended up being passed around throughout the conference, and started an unofficial, <a href="https://twitter.com/bearwithgary/status/889630236224008192/photo/1" target="_blank" rel="noreferrer">annual tradition</a> at Laracon, and <a href="https://twitter.com/bearwithgary/status/1022882695817256960/photo/1" target="_blank" rel="noreferrer">always</a> brought <a href="https://twitter.com/bearwithgary/status/1154088952120381442/photo/1" target="_blank" rel="noreferrer">lots of laughs</a>.',
+          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own [Twitter account](https://twitter.com/bearwithgary), and posed as his own personality online.<br /><br />Gary was [adopted](https://twitter.com/bearwithgary/status/1022276833205731330/photo/1) by [a few friends](https://twitter.com/bearwithgary/status/889851070436044800/photo/1), and ended up being passed around throughout the conference, and started an unofficial, [annual tradition](https://twitter.com/bearwithgary/status/889630236224008192/photo/1) at Laracon, and [always](https://twitter.com/bearwithgary/status/1022882695817256960/photo/1) brought [lots of laughs](https://twitter.com/bearwithgary/status/1154088952120381442/photo/1).',
           year: '2015'
         },
         {
@@ -263,7 +272,7 @@ const About = () => {
           type: 'speaker',
           title: 'Speaker, Laracon EU: "Project Utopia" (Amsterdam)',
           image: laraconEu2016,
-          description: 'This was my first big <a href="https://www.youtube.com/watch?v=WARtjv330mg" target="_blank" rel="noreferrer">conference talk</a>. The talk was jointly given with Jesse O\'Brien on a topic we called Project Utopia; how to run a successful software project. We had been successfully running software projects for several years, and had also seen several mistakes others would make, that we felt we could help alleviate with a few practical and applicable tips. This talk was recreated and published on Medium as <a href="https://medium.com/vehikl-news/running-better-software-projects-c589f017c63f" target="_blank" rel="noreferrer">an article</a> for those who didn\'t see the talk.',
+          description: 'This was my first big [conference talk](https://www.youtube.com/watch?v=WARtjv330mg). The talk was jointly given with Jesse O\'Brien on a topic we called Project Utopia; how to run a successful software project. We had been successfully running software projects for several years, and had also seen several mistakes others would make, that we felt we could help alleviate with a few practical and applicable tips. This talk was recreated and published on Medium as [an article](https://medium.com/vehikl-news/running-better-software-projects-c589f017c63f) for those who didn\'t see the talk.',
           year: '2016'
         },
         {
@@ -276,7 +285,7 @@ const About = () => {
           type: 'speaker',
           title: 'Speaker, Ladies that UX: "Pairing with Devs/Designers" (London, ON)',
           image: devDesign,
-          description: 'At a local UX meetup, I gave <a href="https://youtu.be/jKjPE0hG5oU?t=1802" target="_blank" rel="noreferrer">a brief talk</a> on how to pair program for developers and designers. The concept of cross-functional teams can be controversial in general, but the concept of the two disciplines actually working alongside one another has ruffled a few feathers in the community over the years. This talk was designed to shed light on how to break down the walls between the disciplines so that the product you\'re both designing and building ends up better.',
+          description: 'At a local UX meetup, I gave [a brief talk](https://youtu.be/jKjPE0hG5oU?t=1802) on how to pair program for developers and designers. The concept of cross-functional teams can be controversial in general, but the concept of the two disciplines actually working alongside one another has ruffled a few feathers in the community over the years. This talk was designed to shed light on how to break down the walls between the disciplines so that the product you\'re both designing and building ends up better.',
           year: '2016'
         },
       ]
@@ -308,7 +317,7 @@ const About = () => {
           type: 'community',
           title: 'Attend Laracon EU (Amsterdam)',
           image: laraconEu2017,
-          description: 'This was my third time attending this conference, as a representative of Vehikl; a loyal sponsor of the conference. This conference gave me the opportunity to meet up with our Laravel counterparts in Europe that wouldn\'t be able to make the trip to Laracon US every year.<br /><br />This year I\'d made a <a href="https://twitter.com/LadyCarni/status/902211456283930629" target="_blank" rel="noreferrer">meme</a> out of the celebrity status of Taylor Otwell (the creator of Laravel), so I spent the sponsor dinner <a href="https://www.instagram.com/p/BYdF75FjbeJ/" target="_blank" rel="noreferrer">pretending to be paparazzi</a>. This community is always up for a good laugh.',
+          description: 'This was my third time attending this conference, as a representative of Vehikl; a loyal sponsor of the conference. This conference gave me the opportunity to meet up with our Laravel counterparts in Europe that wouldn\'t be able to make the trip to Laracon US every year.<br /><br />This year I\'d made a [meme](https://twitter.com/LadyCarni/status/902211456283930629) out of the celebrity status of Taylor Otwell (the creator of Laravel), so I spent the sponsor dinner [pretending to be paparazzi](https://www.instagram.com/p/BYdF75FjbeJ/). This community is always up for a good laugh.',
           year: '2017'
         },
         {
@@ -391,7 +400,7 @@ const About = () => {
           type: 'speaker',
           title: 'Author, "Practical UX"',
           image: PracticalUx,
-          description: 'Together, with five experienced UX professionals, designers, and authors, this <a href="https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d" target="_blank" rel="noreferrer">series</a> explores some favorite tools and habits for applying usability in everyday work. It includes a set of free downloadable worksheets and posters.',
+          description: 'Together, with five experienced UX professionals, designers, and authors, this [series](https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d) explores some favorite tools and habits for applying usability in everyday work. It includes a set of free downloadable worksheets and posters.',
           year: '2019',
         },
         {
@@ -413,7 +422,7 @@ const About = () => {
           type: 'community',
           title: 'Organizer, DevLondon (London, ON)',
           image: devLondon,
-          description: 'I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. <a href="https://devldn.ca/" target="_blank" rel="noreferrer">Dev London</a> is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community.',
+          description: 'I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. [Dev London](https://devldn.ca/) is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community.',
           year: '2019',
         },
       ]
@@ -439,17 +448,11 @@ const About = () => {
       year: '2021',
       events: [
         {
-          id: 'ce19e51f-a73a-405b-ad87-1591ac0a6124',
-          type: 'job',
-          title: 'Lead UX Designer',
-          year: '2021'
-        },
-        {
           id: 'd8a5c6c3-a4c3-46ed-8242-01855f44340b',
           type: 'job',
           title: 'UX Design Tech Lead (Arctic Wolf)',
           image: arcticWolf,
-          description: 'This role starts a new chapter in my career, as a tech lead within the design sphere. This role also marks my first experience in the cybersecurity industry.',
+          description: 'I joined Arctic Wolf as the first UX Design Tech Lead, a role created specifically to bridge the gap between design and development. I was responsible for establishing and shipping the company\'s first internal design system, with a strong focus on technical collaboration and implementation. This positioned me as a technically oriented UX resource, working closely with developers to ensure design quality and feasibility. It also marked my introduction to the cybersecurity industry, where I quickly learned how to balance usability with complex product requirements.',
           year: '2021'
         }
       ]
@@ -461,15 +464,28 @@ const About = () => {
         {
           id: '439cdee2-9d2c-479a-9a67-d72fce28d158',
           type: 'job',
-          title: 'UX Manager (Arctic Wolf)',
-          description: 'I am the principal strategist overseeing UX integration in organization-wide planning endeavors. As the UX lead, I orchestrate the planning, design, and implementation of our internal design system, serving both designers and developers. Additionally, I mentor the UX team, fostering skill enhancement and advocating for their professional growth. I excel in identifying process enhancement opportunities and implementing streamlined solutions through cross-departmental collaboration. I am the lead responsible for Information Architecture. The champion for organizational UX maturity through coaching and knowledge sharing. The UX coach for development teams; teaching developers to embrace user-driven thinking while fostering faster feedback cycles and empowering teams to make informed decisions autonomously. Amplification of best practices, tips for user-first thinking, problem definitions, workshop facilitation, etc. UX due diligence through documentation of user flow breakdowns, screenshots, product/feature relationships, and terminology definitions; ensuring a broad understanding of the entire product suite and increased alignment among all team members from all departments. Implementation of practical UX strategies; enhancing efficiency, transparency, and accountability within the team. Collaborator with Process Architects to include UX criteria in the end-to-end results of the software design process; improving consistency and quality throughout the design and implementation of new features.',
-          year: '2022 - Current'
+          title: 'Promotion: UX Manager (Arctic Wolf)',
+          description: 'As UX Manager, I served as the principal strategist for UX integration across the organization. I led the planning, design, and implementation of our internal design system, ensuring it supports both designers and developers with scalable, user-centered solutions. I also act as the lead for Information Architecture, creating structure and alignment across our product suite. \n\nI mentor and advocate for the UX team, supporting their growth through coaching, skill development, and thoughtful feedback. I also partner closely with development teams, acting as a UX coach to help engineers embrace user-first thinking, encourage faster feedback cycles, and make informed, autonomous design decisions. \n\nMy role includes identifying and implementing process improvements through cross-functional collaboration. I work with Process Architects to embed UX criteria into the full software development lifecycle, increasing consistency and elevating the quality of shipped features. \n\nI champion organizational UX maturity by facilitating workshops, sharing best practices, and guiding teams in defining user problems more effectively. I lead UX due diligence efforts through detailed documentation of user flows, feature relationships, terminology standards, and product overlaps; helping teams across departments better understand the full scope of the user experience. I bring practical UX strategies to life by improving transparency, efficiency, and accountability across the organization.',
+          year: '2022 - 2025'
+        },
+      ]
+    },
+    {
+      id: '1ad48ad4-b0e4-4718-be0a-3a8191525746',
+      year: '2025',
+      events: [
+        {
+          id: 'bc271fdc-0d71-48b1-a188-c5c48b72344c',
+          type: 'job',
+          title: 'Promotion: Senior UX Manager (Arctic Wolf)',
+          description: 'As Senior UX Manager, I\'ve grown from leading tactical UX implementation to shaping broader product and organizational strategy. In this role, I continue to oversee the design system and information architecture, while now also driving cross-functional alignment at a higher level. I support both strategic planning and execution across multiple product areas, partnering closely with Product and Engineering leadership to ensure user experience is integrated into long-term roadmaps. \n\nMy focus has expanded to include leading UX maturity initiatives across the organization, scaling coaching efforts, and shaping how UX contributes to business outcomes. I mentor other UX leaders, support hiring and team structure decisions, and help define systems and processes that enable our team to work more efficiently and effectively at scale.',
+          year: '2025 - Current'
         },
       ]
     }
   ];
 
-  const[selectedItemId, setSelectedItemId] = useState(null);
+  const [selectedItemId, setSelectedItemId] = useState(null);
 
   let detailItem;
   timeline.forEach(item => {
@@ -484,7 +500,7 @@ const About = () => {
     <div className="feature feature-width">
       <div className="bio">
         <div className="inline">
-          <img src={caryn1} alt="Caryn Farvour portrait"/>
+          <img src={caryn1} alt="Caryn Farvour portrait" />
         </div>
         <div className="bio-content">
           <h1>Hi, I'm Caryn</h1>
@@ -499,26 +515,26 @@ const About = () => {
           <div className="timeline">
             <div className="path"></div>
             <ul>
-              {timeline.reverse().map(({id, year, events}) => (
+              {timeline.reverse().map(({ id, year, events }) => (
                 <div className="year-section" key={id}>
                   <li className="year-title">{year}</li>
-                  {events.map(({id, type, title, description}) => {
+                  {events.map(({ id, type, title, description }) => {
 
                     const lineClass = `${type} ${description ? "more-info" : ""} ${detailItem && selectedItemId === id ? "active" : ""}`
 
                     return (
-                      <li 
-                        key={year+id}
+                      <li
+                        key={year + id}
                         className={lineClass}
                         onClick={() => description ? setSelectedItemId(id) : null}>
                         <div className="event">
                           {title}
                         </div>
 
-                        { description ? 
-                        (<div className="more">
-                          <FontAwesomeIcon icon={faCommentLines} />
-                        </div>) : null }
+                        {description ?
+                          (<div className="more">
+                            <FontAwesomeIcon icon={faCommentLines} />
+                          </div>) : null}
                       </li>
                     )
                   })}
@@ -526,14 +542,22 @@ const About = () => {
               ))}
             </ul>
           </div>
-          { detailItem && 
+          {detailItem &&
             <div className="detail">
-              <button onClick={() => setSelectedItemId(null)}>close <FontAwesomeIcon icon={faTimes} /></button>
+              <button onClick={() => setSelectedItemId(null)}>
+                close <FontAwesomeIcon icon={faTimes} />
+              </button>
               <h3>{detailItem.title} ({detailItem.year})</h3>
-              { detailItem.image ? (
-                <img src={detailItem.image} alt={detailItem.title}/>) : null
-              }
-              <p dangerouslySetInnerHTML={{__html: detailItem.description}}></p>
+              {detailItem.image && (
+                <img src={detailItem.image} alt={detailItem.title} />
+              )}
+              <ReactMarkdown
+                components={{
+                  a: CustomLink
+                }}
+              >
+                {detailItem.description}
+              </ReactMarkdown>
             </div>
           }
         </div>
