@@ -219,7 +219,7 @@ const About = () => {
           type: 'community',
           title: 'Creator: Gary the Bear',
           image: garyBear,
-          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own [Twitter account](https://twitter.com/bearwithgary), and posed as his own personality online.<br /><br />Gary was [adopted](https://twitter.com/bearwithgary/status/1022276833205731330/photo/1) by [a few friends](https://twitter.com/bearwithgary/status/889851070436044800/photo/1), and ended up being passed around throughout the conference, and started an unofficial, [annual tradition](https://twitter.com/bearwithgary/status/889630236224008192/photo/1) at Laracon, and [always](https://twitter.com/bearwithgary/status/1022882695817256960/photo/1) brought [lots of laughs](https://twitter.com/bearwithgary/status/1154088952120381442/photo/1).',
+          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own [Twitter account](https://twitter.com/bearwithgary), and posed as his own personality online.\n\nGary was [adopted](https://twitter.com/bearwithgary/status/1022276833205731330/photo/1) by [a few friends](https://twitter.com/bearwithgary/status/889851070436044800/photo/1), and ended up being passed around throughout the conference, and started an unofficial, [annual tradition](https://twitter.com/bearwithgary/status/889630236224008192/photo/1) at Laracon, and [always](https://twitter.com/bearwithgary/status/1022882695817256960/photo/1) brought [lots of laughs](https://twitter.com/bearwithgary/status/1154088952120381442/photo/1).',
           year: '2015'
         },
         {
@@ -309,7 +309,7 @@ const About = () => {
           type: 'speaker',
           title: 'Panelist, Future Female Techmakers Conference',
           image: null,
-          description: 'I was invited to speak on a panel of women from varying STEM fields for an audience of grade 9 - 12 high school and undergraduate students. The panel included a 60 minute discussion and a 20 minute Q&A from audience members.<br/><br/>The annual Future Female Techmakers Conference (FFTC) aims to teach women how to be effective mentors, provides female role models to young women interested in the tech industry, and creates lasting meaningful connections that will support all of the participants in their journey towards becoming female techmakers.',
+          description: 'I was invited to speak on a panel of women from varying STEM fields for an audience of grade 9 - 12 high school and undergraduate students. The panel included a 60 minute discussion and a 20 minute Q&A from audience members.\n\nThe annual Future Female Techmakers Conference (FFTC) aims to teach women how to be effective mentors, provides female role models to young women interested in the tech industry, and creates lasting meaningful connections that will support all of the participants in their journey towards becoming female techmakers.',
           year: '2017'
         },
         {
@@ -317,7 +317,7 @@ const About = () => {
           type: 'community',
           title: 'Attend Laracon EU (Amsterdam)',
           image: laraconEu2017,
-          description: 'This was my third time attending this conference, as a representative of Vehikl; a loyal sponsor of the conference. This conference gave me the opportunity to meet up with our Laravel counterparts in Europe that wouldn\'t be able to make the trip to Laracon US every year.<br /><br />This year I\'d made a [meme](https://twitter.com/LadyCarni/status/902211456283930629) out of the celebrity status of Taylor Otwell (the creator of Laravel), so I spent the sponsor dinner [pretending to be paparazzi](https://www.instagram.com/p/BYdF75FjbeJ/). This community is always up for a good laugh.',
+          description: 'This was my third time attending this conference, as a representative of Vehikl; a loyal sponsor of the conference. This conference gave me the opportunity to meet up with our Laravel counterparts in Europe that wouldn\'t be able to make the trip to Laracon US every year.\n\nThis year I\'d made a [meme](https://twitter.com/LadyCarni/status/902211456283930629) out of the celebrity status of Taylor Otwell (the creator of Laravel), so I spent the sponsor dinner [pretending to be paparazzi](https://www.instagram.com/p/BYdF75FjbeJ/). This community is always up for a good laugh.',
           year: '2017'
         },
         {
@@ -365,7 +365,7 @@ const About = () => {
           type: 'community',
           title: 'Attend Codemash (Sandusky, OH)',
           image: codemash,
-          description: 'Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it\'s impossible to get bored during this event.<br />When you aren\'t buzzing with excitement from the last talk you watched, you\'re looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America\'s largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place.',
+          description: 'Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it\'s impossible to get bored during this event.\n\nWhen you aren\'t buzzing with excitement from the last talk you watched, you\'re looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America\'s largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place.',
           year: '2018',
         },
         {
@@ -485,7 +485,18 @@ const About = () => {
     }
   ];
 
-  const [selectedItemId, setSelectedItemId] = useState(null);
+  const getMostRecentDetailItem = () => {
+    for (let i = timeline.length - 1; i >= 0; i--) {
+      const timelineItem = timeline[i];
+      const lastEventWithDescription = timelineItem.events.find(event => event.description);
+      if (lastEventWithDescription) {
+        return lastEventWithDescription.id;
+      }
+    }
+    return null;
+  };
+
+  const [selectedItemId, setSelectedItemId] = useState(getMostRecentDetailItem());
 
   let detailItem;
   timeline.forEach(item => {
@@ -544,10 +555,12 @@ const About = () => {
           </div>
           {detailItem &&
             <div className="detail">
-              <button onClick={() => setSelectedItemId(null)}>
-                close <FontAwesomeIcon icon={faTimes} />
-              </button>
-              <h3>{detailItem.title} ({detailItem.year})</h3>
+              <div className="detail-header">
+                <h3>{detailItem.title} ({detailItem.year})</h3>
+                <button onClick={() => setSelectedItemId(null)}>
+                  close <FontAwesomeIcon icon={faTimes} />
+                </button>
+              </div>
               {detailItem.image && (
                 <img src={detailItem.image} alt={detailItem.title} />
               )}

@@ -255,14 +255,14 @@ p>code {
   &.bottom {
     .description {
       align-self: flex-end;
-      width: 50%;
+      width: 70%;
     }
   }
 
   &.top {
     .description {
       align-self: flex-start;
-      width: 50%;
+      width: 70%;
     }
   }
 
@@ -358,7 +358,7 @@ p>code {
     }
 
     @media screen and (min-width: ($large + 1)) {
-      width: 90%;
+      width: 60%;
     }
 
     .title {
