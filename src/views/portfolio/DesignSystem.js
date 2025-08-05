@@ -53,11 +53,13 @@ const CaseStudy = () => {
                         <h2>My Role</h2>
                         <p>I acted as the product owner of the Fenrir design system, responsible for both its strategic vision and hands-on execution. I worked closely with the developers building the React implementation, advocating for accessibility and scalability. I participated in the foundational audit that determined which system we would build from, pushing for criteria like clear usability standards, robust documentation, strong community support, and a Figma library to start from.</p>
 
-                        <p>I customized the Figma component library, including responsive behaviors, and interaction patterns. I authored all accompanying UX documentation, including design patterns, usage guidance, responsive behavior rules, and file templates to support scalable design across teams. I regularly attended meetings to align across teams, collect feedback, and advocate for adoption. I also participated in an internal Hackathon, where I contributed directly to improving our Storybook documentation.</p>
+                        <p>I authored all accompanying UX documentation, including design patterns, usage guidance, responsive behavior rules, and file templates to support scalable design across teams. I regularly attended meetings to align across teams, collect feedback, and advocate for adoption. I also participated in an internal Hackathon, where I contributed directly to improving our Storybook documentation.</p>
 
                         <p>Throughout the second version of Fenrir, I worked closely with designers to ensure their respective product experiences were accounted for. I focused not just on current tooling, but with evolving features in mind. With their help, I was able to document component requirements, use cases, and edge scenarios, making sure that the system could scale with the evolution of our products.</p>
 
                         <p>In parallel, I worked to consider how the design system would support future mergers and acquisitions. Myself and the developers explored how incoming products and services would be evaluated, integrated, and aligned with our design standards, ensuring that Fenrir could provide a clear path to cohesion as the company continued to grow.</p>
+
+                        <p>PLACEHOLDER FOR INFORMATION ARCHITECTURE OBSCURED PREVIEW</p>
 
                         <p>While Fenrir was evolving, I was also leading the design and implementation of a unified information architecture for Arctic Wolf's product suite. That parallel initiative allowed me to take insights from product teams across the organization and develop navigation rules, iconography guidelines, and terminology standards. This work directly informed the design system, creating alignment not just at the component level, but across the entire product experience. By bridging design systems and information architecture, I was able to bring disparate product areas closer together under a shared design and UX language.</p>
 
@@ -68,27 +70,39 @@ const CaseStudy = () => {
 
                         <p>The need for a design system at Arctic Wolf became apparent as the UX team began noticing we were solving the same problems in different ways. During design reviews and team syncs, we realized that even for common elements like forms, buttons, or modals, each designer had their own solution. As the company scaled, so did the inconsistency, and it became clear we needed shared patterns. The first version of Fenrir grew from this alignment effort. Designers started creating reusable components in Figma, while developers built corresponding versions in code, often referencing external component libraries to replicate the functionality we envisioned. Without shared foundations or governance, the Figma and React components didn't always match perfectly. Because we were building everything from scratch, including components, spacing, states, and tokens, it required extra time and collaboration to get alignment on each element.</p>
 
+                        <p>PLACEHOLDER FOR TIMELINE</p>
+
                         <p>To make the most of the time we had, we started with the basics: form inputs, buttons, and typography. Once we had enough components in place for developers to begin using them, we created a domain to house basic documentation, gave the system a name and logo, and Fenrir became our unofficial, official design system. At that stage, it still lacked formal documentation, accessibility standards, and long-term scalability.</p>
 
-                        <h4>Transitional Lessons</h4>
-                        <p>As the first version of Fenrir was adopted across teams, the cracks began to show. While the system brought basic consistency to design and development, it quickly became clear that v1 was not scalable. Every component required manual effort to design, build, and maintain. As more teams began using the system in live products, developers discovered edge cases, bugs, and performance issues that required constant fixes. There was little time left to make progress on new components or improvements. At the same time, I was continuously updating Figma components and documentation to address feedback from both designers and developers, often needing to adjust for unexpected use cases or limitations in content flexibility.</p>
+                        <h4>Cracks in the Foundation</h4>
+                        <p>As the first version of Fenrir was adopted across teams, the cracks began to show. While we did have consistency in design and development, it quickly became clear that v1 was not scalable. Every component required manual effort to design, build, and maintain. As more teams began using the system in live products, we discovered edge cases, bugs, and performance issues that required constant fixes. There was little time left to make progress on new components or improvements.</p>
 
-                        <p>On the development side, the lack of a mature contribution and governance process led to inconsistent implementation. An early attempt at a contribution model was rolled out to invite developers into the system's evolution, but without clear standards or accountability, components were built in different ways by different contributors. This inconsistency negatively impacted the user experience, and ultimately, the UX team remained responsible for addressing the fallout. Although the designs clearly reflected how components should function, the implementation often diverged in subtle but important ways.</p>
+                        <p className="ah-ha pain">Manual, unscalable component creation</p>
+                        <p className="ah-ha pain">Ongoing bugs and edge cases</p>
+                        <p className="ah-ha pain">Frequent redesigns</p>
 
-                        <p>From the UX side, feedback started to surface that even though the visual alignement was helpful, it lacked the flexibility to meet the needs of complex product requirements. Designers were forced to modify components to match product direction, which led to additional inconsistencies. Documentation was still light, though I worked to create a consistent format that included usage guidance, contextual rules, and a Do/Don't table to help teams understand how and when to use each component.</p>
+                        <p>UX feedback started to surface that even though the visual alignment was helpful, it lacked the flexibility to meet the needs of complex product requirements. Designers were forced to modify components to match product direction, which led to additional inconsistencies. At this stage, documentation was still light, but did include usage guidance, contextual rules, and a Do/Don't table to help teams understand how and when to use each component.</p>
+
+                        <p className="ah-ha pain">Limited flexibility for complex needs</p>
+                        <p className="ah-ha pain">Component overrides reintroduced inconsistency</p>
+                        <p className="ah-ha pain">Documentation was helpful but sparse</p>
 
                         <p>These challenges made it clear that Fenrir needed a second version, one built not just for reuse, but for true scalability. It had to accommodate flexible use cases, support sustainable development, and include the voices of the teams who relied on it every day.</p>
 
-                        <h3>Phase 2: Maturing the System (v2)</h3>
+                        <h3>Phase 2: Patching the Cracks and Maturing the System (v2)</h3>
                         <p>The second version of Fenrir began with a comprehensive audit of component libraries we could use as a more stable and scalable foundation. We knew we would not have a dedicated team to maintain Fenrir long term, so we needed a starting point that was accessible out of the box, well documented, and actively maintained by a trusted external organization. The goal was to reduce the ongoing development burden while improving usability, accessibility, and alignment. We also incorporated our existing brand guidelines from the Marketing team, including colors and typography, which gave us a reliable visual framework to build from.</p>
 
                         <p>To shape the direction of Fenrir v2, I conducted one-on-one interviews with every UX designer on the team. I asked what they felt the system was missing, what was working well, and what opportunities existed to improve. I also spoke with several developers across product teams to gather their perspectives, use cases, and frustrations with the original implementation. Their feedback was documented and used to directly influence design decisions, component prioritization, and areas for future scalability.</p>
 
                         <p>As the system evolved, I introduced dedicated design drop-in sessions for the UX team to increase feedback and surface gaps early. Senior developers became more involved, taking ownership of foundational architectural layers in our repositories to ensure the system was stable, testable, and scalable. Their leadership helped formalize code-side governance and brought consistency to how components were built and maintained.</p>
 
+                        <p>PLACEHOLDER FOR DESIGNER QUOTE ABOUT DESIGN DROP-INS</p>
+
                         <p>At the same time, I expanded my expertise in Figma, learning how to build more intuitive, modular, and scalable components. My goal was to reduce friction for designers by creating a component library that was not only powerful but also easy to use. I focused on interaction states, layout logic, and smart defaults so designers could move quickly without having to tinker endlessly in the tool.</p>
 
                         <p>Documentation also matured during this phase. We expanded guidance to include not only component specifications but also broader design patterns and real-world examples from various product teams. This helped reinforce consistency and gave designers context for when and how to apply system elements effectively.</p>
+
+                        <p>PLACEHOLDER FOR DESIGN TEMPLATE</p>
 
                         <p>Governance became a formal part of the process through the introduction of a Fenrir UX Design Contribution workflow. Using Figma branching and review tools, designers now submit proposals for new patterns or updates alongside clear rationale, real product use cases, and cross-functional review. Contributions are evaluated collaboratively across design and engineering to ensure system-wide fit and feasibility.</p>
 
@@ -103,13 +117,13 @@ const CaseStudy = () => {
 
                         <h2>Challenges & Lessons</h2>
                         <p>What was hard? What did you learn?</p>
-                        <p className="ah-ha">the importance of design pattern documentation; not just the components themselves, but how they behave, interact with, respond, use case examples, loading states, error states, copywriting restrictions, etc.</p>
-                        <p className="ah-ha">you need a brand for a design system; it has to be treated like any other Product at the company; with a name, a logo, and a dedicated supporting team</p>
-                        <p className="ah-ha">like any set of standards, it needs governance and accountability to be adopted properly</p>
-                        <p className="ah-ha">other departments like having a say in how things look and feel, and this can create challenging scenarios where the design system doens't align with somebody's opinion of how a problem should be solved; consistency can frustrate creative people</p>
-                        <p className="ah-ha">Developer alignment takes time; different interpretations of components</p>
-                        <p className="ah-ha">Designers initially resisted governance; finding components was hard, identifying patterns was hard, creating centralized patterns was hard, duplicate solutions, etc.</p>
-                        <p className="ah-ha">Learned the value of meeting people where they are (e.g. coaching via live design reviews)</p>
+                        <p className="ah-ha lesson">the importance of design pattern documentation; not just the components themselves, but how they behave, interact with, respond, use case examples, loading states, error states, copywriting restrictions, etc.</p>
+                        <p className="ah-ha lesson">you need a brand for a design system; it has to be treated like any other Product at the company; with a name, a logo, and a dedicated supporting team</p>
+                        <p className="ah-ha lesson">like any set of standards, it needs governance and accountability to be adopted properly</p>
+                        <p className="ah-ha lesson">other departments like having a say in how things look and feel, and this can create challenging scenarios where the design system doens't align with somebody's opinion of how a problem should be solved; consistency can frustrate creative people</p>
+                        <p className="ah-ha lesson">Developer alignment takes time; different interpretations of components</p>
+                        <p className="ah-ha lesson">Designers initially resisted governance; finding components was hard, identifying patterns was hard, creating centralized patterns was hard, duplicate solutions, etc.</p>
+                        <p className="ah-ha lesson">Learned the value of meeting people where they are (e.g. coaching via live design reviews)</p>
 
                         <h2>Impact & Outcomes</h2>
                         <p>What changed as a result of your work? Use metrics if possible.</p>

@@ -91,9 +91,9 @@ const KnakCaseStudy = () => {
             <h2>User Research</h2>
             <p>Working closely with the Knak team throughout this project helped give insight into the customers and their perspectives while using the product. The research I gathered provided knowledge that drove the interface updates, enabled me to consider their context while building interactions, and highlighted the problems they had that the product was designed to solve.</p>
             <p>What I learned about the users:</p>
-            <p className="ah-ha">Some features were only available to a limited set of customers. This meant I would need to design an experience that would work with or without some features appearing.</p>
-            <p className="ah-ha">Most users were moderately technically savvy with marketing apps. Keeping this in mind, I would need to design interactions for power users, while enabling a usable experience for less savvy users.</p>
-            <p className="ah-ha">Users spanned a wide breadth of business requirements. With so many feature needs, I would be required to offer flexibility alongside stability and consistency while considering each feature throughout the platform.</p>
+            <p className="ah-ha lesson">Some features were only available to a limited set of customers. This meant I would need to design an experience that would work with or without some features appearing.</p>
+            <p className="ah-ha lesson">Most users were moderately technically savvy with marketing apps. Keeping this in mind, I would need to design interactions for power users, while enabling a usable experience for less savvy users.</p>
+            <p className="ah-ha lesson">Users spanned a wide breadth of business requirements. With so many feature needs, I would be required to offer flexibility alongside stability and consistency while considering each feature throughout the platform.</p>
 
             <h2>Layout Redesign</h2>
             <h3>Goals: Familiar, navigable, discoverable</h3>
