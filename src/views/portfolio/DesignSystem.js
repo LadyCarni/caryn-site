@@ -1,6 +1,7 @@
 import React from "react";
 // import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "components/portfolioHeader";
+import timeline from "assets/portfolio/timeline.png";
 
 const CaseStudy = () => {
     return (
@@ -68,13 +69,19 @@ const CaseStudy = () => {
 
                         <p>However, without shared foundations or governance, the Figma and React components didn't always match perfectly. Additionally, because we were building everything from scratch, including spacing, states, and tokens, it required extra time and collaboration to get alignment on each element.</p>
 
-                        <p>PLACEHOLDER FOR TIMELINE</p>
+                    </div>
 
+                    <div className="full-width">
+                        <img src={timeline} alt="Fenrir timeline of progress" />
+                    </div>
+
+                    <div className="article">
                         <p>Just by observing the most common areas of overlap and duplicated effort, I was able to identify the most valuable elements we would need to start with: form inputs, buttons, and typography. Once we had enough React components in place for developers to begin using them, a domain was created for the documentation, and I gave the system a name and a logo, and Fenrir became the first unofficial, official design system at Arctic Wolf.</p>
 
                         <p>PLACEHOLDER FOR FENRIR V1 DOCUMENTATION</p>
 
-                        <h4>Cracks in the Foundation</h4>
+                        <h3>Phase 2: Cracks in the Foundation (v1)</h3>
+
                         <p>As the first version of Fenrir was adopted across teams, the cracks began to show. While we did have consistency in design and development, it quickly became clear that v1 was not scalable. Every component required manual effort to design, build, and maintain. As more teams began using the system in live products, we discovered edge cases, bugs, and performance issues that required constant fixes. There was little time left to make progress on new components or improvements.</p>
 
                         <p className="ah-ha pain">Contribution Model introduced more problems than solved them</p>
@@ -91,10 +98,13 @@ const CaseStudy = () => {
 
                         <p>These challenges made it clear that Fenrir needed a second version, one built not just for reuse, but for true scalability. It had to accommodate flexible use cases, support sustainable development, and include the voices of the teams who relied on it every day.</p>
 
-                        <h3>Phase 2: Patching the Cracks and Maturing the System (v2)</h3>
+                        <h3>Phase 3: Patching the Cracks and Maturing the System (v2)</h3>
+
                         <p>We knew for the second version of Fenrir, that we wanted an existing component library as the foundation. Knowing we would not have a dedicated team to maintain Fenrir long-term, and acknowledging the pitfalls of a Contribution Model, we needed a starting point that was accessible out of the box, documented thoroughly, and actively maintained by a trusted external organization. The goal was to reduce the ongoing development burden while improving usability, accessibility, and alignment. We would incorporate our existing brand guidelines from the Marketing team, including colors and typography, which gave us a reliable visual framework to build from.</p>
 
                         <p>To shape the direction of Fenrir v2, I conducted interviews with UX designers, asking what was working well, and what opportunities for improvement existed. I also spoke with developers to gather their use cases, and frustrations with Fenrir. This feedback directly influenced design decisions, component prioritization, and areas for future scalability.</p>
+
+                        <p>PLACEHOLDER FOR SCREENSHOT OF FENRIR ROADMAP TRACKER</p>
 
                         <p>As the system evolved, I introduced dedicated design drop-in sessions for the UX team to increase feedback and identify gaps early. Senior developers became more involved, taking ownership of foundational architectural layers in our repositories to ensure the system was stable, testable, and scalable. Their leadership helped formalize code-side governance and brought consistency to how components were built and maintained.</p>
 
@@ -110,17 +120,22 @@ const CaseStudy = () => {
 
                         <p>Governance became a formal part of the process through the introduction of a Fenrir UX Design Contribution workflow. Using Figma branching and review tools, designers now submit proposals for new patterns or updates alongside clear rationale, real product use cases, and cross-functional review. Contributions are evaluated collaboratively across design and engineering to ensure system-wide fit and feasibility.</p>
 
-                        <h3>Bonus: Supporting Adoption</h3>
-                        <p>Adoption of Fenrir grew steadily as the system began to prove its value. One of the key drivers on the UX side was the breadth of coverage it offered. Designers found that for nearly any scenario they encountered, the system already provided a component or pattern that could be adapted to fit. This made it easier to solve problems without reinventing the wheel and helped reinforce trust in the system's depth and reliability.</p>
+                        <h3>Phase 4: Supporting Adoption</h3>
 
-                        <p>Another major factor in adoption was the formal contribution process introduced for UX designers. By creating a structured way for designers to propose new components or patterns, the process helped foster a sense of ownership and pride. Designers gained firsthand experience with how components need to scale, remain accessible, and support different product needs. This deeper understanding led to more thoughtful contributions and increased investment in the system's ongoing success.</p>
+                        <p>Adoption of Fenrir grew steadily as designers and developers saw its value first-hand. One of the key drivers was the breadth of coverage it offered. Designers found that for nearly any scenario they encountered, the system already provided a component or pattern that could be adapted to fit. Desginers were able to refocus their time on strategic initiatives and crafting creative ways to solve problems instead of designing from scratch for every feature. Fenrir made it easier to solve problems without reinventing the wheel and helped reinforce trust in the system's depth and reliability.</p>
+
+                        <p>Another major factor in adoption was the formal contribution process introduced for UX designers. By creating a structured way for designers to propose new components or patterns, the process helped foster a sense of ownership and pride. Designers gained first-hand experience with how components need to scale, remain accessible, and support different product needs. This deeper understanding led to more thoughtful contributions and increased investment in the system's ongoing success.</p>
 
                         <p>To support learning and self-sufficiency, I created a series of short, async Figma tutorials by recording my screen and narrating quick walk-throughs based on team requests. These four-minute videos cover practical scenarios, such as how to use our Page Templates, how to configure and adapt DataGrids, and how to work effectively with layout options in Figma. This content has helped make the system more approachable and removed blockers without requiring scheduled training.</p>
 
-                        <p>Finally, leadership support has played a significant role in adoption. Backing Fenrir as the expected standard for all product design across the company reinforced governance and elevated the system from a helpful resource to a core part of the product design process.</p>
+                        <p>PLACEHOLDER FOR ONE OF THE FIGMA TUTORIAL VIDEOS</p>
+
+                        <p>Finally, leadership support played a significant role in adoption. Backing Fenrir as the expected standard for all product design across the company reinforced governance and elevated the system from a helpful resource to a core part of the product design process.</p>
 
                         <h2>Challenges & Lessons</h2>
                         <p>What was hard? What did you learn?</p>
+                        <p className="ah-ha lesson">Providing a centralized place for developers to ask questions, bring up missing components or use cases, showcase bugs all helped in reinforcing the design system as an evolving resource; open for constructive critique and continued growth and expansion</p>
+                        <p className="ah-ha lesson">forcing stability of the system as well as understanding and adoption can be done with one simple addition: a designer contribution model for new patterns, expansion of existing patterns, etc. because it forces them to understand how to think in terms of how a pattern might need to be consumed by other areas; not just their own</p>
                         <p className="ah-ha lesson">the importance of design pattern documentation; not just the components themselves, but how they behave, interact with, respond, use case examples, loading states, error states, copywriting restrictions, etc.</p>
                         <p className="ah-ha lesson">you need a brand for a design system; it has to be treated like any other Product at the company; with a name, a logo, and a dedicated supporting team</p>
                         <p className="ah-ha lesson">like any set of standards, it needs governance and accountability to be adopted properly</p>
@@ -141,6 +156,7 @@ const CaseStudy = () => {
                         <h2>What's Next</h2>
                         <p>Show this as an ongoing, living system</p>
                         <ul>
+                            <li>M&A onboarding support</li>
                             <li>Continuing to evolve componment set based on product needs</li>
                             <li>Improving design pattern documentation</li>
                             <li>Exploring a dedicated design + engineering team for ongoing support</li>

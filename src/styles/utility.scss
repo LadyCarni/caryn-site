@@ -416,11 +416,14 @@ p>code {
 
 .breadcrumb {
   background: $synth4;
-  padding: 1.5em;
+  padding: 1.5em 50px;
   font-family: $type-content;
   font-size: .85em;
   color: $synth3;
   margin-top: 50px;
+  top: 50px;
+  position: sticky;
+  z-index: 4; // resting above portfolio header
 
   &.creative-view {
     background: transparent;

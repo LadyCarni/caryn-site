@@ -12,7 +12,6 @@ html,
 body,
 #root {
   font-size: 16px;
-  height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -177,7 +176,7 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 4; // resting above portfolio header
 
   @media screen and (max-width: $small) {
     padding: 0;

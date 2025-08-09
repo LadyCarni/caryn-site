@@ -67,7 +67,7 @@
   width: 100%;
   height: 4px;
   background: $synth2;
-  background: linear-gradient(90deg, rgba($synth1, 1) 0%, rgba($synth2, 1) 100%);
+  background: linear-gradient(90deg, rgba($synth0, 1) 0%, rgba($synth3, 1) 100%);
 }
 
 .project-title {
@@ -100,16 +100,12 @@
 }
 
 .summary {
-  padding: 40px 0;
+  padding: 40px 0 20px;
   align-items: flex-start;
   justify-content: space-between;
 
   @media screen and (max-width: $small) {
     padding: calc($std-size/2) $std-size;
-  }
-
-  @media screen and (min-width: ($small + 1)) {
-    padding: 40px 0 20x;
   }
 
   h3 {
