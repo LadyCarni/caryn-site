@@ -5,12 +5,13 @@ import timeline from "assets/portfolio/timeline.png";
 import InformationArchitecture from "assets/portfolio/IA preview.png";
 import Fenrirv1Docs from "assets/portfolio/Fenrir v1 docs.png";
 import FenrirDoDont from "assets/portfolio/Fenrirdodont.png";
+import FenrirStickers from "assets/portfolio/Fenrir Stickers.jpg";
 
 const CaseStudy = () => {
     return (
         <>
             <PortfolioHeader
-                headerImage="https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+                headerImage={FenrirStickers}
                 // routes={PortfolioRoutes}
                 imageAlt="placeholder"
                 headerTitle="Fenrir"
