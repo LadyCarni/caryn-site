@@ -2,6 +2,9 @@ import React from "react";
 // import { PortfolioRoutes } from "./index";
 import PortfolioHeader from "components/portfolioHeader";
 import timeline from "assets/portfolio/timeline.png";
+import InformationArchitecture from "assets/portfolio/IA preview.png";
+import Fenrirv1Docs from "assets/portfolio/Fenrir v1 docs.png";
+import FenrirDoDont from "assets/portfolio/Fenrirdodont.png";
 
 const CaseStudy = () => {
     return (
@@ -12,7 +15,7 @@ const CaseStudy = () => {
                 imageAlt="placeholder"
                 headerTitle="Fenrir"
                 headerSubtitle="Design by System, Not by Accident"
-                headerDescription="Fenrir is a full-serve design system, providing a comprehensive set of Figma components for UX designers and a complementary set of React components for developers."
+                headerDescription="Establishing a governed, evolving design system that unites designers and developers, streamlines product delivery, and ensures every user touchpoint is consistent and accessible."
                 headerDisciplines={[
                     "Design Systems",
                     "Information Architecture",
@@ -54,9 +57,15 @@ const CaseStudy = () => {
 
                         <p>In parallel, I considered how the design system would support future mergers and acquisitions. I explored how incoming products and services would be evaluated, integrated, and aligned with our design standards, ensuring that Fenrir could provide a clear path to cohesion as the company continued to grow.</p>
 
-                        <p>PLACEHOLDER FOR INFORMATION ARCHITECTURE OBSCURED PREVIEW</p>
-
                         <p>While Fenrir was evolving, I was also building a unified information architecture for Arctic Wolf's product suite. That parallel initiative allowed me to take insights from product teams across the organization and develop navigation rules, iconography guidelines, and terminology standards. This work directly informed the design system, creating alignment not just at the component level, but across the entire product experience. By bridging the design system and information architecture, I was able to bring disparate product experiences closer together under a shared design and UX language.</p>
+                    </div>
+
+                    <div className="full-width">
+                        <img src={InformationArchitecture} alt="Information Architecture diagram" />
+                        <span className="image-caption">Information Architecture (IA) diagram</span>
+                    </div>
+
+                    <div className="article">
 
                         <h2>Approach & Process</h2>
                         <p>The evolution of the design system followed a deliberate, user-informed process grounded in collaboration, clarity, and scalability. I remained hands-on, partnering closely with engineering, supporting the UX team through live coaching, async tutorials, and ongoing documentation, as well as coaching individual developers and their teams on leveraging the design system.</p>
@@ -78,7 +87,8 @@ const CaseStudy = () => {
                     <div className="article">
                         <p>Just by observing the most common areas of overlap and duplicated effort, I was able to identify the most valuable elements we would need to start with: form inputs, buttons, and typography. Once we had enough React components in place for developers to begin using them, a domain was created for the documentation, and I gave the system a name and a logo, and Fenrir became the first unofficial, official design system at Arctic Wolf.</p>
 
-                        <p>PLACEHOLDER FOR FENRIR V1 DOCUMENTATION</p>
+                        <img src={Fenrirv1Docs} alt="Fenrir v1 docs" />
+                        <span className="image-caption">Fenrir v1 docs</span>
 
                         <h3>Phase 2: Cracks in the Foundation (v1)</h3>
 
@@ -94,7 +104,8 @@ const CaseStudy = () => {
                         <p className="ah-ha pain">Limited flexibility for complex needs</p>
                         <p className="ah-ha pain">Documentation was helpful but sparse</p>
 
-                        <p>PLACEHOLDER FOR DO/DON'T SCREENSHOT</p>
+                        <img src={FenrirDoDont} alt="Fenrir v1 docs with guidelines" />
+                        <span className="image-caption">Usage guidelines in Fenrir v1</span>
 
                         <p>These challenges made it clear that Fenrir needed a second version, one built not just for reuse, but for true scalability. It had to accommodate flexible use cases, support sustainable development, and include the voices of the teams who relied on it every day.</p>
 
@@ -179,13 +190,18 @@ const CaseStudy = () => {
                         </ul>
 
                         <h2>What's Next</h2>
-                        <p>Show this as an ongoing, living system</p>
+                        <p>Fenrir will continue to evolve as a living, adaptable system that grows with the organization's needs. Key focus areas moving forward include:</p>
                         <ul>
-                            <li>M&A onboarding support</li>
-                            <li>Continuing to evolve componment set based on product needs</li>
-                            <li>Improving design pattern documentation</li>
-                            <li>Exploring a dedicated design + engineering team for ongoing support</li>
+                            <li><b>Mergers and Acquisitions Onboarding Support.</b> We will establish clear processes that allow newly acquired products and services to be integrated quickly and effectively into the Arctic Wolf product suite using Fenrir, ensuring a consistent and cohesive user experience across the expanded portfolio.</li>
+                            <li><b>Component Evolution</b> Components will continue to be expanded and refined to address emerging product requirements, new interaction patterns, and accessibility best practices.</li>
+                            <li><b>Enhanced Documentation</b> Design pattern documentation will continue to evolve to contain deeper examples, responsive behavior guidelines, and cross-product implementation notes.</li>
+                            <li><b>Dedicated Support Team Exploration</b> We will explore practical options for scaling and sustaining Fenrir so it continues to meet the needs of both designers and developers. This may include establishing a dedicated, cross-disciplinary design and engineering team, embedding design system responsibilities into specific roles, or allocating rotational time from existing team members. The goal is to strengthen governance, improve scalability, and create capacity for proactive improvements. With the right support model, we can enable UX to work faster and more effectively, while helping developers implement patterns more consistently, reduce bugs, and minimize edge cases.</li>
                         </ul>
+
+                        <h2>Conclusion</h2>
+                        <p>Fenrir has evolved from an informal set of shared files into a scalable, governed design system that supports both designers and developers in creating consistent, high-quality user experiences. The transition from v1 to v2 addressed the gaps that slowed adoption, reduced duplication, and established a reliable foundation for accessibility, documentation, and long-term growth. What began as a way to align design practices has become a critical product in its own right, embedded into the workflows of teams across the organization.</p>
+
+                        <p>Looking ahead, Fenrir will continue to mature as a living system that supports mergers and acquisitions, expands its component and pattern library, and refines documentation to enable faster, more consistent implementation. While dedicated resources remain limited, the system's proven impact positions it as a high-value investment opportunity. Scaling governance and support will not only accelerate UX delivery but also reduce developer rework, minimize bugs, and strengthen the overall user experience across Arctic Wolf's product suite.</p>
                     </div>
                 </div>
             </div>
