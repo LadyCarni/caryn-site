@@ -133,16 +133,41 @@ const CaseStudy = () => {
                         <p>Finally, leadership support played a significant role in adoption. Backing Fenrir as the expected standard for all product design across the company reinforced governance and elevated the system from a helpful resource to a core part of the product design process.</p>
 
                         <h2>Challenges & Lessons</h2>
-                        <p>What was hard? What did you learn?</p>
-                        <p className="ah-ha lesson">I realized that for a design system to be valued and adopted, it has to be treated like any other product in the company. Early on, without a distinct identity, Fenrir was seen as a set of files rather than a critical, shared resource. To shift perception, I gave it a clear brand: a name, a logo, and a presence in company communications. This branding created visibility, helped position the design system as a trusted product, and reinforced its role as an essential tool for building consistent, scalable user experiences.</p>
-                        <p className="ah-ha lesson">Many developer questions, bug reports, and requests for missing components were being raised in different places, often going unanswered or getting lost. To address this, we funneled discussions into a single place, where developers could ask questions, surface gaps, share use cases, and report issues. This single communication channel made it easier to track feedback, identify patterns, and respond quickly, while reinforcing Fenrir as a living system open to constructive critique. This became a collaborative forum that not only resolved immediate needs but also guided the system's ongoing growth and evolution.</p>
-                        <p className="ah-ha lesson">While designers were using the system, their focus often remained on solving problems only within their own product areas. This limited perspective slowed adoption and sometimes led to patterns that could not be reused elsewhere. To address this, we introduced a formal contribution model for new patterns and the expansion of existing ones. By requiring designers to document use cases, consider scalability, and think about how a component might be consumed by other teams, we strengthened both the stability of the system and the depth of understanding among contributors. This process not only improved pattern quality but also increased a sense of shared ownership and accountability across the design team.</p>
-                        <p className="ah-ha lesson">We learned the importance of detailed design pattern documentation when wee saw that, even with the correct components available, designers and developers often implemented them differently. Without clear guidance, there were inconsistencies in how components behaved, responded, or were adapted to specific use cases, as well as variations in copywriting and handling of loading or error states. To address this, we took full ownership of documenting not only the components themselves, but also their behaviors, interactions, example use cases, state variations, and copywriting constraints. This depth of documentation reduced misinterpretation, improved adoption speed, and ensured patterns were implemented consistently across all teams.</p>
-                        <p className="ah-ha lesson">like any set of standards, it needs governance and accountability to be adopted properly</p>
-                        <p className="ah-ha lesson">other departments like having a say in how things look and feel, and this can create challenging scenarios where the design system doens't align with somebody's opinion of how a problem should be solved; consistency can frustrate creative people</p>
-                        <p className="ah-ha lesson">Developer alignment takes time; different interpretations of components</p>
-                        <p className="ah-ha lesson">Designers initially resisted governance; finding components was hard, identifying patterns was hard, creating centralized patterns was hard, duplicate solutions, etc.</p>
-                        <p className="ah-ha lesson">Learned the value of meeting people where they are (e.g. coaching via live design reviews)</p>
+
+                        <div className="ah-ha lesson">
+                            <div className="lesson-content">
+                                <h3>Branding the design system</h3>
+                                <p>For a design system to be valued and adopted, it must be treated like any other product in the company. Early on, without a distinct identity, Fenrir was seen as a collection of files rather than a critical, shared resource. To shift perception, I created a clear brand with a name, a logo, and a visible presence in company communications. This positioned Fenrir as a trusted product and reinforced its role as an essential tool for building consistent, scalable user experiences.</p>
+                            </div>
+                        </div>
+
+                        <div className="ah-ha lesson">
+                            <div className="lesson-content">
+                                <h3>Centralizing feedback and support</h3>
+                                <p>Developer questions, bug reports, and component requests were initially scattered across multiple channels, often going unanswered or lost. We consolidated all discussions into a single, dedicated space where developers could ask questions, surface gaps, share use cases, and report issues. This streamlined tracking, improved response times, and created a collaborative forum that informed both immediate fixes and long-term system growth.</p>
+                            </div>
+                        </div>
+
+                        <div className="ah-ha lesson">
+                            <div className="lesson-content">
+                                <h3>Documenting patterns in depth</h3>
+                                <p>Even with components available, designers and developers sometimes implemented them differently, leading to inconsistencies in behavior, responsiveness, and states. To address this, my development partner and I documented each pattern in detail, including behaviors, interactions, example use cases, state variations, and copywriting guidelines. This reduced misinterpretation, sped up adoption, and ensured consistency across teams.</p>
+                            </div>
+                        </div>
+
+                        <div className="ah-ha lesson">
+                            <div className="lesson-content">
+                                <h3>Introducing a contribution model</h3>
+                                <p>While designers used the system, their focus often stayed within their own product areas, leading to solutions that couldn't easily be reused elsewhere. I introduced a formal contribution model for adding or expanding patterns, requiring documented use cases, scalability considerations, and cross-team applicability. This not only improved the quality and reusability of patterns but also increased shared ownership and accountability within the design team.</p>
+                            </div>
+                        </div>
+
+                        <div className="ah-ha lesson">
+                            <div className="lesson-content">
+                                <h3>Balancing consistency with creative input</h3>
+                                <p>Other departments often wanted a say in visual and interaction decisions, which sometimes conflicted with established design system patterns. In some cases, enforced consistency frustrated creative contributors seeking more flexibility. This was addressed by building relationships, explaining the rationale for system decisions, and incorporating valid feedback into updates when appropriate. This approach preserved system consistency while strengthening cross-team trust and buy-in.</p>
+                            </div>
+                        </div>
 
                         <h2>Impact & Outcomes</h2>
                         <p>What changed as a result of your work? Use metrics if possible.</p>
