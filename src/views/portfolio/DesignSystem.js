@@ -11,6 +11,8 @@ import FenrirComponentBreakdown from "assets/portfolio/fenrir component breakdow
 import FenrirPatternExample from "assets/portfolio/pattern example.png";
 import FenrirHowto from "assets/portfolio/Fenrir DataGrid demo.mp4";
 import FenrirComponents from "assets/portfolio/fenrir-components.png";
+import FenrirDesignSpeed from "assets/portfolio/fenrir-design-speed.png";
+import FenrirQuality from "assets/portfolio/quality-cards.png";
 
 const CaseStudy = () => {
     return (
@@ -68,7 +70,7 @@ const CaseStudy = () => {
 
                     <div className="full-width">
                         <img src={InformationArchitecture} alt="Information Architecture diagram" />
-                        <span className="image-caption">Information Architecture (IA) diagram</span>
+                        <span className="image-caption">Information Architecture (IA)</span>
                     </div>
 
                     <div className="article">
@@ -149,6 +151,7 @@ const CaseStudy = () => {
 
                     <div className="full-width">
                         <video width="1000" height="600" controls src={FenrirHowto} alt="Figma how-to with Fenrir" />
+                        <span className="image-caption">Tutorial for using Fenrir in Figma</span>
                     </div>
 
                     <div className="article">
@@ -198,24 +201,34 @@ const CaseStudy = () => {
                             <li>Cut onboarding time for new designers by 5 weeks.</li>
                         </ul>
                         <h3>Adoption Momentum</h3>
-                        <p>Since the launch of Fenrir v2, adoption has steadily increased across Arctic Wolf's product teams. The system is now the default starting point for new designs, with over 234,881 component insertions in Figma over the past year. This represents a significant shift from occasional use to becoming the standard for new product experiences.</p>
+                        <p>Since the launch of Fenrir v2, adoption has steadily increased across Arctic Wolf's product teams. The system is now the default starting point for new designs, with over 230,000 component insertions in Figma over the past year. This marks the shift from occasional use to a company-wide standard for building product experiences.</p>
                     </div>
 
                     <div className="full-width">
                         <img src={FenrirComponents} alt="Fenrir components usage" />
+                        <span className="image-caption">Fenrir v1 (white) vs Fenrir v2 (blue) component insertions</span>
                     </div>
 
                     <div className="article">
                         <h3>Design Delivery Speed</h3>
-                        <p>The introduction of Fenrir has consistently reduced design delivery times from months to weeks, with v2 enabling teams to deliver high-quality designs up to 3x faster than before.</p>
+                        <p>Fenrir has transformed delivery timelines from unpredictable months to predictable weeks. With v2, teams deliver high-quality designs up to 3x faster.</p>
                         <ul>
                             <li><b>Before Fenrir:</b> Several weeks to months per feature, with no predictable timelines.</li>
                             <li><b>Fenrir v1:</b> Reduced to 2-5 weeks depending on scope.</li>
                             <li><b>Fenrir v2:</b> Reduced further to 1-3 weeks, enabling faster iteration and delivery.</li>
                         </ul>
+                    </div>
 
+                    <div className="full-width">
+                        <img src={FenrirDesignSpeed} alt="Design delivery speed improvements" />
+                    </div>
+
+                    <div className="article">
                         <h3>Quality & Consistency</h3>
-                        <p>With Fenrir v2, shared tokens and variables for spacing, colors, and typography are now consistently applied across both design and development. This has led to a measurable increase in product consistency and reduced variance between design and implementation. From a development perspective, only 14 active bugs are currently logged for Fenrir, reflecting a more stable and reliable system. While historical bug volume is harder to quantify, early v2 and v1 phases saw more frequent issues, especially related to mismatched designs and components — a challenge that has been significantly reduced.</p>
+                        <p>Fenrir v2 introduced shared tokens and variables for spacing, colors, and typography across both design and development. This alignment has improved consistency, reduced variance between design and implementation, and stabilized delivery. Currently only 14 active bugs are logged against Fenrir, compared to the more frequent mismatches and issues seen in earlier phases.</p>
+
+                        <img src={FenrirQuality} alt="Quality and consistency improvements" />
+                        <span className="image-caption">Quality improvements as a result of Fenrir</span>
 
                         <h2>What's Next</h2>
                         <p>Fenrir will continue to evolve as a living, adaptable system that grows with the organization's needs. Key focus areas moving forward include:</p>
