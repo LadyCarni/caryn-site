@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import caryn1 from 'assets/about/caryn-portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentLines, faTimes } from '@fortawesome/pro-light-svg-icons';
-import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
+import { faCommentLines } from '@fortawesome/pro-light-svg-icons';
+import carynResume from 'assets/CarynFarvour_UXManager_Resume.pdf';
 import PracticalUx from 'assets/about/practicalux.png';
 import erieTalk from 'assets/caryn3.jpg';
 import devLondon from 'assets/portfolio/dev-london.jpg';
@@ -22,12 +22,15 @@ import canUx from 'assets/about/canUx.jpg';
 import fluxible from 'assets/about/fluxible-goat-check.jpg';
 import laraconUs2015 from 'assets/about/laracon-us-2015.jpg';
 import devDesign from 'assets/about/dev-design-pair.jpg';
-import arcticWolf from 'assets/about/arctic-wolf-caryn.jpg';
+import stockDesk from 'assets/about/stock-desk.jpg';
 import hackernest from 'assets/about/hackernest.jpg';
 import laraconEu2014 from 'assets/about/laracon-eu-2014.jpg';
 import fluxible2014 from 'assets/about/fluxible2014.jpg';
 import uxWaterloo2014 from 'assets/about/ux-waterloo-2014.jpg';
 import wireframe2017 from 'assets/about/wireframe.png';
+import stockBike from 'assets/about/stock-bike.jpg';
+import stockScreen from 'assets/about/stock-screen.jpg';
+import stockMic from 'assets/about/stock-mic.jpg';
 
 const CustomLink = ({ href, children }) => {
   return (
@@ -134,23 +137,9 @@ const About = () => {
       year: '2014',
       events: [
         {
-          id: '45cde8e3-f1d8-4ff8-91e0-c156f342003f',
-          type: 'job',
-          title: 'Rebrand ChromeMedia to Vehikl',
-          description: 'When ChromeMedia decided to pivot the company in a more long-term strategic direction, I helped build the face of the new brand. With the new logo and icon came new swag, new social media presence, new website, and an all new approach to building software.',
-          year: '2014'
-        },
-        {
           id: '18dc2aa3-7c71-4f69-aafd-e20320819976',
           type: 'education',
           title: 'Certification: Human Computer Interaction (UC San Diego)',
-        },
-        {
-          id: '0c1adfc4-b550-4a43-9e9f-bc610dcd363d',
-          type: 'job',
-          title: 'Promotion: UX Designer (Vehikl)',
-          description: 'As I continued to expand and hone my skills as a designer, I branched out from the \'web designer\' role and began being identified as a more holistic UX Designer as a result. This shift came on the heels of a strategic company rebrand and a new direction that we would take as a team for how we approached building software.',
-          year: '2014'
         },
         {
           id: 'c18d16ee-e5a3-4389-a6ab-e77b567155d9',
@@ -295,11 +284,6 @@ const About = () => {
       year: '2017',
       events: [
         {
-          id: '1448592f-adbe-47c7-9afb-3d961389da17',
-          type: 'job',
-          title: 'Promotion: UX Developer (Vehikl)',
-        },
-        {
           id: '43b98251-ff3d-4d36-a5fc-dca7ee7bf0e3',
           type: 'community',
           title: 'Join Technical Chats for Women (Kitchener)',
@@ -308,7 +292,7 @@ const About = () => {
           id: 'e0b6bd30-4ba3-45fc-99bf-997bff06de53',
           type: 'speaker',
           title: 'Panelist, Future Female Techmakers Conference',
-          image: null,
+          image: stockMic,
           description: 'I was invited to speak on a panel of women from varying STEM fields for an audience of grade 9 - 12 high school and undergraduate students. The panel included a 60 minute discussion and a 20 minute Q&A from audience members.\n\nThe annual Future Female Techmakers Conference (FFTC) aims to teach women how to be effective mentors, provides female role models to young women interested in the tech industry, and creates lasting meaningful connections that will support all of the participants in their journey towards becoming female techmakers.',
           year: '2017'
         },
@@ -412,12 +396,6 @@ const About = () => {
           year: '2019',
         },
         {
-          id: '5c1c0249-9590-4e3b-a5c7-c3301094381c',
-          type: 'job',
-          title: 'Product Manager: North America (Flyt; Skip the Dishes)',
-
-        },
-        {
           id: 'ef0fa120-d967-4a57-8251-e9d1d5e0537e',
           type: 'community',
           title: 'Organizer, DevLondon (London, ON)',
@@ -444,43 +422,53 @@ const About = () => {
       ]
     },
     {
-      id: '90724e2b-f611-4fdb-a3c9-e222819cfeeb',
-      year: '2021',
+      id: '811a300d-5dad-4fce-badc-a82054fade8b',
+      year: 'Vehikl (formerly ChromeMedia)',
       events: [
         {
-          id: 'd8a5c6c3-a4c3-46ed-8242-01855f44340b',
+          id: 'cb686e97-2463-40dc-b9e3-90998bac056a',
           type: 'job',
-          title: 'UX Design Tech Lead (Arctic Wolf)',
-          image: arcticWolf,
-          description: 'I joined Arctic Wolf as the first UX Design Tech Lead, a role created specifically to bridge the gap between design and development. I was responsible for establishing and shipping the company\'s first internal design system, with a strong focus on technical collaboration and implementation. This positioned me as a technically oriented UX resource, working closely with developers to ensure design quality and feasibility. It also marked my introduction to the cybersecurity industry, where I quickly learned how to balance usability with complex product requirements.',
-          year: '2021'
-        }
-      ]
-    },
-    {
-      id: '37ce47d5-7666-4633-bb1f-aee41212836a',
-      year: '2022',
-      events: [
-        {
-          id: '439cdee2-9d2c-479a-9a67-d72fce28d158',
-          type: 'job',
-          title: 'Promotion: UX Manager (Arctic Wolf)',
-          description: 'As UX Manager, I served as the principal strategist for UX integration across the organization. I led the planning, design, and implementation of our internal design system, ensuring it supports both designers and developers with scalable, user-centered solutions. I also act as the lead for Information Architecture, creating structure and alignment across our product suite. \n\nI mentor and advocate for the UX team, supporting their growth through coaching, skill development, and thoughtful feedback. I also partner closely with development teams, acting as a UX coach to help engineers embrace user-first thinking, encourage faster feedback cycles, and make informed, autonomous design decisions. \n\nMy role includes identifying and implementing process improvements through cross-functional collaboration. I work with Process Architects to embed UX criteria into the full software development lifecycle, increasing consistency and elevating the quality of shipped features. \n\nI champion organizational UX maturity by facilitating workshops, sharing best practices, and guiding teams in defining user problems more effectively. I lead UX due diligence efforts through detailed documentation of user flows, feature relationships, terminology standards, and product overlaps; helping teams across departments better understand the full scope of the user experience. I bring practical UX strategies to life by improving transparency, efficiency, and accountability across the organization.',
-          year: '2022 - 2025'
+          title: 'UX Designer; Acting UX Lead',
+          image: stockScreen,
+          description: 'Delivered impactful digital products across industries by leading UX design for startups, nonprofits, and enterprise clients, resulting in scalable applications and stronger client engagement.\n\nEstablished UX as a core offering within Vehikl, influencing how development teams collaborated with clients and elevating the company\'s profile as a full-service partner beyond engineering.\n\nCreated design systems, IA frameworks, and user-centered workflows that reduced development rework and enabled faster iteration cycles.\n\nAuthored thought leadership articles and case studies (2015-2019) that showcased Vehikl\'s design expertise, strengthening industry reputation and contributing to new client acquisition.\n\nMentored developers and junior designers on design thinking and usability practices, improving cross-functional collaboration and raising overall design maturity inside the company.',
+          year: '2012 - 2019'
         },
       ]
     },
     {
-      id: '1ad48ad4-b0e4-4718-be0a-3a8191525746',
-      year: '2025',
+      id: 'fe08895f-4701-4918-bb2b-a9554cae8fbc',
+      year: 'Flyt (Just Eat Group)',
+      events: [
+        {
+          id: 'a35e13f8-c1dd-47ad-af4d-2ccdc82b031a',
+          type: 'job',
+          title: 'Product Manager: North America',
+          image: stockBike,
+          description: 'Shipped [Connect API](/portfolio/connect-api), a scalable integration platform that enabled restaurants to onboard new delivery partners in weeks instead of months, reducing operational overhead and accelerating revenue opportunities across North American markets.',
+          year: '2019 - 2021'
+        },
+      ]
+    },
+    {
+      id: '90724e2b-f611-4fdb-a3c9-e222819cfeeb',
+      year: 'Arctic Wolf',
       events: [
         {
           id: 'bc271fdc-0d71-48b1-a188-c5c48b72344c',
           type: 'job',
-          title: 'Promotion: Senior UX Manager (Arctic Wolf)',
-          description: 'As Senior UX Manager, I\'ve grown from leading tactical UX implementation to shaping broader product and organizational strategy. In this role, I continue to oversee the design system and information architecture, while now also driving cross-functional alignment at a higher level. I support both strategic planning and execution across multiple product areas, partnering closely with Product and Engineering leadership to ensure user experience is integrated into long-term roadmaps. \n\nMy focus has expanded to include leading UX maturity initiatives across the organization, scaling coaching efforts, and shaping how UX contributes to business outcomes. I mentor other UX leaders, support hiring and team structure decisions, and help define systems and processes that enable our team to work more efficiently and effectively at scale.',
+          title: 'Senior UX Manager',
+          image: stockDesk,
+          description: 'Scaled governance and adoption of Fenrir v2 design system\n\nIncreased adoption from ~33% to 95% of product teams\n\nReduced design delivery from 2-5 weeks to 1-3 weeks',
           year: '2025 - Current'
         },
+        {
+          id: '439cdee2-9d2c-479a-9a67-d72fce28d158',
+          type: 'job',
+          title: 'UX Manager',
+          image: stockDesk,
+          description: 'Launched Fenrir v1 design system and governance model\n\nReduced design delivery from months to weeks\n\nPartnered with product leaders to integrate UX into roadmap planning',
+          year: '2021-2022'
+        }
       ]
     }
   ];
@@ -516,12 +504,26 @@ const About = () => {
         <div className="bio-content">
           <h1>Hi, I'm Caryn</h1>
           <p className="help">(pronounced kuh-<i>RIN</i>; like Corinne)</p>
-          <p>As a dedicated leader of cross-functional teams, I'm passionate about collaborating with users to craft elegant solutions that address tangible needs. I firmly believe that effective UX and UI design demands a strong grasp of front-end development and a high level of collaboration between disciplines. Beyond honing my skills, I find joy in delving into the realms of behavioral cognition, neuroscience, and psychology. Outside of work, you'll often find me actively engaged in skills-based volunteering, community initiatives, and advocating for STEM education.</p>
+          <p>I'm a UX leader focused on design systems, information architecture, and cross-functional delivery. I partner closely with product and engineering to ship scalable patterns that speed design, reduce rework, and improve consistency across complex suites. I also mentor teams and leaders, coach developers on user-first practices, and contribute to the UX community through talks and workshops.</p>
+          <h3>Quick Facts</h3>
+          <ul>
+            <li><b>Core strengths:</b> Design Systems, UX Strategy, Information Architecture, Team Leadership, Cross-functional Collaboration</li>
+            <li><b>Current role:</b> Senior UX Manager at Arctic Wolf</li>
+            <li><b>Community:</b> Speaker and contributor at Laracon, Fluxible, and other UX/Dev conferences</li>
+          </ul>
+          <h3>Community & Speaking Highlights</h3>
+          <ul>
+            <li><b>Laracon (2014-2018):</b> Speaker and recurring participant; introduced dev community to core UX practices</li>
+            <li><b>Fluxible (2013-2015):</b> Attendee and workshop participant; built local UX connections</li>
+            <li><b>Practical UX Series (2019):</b> Co-authored developer-friendly UX resources with worksheets, adopted in dev teams globally</li>
+            <li><b>STEMGyrls Workshop (2015):</b> Facilitated UX intro session for high-school participants</li>
+            <li><b>Local Meetups:</b> Regular speaker at UX Waterloo and other design/dev meetups</li>
+          </ul>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)</a>
         </div>
       </div>
       <div className="timeline">
-        <h2>History</h2>
+        <h2>Career Timeline</h2>
         <div className="timeline-content">
           <div className="timeline">
             <div className="path"></div>
@@ -554,24 +556,42 @@ const About = () => {
             </ul>
           </div>
           {detailItem &&
-            <div className="detail">
-              <div className="detail-header">
-                <h3>{detailItem.title} ({detailItem.year})</h3>
-                <button onClick={() => setSelectedItemId(null)}>
-                  close <FontAwesomeIcon icon={faTimes} />
-                </button>
-              </div>
+            <div className="about-detail">
               {detailItem.image && (
-                <img src={detailItem.image} alt={detailItem.title} />
+                <img className="about-detail-profile-img" src={detailItem.image} alt={detailItem.title} />
               )}
-              <ReactMarkdown
-                components={{
-                  a: CustomLink
-                }}
-              >
-                {detailItem.description}
-              </ReactMarkdown>
+              <div className="about-detail-description-bk"></div>
+              <div className="about-detail-description">
+                <ReactMarkdown
+                  components={{
+                    a: CustomLink
+                  }}
+                >
+                  {detailItem.description}
+                </ReactMarkdown>
+              </div>
+              <div className="about-detail-date">
+                <p>({detailItem.year})</p>
+              </div>
             </div>
+            // <div className="detail">
+            //   <div className="detail-header">
+            //     <h3>{detailItem.title} ({detailItem.year})</h3>
+            //     <button onClick={() => setSelectedItemId(null)}>
+            //       close <FontAwesomeIcon icon={faTimes} />
+            //     </button>
+            //   </div>
+            //   {detailItem.image && (
+            //     <img src={detailItem.image} alt={detailItem.title} />
+            //   )}
+            //   <ReactMarkdown
+            //     components={{
+            //       a: CustomLink
+            //     }}
+            //   >
+            //     {detailItem.description}
+            //   </ReactMarkdown>
+            // </div>
           }
         </div>
       </div>
