@@ -507,8 +507,8 @@ const About = () => {
           <p>I'm a UX leader focused on design systems, information architecture, and cross-functional delivery. I partner closely with product and engineering to ship scalable patterns that speed design, reduce rework, and improve consistency across complex suites. I also mentor teams and leaders, coach developers on user-first practices, and contribute to the UX community through talks and workshops.</p>
           <h3>Quick Facts</h3>
           <ul>
-            <li><b>Core strengths:</b> Design Systems, UX Strategy, Information Architecture, Team Leadership, Cross-functional Collaboration</li>
             <li><b>Current role:</b> Senior UX Manager at Arctic Wolf</li>
+            <li><b>Core strengths:</b> Design Systems, UX Strategy, Information Architecture, Team Leadership, Cross-functional Collaboration</li>
             <li><b>Community:</b> Speaker and contributor at Laracon, Fluxible, and other UX/Dev conferences</li>
           </ul>
           <h3>Community & Speaking Highlights</h3>
@@ -517,7 +517,7 @@ const About = () => {
             <li><b>Fluxible (2013-2015):</b> Attendee and workshop participant; built local UX connections</li>
             <li><b>Practical UX Series (2019):</b> Co-authored developer-friendly UX resources with worksheets, adopted in dev teams globally</li>
             <li><b>STEMGyrls Workshop (2015):</b> Facilitated UX intro session for high-school participants</li>
-            <li><b>Local Meetups:</b> Regular speaker at UX Waterloo and other design/dev meetups</li>
+            <li><b>Local Meetups:</b> Speaker at UX Waterloo and other design/dev meetups</li>
           </ul>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)</a>
         </div>
@@ -560,38 +560,19 @@ const About = () => {
               {detailItem.image && (
                 <img className="about-detail-profile-img" src={detailItem.image} alt={detailItem.title} />
               )}
-              <div className="about-detail-description-bk"></div>
               <div className="about-detail-description">
-                <ReactMarkdown
-                  components={{
-                    a: CustomLink
-                  }}
-                >
-                  {detailItem.description}
-                </ReactMarkdown>
-              </div>
-              <div className="about-detail-date">
-                <p>({detailItem.year})</p>
+                <div className="description-content">
+                  <ReactMarkdown
+                    components={{
+                      a: CustomLink
+                    }}
+                  >
+                    {detailItem.description}
+                  </ReactMarkdown>
+                  <p>({detailItem.year})</p>
+                </div>
               </div>
             </div>
-            // <div className="detail">
-            //   <div className="detail-header">
-            //     <h3>{detailItem.title} ({detailItem.year})</h3>
-            //     <button onClick={() => setSelectedItemId(null)}>
-            //       close <FontAwesomeIcon icon={faTimes} />
-            //     </button>
-            //   </div>
-            //   {detailItem.image && (
-            //     <img src={detailItem.image} alt={detailItem.title} />
-            //   )}
-            //   <ReactMarkdown
-            //     components={{
-            //       a: CustomLink
-            //     }}
-            //   >
-            //     {detailItem.description}
-            //   </ReactMarkdown>
-            // </div>
           }
         </div>
       </div>
