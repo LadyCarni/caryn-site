@@ -357,24 +357,24 @@
   position: sticky;
   width: 600px;
   top: 80px;
-}
 
-.about-detail-profile-img {
-  height: max-content;
-  width: 600px;
-}
-
-.about-detail-description {
-  color: #fff;
-  font-weight: 500;
-  background: linear-gradient(0deg, #3f5efb, #fc466b);
-
-  a,
-  a:visited {
-    color: $synth3;
+  .about-detail-profile-img {
+    height: max-content;
+    width: 600px;
   }
 
-  .description-content {
-    padding: 2em;
+  .about-detail-description {
+    color: #fff;
+    font-weight: 500;
+    background: linear-gradient(0deg, $synth8, $synth2);
+
+    a,
+    a:visited {
+      color: $synth3;
+    }
+
+    .description-content {
+      padding: 2em;
+    }
   }
 }
