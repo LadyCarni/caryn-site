@@ -176,7 +176,7 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 4; // resting above portfolio header
+  z-index: 10; // shove this on top of all the things
 
   @media screen and (max-width: $small) {
     padding: 0;
