@@ -12,6 +12,7 @@ import fongoWire4 from "assets/portfolio/fongo-wire4.jpg";
 import fongoMembers from "assets/portfolio/fongo-members.png";
 import fongoWire5 from "assets/portfolio/fongo-wire5.jpg";
 import fongoReceptionist from "assets/portfolio/fongo-receptionist.png";
+import { Helmet } from 'react-helmet';
 
 
 const FongoWorks = () => {
@@ -26,6 +27,14 @@ const FongoWorks = () => {
         headerDescription="Fongo Works is a cloud-based phone system designed to replace physical phones for small teams."
         headerDisciplines={["UX Research & Design", "Front-end Development (Angular)", "Web Design"]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={fongoCover} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/fongo-works" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import ReactMarkdown from 'react-markdown';
 import caryn1 from 'assets/about/caryn-portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -497,6 +498,14 @@ const About = () => {
 
   return (
     <div className="feature feature-width">
+      <Helmet>
+        <title>Caryn Farvour</title>
+        <meta property="og:title" content="Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio showcasing industry insights, creative projects, hobbies, and recipes, blending design expertise with personal passion." />
+        <meta property="og:image" content="%PUBLIC_URL%/assets/about/caryn-portrait.jpg" />
+        <meta property="og:url" content="https://carynfarvour.design" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="bio">
         <div className="inline">
           <img src={caryn1} alt="Caryn Farvour portrait" />

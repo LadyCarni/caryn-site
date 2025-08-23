@@ -10,6 +10,7 @@ import lunaDivider from "assets/portfolio/luna-divider.png";
 import lunaGradient from "assets/portfolio/luna-gradient.png";
 import lunaHamburger from "assets/portfolio/luna-hamburger.gif";
 import lunaScreens from "assets/portfolio/luna-nova-screens.jpg";
+import { Helmet } from 'react-helmet';
 
 const LunaNova = () => {
   usePrism();
@@ -25,6 +26,14 @@ const LunaNova = () => {
         headerDescription="Luna Nova is a Portuguese Water Dog breeder operating from a home-based business in Cambridge, Ontario"
         headerDisciplines={["Web Design", "Front-end Development (React)"]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={lunaCover} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/luna-nova" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">

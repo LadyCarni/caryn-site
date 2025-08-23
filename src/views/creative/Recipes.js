@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { faHatChef } from "@fortawesome/pro-light-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import header from 'assets/creative/creative-header.jpg';
+import { Helmet } from 'react-helmet';
 import CreativeHeader from 'components/creativeHeader';
 import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "./index";
@@ -316,6 +317,14 @@ const Recipes = () => {
 
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Caryn Farvour</title>
+        <meta property="og:title" content="Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio showcasing industry insights, creative projects, hobbies, and recipes, blending design expertise with personal passion." />
+        <meta property="og:image" content="%PUBLIC_URL%/assets/about/caryn-portrait.jpg" />
+        <meta property="og:url" content="https://carynfarvour.design" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <CreativeHeader
         headerImage={header}

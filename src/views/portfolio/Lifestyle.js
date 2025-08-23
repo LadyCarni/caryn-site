@@ -8,6 +8,7 @@ import lifestyleVisibility from "assets/portfolio/lifestyle-video-visibility.jpg
 import lifestyleTags from "assets/portfolio/lifestyle-video-tags.jpg";
 import lifestylePlan from "assets/portfolio/lifestyle-war-room.jpg";
 import lifestyleWires from "assets/portfolio/lifestyle-wires.jpg";
+import { Helmet } from 'react-helmet';
 
 
 const Lifestyle = () => {
@@ -23,6 +24,14 @@ const Lifestyle = () => {
         headerDescription="This app was designed for an ambitious startup dedicated to changing how we connect with technology and capture memories."
         headerDisciplines={["UX Research & Planning", "Web App Design"]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={lifestyleCover} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/lifestyle-app" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">

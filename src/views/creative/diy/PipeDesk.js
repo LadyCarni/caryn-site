@@ -18,6 +18,7 @@ import pipeDesk13 from 'assets/creative/diy/pipe-desk13.jpg';
 import pipeDesk14 from 'assets/creative/diy/pipe-desk14.jpg';
 import pipeDesk15 from 'assets/creative/diy/pipe-desk15.jpg';
 import pipeDesk16 from 'assets/creative/diy/pipe-desk16.jpg';
+import { Helmet } from 'react-helmet';
 
 const MaterialsList = ( {media} ) => {
   return (
@@ -55,6 +56,14 @@ const MaterialsList = ( {media} ) => {
 const PipeDesk = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Pipe Desk</title>
+        <meta property="og:title" content="Pipe Desk" />
+        <meta property="og:description" content="Step-by-step instructions for making and finishing this wood and pipe desk." />
+        <meta property="og:image" content={pipeDesk} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/pipe-desk" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">

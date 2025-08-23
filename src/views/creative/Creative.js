@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import RecipeHeader from 'assets/creative/creative-header.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Helmet } from 'react-helmet';
 import { faBookmark, faCameraRetro, faHammer, faHatChef, faPalette } from '@fortawesome/pro-light-svg-icons';
 import CreativeHeader from 'components/creativeHeader';
 import cheesecake from 'assets/creative/recipes/recipe-cheesecake4.jpg'
@@ -10,6 +11,14 @@ import vinylElephant from 'assets/creative/crafts/vinyl-elephant.jpg'
 const Creative = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Caryn Farvour</title>
+        <meta property="og:title" content="Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio showcasing industry insights, creative projects, hobbies, and recipes, blending design expertise with personal passion." />
+        <meta property="og:image" content="%PUBLIC_URL%/assets/about/caryn-portrait.jpg" />
+        <meta property="og:url" content="https://carynfarvour.design" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <CreativeHeader
         headerImage={RecipeHeader}
         imageAlt="Lemon blueberry pie"

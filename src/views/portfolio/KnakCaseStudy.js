@@ -22,6 +22,7 @@ import knakExpand from "assets/portfolio/knak-expand.png";
 import knakDrag from "assets/portfolio/knak-drag.png";
 import knakDragDrop from "assets/portfolio/knak-dragdrop.gif";
 import knakPierce from "assets/portfolio/knak-pierce.png";
+import { Helmet } from "react-helmet";
 
 const KnakCaseStudy = () => {
   usePrism();
@@ -37,6 +38,14 @@ const KnakCaseStudy = () => {
         headerDescription="Knak is an enterprise email creation platform built to help large teams build on-brand emails faster and more efficiently than ever before."
         headerDisciplines={["UX research", "Front-end Development (Vue)", "Web Design"]}
       />
+      <Helmet>
+        <title>Portfolio | Caryn Farvour</title>
+        <meta property="og:title" content="Portfolio | Caryn Farvour" />
+        <meta property="og:description" content="A professional UX portfolio." />
+        <meta property="og:image" content={knakWires} />
+        <meta property="og:url" content="https://carynfarvour.design/portfolio/knak-ux-case-study" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="feature feature-width">
         <div className="content flex column">
           <div className="article">

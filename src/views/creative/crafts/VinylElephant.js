@@ -4,10 +4,19 @@ import { CreativeRoutes } from "../index";
 import vinylElephant from 'assets/creative/crafts/vinyl-elephant.jpg';
 import vinylElephant2 from 'assets/creative/crafts/vinyl-elephant2.jpg';
 import vinylElephant3 from 'assets/creative/crafts/vinyl-elephant3.jpg';
+import { Helmet } from 'react-helmet';
 
 const VinylElephant = () => {
   return (
     <div className="creative full-height">
+      <Helmet>
+        <title>Vinyl Elephant</title>
+        <meta property="og:title" content="Vinyl Elephant" />
+        <meta property="og:description" content="How to make and hang this vinyl elephant." />
+        <meta property="og:image" content={vinylElephant} />
+        <meta property="og:url" content="https://carynfarvour.design/creative/recipes/vinyl-elephant" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <Breadcrumb routes={CreativeRoutes} className="creative-view" />
       <div className="creative-body-container">
         <div className="creative-body">
