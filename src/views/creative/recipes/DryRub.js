@@ -4,11 +4,10 @@ import { CreativeRoutes } from "../index";
 import dryRub from 'assets/creative/recipes/dry-rub.jpg'
 import { Helmet } from 'react-helmet';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3>Portions</h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">8 Tbsp</span>light brown sugar, tightly packed</li>
         <li><span className="amount">3 Tbsp</span>kosher salt</li>
@@ -48,7 +47,7 @@ const DryRub = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={dryRub} alt="Best-ever dry rub"/>
+              <img src={dryRub} alt="Best-ever dry rub" />
             </div>
 
             <Ingredients media="mobile" />
@@ -58,7 +57,7 @@ const DryRub = () => {
               <p><span className="instruction-step stir-step">Step 1.</span> Measure all ingredients into a bowl.</p>
 
               <p><span className="instruction-step stir-step">Step 2.</span>Whisk till fully incorporated.</p>
-              
+
               <p><span className="instruction-step stir-step">Step 3.</span>Use liberally, on anything (ribs, wings, chicken, fish, etc.) Store in an air-tight container.</p>
             </div>
           </div>

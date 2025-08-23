@@ -5,7 +5,7 @@ import { CreativeRoutes } from "../index";
 import ChocolateOrange from 'assets/creative/recipes/recipe-chocolate-orange1.jpg';
 import ChocolateOrange2 from 'assets/creative/recipes/recipe-chocolate-orange2.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
@@ -66,7 +66,7 @@ const ChocolateOrangeSwirl = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={ChocolateOrange} alt="Chocolate orange cookies"/>
+              <img src={ChocolateOrange} alt="Chocolate orange cookies" />
             </div>
 
             <Ingredients media="mobile" />
@@ -80,7 +80,7 @@ const ChocolateOrangeSwirl = () => {
               <p><span className="instruction-step stir-step">Step 2.</span> Combine flour, baking powder, and salt; stir well. Add flour mixture to butter mixture, beating at low speed.</p>
 
               <p className="tip">Add the dry mixture slowly by scooping in 1/2 cup increments until fully incorporated.</p>
-              
+
               <p><span className="instruction-step stir-step">Step 3.</span> Remove half of dough from bowl. Add orange rind and orange extract to dough in bowl and mix well (hands work best for this step). Remove orange dough from bowl and set aside. Return plain dough to bowl; add melted chocolate, mixing well (start with a spoon, finish with hands). Cover and chill both portions of dough for 1 hour.</p>
 
               <p><span className="instruction-step prep-step">Step 4.</span> Roll each half of dough to a 15" x 8" rectangle on floured wax paper. Place orange dough on top of chocolate dough; peel off top wax paper. Tightly roll dough, jellyroll fashion, starting at short side and peeling wax paper from dough while rolling. Cover and chill for 1 hour.</p>
@@ -89,7 +89,7 @@ const ChocolateOrangeSwirl = () => {
 
               <p><span className="instruction-step cook-step">Step 5.</span> Using a sharp knife, slice the dough into 1/4" slices; place on ungreased cookie sheets. Bake at 350°F for 10-12 minutes. Remove to wire racks to cool.</p>
 
-              <img src={ChocolateOrange2} alt="Chocolate orange on cookie sheet"/>
+              <img src={ChocolateOrange2} alt="Chocolate orange on cookie sheet" />
             </div>
           </div>
 

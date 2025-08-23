@@ -4,11 +4,10 @@ import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 import BaileysFudge from 'assets/creative/recipes/recipe-baileys-fudge.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3>Fudge ingredients</h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">3 1/2 cups</span>milk chocolate chips</li>
         <li><span className="amount">1 cup</span>sweetened condensed milk</li>
@@ -56,7 +55,7 @@ const Fudge = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={BaileysFudge} alt="baileys fudge"/>
+              <img src={BaileysFudge} alt="baileys fudge" />
             </div>
 
             <Ingredients media="mobile" />

@@ -2,7 +2,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   display: flex;
-  margin-top: 2em;
+  margin-top: 100px;
   max-width: 1200px;
   width: 100%;
 
@@ -12,10 +12,24 @@
   }
 
   .bio-content {
-    h1 {
+
+    h1,
+    h3 {
       font-family: $type-content;
       font-weight: 700;
       margin-bottom: 0;
+    }
+
+    h3 {
+      font-weight: 500;
+    }
+
+    ul {
+      font-family: $type-content;
+
+      li {
+        line-height: 1.5em;
+      }
     }
   }
 }
@@ -67,25 +81,22 @@
   }
 
   .timeline-content {
+    align-items: self-start;
     display: flex;
     position: relative;
   }
 
   .detail {
-    background: lighten($primary, 50%);
-    border-radius: 10px;
-    border: 1px solid $primary;
+    color: $content;
     height: fit-content;
     margin-left: 1em;
     margin-top: 2em;
     max-height: 65vh;
     min-width: 600px;
-    overflow-y: scroll;
-    overflow-y: scroll;
-    padding: $space;
     position: sticky;
     top: 80px;
     width: 600px;
+
 
     @media screen and (max-width: $small) {
       position: fixed;
@@ -108,9 +119,9 @@
 
     /* Track */
     &::-webkit-scrollbar-track {
-      background: transparent; 
+      background: transparent;
     }
-    
+
     /* Handle */
     &::-webkit-scrollbar-thumb {
       background: $primary;
@@ -119,28 +130,33 @@
 
     /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
-      background: $primary-dark; 
+      background: $primary-dark;
+    }
+
+    .detail-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 1em;
     }
 
     button {
       align-items: center;
       background-color: transparent;
       border: none;
-      color: $primary-dark;
+      color: $synth3;
       cursor: pointer;
       display: flex;
       justify-content: center;
       opacity: .75;
       padding: .5em 1em;
-      position: absolute;
-      right: 0;
-      top: .5em;
+
 
       svg {
         font-size: 1.25em;
         padding-left: .25em;
       }
-      
+
       &:hover {
         background-color: rgba($primary, .30);
         opacity: 1;
@@ -152,12 +168,18 @@
     }
 
     h3 {
+      margin-bottom: 0;
       margin-top: 0;
       max-width: 85%;
     }
 
     p {
       color: $content;
+      font-weight: 400;
+
+      &:first-child {
+        margin-top: 0;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -177,7 +199,7 @@
   .path {
     background: rgba($grey3, .25);
     height: 100%;
-    left: 1em;
+    left: 22px;
     position: absolute;
     top: 0;
     width: 4px;
@@ -209,23 +231,24 @@
       display: flex;
       flex-wrap: nowrap;
       line-height: 1.5em;
-      margin-bottom: 1.5em;
+      margin-bottom: .5em;
+      min-height: 48px;
       position: relative;
 
       &.active {
-        background: rgba($primary, .20);
+        background: rgba($synth3, .20);
         border-radius: 30px;
 
         &.more-info {
           &::after {
-            color: $primary-dark;
+            color: $synth3;
           }
         }
       }
 
       .more {
         align-self: center;
-        color: $primary-dark;
+        color: $synth3;
         margin-left: auto;
         padding-top: 5px;
         padding-right: 10px;
@@ -245,7 +268,7 @@
 
           &::after {
             animation: highlight 300ms linear;
-            background: rgba($primary, .20);
+            background: rgba($synth3, .20);
             border-radius: 30px;
             display: block;
             content: '';
@@ -261,11 +284,12 @@
         align-self: center;
         background: darken($primary, 10%);
         border-radius: 30px;
-        color: $grey3;
+        color: white;
         display: inline-flex;
         font-family: $icon;
         height: 30px;
         justify-content: center;
+        margin-left: 5px;
         margin-right: 1em;
         min-width: 30px;
         padding: .25em;
@@ -290,7 +314,7 @@
 
       &.job {
         &::before {
-          background: $color1;
+          background: $primary-dark;
           content: '\f109';
           font-weight: 700;
         }
@@ -298,7 +322,7 @@
 
       &.education {
         &::before {
-          background: $color2;
+          background: $synth0;
           content: '\f19d';
           font-weight: 700;
         }
@@ -306,7 +330,7 @@
 
       &.community {
         &::before {
-          background: $color4;
+          background: $synth5;
           content: '\f4c3';
           font-weight: 100;
         }
@@ -314,11 +338,43 @@
 
       &.speaker {
         &::before {
-          background: $color3;
+          background: $grey0;
           content: '\f3c9';
           font-weight: 700;
         }
       }
+    }
+  }
+}
+
+.about-detail {
+  border-radius: 30px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  overflow: hidden;
+  position: sticky;
+  width: 600px;
+  top: 80px;
+
+  .about-detail-profile-img {
+    height: max-content;
+    width: 600px;
+  }
+
+  .about-detail-description {
+    color: #fff;
+    font-weight: 500;
+    background: linear-gradient(0deg, $synth8, $synth2);
+
+    a,
+    a:visited {
+      color: $synth3;
+    }
+
+    .description-content {
+      padding: 2em;
     }
   }
 }

@@ -25,10 +25,9 @@ const Creative = () => {
       />
       <div className="creative-features">
         <span className="landmark"><FontAwesomeIcon icon={faBookmark} /> Featured Projects</span>
-
         <div className="featured-project">
-          <div className="image">
-            <img src={cheesecake} alt="cheesecake"/>
+          <div className="image main">
+            <img src={cheesecake} alt="cheesecake" />
           </div>
           <div className="feature-summary">
             <div className="title">
@@ -39,10 +38,9 @@ const Creative = () => {
             <Link to="/creative/recipes/cheesecake" className="arrow-link block">View recipe</Link>
           </div>
         </div>
-
         <div className="featured-project">
           <div className="image">
-            <img src="https://images.squarespace-cdn.com/content/v1/59dbb8f880bd5e687ee3d7de/1510633563810-PMLF9EBAVONPDEIV6BHS/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFk_H6M1tkD9NpL7mXac0oVSXdFfjxR5AjcLwGSebOiGBsFzzcw3xKxvyC_6CFFG_/13551683_1754461124777429_728829684_n.jpg?format=750w" alt="craft"/>
+            <img src="https://images.squarespace-cdn.com/content/v1/59dbb8f880bd5e687ee3d7de/1510633563810-PMLF9EBAVONPDEIV6BHS/ke17ZwdGBToddI8pDm48kJK4Mm1kch8SFO9ZNkN1NT97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmFk_H6M1tkD9NpL7mXac0oVSXdFfjxR5AjcLwGSebOiGBsFzzcw3xKxvyC_6CFFG_/13551683_1754461124777429_728829684_n.jpg?format=750w" alt="craft" />
           </div>
           <div className="feature-summary">
             <div className="title">
@@ -53,10 +51,9 @@ const Creative = () => {
             <Link to="/creative/diy/pipe-desk" className="arrow-link block">View project</Link>
           </div>
         </div>
-
         <div className="featured-project">
           <div className="image">
-            <img src={vinylElephant} alt="vinyl elephant craft"/>
+            <img src={vinylElephant} alt="vinyl elephant craft" />
           </div>
           <div className="feature-summary">
             <div className="title">
@@ -67,10 +64,9 @@ const Creative = () => {
             <Link to="/creative/crafts/vinyl-elephant" className="arrow-link block">View craft</Link>
           </div>
         </div>
-
         <div className="featured-project">
           <div className="image">
-            <img src="https://live.staticflickr.com/4916/32434745468_ae87922187_w.jpg" alt="Costa Rica Jungle"/>
+            <img src="https://live.staticflickr.com/4916/32434745468_ae87922187_w.jpg" alt="Costa Rica Jungle" />
           </div>
           <div className="feature-summary">
             <div className="title">
@@ -85,5 +81,4 @@ const Creative = () => {
     </div>
   )
 }
-
 export default Creative;

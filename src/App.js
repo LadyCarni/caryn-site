@@ -40,7 +40,7 @@ const Site = () => {
 
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/portfolio/*" element={<Portfolio />}/>
+        <Route path="/portfolio/*" element={<Portfolio />} />
         {PortfolioRoutes.map((route, index) => (
           <Route
             key={index}
@@ -49,8 +49,8 @@ const Site = () => {
             exact={route.exact}
           />
         ))}
-        <Route path="/articles" element={<Articles />}/>
-        <Route path="/creative" element={<Creative />}/>
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/creative" element={<Creative />} />
         {CreativeRoutes.map((route, index) => (
           <Route
             key={index}

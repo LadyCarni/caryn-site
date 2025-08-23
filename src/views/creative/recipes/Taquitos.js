@@ -4,11 +4,10 @@ import { CreativeRoutes } from "../index";
 import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
 import { Helmet } from 'react-helmet';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3></h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">1 8oz package</span>cream cheese, softened</li>
         <li><span className="amount">1/2 cup</span>ranch dressing</li>
@@ -58,7 +57,7 @@ const TaquitoRecipe = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={Taquitos} alt="finished buffalo chicken taquitos"/>
+              <img src={Taquitos} alt="finished buffalo chicken taquitos" />
             </div>
 
             <Ingredients media="mobile" />

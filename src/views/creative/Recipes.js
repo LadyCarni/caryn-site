@@ -40,32 +40,32 @@ const categories = [
   {
     name: "All",
     value: null,
-    id: 0-1,
+    id: 0 - 1,
   },
   {
     name: "Desserts",
     value: "Desserts",
-    id: 0-2,
+    id: 0 - 2,
   },
   {
     name: "Appetizers",
     value: "Appetizers",
-    id: 0-3,
+    id: 0 - 3,
   },
   {
     name: "Mains",
     value: "Mains",
-    id: 0-4,
+    id: 0 - 4,
   },
   {
     name: "Misc",
     value: "Misc",
-    id: 0-5,
+    id: 0 - 5,
   }
 ];
 
 const allRecipes = [
-  { 
+  {
     title: "World's Best Cheesecake",
     image: Cheesecake,
     link: "/creative/recipes/cheesecake",
@@ -73,7 +73,7 @@ const allRecipes = [
     thumb: "item rectangle",
     id: '781759a9-bc6b-4204-a53c-e3131cb72683',
   },
-  { 
+  {
     title: "Cinnamon Rolls",
     image: CinnamonRolls,
     link: "/creative/recipes/cinnamon-rolls",
@@ -81,7 +81,7 @@ const allRecipes = [
     thumb: "item rectangle",
     id: '7153a2e6-30a4-4b6b-b0c1-f551790265d2',
   },
-  { 
+  {
     title: "Chicken Lasagna",
     image: Lasagna,
     link: "/creative/recipes/lasagna",
@@ -89,7 +89,7 @@ const allRecipes = [
     thumb: "item rectangle",
     id: '175af412-fe01-43f2-ac2b-cea0ddd9e168',
   },
-  { 
+  {
     title: "Bailey's Fudge",
     image: BaileysFudge,
     link: "/creative/recipes/fudge",
@@ -97,7 +97,7 @@ const allRecipes = [
     thumb: "item",
     id: '268b49ac-879c-46d1-b268-fe21897c7596',
   },
-  { 
+  {
     title: "Bourbon Molasses Cookies",
     image: BourbonMolasses,
     link: "/creative/recipes/bourbon-molasses-cookie",
@@ -105,7 +105,7 @@ const allRecipes = [
     thumb: "item rectangle",
     id: "5097e68d-637f-435d-b48d-36fdf1ef9ee1",
   },
-  { 
+  {
     title: "Best-Ever Dry Rub",
     image: DryRub,
     link: "/creative/recipes/dry-rub",
@@ -113,7 +113,7 @@ const allRecipes = [
     thumb: "item",
     id: 'e6f538eb-39f0-45a0-b9df-b807117cb9a8',
   },
-  { 
+  {
     title: "Banana Bread French Toast",
     image: FrenchToast,
     link: "/creative/recipes/french-toast",
@@ -121,7 +121,7 @@ const allRecipes = [
     thumb: "item rectangle",
     id: '991eeb7f-7437-486d-8472-3bc4c1dc1b28',
   },
-  { 
+  {
     title: "Chocolate Orange Swirl Cookies",
     image: ChocolateOrange,
     link: "/creative/recipes/chocolate-orange-swirl",
@@ -129,7 +129,7 @@ const allRecipes = [
     thumb: "item rectangle",
     id: 'abc442c1-6aef-487b-9ccf-45e62a53e471',
   },
-  { 
+  {
     title: "Shortbread Cookies",
     image: Shortbread,
     link: "/creative/recipes/shortbread",
@@ -137,7 +137,7 @@ const allRecipes = [
     thumb: "item",
     id: 'bb14bb7d-f169-4dfd-829a-263aa7e585f1',
   },
-  { 
+  {
     title: "Sparkly Pumpkin Pie",
     image: PumpkinPie,
     link: "/creative/recipes/pumpkin-pie",
@@ -145,7 +145,7 @@ const allRecipes = [
     thumb: "item",
     id: 'f76d5449-7bfa-40b2-a55a-109fd957c9c7',
   },
-  { 
+  {
     title: "Sweet Potato Casserole",
     image: SweetPotatoCasserole,
     link: "/creative/recipes/sweet-potato-casserole",
@@ -153,7 +153,7 @@ const allRecipes = [
     thumb: "item",
     id: '57416f61-67fe-4204-aa0d-77956e34d36e',
   },
-  { 
+  {
     title: "Buffalo Chicken Taquitos",
     image: Taquitos,
     link: "/creative/recipes/buffalo-chicken-taquitos",
@@ -161,7 +161,7 @@ const allRecipes = [
     thumb: "item",
     id: '8bee53df-db27-4678-82ea-37f076d8ec2a',
   },
-  { 
+  {
     title: "Snickerdoodle Cookies",
     image: Snickerdoodle,
     link: "/creative/recipes/snickerdoodle",
@@ -169,7 +169,7 @@ const allRecipes = [
     thumb: "item",
     id: "bce43d05-cea1-410e-9811-aff7246e8d97",
   },
-  { 
+  {
     title: "Twice Baked Potatoes",
     image: TwicePotatoes,
     link: "#",
@@ -177,7 +177,7 @@ const allRecipes = [
     thumb: "item large-square soon",
     id: 2,
   },
-  { 
+  {
     title: "Bitterballen",
     image: Bitterballen,
     link: "#",
@@ -185,7 +185,7 @@ const allRecipes = [
     thumb: "item rectangle soon",
     id: 3,
   },
-  { 
+  {
     title: "Shrimp Tortellini",
     image: Tortellini,
     link: "#",
@@ -193,7 +193,7 @@ const allRecipes = [
     thumb: "item rectangle soon",
     id: 4,
   },
-  { 
+  {
     title: "Campfire Shrimp",
     image: CampingShrimp,
     link: "#",
@@ -201,7 +201,7 @@ const allRecipes = [
     thumb: "item soon",
     id: 6,
   },
-  { 
+  {
     title: "Blueberry Lemon cake",
     image: BlueberryLemon,
     link: "#",
@@ -209,7 +209,7 @@ const allRecipes = [
     thumb: "item large-square soon",
     id: 7,
   },
-  { 
+  {
     title: "White Chili",
     image: WhiteChili,
     link: "#",
@@ -217,7 +217,7 @@ const allRecipes = [
     thumb: "item soon",
     id: 8,
   },
-  { 
+  {
     title: "Cardamom Cookies",
     image: Cardamom,
     link: "#",
@@ -225,7 +225,7 @@ const allRecipes = [
     thumb: "item rectangle soon",
     id: 9,
   },
-  { 
+  {
     title: "Theme Cake: Rainbow",
     image: RainbowCake,
     link: "#",
@@ -233,7 +233,7 @@ const allRecipes = [
     thumb: "item rectangle soon",
     id: 11,
   },
-  { 
+  {
     title: "Charcuterie Boards",
     image: Charcuterie,
     link: "#",
@@ -241,7 +241,7 @@ const allRecipes = [
     thumb: "item rectangle soon",
     id: 13,
   },
-  { 
+  {
     title: "Caesar Cocktail",
     image: Ceasar,
     link: "#",
@@ -249,7 +249,7 @@ const allRecipes = [
     thumb: "item rectangle soon",
     id: 14,
   },
-  { 
+  {
     title: "Cranberry Pecan Rugalach",
     image: Rugalach,
     link: "#",
@@ -257,7 +257,7 @@ const allRecipes = [
     thumb: "item large-square soon",
     id: 15,
   },
-  { 
+  {
     title: "Traditional Donuts",
     image: Donuts,
     link: "#",
@@ -265,7 +265,7 @@ const allRecipes = [
     thumb: "item soon",
     id: 16,
   },
-  { 
+  {
     title: "White Drip Cake",
     image: DripCake,
     link: "#",
@@ -273,7 +273,7 @@ const allRecipes = [
     thumb: "item large-square soon",
     id: 17,
   },
-  { 
+  {
     title: "Theme Cake: Espurr",
     image: ThemeCake,
     link: "#",
@@ -281,7 +281,7 @@ const allRecipes = [
     thumb: "item rectangle soon",
     id: 18,
   },
-  { 
+  {
     title: "Linzer Cookies",
     image: Linzer,
     link: "#",
@@ -289,7 +289,7 @@ const allRecipes = [
     thumb: "item soon",
     id: 19,
   },
-  { 
+  {
     title: "Loco Moco",
     image: LocoMoco,
     link: "#",
@@ -301,15 +301,15 @@ const allRecipes = [
 
 
 const Recipes = () => {
-  const[filter, setFilter] = useState(null);
+  const [filter, setFilter] = useState(null);
 
   const renderAll = allRecipes.filter(recipe => filter ? recipe.category === filter : true).map(recipe => (
     <div className={recipe.thumb} key={recipe.id}>
       <a href={recipe.link}>
-        <img src={recipe.image} alt={recipe.title}/>
+        <img src={recipe.image} alt={recipe.title} />
         <div className="photo-info">
-            <p>{recipe.title}</p>
-            <span className="link-text">View recipe</span><FontAwesomeIcon icon={faHatChef} />
+          <p>{recipe.title}</p>
+          <span className="link-text">View recipe</span><FontAwesomeIcon icon={faHatChef} />
         </div>
       </a>
     </div>
@@ -334,8 +334,8 @@ const Recipes = () => {
         <div className="creative-body">
           <div className="creative-nav">
             <ul className="sticky-side">
-              {categories.map(({id, name, value}) => (
-                <li key={id} onClick={() => setFilter(value)} className={`${filter === value ? 'active' : '' }`}>
+              {categories.map(({ id, name, value }) => (
+                <li key={id} onClick={() => setFilter(value)} className={`${filter === value ? 'active' : ''}`}>
                   {name}
                   {/* ({allRecipes.filter(recipe => value ? recipe.category === value : true).length}) */}
                 </li>

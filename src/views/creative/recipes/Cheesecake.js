@@ -7,7 +7,7 @@ import cheesecake2 from 'assets/creative/recipes/recipe-cheesecake2.jpg'
 import cheesecake3 from 'assets/creative/recipes/recipe-cheesecake3.jpg'
 import { Helmet } from 'react-helmet';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
@@ -76,7 +76,7 @@ const Cheesecake = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={cheesecakeCover} alt="cheesecake"/>
+              <img src={cheesecakeCover} alt="cheesecake" />
             </div>
 
             <Ingredients media="mobile" />
@@ -89,21 +89,21 @@ const Cheesecake = () => {
 
               <p><span className="instruction-step stir-step">Step 2.</span>Make crust: Mix graham cracker crumbs and cinnamon; add butter. Press crust onto bottom and up the sides of a 9-inch springform pan lined with parchment. Wrap a large piece of foil around bottom of the outside of the pan. Freeze until filling is prepared.</p>
 
-              <img src={cheesecake1} alt="cheesecake"/>
+              <img src={cheesecake1} alt="cheesecake" />
 
               <p className="tip">To achieve an easy, uniform crust, use a straight-edged cup or a muddler to press the crust into the pan.</p>
 
-              <img src={cheesecake2} alt="cheesecake"/>
-              
+              <img src={cheesecake2} alt="cheesecake" />
+
               <p><span className="instruction-step stir-step">Step 3.</span>Make filling: Use an electric mixer or stand mixer to mix cream cheese, sugar, sour cream and vanilla. Blend until smooth and creamy. Scrape down sides of bowl. Whisk eggs in a bowl; add to cream cheese mixture. Blend just until eggs are incorporated.</p>
 
               <p><span className="instruction-step cook-step">Step 4.</span>Remove crust from freezer and pour in filling. Carefully place cheesecake into preheated water bath. Bake for 12 minutes; turn oven down to 350°F and bake until top of cheesecake turns golden, 50 to 60 minutes. Remove cake to a wire rack to cool.</p>
 
-              <img src={cheesecake3} alt="cheesecake"/>
-              
+              <img src={cheesecake3} alt="cheesecake" />
+
               <p><span className="instruction-step decorate-step">Step 5.</span>Make topping: Combine sour cream and sugar; spread over cake. Cover and refrigerate at least 4 hours.</p>
 
-              <img src={cheesecakeCover} alt="cheesecake"/>
+              <img src={cheesecakeCover} alt="cheesecake" />
 
               <p><span className="instruction-step serve-step">Step 6.</span>Cut into 12-16 pieces with a wet knife to prevent crumbling. Serve chilled.</p>
             </div>

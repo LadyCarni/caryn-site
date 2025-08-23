@@ -1,11 +1,15 @@
 .creative {
   font-family: $type-content;
-  margin-bottom: 100px;
+
+  &.full-height {
+    height: fit-content;
+    padding-bottom: 100px;
+    margin-top: 50px;
+  }
 }
 
 .creative-header {
   margin: 0 auto 50px;
-  max-width: 1200px;
   text-align: center;
 
   @media screen and (max-width: 500px) {
@@ -37,6 +41,10 @@
   @media screen and (min-width: ($medium + 1)) {
     .header-image {
       height: 300px;
+
+      &.main {
+        height: 360px;
+      }
     }
 
     ul {
@@ -75,9 +83,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       text-decoration: none;
-      padding-bottom: 1em;
       width: 100px;
       height: 60px;
       transition: transform 200ms ease;
@@ -88,7 +95,7 @@
       }
 
       &.active {
-        border-bottom: 2px solid $primary;
+        border-bottom: 2px solid $synth3;
       }
 
       &:hover {
@@ -99,7 +106,6 @@
 
       svg {
         color: $primary;
-        margin-bottom: .5em;
       }
     }
   }
@@ -190,7 +196,7 @@
           font-weight: 700;
 
           a {
-            color: $primary-dark;
+            color: $synth2;
             text-decoration: none;
           }
         }
@@ -559,7 +565,6 @@
 }
 
 .recipe-card {
-  background: rgba($primary, .10);
   border-radius: 10px;
   border: 1px solid $primary;
   height: fit-content;
@@ -592,23 +597,22 @@
 
   /* Track */
   &::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
   }
-  
-  /* Handle */
+
   &::-webkit-scrollbar-thumb {
-    background: $primary;
     border-radius: 10px;
   }
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    background: $primary-dark; 
+    background: $primary-dark;
   }
 
   &.sticky {
+    margin-top: 24px;
     position: sticky;
-    top: 70px;
+    top: 130px;
   }
 
   h2 {
@@ -616,6 +620,12 @@
     font-size: 1.25em;
     font-weight: 500;
     margin: 0;
+
+    &.border {
+      border-bottom: 1px solid rgba($primary, .3);
+      padding-bottom: .5em;
+      margin-bottom: .5em;
+    }
   }
 
   h3 {
@@ -642,6 +652,6 @@
 }
 
 .sticky-side {
-  top: 5em;
+  top: 8em;
   position: sticky;
 }

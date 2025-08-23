@@ -5,11 +5,10 @@ import { CreativeRoutes } from "../index";
 import BourbonMolassesDone from 'assets/creative/recipes/bourbon-molasses-done.jpg';
 import BourbonMolassesPrep from 'assets/creative/recipes/bourbon-molasses-prep.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
-      <h2>Ingredients</h2>
-      <h3></h3>
+      <h2 className="border">Ingredients</h2>
       <ul>
         <li><span className="amount">4 2/3 cups</span>all-purpose flour</li>
         <li><span className="amount">1 Tbsp</span>baking soda</li>
@@ -72,7 +71,7 @@ const BourbonMolassesCookie = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={BourbonMolassesDone} alt="bourbon molasses cookies"/>
+              <img src={BourbonMolassesDone} alt="bourbon molasses cookies" />
             </div>
 
             <Ingredients media="mobile" />
@@ -96,7 +95,7 @@ const BourbonMolassesCookie = () => {
 
               <p><span className="instruction-step stir-step">Step 3.</span> Roll the dough into 3 Tablespoon sized balls. Fill a small and shallow bowl with granulated sugar. Roll each ball in the sugar until it's completely coated. Place the sugar coated cookie dough balls on the prepared baking sheets, leaving 2 inches between each ball for spreading.</p>
 
-              <img src={BourbonMolassesPrep} alt="preparing bourbon molasses cookies"/>
+              <img src={BourbonMolassesPrep} alt="preparing bourbon molasses cookies" />
 
               <p><span className="instruction-step cook-step">Step 4.</span> Bake, one tray at a time, for 8 to 10 minutes, or until the cookies have puffed up and have begun to slightly crack on top. (They will crack more as they cool, so don't over bake!)</p>
 

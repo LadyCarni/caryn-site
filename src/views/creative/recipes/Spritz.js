@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 import SpritzCookie from 'assets/creative/recipes/recipe-shortbread.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
@@ -57,7 +57,7 @@ const Spritz = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={SpritzCookie} alt="spritz cookies"/>
+              <img src={SpritzCookie} alt="spritz cookies" />
             </div>
 
             <Ingredients media="mobile" />

@@ -6,7 +6,7 @@ const Breadcrumb = () => {
   const pathnames = location.pathname.split('/').filter(x => x);
 
   return (
-    <div className="breadcrumb">
+    <div className="breadcrumb shadow">
       <ul>
         {pathnames.map((value, index) => {
           const to = `/${pathnames.slice(0, index + 1).join('/')}`;

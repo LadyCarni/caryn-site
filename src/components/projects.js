@@ -8,59 +8,67 @@ import lunaCover from 'assets/portfolio/luna-cover.png';
 import financialCover from 'assets/portfolio/financial-cover.png';
 import lifestyleCover from 'assets/portfolio/lifestyle-cover.jpg';
 import wireframeCover from 'assets/caryn5.jpg';
+import FenrirDocs from "assets/portfolio/fenrir-docs.png";
 
 const Projects = ({ match }) => {
   const gallery = [
-    { 
+    {
+      source: FenrirDocs,
+      title: "Fenrir Design System",
+      slug: "design-system",
+      category: "Design Systems, Product Design",
+      id: '49bbdd1e-3ee9-4658-976f-bff4b395937e',
+    },
+    {
       source: connectFeature,
       title: "Connect API",
       slug: "connect-api",
       category: "Product Design, Front-end Dev",
       id: '53f08c99-ca43-4250-83de-07f96b108daa',
     },
-    { 
+    {
       source: devLondon,
       title: "Dev London",
       slug: "dev-london",
       category: "Front-end Development",
       id: 'f2af8a95-d3b2-46f7-b274-5b6dd13d5e35',
     },
-    { 
+    {
       source: knakWires,
       title: "Knak UX Case Study",
       slug: "knak-ux-case-study",
       category: "UX, Product Development",
       id: 'f6837403-ca1b-45ff-82fe-b8d3ccc9c93f'
     },
-    { 
+    {
       source: lunaCover,
       title: "Luna Nova",
       slug: "luna-nova",
       category: "Web Design, Front-end Dev",
       id: '1102ec94-84d4-42af-94cd-4eea1fb0dd23'
     },
-    { 
+    {
       source: fongoCover,
       title: "Fongo Works",
       slug: "fongo-works",
       category: "Web App",
       id: '1fe98b31-a32a-4cef-872e-b6a08ea533aa'
     },
-    { 
+    {
       source: financialCover,
       title: "Financial App *",
       slug: "financial-app",
       category: "Web App Design",
       id: 'f50ed972-30e3-41d2-99b2-e58442245fc6'
     },
-    { 
+    {
       source: lifestyleCover,
       title: "Lifestyle App *",
       slug: "lifestyle-app",
       category: "Web App Design",
       id: '260b072f-6ff6-4b4e-84b6-3ccfce49c145'
     },
-    { 
+    {
       source: wireframeCover,
       title: "Wireframe coaching",
       slug: "wireframe-coaching",
@@ -141,13 +149,13 @@ const Projects = ({ match }) => {
 
   return (
     <>
-      <h1>Welcome to the greatest portfolio on this site</h1>
-      <div className="feature-content shadow columns portfolio">
-        {gallery.map(({id, slug, title, category, source}) =>(
-          <div className="column filter" key={id}>
+      <h1>Where Strategy Meets Execution</h1>
+      <div className="feature-content columns portfolio">
+        {gallery.map(({ id, slug, title, category, source }) => (
+          <div className="column shadow filter" key={id}>
             <Link to={`/portfolio/${slug}`}>
               <div className="image bottom">
-                <img src={source} alt={title}/>
+                <img src={source} alt={title} />
               </div>
               <div className="caption overlay">
                 <h3>{title}</h3>

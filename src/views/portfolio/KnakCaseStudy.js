@@ -71,7 +71,7 @@ const KnakCaseStudy = () => {
             <p>Writing good code helps ensure maintainability as well as scalability for the future. As a part of the refactoring work I did, I chose to apply a strict CSS Linter through <a href="https://stylelint.io/" target="_blank" rel="noreferrer">stylelint.io</a>, using a <a href="https://gist.github.com/LadyCarni/0eee4b69f54c615d70597d54c075830a" target="_blank" rel="noreferrer">custom configuration</a> designed for readability, consistency, and rapid writing of styles (example shown below).</p>
 
             <pre className="language-json"><code>
-            {`
+              {`
               .stylelintrc
 
               {
@@ -100,9 +100,9 @@ const KnakCaseStudy = () => {
             <h2>User Research</h2>
             <p>Working closely with the Knak team throughout this project helped give insight into the customers and their perspectives while using the product. The research I gathered provided knowledge that drove the interface updates, enabled me to consider their context while building interactions, and highlighted the problems they had that the product was designed to solve.</p>
             <p>What I learned about the users:</p>
-            <p className="ah-ha">Some features were only available to a limited set of customers. This meant I would need to <i>design an experience that would work with or without some features</i> appearing.</p>
-            <p className="ah-ha">Most users were moderately technically savvy with marketing apps. Keeping this in mind, I would need to design <i>interactions for power users</i>, while enabling a <i>usable experience for less savvy users</i>.</p>
-            <p className="ah-ha">Users spanned a wide breadth of business requirements. With so many feature needs, I would be required to offer <i>flexibility alongside stability and consistency</i> while considering each feature throughout the platform.</p>
+            <p className="ah-ha lesson">Some features were only available to a limited set of customers. This meant I would need to design an experience that would work with or without some features appearing.</p>
+            <p className="ah-ha lesson">Most users were moderately technically savvy with marketing apps. Keeping this in mind, I would need to design interactions for power users, while enabling a usable experience for less savvy users.</p>
+            <p className="ah-ha lesson">Users spanned a wide breadth of business requirements. With so many feature needs, I would be required to offer flexibility alongside stability and consistency while considering each feature throughout the platform.</p>
 
             <h2>Layout Redesign</h2>
             <h3>Goals: Familiar, navigable, discoverable</h3>
@@ -110,7 +110,7 @@ const KnakCaseStudy = () => {
           </div>
 
           <div className="full-width">
-            <img src={knakLayout} alt="Knak app layout before the redesign"/>
+            <img src={knakLayout} alt="Knak app layout before the redesign" />
           </div>
 
           <div className="article">
@@ -119,16 +119,16 @@ const KnakCaseStudy = () => {
 
             <div className="image-collection">
               <div className="item col1">
-                <img src={knakWires1} alt="Knak layout wireframe"/>
+                <img src={knakWires1} alt="Knak layout wireframe" />
                 <span className="image-caption">List view wireframe concept</span>
               </div>
               <div className="item col2">
                 <div className="stacked">
-                  <img src={knakWires2} alt="Knak sticky nav wireframe"/>
+                  <img src={knakWires2} alt="Knak sticky nav wireframe" />
                   <span className="image-caption">Sticky side nav wireframe</span>
                 </div>
                 <div className="stacked">
-                  <img src={knakWires3} alt="Knak slide behavior wireframe"/>
+                  <img src={knakWires3} alt="Knak slide behavior wireframe" />
                   <span className="image-caption">Behavior concept wireframe</span>
                 </div>
               </div>
@@ -139,14 +139,14 @@ const KnakCaseStudy = () => {
           </div>
 
           <div className="full-width">
-            <img src={knakLayoutAfter} alt="new Knak app layout proposal"/>
+            <img src={knakLayoutAfter} alt="new Knak app layout proposal" />
           </div>
 
           <div className="article">
             <h2>Color palette consistency</h2>
             <h3>Goals: recognizable, intentional</h3>
             <p>Identifying the key brand colors and the theme for the application enabled the creation of a palette of accessibility-tested and reusable colors. These identifiers in the SCSS allowed me to organize styles based on state, response, and behavior.</p>
-            <img src={knakColors} alt="Knak color palette"/>
+            <img src={knakColors} alt="Knak color palette" />
             <p>Colors derived from the brand were selectively used for focused call-to-action behaviors and interactive states. While the palette of colors chosen purely for the app elements reflected a sense of consistency and predictability based on the hierarchy of the element in the interface.</p>
 
             <div className="flex columns">
@@ -170,7 +170,7 @@ const KnakCaseStudy = () => {
                 </code></pre>
               </div>
               <div className="fill">
-                <img src={knakColorsUi} alt="Knak color in the UI" className="shadow"/>
+                <img src={knakColorsUi} alt="Knak color in the UI" className="shadow" />
                 <span className="image-caption">The new colors in action</span>
               </div>
             </div>
@@ -208,7 +208,7 @@ const KnakCaseStudy = () => {
                 </code></pre>
               </div>
               <div className="fill">
-                <img src={knakTypography} alt="Knak typography example" className="shadow"/>
+                <img src={knakTypography} alt="Knak typography example" className="shadow" />
                 <span className="image-caption">Updated typography</span>
               </div>
             </div>
@@ -280,11 +280,11 @@ const KnakCaseStudy = () => {
           <div className="full-width">
             <div className="flex columns">
               <div className="fill">
-                <img src={knakPattern1} alt="Knak card pattern" className="shadow"/>
+                <img src={knakPattern1} alt="Knak card pattern" className="shadow" />
                 <span className="image-caption">Material Card</span>
               </div>
               <div className="fill">
-                <img src={knakPattern2} alt="Knak detailed card pattern" className="shadow"/>
+                <img src={knakPattern2} alt="Knak detailed card pattern" className="shadow" />
                 <span className="image-caption">Detailed Card</span>
               </div>
             </div>
@@ -304,7 +304,7 @@ const KnakCaseStudy = () => {
 
             <div className="flex columns">
               <div className="fit">
-                <img src={knakTax} alt="Knak menu organization" className="shadow"/>
+                <img src={knakTax} alt="Knak menu organization" className="shadow" />
                 <span className="image-caption">Knak's updated menu</span>
               </div>
               <div className="fill">
@@ -316,7 +316,7 @@ const KnakCaseStudy = () => {
             <h3>Interaction Design</h3>
             <div className="flex columns">
               <div className="fit">
-                <img src={knakNav} alt="Knak menu interactions" className="shadow"/>
+                <img src={knakNav} alt="Knak menu interactions" className="shadow" />
                 <span className="image-caption">Knak's menu interactions</span>
               </div>
               <div className="fill">
@@ -336,7 +336,7 @@ const KnakCaseStudy = () => {
           </div>
 
           <div className="full-width">
-            <img src={knakForms} alt="Knak forms redesign"/>
+            <img src={knakForms} alt="Knak forms redesign" />
           </div>
 
           <div className="article">
@@ -354,7 +354,7 @@ const KnakCaseStudy = () => {
             </iframe>
 
             <p>The result reduced the necessity for external dependencies, allowed customization of the style of the switch, and enabled full control over the interactions and animations.</p>
-            <img src={knakSwitch} alt="Knak switch redesign"/>
+            <img src={knakSwitch} alt="Knak switch redesign" />
 
             <h2>Design Highlight: Expandable Cards</h2>
             <p>Occasionally, custom functionality is necessary for a specific feature. In this case, users could enable or disable optional rules, with further customization options once the rules were enabled. On initial inspection, the feature had several conflicting areas of visual priority (see below, left). Unsure of where the eye was intended to follow, the lack of polished focus lead to considerable distraction.</p>
@@ -362,7 +362,7 @@ const KnakCaseStudy = () => {
           </div>
 
           <div className="full-width">
-            <img src={knakExpand} alt="Knak expandable cards"/>
+            <img src={knakExpand} alt="Knak expandable cards" />
           </div>
 
           <div className="article">
@@ -377,7 +377,7 @@ const KnakCaseStudy = () => {
           </div>
 
           <div className="full-width">
-            <img src={knakDrag} alt="Knak drag and drop"/>
+            <img src={knakDrag} alt="Knak drag and drop" />
           </div>
 
           <div className="article">
@@ -388,7 +388,7 @@ const KnakCaseStudy = () => {
             <p>Interactions with these elements required careful consideration both during the action as well as after the action was completed. The height of the active draggable element as well as the style reflected in its next potential spot in the list needed to be clear, easy to understand, and quick to manipulate (see below).</p>
             <p>As well as creating a clear differentiation between the draggable items (seen above, right — harder to see below in the GIF), the action icons were given a subtle hover effect to enable clear visibility during interactivity of those buttons.</p>
 
-            <img src={knakDragDrop} alt="Knak drag and drop in action"/>
+            <img src={knakDragDrop} alt="Knak drag and drop in action" />
 
             <p>The result of the redesign for the draggable lists was more clarity of purpose for the feature, a faster interaction, and a predictable outcome.</p>
 
@@ -397,7 +397,7 @@ const KnakCaseStudy = () => {
           </div>
 
           <div className="full-width">
-            <img src={knakApp} alt="Knak application"/>
+            <img src={knakApp} alt="Knak application" />
           </div>
 
           <div className="article">
@@ -411,7 +411,7 @@ const KnakCaseStudy = () => {
             <h3>Thoughts from the founder</h3>
             <div className="flex columns">
               <div className="fit">
-                <img src={knakPierce} alt="Knak founder, Pierce Ujjainwalla"/>
+                <img src={knakPierce} alt="Knak founder, Pierce Ujjainwalla" />
               </div>
               <div className="fill">
                 <div className="quote">

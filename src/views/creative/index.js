@@ -1,6 +1,4 @@
-// import Placeholder from './Placeholder';
 import Creative from "./Creative";
-import Crafts from "./Crafts";
 import Diy from "./Diy";
 import Recipes from "./Recipes";
 import Photography from "./Photography";
@@ -19,6 +17,9 @@ import TaquitoRecipe from "./recipes/Taquitos";
 import SnickerdoodleCookie from "./recipes/Snickerdoodle";
 import BourbonMolassesCookie from "./recipes/BourbonMolasses";
 import CinnamonRolls from "./recipes/CinnamonRolls";
+
+// Import Crafts last to avoid circular dependency
+import Crafts from "./Crafts";
 
 export const CreativeRoutes = [
   { path: "/creative", name: "Creative", component: Creative, exact: true },

@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { CreativeRoutes } from "../index";
 import SparklyPumpkin from 'assets/creative/recipes/recipe-pumpkin-pie.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
@@ -72,7 +72,7 @@ const PumpkinPie = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={SparklyPumpkin} alt="pumpkin pie"/>
+              <img src={SparklyPumpkin} alt="pumpkin pie" />
             </div>
 
             <Ingredients media="mobile" />

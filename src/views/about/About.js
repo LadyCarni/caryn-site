@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import ReactMarkdown from 'react-markdown';
 import caryn1 from 'assets/about/caryn-portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentLines, faTimes } from '@fortawesome/pro-light-svg-icons';
-import carynResume from 'assets/caryn-humphreys-resume-2021.pdf';
+import { faCommentLines } from '@fortawesome/pro-light-svg-icons';
+import carynResume from 'assets/CarynFarvour_UXManager_Resume.pdf';
 import PracticalUx from 'assets/about/practicalux.png';
 import erieTalk from 'assets/caryn3.jpg';
 import devLondon from 'assets/portfolio/dev-london.jpg';
@@ -22,12 +23,23 @@ import canUx from 'assets/about/canUx.jpg';
 import fluxible from 'assets/about/fluxible-goat-check.jpg';
 import laraconUs2015 from 'assets/about/laracon-us-2015.jpg';
 import devDesign from 'assets/about/dev-design-pair.jpg';
-import arcticWolf from 'assets/about/arctic-wolf-caryn.jpg';
+import stockDesk from 'assets/about/stock-desk.jpg';
 import hackernest from 'assets/about/hackernest.jpg';
 import laraconEu2014 from 'assets/about/laracon-eu-2014.jpg';
 import fluxible2014 from 'assets/about/fluxible2014.jpg';
 import uxWaterloo2014 from 'assets/about/ux-waterloo-2014.jpg';
 import wireframe2017 from 'assets/about/wireframe.png';
+import stockBike from 'assets/about/stock-bike.jpg';
+import stockScreen from 'assets/about/stock-screen.jpg';
+import stockMic from 'assets/about/stock-mic.jpg';
+
+const CustomLink = ({ href, children }) => {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  );
+};
 
 const About = () => {
   const timeline = [
@@ -126,23 +138,9 @@ const About = () => {
       year: '2014',
       events: [
         {
-          id: '45cde8e3-f1d8-4ff8-91e0-c156f342003f',
-          type: 'job',
-          title: 'Rebrand ChromeMedia to Vehikl',
-          description: 'When ChromeMedia decided to pivot the company in a more long-term strategic direction, I helped build the face of the new brand. With the new logo and icon came new swag, new social media presence, new website, and an all new approach to building software.',
-          year: '2014'
-        },
-        {
           id: '18dc2aa3-7c71-4f69-aafd-e20320819976',
           type: 'education',
           title: 'Certification: Human Computer Interaction (UC San Diego)',
-        },
-        {
-          id: '0c1adfc4-b550-4a43-9e9f-bc610dcd363d',
-          type: 'job',
-          title: 'Promotion: UX Designer (Vehikl)',
-          description: 'As I continued to expand and hone my skills as a designer, I branched out from the \'web designer\' role and began being identified as a more holistic UX Designer as a result. This shift came on the heels of a strategic company rebrand and a new direction that we would take as a team for how we approached building software.',
-          year: '2014'
         },
         {
           id: 'c18d16ee-e5a3-4389-a6ab-e77b567155d9',
@@ -187,7 +185,7 @@ const About = () => {
           type: 'speaker',
           title: 'UX Facilitative Volunteer, STEMGyrls',
           image: stemGyrls2015,
-          description: 'I was thrilled to be asked to share my UX skills for the first time at this mini-con hosted by the YWCA in Cambridge, Ontario. As the oldest sister of 6 girls, I\'ve had a passion for encouraging and inspiring young girls to get interested in and follow a STEM path. It was a treat to get to see the girls\' faces light up when they realized that some of the most essential artistic UX skills were skills <a href="https://twitter.com/LadyCarni/status/655469926040383488" target="_blank" rel="noreferrer">they already possessed</a>! This was certainly one of the most rewarding little events I\'d participated in.',
+          description: 'I was thrilled to be asked to share my UX skills for the first time at this mini-con hosted by the YWCA in Cambridge, Ontario. As the oldest sister of 6 girls, I\'ve had a passion for encouraging and inspiring young girls to get interested in and follow a STEM path. It was a treat to get to see the girls\' faces light up when they realized that some of the most essential artistic UX skills were skills [they already possessed](https://twitter.com/LadyCarni/status/655469926040383488)! This was certainly one of the most rewarding little events I\'d participated in.',
           year: '2015'
         },
         {
@@ -211,7 +209,7 @@ const About = () => {
           type: 'community',
           title: 'Creator: Gary the Bear',
           image: garyBear,
-          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own <a href="https://twitter.com/bearwithgary" target="_blank" rel="noreferrer">Twitter account</a>, and posed as his own personality online.<br /><br />Gary was <a href="https://twitter.com/bearwithgary/status/1022276833205731330/photo/1" target="_blank" rel="noreferrer">adopted</a> by <a href="https://twitter.com/bearwithgary/status/889851070436044800/photo/1" target="_blank" rel="noreferrer">a few friends</a>, and ended up being passed around throughout the conference, and started an unofficial, <a href="https://twitter.com/bearwithgary/status/889630236224008192/photo/1" target="_blank" rel="noreferrer">annual tradition</a> at Laracon, and <a href="https://twitter.com/bearwithgary/status/1022882695817256960/photo/1" target="_blank" rel="noreferrer">always</a> brought <a href="https://twitter.com/bearwithgary/status/1154088952120381442/photo/1" target="_blank" rel="noreferrer">lots of laughs</a>.',
+          description: 'In a moment of inspiration (and no small amount of frivolity), I bought a giant bear coat and decided he would live in the Vehikl office as our unofficial mascot. I named him Gary the Bear (in honor of a well-liked client at the time). Gary was given his own [Twitter account](https://twitter.com/bearwithgary), and posed as his own personality online.\n\nGary was [adopted](https://twitter.com/bearwithgary/status/1022276833205731330/photo/1) by [a few friends](https://twitter.com/bearwithgary/status/889851070436044800/photo/1), and ended up being passed around throughout the conference, and started an unofficial, [annual tradition](https://twitter.com/bearwithgary/status/889630236224008192/photo/1) at Laracon, and [always](https://twitter.com/bearwithgary/status/1022882695817256960/photo/1) brought [lots of laughs](https://twitter.com/bearwithgary/status/1154088952120381442/photo/1).',
           year: '2015'
         },
         {
@@ -264,7 +262,7 @@ const About = () => {
           type: 'speaker',
           title: 'Speaker, Laracon EU: "Project Utopia" (Amsterdam)',
           image: laraconEu2016,
-          description: 'This was my first big <a href="https://www.youtube.com/watch?v=WARtjv330mg" target="_blank" rel="noreferrer">conference talk</a>. The talk was jointly given with Jesse O\'Brien on a topic we called Project Utopia; how to run a successful software project. We had been successfully running software projects for several years, and had also seen several mistakes others would make, that we felt we could help alleviate with a few practical and applicable tips. This talk was recreated and published on Medium as <a href="https://medium.com/vehikl-news/running-better-software-projects-c589f017c63f" target="_blank" rel="noreferrer">an article</a> for those who didn\'t see the talk.',
+          description: 'This was my first big [conference talk](https://www.youtube.com/watch?v=WARtjv330mg). The talk was jointly given with Jesse O\'Brien on a topic we called Project Utopia; how to run a successful software project. We had been successfully running software projects for several years, and had also seen several mistakes others would make, that we felt we could help alleviate with a few practical and applicable tips. This talk was recreated and published on Medium as [an article](https://medium.com/vehikl-news/running-better-software-projects-c589f017c63f) for those who didn\'t see the talk.',
           year: '2016'
         },
         {
@@ -277,7 +275,7 @@ const About = () => {
           type: 'speaker',
           title: 'Speaker, Ladies that UX: "Pairing with Devs/Designers" (London, ON)',
           image: devDesign,
-          description: 'At a local UX meetup, I gave <a href="https://youtu.be/jKjPE0hG5oU?t=1802" target="_blank" rel="noreferrer">a brief talk</a> on how to pair program for developers and designers. The concept of cross-functional teams can be controversial in general, but the concept of the two disciplines actually working alongside one another has ruffled a few feathers in the community over the years. This talk was designed to shed light on how to break down the walls between the disciplines so that the product you\'re both designing and building ends up better.',
+          description: 'At a local UX meetup, I gave [a brief talk](https://youtu.be/jKjPE0hG5oU?t=1802) on how to pair program for developers and designers. The concept of cross-functional teams can be controversial in general, but the concept of the two disciplines actually working alongside one another has ruffled a few feathers in the community over the years. This talk was designed to shed light on how to break down the walls between the disciplines so that the product you\'re both designing and building ends up better.',
           year: '2016'
         },
       ]
@@ -287,11 +285,6 @@ const About = () => {
       year: '2017',
       events: [
         {
-          id: '1448592f-adbe-47c7-9afb-3d961389da17',
-          type: 'job',
-          title: 'Promotion: UX Developer (Vehikl)',
-        },
-        {
           id: '43b98251-ff3d-4d36-a5fc-dca7ee7bf0e3',
           type: 'community',
           title: 'Join Technical Chats for Women (Kitchener)',
@@ -300,8 +293,8 @@ const About = () => {
           id: 'e0b6bd30-4ba3-45fc-99bf-997bff06de53',
           type: 'speaker',
           title: 'Panelist, Future Female Techmakers Conference',
-          image: null,
-          description: 'I was invited to speak on a panel of women from varying STEM fields for an audience of grade 9 - 12 high school and undergraduate students. The panel included a 60 minute discussion and a 20 minute Q&A from audience members.<br/><br/>The annual Future Female Techmakers Conference (FFTC) aims to teach women how to be effective mentors, provides female role models to young women interested in the tech industry, and creates lasting meaningful connections that will support all of the participants in their journey towards becoming female techmakers.',
+          image: stockMic,
+          description: 'I was invited to speak on a panel of women from varying STEM fields for an audience of grade 9 - 12 high school and undergraduate students. The panel included a 60 minute discussion and a 20 minute Q&A from audience members.\n\nThe annual Future Female Techmakers Conference (FFTC) aims to teach women how to be effective mentors, provides female role models to young women interested in the tech industry, and creates lasting meaningful connections that will support all of the participants in their journey towards becoming female techmakers.',
           year: '2017'
         },
         {
@@ -309,7 +302,7 @@ const About = () => {
           type: 'community',
           title: 'Attend Laracon EU (Amsterdam)',
           image: laraconEu2017,
-          description: 'This was my third time attending this conference, as a representative of Vehikl; a loyal sponsor of the conference. This conference gave me the opportunity to meet up with our Laravel counterparts in Europe that wouldn\'t be able to make the trip to Laracon US every year.<br /><br />This year I\'d made a <a href="https://twitter.com/LadyCarni/status/902211456283930629" target="_blank" rel="noreferrer">meme</a> out of the celebrity status of Taylor Otwell (the creator of Laravel), so I spent the sponsor dinner <a href="https://www.instagram.com/p/BYdF75FjbeJ/" target="_blank" rel="noreferrer">pretending to be paparazzi</a>. This community is always up for a good laugh.',
+          description: 'This was my third time attending this conference, as a representative of Vehikl; a loyal sponsor of the conference. This conference gave me the opportunity to meet up with our Laravel counterparts in Europe that wouldn\'t be able to make the trip to Laracon US every year.\n\nThis year I\'d made a [meme](https://twitter.com/LadyCarni/status/902211456283930629) out of the celebrity status of Taylor Otwell (the creator of Laravel), so I spent the sponsor dinner [pretending to be paparazzi](https://www.instagram.com/p/BYdF75FjbeJ/). This community is always up for a good laugh.',
           year: '2017'
         },
         {
@@ -357,7 +350,7 @@ const About = () => {
           type: 'community',
           title: 'Attend Codemash (Sandusky, OH)',
           image: codemash,
-          description: 'Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it\'s impossible to get bored during this event.<br />When you aren\'t buzzing with excitement from the last talk you watched, you\'re looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America\'s largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place.',
+          description: 'Even after a few trips to Sandusky for Codemash, this conference never fails to deliver. Tons of tracks, across a huge variety of topics, to appeal to almost every discipline in software, with top tier speakers, it\'s impossible to get bored during this event.\n\nWhen you aren\'t buzzing with excitement from the last talk you watched, you\'re looking forward to chatting with the seemingly endless hallways of sponsors, with your eye on North America\'s largest indoor water park located right at the venue... which also happens to be where the incredibly fun after party takes place.',
           year: '2018',
         },
         {
@@ -392,7 +385,7 @@ const About = () => {
           type: 'speaker',
           title: 'Author, "Practical UX"',
           image: PracticalUx,
-          description: 'Together, with five experienced UX professionals, designers, and authors, this <a href="https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d" target="_blank" rel="noreferrer">series</a> explores some favorite tools and habits for applying usability in everyday work. It includes a set of free downloadable worksheets and posters.',
+          description: 'Together, with five experienced UX professionals, designers, and authors, this [series](https://medium.com/@LadyCarni/practical-ux-the-perspective-d8908313336d) explores some favorite tools and habits for applying usability in everyday work. It includes a set of free downloadable worksheets and posters.',
           year: '2019',
         },
         {
@@ -404,17 +397,11 @@ const About = () => {
           year: '2019',
         },
         {
-          id: '5c1c0249-9590-4e3b-a5c7-c3301094381c',
-          type: 'job',
-          title: 'Product Manager: North America (Flyt; Skip the Dishes)',
-
-        },
-        {
           id: 'ef0fa120-d967-4a57-8251-e9d1d5e0537e',
           type: 'community',
           title: 'Organizer, DevLondon (London, ON)',
           image: devLondon,
-          description: 'I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. <a href="https://devldn.ca/" target="_blank" rel="noreferrer">Dev London</a> is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community.',
+          description: 'I volunteered to take over the events of this local community group that had become quiet and relatively inactive in London, Ontario. I renamed it to give it a fresh face. [Dev London](https://devldn.ca/) is a peer-to-peer group designed to provide insights and inspiration through leadership and networking with the local tech community.',
           year: '2019',
         },
       ]
@@ -436,41 +423,69 @@ const About = () => {
       ]
     },
     {
-      id: '90724e2b-f611-4fdb-a3c9-e222819cfeeb',
-      year: '2021',
+      id: '811a300d-5dad-4fce-badc-a82054fade8b',
+      year: 'Vehikl (formerly ChromeMedia)',
       events: [
         {
-          id: 'ce19e51f-a73a-405b-ad87-1591ac0a6124',
+          id: 'cb686e97-2463-40dc-b9e3-90998bac056a',
           type: 'job',
-          title: 'Lead UX Designer',
-          year: '2021'
+          title: 'UX Designer; Acting UX Lead',
+          image: stockScreen,
+          description: 'Delivered impactful digital products across industries by leading UX design for startups, nonprofits, and enterprise clients, resulting in scalable applications and stronger client engagement.\n\nEstablished UX as a core offering within Vehikl, influencing how development teams collaborated with clients and elevating the company\'s profile as a full-service partner beyond engineering.\n\nCreated design systems, IA frameworks, and user-centered workflows that reduced development rework and enabled faster iteration cycles.\n\nAuthored thought leadership articles and case studies (2015-2019) that showcased Vehikl\'s design expertise, strengthening industry reputation and contributing to new client acquisition.\n\nMentored developers and junior designers on design thinking and usability practices, improving cross-functional collaboration and raising overall design maturity inside the company.',
+          year: '2012 - 2019'
         },
-        {
-          id: 'd8a5c6c3-a4c3-46ed-8242-01855f44340b',
-          type: 'job',
-          title: 'UX Design Tech Lead (Arctic Wolf)',
-          image: arcticWolf,
-          description: 'This role starts a new chapter in my career, as a tech lead within the design sphere. This role also marks my first experience in the cybersecurity industry.',
-          year: '2021'
-        }
       ]
     },
     {
-      id: '37ce47d5-7666-4633-bb1f-aee41212836a',
-      year: '2022',
+      id: 'fe08895f-4701-4918-bb2b-a9554cae8fbc',
+      year: 'Flyt (Just Eat Group)',
       events: [
+        {
+          id: 'a35e13f8-c1dd-47ad-af4d-2ccdc82b031a',
+          type: 'job',
+          title: 'Product Manager: North America',
+          image: stockBike,
+          description: 'Shipped [Connect API](/portfolio/connect-api), a scalable integration platform that enabled restaurants to onboard new delivery partners in weeks instead of months, reducing operational overhead and accelerating revenue opportunities across North American markets.',
+          year: '2019 - 2021'
+        },
+      ]
+    },
+    {
+      id: '90724e2b-f611-4fdb-a3c9-e222819cfeeb',
+      year: 'Arctic Wolf',
+      events: [
+        {
+          id: 'bc271fdc-0d71-48b1-a188-c5c48b72344c',
+          type: 'job',
+          title: 'Senior UX Manager',
+          image: stockDesk,
+          description: 'Scaled governance and adoption of [Fenrir design system](/portfolio/design-system)\n\nIncreased adoption from ~33% to 95% of product teams\n\nReduced design delivery from 2-5 weeks to 1-3 weeks',
+          year: '2025 - Current'
+        },
         {
           id: '439cdee2-9d2c-479a-9a67-d72fce28d158',
           type: 'job',
-          title: 'UX Manager (Arctic Wolf)',
-          description: 'I am the principal strategist overseeing UX integration in organization-wide planning endeavors. As the UX lead, I orchestrate the planning, design, and implementation of our internal design system, serving both designers and developers. Additionally, I mentor the UX team, fostering skill enhancement and advocating for their professional growth. I excel in identifying process enhancement opportunities and implementing streamlined solutions through cross-departmental collaboration. I am the lead responsible for Information Architecture. The champion for organizational UX maturity through coaching and knowledge sharing. The UX coach for development teams; teaching developers to embrace user-driven thinking while fostering faster feedback cycles and empowering teams to make informed decisions autonomously. Amplification of best practices, tips for user-first thinking, problem definitions, workshop facilitation, etc. UX due diligence through documentation of user flow breakdowns, screenshots, product/feature relationships, and terminology definitions; ensuring a broad understanding of the entire product suite and increased alignment among all team members from all departments. Implementation of practical UX strategies; enhancing efficiency, transparency, and accountability within the team. Collaborator with Process Architects to include UX criteria in the end-to-end results of the software design process; improving consistency and quality throughout the design and implementation of new features.',
-          year: '2022 - Current'
-        },
+          title: 'UX Manager',
+          image: stockDesk,
+          description: 'Launched Fenrir v1 design system and governance model\n\nReduced design delivery from months to weeks\n\nPartnered with product leaders to integrate UX into roadmap planning',
+          year: '2021-2022'
+        }
       ]
     }
   ];
 
-  const[selectedItemId, setSelectedItemId] = useState(null);
+  const getMostRecentDetailItem = () => {
+    for (let i = timeline.length - 1; i >= 0; i--) {
+      const timelineItem = timeline[i];
+      const lastEventWithDescription = timelineItem.events.find(event => event.description);
+      if (lastEventWithDescription) {
+        return lastEventWithDescription.id;
+      }
+    }
+    return null;
+  };
+
+  const [selectedItemId, setSelectedItemId] = useState(getMostRecentDetailItem());
 
   let detailItem;
   timeline.forEach(item => {
@@ -493,41 +508,55 @@ const About = () => {
       </Helmet>
       <div className="bio">
         <div className="inline">
-          <img src={caryn1} alt="Caryn Farvour portrait"/>
+          <img src={caryn1} alt="Caryn Farvour portrait" />
         </div>
         <div className="bio-content">
           <h1>Hi, I'm Caryn</h1>
           <p className="help">(pronounced kuh-<i>RIN</i>; like Corinne)</p>
-          <p>As a dedicated leader of cross-functional teams, I'm passionate about collaborating with users to craft elegant solutions that address tangible needs. I firmly believe that effective UX and UI design demands a strong grasp of front-end development and a high level of collaboration between disciplines. Beyond honing my skills, I find joy in delving into the realms of behavioral cognition, neuroscience, and psychology. Outside of work, you'll often find me actively engaged in skills-based volunteering, community initiatives, and advocating for STEM education.</p>
+          <p>I'm a UX leader focused on design systems, information architecture, and cross-functional delivery. I partner closely with product and engineering to ship scalable patterns that speed design, reduce rework, and improve consistency across complex suites. I also mentor teams and leaders, coach developers on user-first practices, and contribute to the UX community through talks and workshops.</p>
+          <h3>Quick Facts</h3>
+          <ul>
+            <li><b>Current role:</b> Senior UX Manager at Arctic Wolf</li>
+            <li><b>Core strengths:</b> Design Systems, UX Strategy, Information Architecture, Team Leadership, Cross-functional Collaboration</li>
+            <li><b>Community:</b> Speaker and contributor at Laracon, Fluxible, and other UX/Dev conferences</li>
+          </ul>
+          <h3>Community & Speaking Highlights</h3>
+          <ul>
+            <li><b>Laracon (2014-2018):</b> Speaker and recurring participant</li>
+            <li><b>Fluxible (2013-2015):</b> Attendee and workshop participant</li>
+            <li><b>Practical UX Series (2019):</b> Co-authored developer-friendly UX resources</li>
+            <li><b>STEMGyrls Workshop (2015):</b> Facilitated UX intro session for high-schoolers</li>
+            <li><b>Local Meetups:</b> Speaker at UX Waterloo and other software meetups</li>
+          </ul>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)</a>
         </div>
       </div>
       <div className="timeline">
-        <h2>History</h2>
+        <h2>Career Timeline</h2>
         <div className="timeline-content">
           <div className="timeline">
             <div className="path"></div>
             <ul>
-              {timeline.reverse().map(({id, year, events}) => (
+              {timeline.reverse().map(({ id, year, events }) => (
                 <div className="year-section" key={id}>
                   <li className="year-title">{year}</li>
-                  {events.map(({id, type, title, description}) => {
+                  {events.map(({ id, type, title, description }) => {
 
                     const lineClass = `${type} ${description ? "more-info" : ""} ${detailItem && selectedItemId === id ? "active" : ""}`
 
                     return (
-                      <li 
-                        key={year+id}
+                      <li
+                        key={year + id}
                         className={lineClass}
                         onClick={() => description ? setSelectedItemId(id) : null}>
                         <div className="event">
                           {title}
                         </div>
 
-                        { description ? 
-                        (<div className="more">
-                          <FontAwesomeIcon icon={faCommentLines} />
-                        </div>) : null }
+                        {description ?
+                          (<div className="more">
+                            <FontAwesomeIcon icon={faCommentLines} />
+                          </div>) : null}
                       </li>
                     )
                   })}
@@ -535,14 +564,23 @@ const About = () => {
               ))}
             </ul>
           </div>
-          { detailItem && 
-            <div className="detail">
-              <button onClick={() => setSelectedItemId(null)}>close <FontAwesomeIcon icon={faTimes} /></button>
-              <h3>{detailItem.title} ({detailItem.year})</h3>
-              { detailItem.image ? (
-                <img src={detailItem.image} alt={detailItem.title}/>) : null
-              }
-              <p dangerouslySetInnerHTML={{__html: detailItem.description}}></p>
+          {detailItem &&
+            <div className="about-detail">
+              {detailItem.image && (
+                <img className="about-detail-profile-img" src={detailItem.image} alt={detailItem.title} />
+              )}
+              <div className="about-detail-description">
+                <div className="description-content">
+                  <ReactMarkdown
+                    components={{
+                      a: CustomLink
+                    }}
+                  >
+                    {detailItem.description}
+                  </ReactMarkdown>
+                  <p>({detailItem.year})</p>
+                </div>
+              </div>
             </div>
           }
         </div>

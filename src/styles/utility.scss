@@ -34,7 +34,7 @@
   margin-top: 0;
 }
 
-p > code {
+p>code {
   background: rgba($primary, .25);
   padding: 0 .25em;
 }
@@ -64,7 +64,7 @@ p > code {
 }
 
 .shadow {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
   @media screen and (max-width: $small) {
     box-shadow: none;
@@ -141,13 +141,13 @@ p > code {
         @media screen and (max-width: ($small - 1)) {
           height: 50%;
         }
-  
+
         @media screen and (min-width: $small) {
           height: 120px;
         }
       }
     }
-  
+
     &.left {
       &::after {
         background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
@@ -159,7 +159,7 @@ p > code {
         }
       }
     }
-  
+
     &::after {
       display: block;
       content: '';
@@ -222,6 +222,26 @@ p > code {
   }
 }
 
+.gradient-pop {
+  background: linear-gradient(-45deg, $synth1, $synth2, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .feature {
   align-items: center;
   display: flex;
@@ -235,14 +255,14 @@ p > code {
   &.bottom {
     .description {
       align-self: flex-end;
-      width: 50%;
+      width: 70%;
     }
   }
 
   &.top {
     .description {
       align-self: flex-start;
-      width: 50%;
+      width: 70%;
     }
   }
 
@@ -264,6 +284,7 @@ p > code {
     justify-content: space-between;
 
     &.portfolio {
+      gap: 16px;
       margin-top: 0;
 
       @media screen and (max-width: $small) {
@@ -282,7 +303,8 @@ p > code {
         }
       }
 
-      .title, .description {
+      .title,
+      .description {
         width: 100%;
       }
 
@@ -316,7 +338,9 @@ p > code {
     }
 
     @media screen and (min-width: ($small + 1)) and (max-width: $medium) {
-      .title, .description {
+
+      .title,
+      .description {
         width: 50%;
       }
 
@@ -326,7 +350,7 @@ p > code {
     }
 
     @media screen and (min-width: ($medium + 1)) and (max-width: $large) {
-      width: 80vw;
+      width: 90vw;
 
       h2 {
         font-size: 2.5em;
@@ -334,9 +358,9 @@ p > code {
     }
 
     @media screen and (min-width: ($large + 1)) {
-      width: $content-width;
+      width: 80%;
     }
-    
+
     .title {
       display: flex;
       flex-direction: column;
@@ -385,17 +409,21 @@ p > code {
     font-weight: 100;
     content: '\f178';
     margin-left: .5em;
-    color: $primary;
+    color: $synth2;
     vertical-align: middle;
   }
 }
 
 .breadcrumb {
-  background: #eee;
-  padding: 1.5em;
+  background: $synth4;
+  padding: 1.5em 50px;
   font-family: $type-content;
-  color: $content;
   font-size: .85em;
+  color: $synth3;
+  margin-top: 50px;
+  top: 50px;
+  position: sticky;
+  z-index: 4; // resting above portfolio header
 
   &.creative-view {
     background: transparent;
@@ -404,7 +432,7 @@ p > code {
     margin: 0 auto;
     padding: 1.5em 0;
   }
-  
+
   ul {
     list-style-type: none;
     padding: 0;
@@ -420,35 +448,71 @@ p > code {
       }
 
       &:last-child {
-        font-weight: 700;
+        font-weight: 500;
+
+        a {
+          text-decoration: none;
+        }
 
         &::after {
           display: none;
           visibility: hidden;
         }
       }
+
+      a {
+        color: $synth2
+      }
     }
   }
 }
 
 .ah-ha {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+
   &::before {
+    flex-shrink: 0;
     font-family: $icon;
-    display: inline-block;
+    color: $primary;
     font-size: 1.25em;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-weight: 100;
-    content: '\f671';
-    margin-right: .5em;
-    color: $primary;
-    vertical-align: top;
+    margin-right: 1rem;
+    margin-top: 0.125rem;
+  }
+
+  .lesson-content {
+    h3 {
+      line-height: 1.75em;
+      margin-bottom: .25em;
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  &.lesson {
+    &::before {
+      content: '\f671';
+    }
+  }
+
+  &.pain {
+    &::before {
+      content: '\f757';
+    }
   }
 
   i {
-    background: rgba($primary, .5);
+    background: rgba($synth2, .5);
   }
 }
 
@@ -468,6 +532,7 @@ p > code {
 .quote {
   border-left: 3px solid rgba($grey3, .5);
   padding-left: 1em;
+
   p {
     color: $content;
 

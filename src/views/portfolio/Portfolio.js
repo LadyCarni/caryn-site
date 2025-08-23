@@ -4,7 +4,7 @@ import Projects from 'components/projects';
 
 const Portfolio = () => {
   return (
-    <div className="light pattern feature portfolio">
+    <div className="feature portfolio">
       <Helmet>
         <title>Caryn Farvour</title>
         <meta property="og:title" content="Caryn Farvour" />
