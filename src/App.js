@@ -30,9 +30,12 @@ const Site = () => {
     <Router>
       <ScrollToTop />
       <div className="header row">
-        <span className="brand">
-          <Link to="/">Caryn Farvour</Link>
-        </span>
+        <div className="brand">
+          <Link to="/">
+            <div className="name">Caryn Farvour</div>
+            <div className="icon"></div>
+          </Link>
+        </div>
         <div className="nav-container">
           <Menu />
         </div>
