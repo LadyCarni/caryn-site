@@ -29,7 +29,7 @@ code {
 
 a {
   &:visited {
-    color: darken($primary, 20%);
+    color: $synth8;
   }
 }
 
@@ -152,10 +152,11 @@ h2 {
 
 .brand {
   font-size: 32px;
+  margin-left: 50px;
   min-width: 160px;
 
   @media screen and (max-width: $small) {
-    margin-left: 1em;
+    margin-left: 50px;
   }
 
   a {
@@ -172,7 +173,6 @@ h2 {
   font-family: $type-content;
   height: 50px;
   justify-content: space-between;
-  padding: 0 50px;
   position: fixed;
   top: 0;
   width: 100%;

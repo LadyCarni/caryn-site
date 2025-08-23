@@ -3,7 +3,7 @@ import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
 import ShortbreadCookie from 'assets/creative/recipes/recipe-shortbread.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
@@ -48,7 +48,7 @@ const Shortbread = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={ShortbreadCookie} alt="shortbread cookies"/>
+              <img src={ShortbreadCookie} alt="shortbread cookies" />
             </div>
 
             <Ingredients media="mobile" />

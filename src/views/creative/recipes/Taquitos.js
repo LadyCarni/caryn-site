@@ -3,7 +3,7 @@ import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
 import Taquitos from 'assets/creative/recipes/recipe-buffalo-taquitos.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2 className="border">Ingredients</h2>
@@ -48,7 +48,7 @@ const TaquitoRecipe = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={Taquitos} alt="finished buffalo chicken taquitos"/>
+              <img src={Taquitos} alt="finished buffalo chicken taquitos" />
             </div>
 
             <Ingredients media="mobile" />

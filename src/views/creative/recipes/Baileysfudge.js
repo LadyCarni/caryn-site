@@ -3,7 +3,7 @@ import Breadcrumb from 'components/breadcrumb';
 import { CreativeRoutes } from "../index";
 import BaileysFudge from 'assets/creative/recipes/recipe-baileys-fudge.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2 className="border">Ingredients</h2>
@@ -46,7 +46,7 @@ const Fudge = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={BaileysFudge} alt="baileys fudge"/>
+              <img src={BaileysFudge} alt="baileys fudge" />
             </div>
 
             <Ingredients media="mobile" />

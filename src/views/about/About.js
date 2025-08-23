@@ -458,7 +458,7 @@ const About = () => {
           type: 'job',
           title: 'Senior UX Manager',
           image: stockDesk,
-          description: 'Scaled governance and adoption of Fenrir v2 design system\n\nIncreased adoption from ~33% to 95% of product teams\n\nReduced design delivery from 2-5 weeks to 1-3 weeks',
+          description: 'Scaled governance and adoption of [Fenrir design system](/portfolio/design-system)\n\nIncreased adoption from ~33% to 95% of product teams\n\nReduced design delivery from 2-5 weeks to 1-3 weeks',
           year: '2025 - Current'
         },
         {
@@ -513,11 +513,11 @@ const About = () => {
           </ul>
           <h3>Community & Speaking Highlights</h3>
           <ul>
-            <li><b>Laracon (2014-2018):</b> Speaker and recurring participant; introduced dev community to core UX practices</li>
-            <li><b>Fluxible (2013-2015):</b> Attendee and workshop participant; built local UX connections</li>
-            <li><b>Practical UX Series (2019):</b> Co-authored developer-friendly UX resources with worksheets, adopted in dev teams globally</li>
-            <li><b>STEMGyrls Workshop (2015):</b> Facilitated UX intro session for high-school participants</li>
-            <li><b>Local Meetups:</b> Speaker at UX Waterloo and other design/dev meetups</li>
+            <li><b>Laracon (2014-2018):</b> Speaker and recurring participant</li>
+            <li><b>Fluxible (2013-2015):</b> Attendee and workshop participant</li>
+            <li><b>Practical UX Series (2019):</b> Co-authored developer-friendly UX resources</li>
+            <li><b>STEMGyrls Workshop (2015):</b> Facilitated UX intro session for high-schoolers</li>
+            <li><b>Local Meetups:</b> Speaker at UX Waterloo and other software meetups</li>
           </ul>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)</a>
         </div>

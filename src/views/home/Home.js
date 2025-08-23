@@ -5,6 +5,9 @@ import { faLongArrowDown, faShovel, faPeopleCarry, faUsersClass, faDoorOpen, faH
 // import triangles from 'assets/tri-large.svg'; 
 import PortfolioFeatures from 'components/portfolioFeatures';
 import knakWires from 'assets/portfolio/knak-wires.jpg';
+import Stickers from "assets/portfolio/Fenrir Stickers.jpg";
+
+
 const Home = () => {
   return (
     <>
@@ -47,6 +50,16 @@ const Home = () => {
           <div className="flex row">
             <PortfolioFeatures />
           </div>
+        </div>
+      </div>
+      <div className="dark feature center filter headline">
+        <div className="headline-image">
+          <img src={Stickers} alt="Fenrir design system" />
+        </div>
+        <div className="headline overlay">
+          <h3>Fenrir Design System: A Case Study</h3>
+          <h2>Design by System, Not by Accident</h2>
+          <Link to="/portfolio/design-system" className="arrow-link block">View case study</Link>
         </div>
       </div>
       <div className="dark feature center filter headline">

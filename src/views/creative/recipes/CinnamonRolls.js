@@ -5,7 +5,7 @@ import CinnamonRollFrosted from 'assets/creative/recipes/cinnamon-rolls-frosted.
 import CinnamonRollBaking from 'assets/creative/recipes/cinnamon-rolls-baking.jpg';
 import CinnamonRollBaked from 'assets/creative/recipes/cinnamon-rolls-baked.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
@@ -19,7 +19,7 @@ const Ingredients = ( {media} ) => {
         <li><span className="amount">3 cups</span>bread flour, plus more for dusting</li>
         <li>3/4 tsp</li>salt
       </ul>
-      
+
       <h3>Filling</h3>
       <ul>
         <li><span className="amount">2/3 cups</span>dark brown sugar, lightly packed</li>
@@ -66,7 +66,7 @@ const CinnamonRolls = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={CinnamonRollFrosted} alt="cinnamon rolls"/>
+              <img src={CinnamonRollFrosted} alt="cinnamon rolls" />
             </div>
 
             <Ingredients media="mobile" />
@@ -89,15 +89,15 @@ const CinnamonRolls = () => {
 
               <p><span className="instruction-step stir-step">Step 7.</span> Cut into 1 inch sections with a serrated knife. You should get 9 large pieces.</p>
 
-              <img src={CinnamonRollBaking} alt="cinnamon rolls baking"/>
+              <img src={CinnamonRollBaking} alt="cinnamon rolls baking" />
 
               <p><span className="instruction-step stir-step">Step 8.</span> Place cinnamon rolls in a greased 9x9 inch baking pan. You may also line the pan with parchment paper. Cover with plastic wrap and a warm towel and let rise again for 30-45 minutes.</p>
 
-              <img src={CinnamonRollBaked} alt="cinnamon rolls baked"/>
+              <img src={CinnamonRollBaked} alt="cinnamon rolls baked" />
 
               <p><span class="instruction-step cook-step">Step 9.</span> Preheat oven to 350°F. Remove plastic wrap and towel and bake cinnamon rolls for 20-25 minutes or until just slightly golden brown on the edges. Do your best to under-bake them slightly so they stay soft in the middle.</p>
 
-              <img src={CinnamonRollFrosted} alt="cinnamon rolls"/>
+              <img src={CinnamonRollFrosted} alt="cinnamon rolls" />
 
               <p><span class="instruction-step serve-step">Step 10.</span> Allow them to cool for 5-10 minutes before frosting. In the bowl of an electric mixer, combine cream cheese, butter, powdered sugar and vanilla extract. Beat until smooth and fluffy. Spread over cinnamon rolls and serve immediately. Makes 9 cinnamon rolls.</p>
             </div>

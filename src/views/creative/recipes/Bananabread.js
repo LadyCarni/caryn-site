@@ -5,7 +5,7 @@ import bananaBread1 from 'assets/creative/recipes/banana-bread1.jpg'
 import bananaBread2 from 'assets/creative/recipes/banana-bread2.jpg'
 import bananaBread3 from 'assets/creative/recipes/banana-bread3.jpg'
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2>Ingredients</h2>
@@ -72,7 +72,7 @@ const BananaBread = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={bananaBread2} alt="Banana Bread french toast"/>
+              <img src={bananaBread2} alt="Banana Bread french toast" />
             </div>
 
             <Ingredients media="mobile" />
@@ -82,12 +82,12 @@ const BananaBread = () => {
               <p><span className="instruction-step prep-step">Step 1.</span> Preheat oven to 350°F. Grease a loaf pan and set aside.</p>
 
               <p><span className="instruction-step stir-step">Step 2.</span>Cream bananas, shortening, and eggs till smooth.</p>
-              
+
               <p><span className="instruction-step stir-step">Step 3.</span>Stir in the rest till just combined.</p>
-              
+
               <p><span className="instruction-step cook-step">Step 4.</span>Pour into loaf pan. Bake for 50-60 minutes, or till a toothpick in the middle comes out clean. Let cool (~1 hour), slice into 12 equal pieces.</p>
 
-              <img src={bananaBread1} alt="banana bread"/>
+              <img src={bananaBread1} alt="banana bread" />
 
               <p><span className="instruction-step stir-step">Step 5.</span>Heat a wide frying pan or griddle on medium. Grease with your preferred ingredient (butter, shortening, coconut oil).</p>
 
@@ -99,7 +99,7 @@ const BananaBread = () => {
 
               <p><span className="instruction-step stir-step">Step 9.</span>In a large bowl, using a hand mixer, beat all ingredients until fully combined and butter is slightly whipped.</p>
 
-              <img src={bananaBread3} alt="cinnamon butter"/>
+              <img src={bananaBread3} alt="cinnamon butter" />
 
               <p><span className="instruction-step stir-step">Step 10.</span>Place butter in a ramekin and garnish with a sprinkle of cinnamon. Slather on everything.</p>
             </div>

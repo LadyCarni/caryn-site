@@ -4,7 +4,7 @@ import { CreativeRoutes } from "../index";
 import Snickerdoodle from 'assets/creative/recipes/recipe-snickerdoodle3.jpg';
 import SnickerdoodlePrep from 'assets/creative/recipes/recipe-snickerdoodle2.jpg';
 
-const Ingredients = ( {media} ) => {
+const Ingredients = ({ media }) => {
   return (
     <div className={`${media} recipe-card`}>
       <h2 className="border">Ingredients</h2>
@@ -51,7 +51,7 @@ const SnickerdoodleCookie = () => {
             </div>
 
             <div className="recipe-cover">
-              <img src={Snickerdoodle} alt="finished Snickerdoodle cookies"/>
+              <img src={Snickerdoodle} alt="finished Snickerdoodle cookies" />
             </div>
 
             <Ingredients media="mobile" />
@@ -70,7 +70,7 @@ const SnickerdoodleCookie = () => {
 
               <p><span className='instruction-step prep-step'>Step 6.</span> Roll dough into 1 inch balls. Rolls balls in sugar and cinnamon mixture to coat.</p>
 
-              <img src={SnickerdoodlePrep} alt="preparing Snickerdoodle cookies"/>
+              <img src={SnickerdoodlePrep} alt="preparing Snickerdoodle cookies" />
 
               <p><span className='instruction-step prep-step'>Step 7.</span> Place dough balls 2 inches apart on your cookie sheet.</p>
 

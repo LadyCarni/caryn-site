@@ -5,7 +5,6 @@ import timeline from "assets/portfolio/timeline.png";
 import InformationArchitecture from "assets/portfolio/IA preview.png";
 import Fenrirv1Docs from "assets/portfolio/Fenrir v1 docs.png";
 import FenrirDoDont from "assets/portfolio/Fenrirdodont.png";
-import FenrirStickers from "assets/portfolio/Fenrir Stickers.jpg";
 import FenrirRoadmap from "assets/portfolio/fenrir roadmap.png";
 import FenrirComponentBreakdown from "assets/portfolio/fenrir component breakdown.png";
 import FenrirPatternExample from "assets/portfolio/pattern example.png";
@@ -13,12 +12,13 @@ import FenrirHowto from "assets/portfolio/Fenrir DataGrid demo.mp4";
 import FenrirComponents from "assets/portfolio/fenrir-components.png";
 import FenrirDesignSpeed from "assets/portfolio/fenrir-design-speed.png";
 import FenrirQuality from "assets/portfolio/quality-cards.png";
+import SplitHeader from "assets/portfolio/split-header.png";
 
 const CaseStudy = () => {
     return (
         <>
             <PortfolioHeader
-                headerImage={FenrirStickers}
+                headerImage={SplitHeader}
                 // routes={PortfolioRoutes}
                 imageAlt="placeholder"
                 headerTitle="Fenrir"

@@ -8,12 +8,12 @@ import lunaCover from 'assets/portfolio/luna-cover.png';
 import financialCover from 'assets/portfolio/financial-cover.png';
 import lifestyleCover from 'assets/portfolio/lifestyle-cover.jpg';
 import wireframeCover from 'assets/caryn5.jpg';
-import FenrirStickers from "assets/portfolio/Fenrir Stickers.jpg";
+import FenrirDocs from "assets/portfolio/fenrir-docs.png";
 
 const Projects = ({ match }) => {
   const gallery = [
     {
-      source: FenrirStickers,
+      source: FenrirDocs,
       title: "Fenrir Design System",
       slug: "design-system",
       category: "Design Systems, Product Design",

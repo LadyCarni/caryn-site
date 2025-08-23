@@ -4,12 +4,12 @@
 
 .contact-header {
   width: 100vw;
-  margin: 0 auto 2em;
+  margin: 60px auto 2em;
   max-width: 1200px;
 
   .header-image {
     display: block;
-    height: 300px;
+    height: 500px;
 
     img {
       object-fit: cover;
@@ -22,13 +22,13 @@
     display: block;
     width: 100%;
   }
-  
+
   .contact-headline {
     font-family: $type-content;
     text-align: center;
     margin-top: 2em;
     padding: 0 1em;
-  
+
     .pop {
       font-family: $type-headline;
       color: $primary;
@@ -54,7 +54,7 @@
   }
 
 
-  > div {
+  >div {
     flex: 1;
     padding: 2em;
     text-align: center;
@@ -82,7 +82,7 @@
         &:last-child {
           margin-right: 0;
         }
-        
+
         a {
           color: $primary-dark;
           align-items: center;
@@ -91,7 +91,6 @@
           text-decoration: none;
 
           &:hover {
-            font-weight: 700;
 
             svg {
               color: $primary;
