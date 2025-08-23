@@ -34,22 +34,22 @@ const Home = () => {
         <div className="section-divider"></div>
       </div>
       <div className="feature top feature-width feature-height">
-        <div className="feature-content flex column">
-          <div className="flex row">
-            <div className="title">
-              <h2>What I do</h2>
-            </div>
-            <div className="description">
-              <p>I'm a designer and creative leader focused on guiding thoughtful, strategy-driven design processes that deliver meaningful outcomes. I specialize in creating user-centered solutions that balance aesthetic simplicity with functional clarity, always aligned to the broader vision.</p>
-              <p>I lead with intention, merging creativity and strategy to ensure every project meets its goals while maintaining a strong, consistent visual identity. Collaboration and accessibility are at the core of my approach, helping teams align across perspectives and bring ideas to life with clarity and impact.</p>
-              <p>
-                <Link to="/portfolio" className="arrow-link block">View Caryn's work</Link>
-              </p>
-            </div>
+        <div className="feature-content">
+          <div className="title">
+            <h2>What I do</h2>
           </div>
-          <div className="flex row">
-            <PortfolioFeatures />
+          <div className="description">
+            <p>I'm a designer and creative leader focused on guiding thoughtful, strategy-driven design processes that deliver meaningful outcomes. I specialize in creating user-centered solutions that balance aesthetic simplicity with functional clarity, always aligned to the broader vision.</p>
+            <p>I lead with intention, merging creativity and strategy to ensure every project meets its goals while maintaining a strong, consistent visual identity. Collaboration and accessibility are at the core of my approach, helping teams align across perspectives and bring ideas to life with clarity and impact.</p>
+            <p>
+              <Link to="/portfolio" className="arrow-link block">View Caryn's work</Link>
+            </p>
           </div>
+        </div>
+      </div>
+      <div className="home-features feature bottom feature-width feature-height">
+        <div className="flex row">
+          <PortfolioFeatures />
         </div>
       </div>
       <div className="dark feature center filter headline">

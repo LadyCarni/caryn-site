@@ -10,6 +10,15 @@
   &.pattern {
     background: url('/assets/swirl-pattern.png');
   }
+
+  &.home-features {
+    margin-bottom: 2em;
+
+    @media screen and (max-width: $small) {
+      display: none;
+      visibility: hidden;
+    }
+  }
 }
 
 .feature-height {
@@ -294,6 +303,7 @@ p>code {
 
     @media screen and (max-width: $small) {
       flex-direction: column;
+      margin: 2em;
 
       .title {
         margin-bottom: 1.5em;
@@ -325,7 +335,7 @@ p>code {
       }
     }
 
-    @media screen and (max-width: $medium) {
+    @media screen and (min-width: $small) and (max-width: $medium) {
       padding: 2em;
     }
 
@@ -424,6 +434,10 @@ p>code {
   top: 50px;
   position: sticky;
   z-index: 4; // resting above portfolio header
+
+  @media screen and (max-width: $small) {
+    padding: 12px 25px;
+  }
 
   &.creative-view {
     background: transparent;

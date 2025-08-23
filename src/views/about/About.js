@@ -584,6 +584,40 @@ const About = () => {
             </div>
           }
         </div>
+
+        <div className="mobile-timeline">
+          <ul>
+            {timeline.map(({ id, year, events }) => (
+              <div className="year-section" key={id}>
+                <li className="year-title">{year}</li>
+                {events.map(({ id, type, title, description }) => {
+
+                  const lineClass = `${type} ${description ? "more-info" : ""} ${detailItem && selectedItemId === id ? "active" : ""}`
+
+                  return (
+                    <li
+                      key={year + id}
+                      className={lineClass}
+                      onClick={() => description ? setSelectedItemId(id) : null}>
+                      <div className="event">
+                        {title}
+                        <div className="description-content">
+                          <ReactMarkdown
+                            components={{
+                              a: CustomLink
+                            }}
+                          >
+                            {description}
+                          </ReactMarkdown>
+                        </div>
+                      </div>
+                    </li>
+                  )
+                })}
+              </div>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
