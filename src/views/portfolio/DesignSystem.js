@@ -147,14 +147,9 @@ const CaseStudy = () => {
                         <p>Another major factor in adoption was the formal contribution process introduced for UX designers. By creating a structured way for designers to propose new components or patterns, the process helped foster a sense of ownership and pride. Designers gained first-hand experience with how components need to scale, remain accessible, and support different product needs. This deeper understanding led to more thoughtful contributions and increased investment in the system's ongoing success.</p>
 
                         <p>To support learning and self-sufficiency, I created a series of short, async Figma tutorials by recording my screen and narrating quick walk-throughs based on team requests. These short videos cover practical scenarios, such as how to use our Page Templates, how to configure and adapt DataGrids, and how to work effectively with layout options in Figma. This content has helped make the system more approachable and removed blockers without requiring scheduled training.</p>
-                    </div>
 
-                    <div className="full-width">
-                        <video width="1000" height="600" controls src={FenrirHowto} alt="Figma how-to with Fenrir" />
-                        <span className="image-caption">Tutorial for using Fenrir in Figma</span>
-                    </div>
+                        <video width="100%" controls src={FenrirHowto} alt="Figma how-to with Fenrir" />
 
-                    <div className="article">
                         <p>Finally, leadership support played a significant role in adoption. Backing Fenrir as the expected standard for all product design across the company reinforced governance and elevated the system from a helpful resource to a core part of the product design process.</p>
 
                         <h2>Challenges & Lessons</h2>
