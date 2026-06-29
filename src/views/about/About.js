@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import caryn1 from 'assets/about/caryn-portrait.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentLines } from '@fortawesome/pro-light-svg-icons';
-import carynResume from 'assets/CarynFarvour_UXManager_Resume.pdf';
+import carynResume from 'assets/CarynHumphreysFarvour_Resume.pdf';
 import PracticalUx from 'assets/about/practicalux.png';
 import erieTalk from 'assets/caryn3.jpg';
 import devLondon from 'assets/portfolio/dev-london.jpg';
@@ -513,20 +513,14 @@ const About = () => {
         <div className="bio-content">
           <h1>Hi, I'm Caryn</h1>
           <p className="help">(pronounced kuh-<i>RIN</i>; like Corinne)</p>
-          <p>I'm a UX leader focused on design systems, information architecture, and cross-functional delivery. I partner closely with product and engineering to ship scalable patterns that speed design, reduce rework, and improve consistency across complex suites. I also mentor teams and leaders, coach developers on user-first practices, and contribute to the UX community through talks and workshops.</p>
+          <p>I'm a UX Architect specializing in design systems and the practical integration of AI into product workflows. I partner closely with product and engineering to build the structural foundations that let teams ship faster, more consistently, and with less rework, across complex, multi-product suites.</p>
+          <p>For years I've been doing this structural work: scaling design systems, developing team capabilities, and helping organizations move toward a more intentional, coherent design practice. More recently I've brought that same systems thinking to AI, building hands-on experience applying it to product planning, component discoverability, accessibility, and engineering usability.</p>
+          <p>I also mentor designers and design-adjacent leaders, coach developers on user-first practices, and contribute to the UX and dev communities through talks and workshops.</p>
           <h3>Quick Facts</h3>
           <ul>
             <li><b>Current role:</b> Senior UX Manager at Arctic Wolf</li>
-            <li><b>Core strengths:</b> Design Systems, UX Strategy, Information Architecture, Team Leadership, Cross-functional Collaboration</li>
+            <li><b>Core strengths:</b> Design Systems, AI-Augmented UX, UX Architecture, Cross-functional Leadership</li>
             <li><b>Community:</b> Speaker and contributor at Laracon, Fluxible, and other UX/Dev conferences</li>
-          </ul>
-          <h3>Community & Speaking Highlights</h3>
-          <ul>
-            <li><b>Laracon (2014-2018):</b> Speaker and recurring participant</li>
-            <li><b>Fluxible (2013-2015):</b> Attendee and workshop participant</li>
-            <li><b>Practical UX Series (2019):</b> Co-authored developer-friendly UX resources</li>
-            <li><b>STEMGyrls Workshop (2015):</b> Facilitated UX intro session for high-schoolers</li>
-            <li><b>Local Meetups:</b> Speaker at UX Waterloo and other software meetups</li>
           </ul>
           <a href={carynResume} target="_blank" rel="noreferrer" className="arrow-link block">View Resume (PDF)</a>
         </div>

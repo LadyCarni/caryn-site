@@ -24,7 +24,7 @@ const Home = () => {
           </div>
           <div className="description">
             <h3>I <span className="pop">design</span> experiences</h3>
-            <p>I find inspiration in the small details and bring creativity into every part of my life. Whether I'm behind the camera capturing light and texture, in the kitchen crafting recipes that are as beautiful as they are delicious, or designing thoughtful solutions in my professional work, I approach everything with intention and a strong sense of harmony.</p>
+            <p>I find inspiration in the small details and bring creativity into every part of my life. Whether I'm behind the camera capturing light and texture, in the kitchen crafting recipes that are as beautiful as they are delicious, or designing the systems that help product teams do their best work, I approach everything with intention and a strong sense of harmony.</p>
             <p>Creativity isn't just a skill or a hobby for me. It's how I see the world, how I solve problems, and how I connect with others. I aim to create experiences that are not only effective and intuitive, but also deeply meaningful.</p>
             <p>
               <Link to="/about" className="arrow-link block">Get to know Caryn</Link>
@@ -39,8 +39,9 @@ const Home = () => {
             <h2>What I do</h2>
           </div>
           <div className="description">
-            <p>I'm a designer and creative leader focused on guiding thoughtful, strategy-driven design processes that deliver meaningful outcomes. I specialize in creating user-centered solutions that balance aesthetic simplicity with functional clarity, always aligned to the broader vision.</p>
-            <p>I lead with intention, merging creativity and strategy to ensure every project meets its goals while maintaining a strong, consistent visual identity. Collaboration and accessibility are at the core of my approach, helping teams align across perspectives and bring ideas to life with clarity and impact.</p>
+            <p>I'm a UX Architect focused on design systems and AI integration, building the structural foundations that let product teams move faster without sacrificing consistency or quality.</p>
+            <p>My work lives at the intersection of design and engineering. I build and scale design systems, establish the patterns and governance that reduce rework across complex product suites, and bring AI into UX workflows in ways that are practical and grounded; not just experimental.</p>
+            <p>Collaboration is central to how I work. I partner closely with product and engineering, coach teams on user-first practices, and help organizations build a design practice that holds up as they grow.</p>
             <p>
               <Link to="/portfolio" className="arrow-link block">View Caryn's work</Link>
             </p>
