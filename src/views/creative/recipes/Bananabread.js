@@ -98,19 +98,19 @@ const BananaBread = () => {
 
               <img src={bananaBread1} alt="banana bread" />
 
-              <p><span className="instruction-step stir-step">Step 5.</span>Heat a wide frying pan or griddle on medium. Grease with your preferred ingredient (butter, shortening, coconut oil).</p>
+              <p><span className="instruction-step prep-step">Step 5.</span>Heat a wide frying pan or griddle on medium. Grease with your preferred ingredient (butter, shortening, coconut oil).</p>
 
               <p><span className="instruction-step stir-step">Step 6.</span>In a wide, shallow bowl or dish, beat french toast eggs till combined. If desired, add cinnamon for some extra flavor.</p>
 
               <p><span className="instruction-step stir-step">Step 7.</span>Dip a slice of banana bread into the egg, flipping gently to coat both sides.</p>
 
-              <p><span className="instruction-step stir-step">Step 8.</span>Fry till golden brown on both sides. Meanwhile, prepare the cinnamon butter.</p>
+              <p><span className="instruction-step cook-step">Step 8.</span>Fry till golden brown on both sides. Meanwhile, prepare the cinnamon butter.</p>
 
               <p><span className="instruction-step stir-step">Step 9.</span>In a large bowl, using a hand mixer, beat all ingredients until fully combined and butter is slightly whipped.</p>
 
               <img src={bananaBread3} alt="cinnamon butter" />
 
-              <p><span className="instruction-step stir-step">Step 10.</span>Place butter in a ramekin and garnish with a sprinkle of cinnamon. Slather on everything.</p>
+              <p><span className="instruction-step serve-step">Step 10.</span>Place butter in a ramekin and garnish with a sprinkle of cinnamon. Slather on everything.</p>
             </div>
           </div>
 

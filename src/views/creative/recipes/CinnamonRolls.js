@@ -86,29 +86,29 @@ const CinnamonRolls = () => {
 
               <p><span className="instruction-step stir-step">Step 2.</span> Place dough hook on stand mixer and knead dough on low-medium speed for 8 minutes. Dough should form into a ball and be slightly sticky.</p>
 
-              <p><span className="instruction-step stir-step">Step 3.</span> Transfer dough ball to a well-oiled bowl, cover with plastic wrap and a warm towel. If you have a proofing option on your oven, use with care. Allow dough to rise for 1 hour to 1 1/2 hours, or until doubled in size. This may more or less time depending the humidity and temperature in your home.</p>
+              <p><span className="instruction-step wait-step">Step 3.</span> Transfer dough ball to a well-oiled bowl, cover with plastic wrap and a warm towel. If you have a proofing option on your oven, use with care. Allow dough to rise for 1 hour to 1 1/2 hours, or until doubled in size. This may more or less time depending the humidity and temperature in your home.</p>
 
-              <p><span className="instruction-step stir-step">Step 4.</span> After dough has doubled in size, transfer dough to a well-floured surface and roll out into a 14x9 inch rectangle. Spread softened butter over dough, leaving a 1/4 inch margin at the far side of the dough.</p>
+              <p><span className="instruction-step prep-step">Step 4.</span> After dough has doubled in size, transfer dough to a well-floured surface and roll out into a 14x9 inch rectangle. Spread softened butter over dough, leaving a 1/4 inch margin at the far side of the dough.</p>
 
               <p><span className="instruction-step stir-step">Step 5.</span> In a small bowl, mix together brown sugar and cinnamon. Manually sprinkle mixture over the buttered dough, then rub the brown sugar mixture into the butter.</p>
 
-              <p><span className="instruction-step stir-step">Step 6.</span> Tightly roll dough up, starting from the 9-inch side and place seam side down making sure to seal the edges of the dough as best you can.</p>
+              <p><span className="instruction-step prep-step">Step 6.</span> Tightly roll dough up, starting from the 9-inch side and place seam side down making sure to seal the edges of the dough as best you can.</p>
 
               <p className="tip">You may need to cut off an inch or so off the ends of the dough as the ends may not be as full of the filling.</p>
 
-              <p><span className="instruction-step stir-step">Step 7.</span> Cut into 1 inch sections with a serrated knife. You should get 9 large pieces.</p>
+              <p><span className="instruction-step prep-step">Step 7.</span> Cut into 1 inch sections with a serrated knife. You should get 9 large pieces.</p>
 
               <img src={CinnamonRollBaking} alt="cinnamon rolls baking" />
 
-              <p><span className="instruction-step stir-step">Step 8.</span> Place cinnamon rolls in a greased 9x9 inch baking pan. You may also line the pan with parchment paper. Cover with plastic wrap and a warm towel and let rise again for 30-45 minutes.</p>
+              <p><span className="instruction-step wait-step">Step 8.</span> Place cinnamon rolls in a greased 9x9 inch baking pan. You may also line the pan with parchment paper. Cover with plastic wrap and a warm towel and let rise again for 30-45 minutes.</p>
 
               <img src={CinnamonRollBaked} alt="cinnamon rolls baked" />
 
-              <p><span class="instruction-step cook-step">Step 9.</span> Preheat oven to 350°F. Remove plastic wrap and towel and bake cinnamon rolls for 20-25 minutes or until just slightly golden brown on the edges. Do your best to under-bake them slightly so they stay soft in the middle.</p>
+              <p><span className="instruction-step cook-step">Step 9.</span> Preheat oven to 350°F. Remove plastic wrap and towel and bake cinnamon rolls for 20-25 minutes or until just slightly golden brown on the edges. Do your best to under-bake them slightly so they stay soft in the middle.</p>
 
               <img src={CinnamonRollFrosted} alt="cinnamon rolls" />
 
-              <p><span class="instruction-step serve-step">Step 10.</span> Allow them to cool for 5-10 minutes before frosting. In the bowl of an electric mixer, combine cream cheese, butter, powdered sugar and vanilla extract. Beat until smooth and fluffy. Spread over cinnamon rolls and serve immediately. Makes 9 cinnamon rolls.</p>
+              <p><span className="instruction-step serve-step">Step 10.</span> Allow them to cool for 5-10 minutes before frosting. In the bowl of an electric mixer, combine cream cheese, butter, powdered sugar and vanilla extract. Beat until smooth and fluffy. Spread over cinnamon rolls and serve immediately. Makes 9 cinnamon rolls.</p>
             </div>
           </div>
 

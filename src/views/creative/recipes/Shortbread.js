@@ -80,7 +80,7 @@ const Shortbread = () => {
 
               <p><span className="instruction-step cook-step">Step 7.</span> Bake for 7-10 minutes or until the edges of the cookies start to turn a golden color on the edges.</p>
 
-              <p><span className="instruction-step prep-step">Step 8.</span> Remove from oven and cool on a wire rack. Once cooled, cookies may be stored in an air-tight container up to 1 week, or frozen to last longer!</p>
+              <p><span className="instruction-step wait-step">Step 8.</span> Remove from oven and cool on a wire rack. Once cooled, cookies may be stored in an air-tight container up to 1 week, or frozen to last longer!</p>
 
               <p className="tip">This is the cookie press I use: <a target="_blank" href="https://www.amazon.ca/gp/product/B00ABH0PYI" rel="noreferrer">https://www.amazon.ca/gp/product/B00ABH0PYI</a></p>
             </div>

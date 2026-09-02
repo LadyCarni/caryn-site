@@ -66,9 +66,9 @@ const Fudge = () => {
 
               <p><span className="instruction-step stir-step">Step 2.</span> In a large bowl combine the chocolate chips and sweetened condensed milk. Microwave for one minute, stir, and microwave for 30 seconds.</p>
 
-              <p><span className="instruction-step stir-step">Step 3.</span> Stir in the Baileys and the vanilla extract until smooth. Pour into the prepared pan and top with your topping of choice. Press in slightly.</p>
+              <p><span className="instruction-step decorate-step">Step 3.</span> Stir in the Baileys and the vanilla extract until smooth. Pour into the prepared pan and top with your topping of choice. Press in slightly.</p>
 
-              <p><span className="instruction-step cook-step">Step 4.</span> Cover and refrigerate for four hours until firm. For firmer fudge store in the refrigerator.</p>
+              <p><span className="instruction-step wait-step">Step 4.</span> Cover and refrigerate for four hours until firm. For firmer fudge store in the refrigerator.</p>
             </div>
           </div>
 

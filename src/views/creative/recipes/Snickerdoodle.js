@@ -66,7 +66,7 @@ const SnickerdoodleCookie = () => {
 
               <p><span className="instruction-step stir-step">Step 4.</span> In a large bowl, beat butter and sugar with electric mixer or stand mixer on medium speed until light and fluffy. Add eggs and RumChata, mix well. Add flour mixture to the butter mixture; mix only until incorporated.</p>
 
-              <p><span className="instruction-step prep-step">Step 5.</span> In a small bowl, combine remaining 1/4 cup sugar and cinnamon.</p>
+              <p><span className="instruction-step stir-step">Step 5.</span> In a small bowl, combine remaining 1/4 cup sugar and cinnamon.</p>
 
               <p><span className='instruction-step prep-step'>Step 6.</span> Roll dough into 1 inch balls. Rolls balls in sugar and cinnamon mixture to coat.</p>
 

@@ -85,7 +85,7 @@ const BourbonMolassesCookie = () => {
 
               <p><span className="instruction-step stir-step">Step 2.</span> In the bowl of a stand mixer fitted with the paddle attachment, or in a large bowl using a handheld electric mixer, beat together the butter and brown sugar on medium-high speed until the mixture is light and fluffy, about 2 minutes, scraping down the sides as needed. Add in the vanilla and orange zest and beat until combined. Reduce the mixer speed to medium-low. Add in the eggs, one at a time, beating well after each addition. Add in the molasses and bourbon and beat until combined. Gradually add in the dry ingredients and beat until it's evenly incorporated.</p>
 
-              <p><span className="instruction-step prep-step">Step 3.</span> Cover the bowl and refrigerate for at least 4 hours, and up to 3 days.</p>
+              <p><span className="instruction-step wait-step">Step 3.</span> Cover the bowl and refrigerate for at least 4 hours, and up to 3 days.</p>
 
               <h2>When you're ready to bake</h2>
 
@@ -93,13 +93,13 @@ const BourbonMolassesCookie = () => {
 
               <p><span className="instruction-step prep-step">Step 2.</span> Prepare two of your favorite cookie sheets.</p>
 
-              <p><span className="instruction-step stir-step">Step 3.</span> Roll the dough into 3 Tablespoon sized balls. Fill a small and shallow bowl with granulated sugar. Roll each ball in the sugar until it's completely coated. Place the sugar coated cookie dough balls on the prepared baking sheets, leaving 2 inches between each ball for spreading.</p>
+              <p><span className="instruction-step prep-step">Step 3.</span> Roll the dough into 3 Tablespoon sized balls. Fill a small and shallow bowl with granulated sugar. Roll each ball in the sugar until it's completely coated. Place the sugar coated cookie dough balls on the prepared baking sheets, leaving 2 inches between each ball for spreading.</p>
 
               <img src={BourbonMolassesPrep} alt="preparing bourbon molasses cookies" />
 
               <p><span className="instruction-step cook-step">Step 4.</span> Bake, one tray at a time, for 8 to 10 minutes, or until the cookies have puffed up and have begun to slightly crack on top. (They will crack more as they cool, so don't over bake!)</p>
 
-              <p><span className="instruction-step prep-step">Step 5.</span> Remove from the oven and place the pan on a cooling rack. Cool cookies for 5 minutes on the baking sheet, then carefully transfer the cookies to a separate cooling rack to cool completely.</p>
+              <p><span className="instruction-step wait-step">Step 5.</span> Remove from the oven and place the pan on a cooling rack. Cool cookies for 5 minutes on the baking sheet, then carefully transfer the cookies to a separate cooling rack to cool completely.</p>
 
               <p><span className='instruction-step serve-step'>Step 6.</span> Serve cookies warm, or completely cool them and store them in an airtight container for up to 4 days.  Cookies may also be frozen for up to 3 months.</p>
             </div>

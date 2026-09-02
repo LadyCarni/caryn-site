@@ -83,13 +83,13 @@ const SweetPotatoCasserole = () => {
 
               <p><span className="instruction-step stir-step">Step 4.</span> Prep the topping. Combine cornflakes, pecans, brown sugar, and butter in a small bowl.</p>
 
-              <p><span className="instruction-step prep-step">Step 5.</span> Sprinkle cereal mixture over the casserole in diagonal rows two inches apart.</p>
+              <p><span className="instruction-step decorate-step">Step 5.</span> Sprinkle cereal mixture over the casserole in diagonal rows two inches apart.</p>
 
               <p><span className='instruction-step cook-step'>Step 6.</span> Bake at 350° for 30 minutes.</p>
 
-              <p><span className='instruction-step prep-step'>Step 7.</span> Remove from oven; let stand 10 minutes.</p>
+              <p><span className='instruction-step wait-step'>Step 7.</span> Remove from oven; let stand 10 minutes.</p>
 
-              <p><span className='instruction-step prep-step'>Step 8.</span>Sprinkle marshmallows in alternate rows between cornflake mixture; bake 10 minutes.</p>
+              <p><span className='instruction-step cook-step'>Step 8.</span>Sprinkle marshmallows in alternate rows between cornflake mixture; bake 10 minutes.</p>
 
               <p><span className='instruction-step serve-step'>Step 9.</span> Let stand 10 minutes before serving.</p>
             </div>

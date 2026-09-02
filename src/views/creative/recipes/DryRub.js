@@ -54,11 +54,11 @@ const DryRub = () => {
 
             <div className="recipe-instructions">
               <h2>Instructions</h2>
-              <p><span className="instruction-step stir-step">Step 1.</span> Measure all ingredients into a bowl.</p>
+              <p><span className="instruction-step prep-step">Step 1.</span> Measure all ingredients into a bowl.</p>
 
               <p><span className="instruction-step stir-step">Step 2.</span>Whisk till fully incorporated.</p>
 
-              <p><span className="instruction-step stir-step">Step 3.</span>Use liberally, on anything (ribs, wings, chicken, fish, etc.) Store in an air-tight container.</p>
+              <p><span className="instruction-step serve-step">Step 3.</span>Use liberally, on anything (ribs, wings, chicken, fish, etc.) Store in an air-tight container.</p>
             </div>
           </div>
 
