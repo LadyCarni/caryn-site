@@ -180,10 +180,10 @@ const allRecipes = [
   {
     title: "Twice Baked Potatoes",
     image: TwicePotatoes,
-    link: "#",
+    link: "/creative/recipes/twice-baked-potatoes",
     category: "Appetizers",
-    thumb: "item large-square soon",
-    id: 2,
+    thumb: "item large-square",
+    id: 'cb4522a6-0b2c-4baf-b199-f4cc7d41aa5b',
   },
   {
     title: "Bitterballen",
