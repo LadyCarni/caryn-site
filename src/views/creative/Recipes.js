@@ -162,6 +162,14 @@ const allRecipes = [
     id: '8bee53df-db27-4678-82ea-37f076d8ec2a',
   },
   {
+    title: "Loco Moco",
+    image: LocoMoco,
+    link: "/creative/recipes/loco-moco",
+    category: "Mains",
+    thumb: "item rectangle",
+    id: '83b9f7a8-66b7-40e8-95c2-94fba316d1c6',
+  },
+  {
     title: "Snickerdoodle Cookies",
     image: Snickerdoodle,
     link: "/creative/recipes/snickerdoodle",
@@ -288,14 +296,6 @@ const allRecipes = [
     category: "Desserts",
     thumb: "item soon",
     id: 19,
-  },
-  {
-    title: "Loco Moco",
-    image: LocoMoco,
-    link: "#",
-    category: "Mains",
-    thumb: "item rectangle soon",
-    id: 21,
   },
 ];
 

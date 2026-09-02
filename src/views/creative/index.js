@@ -17,6 +17,7 @@ import TaquitoRecipe from "./recipes/Taquitos";
 import SnickerdoodleCookie from "./recipes/Snickerdoodle";
 import BourbonMolassesCookie from "./recipes/BourbonMolasses";
 import CinnamonRolls from "./recipes/CinnamonRolls";
+import LocoMocoRecipe from "./recipes/LocoMoco";
 
 // Import Crafts last to avoid circular dependency
 import Crafts from "./Crafts";
@@ -39,6 +40,7 @@ export const CreativeRoutes = [
   { path: "/creative/recipes/snickerdoodle", name: "Snickerdoodle Cookies", component: SnickerdoodleCookie },
   { path: "/creative/recipes/bourbon-molasses-cookie", name: "Bourbon Molasses Cookies", component: BourbonMolassesCookie },
   { path: "/creative/recipes/cinnamon-rolls", name: "Cinnamon Rolls", component: CinnamonRolls },
+  { path: "/creative/recipes/loco-moco", name: "Loco Moco", component: LocoMocoRecipe },
   { path: "/creative/diy", name: "DIY", component: Diy },
   { path: "/creative/diy/pipe-desk", name: "Pipe Desk", component: PipeDesk },
   { path: "/creative/photography", name: "Photography", component: Photography },
