@@ -11,6 +11,13 @@ import teamBuilding from "assets/articles/team-building.jpg";
 const Articles = () => {
   const articles = [
     {
+      title: "AI for UX: The CLI Bridge",
+      link: "https://medium.com/@LadyCarni/ai-for-ux-the-cli-bridge-3abdfa8e8d9d",
+      date: "September 15, 2026",
+      summary: "Part 5 of the AI for UX series moves past the chat window and into the command line, covering tools like Claude Code for prototyping, accessibility audits, and automation. This article covers what a CLI-based workflow actually looks like day to day, when it's worth the setup cost over a GUI tool, and how to fold it into existing UX practice without losing the parts of the job that still need a human.",
+      id: 'b5e5c387-c901-4a05-85ad-e4af4b5a3160'
+    },
+    {
       title: "AI for UX: AI Across the UX Workflow — Writing, Prototyping, and Handoff",
       link: "https://medium.com/@LadyCarni/ai-for-ux-ai-across-the-ux-workflow-writing-prototyping-and-handoff-4076a991abe0",
       date: "June 28, 2026",
