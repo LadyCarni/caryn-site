@@ -41,6 +41,13 @@ const Diy = () => {
       id: crypto.randomUUID(),
     },
     {
+      title: "Antique table refurbish",
+      image: antiqueTable,
+      link: "/creative/diy/antique-table-refurbish",
+      thumb: "item rectangle",
+      id: crypto.randomUUID(),
+    },
+    {
       title: "Stairs refinish",
       image: stairsRefinish,
       link: "#",
@@ -81,13 +88,6 @@ const Diy = () => {
       link: "#",
       thumb: "item soon",
       id: 13,
-    },
-    {
-      title: "Antique table refurbish",
-      image: antiqueTable,
-      link: "#",
-      thumb: "item rectangle soon",
-      id: 14,
     },
   ];
 

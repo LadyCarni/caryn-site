@@ -13,6 +13,7 @@ import SarahsChoiceQuilt from "./crafts/SarahsChoiceQuilt";
 import PipeDesk from "./diy/PipeDesk";
 import LoftBed from "./diy/LoftBed";
 import BuffetRefurbish from "./diy/BuffetRefurbish";
+import AntiqueTableRefurbish from "./diy/AntiqueTableRefurbish";
 import Shortbread from "./recipes/Shortbread";
 import PumpkinPie from "./recipes/PumpkinPie";
 import SweetPotatoCasserole from "./recipes/SweetPotatoCasserole";
@@ -51,5 +52,6 @@ export const CreativeRoutes = [
   { path: "/creative/diy/pipe-desk", name: "Pipe Desk", component: PipeDesk },
   { path: "/creative/diy/loft-bed", name: "Loft Bed", component: LoftBed },
   { path: "/creative/diy/buffet-refurbish", name: "Buffet Refurbish", component: BuffetRefurbish },
+  { path: "/creative/diy/antique-table-refurbish", name: "Antique Table Refurbish", component: AntiqueTableRefurbish },
   { path: "/creative/photography", name: "Photography", component: Photography },
 ];
