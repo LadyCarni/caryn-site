@@ -232,6 +232,24 @@
     img {
       max-width: 100%;
       margin-bottom: 1em;
+
+      &.half-width {
+        width: 50%;
+      }
+    }
+
+    .image-row {
+      display: flex;
+      gap: 1em;
+
+      img {
+        flex: 1;
+        min-width: 0;
+      }
+
+      @media screen and (max-width: $medium) {
+        flex-direction: column;
+      }
     }
 
     .tip {
@@ -381,7 +399,32 @@
   }
 }
 
+.creative-divider {
+  align-items: center;
+  display: flex;
+  margin: 2em 0;
+
+  .divider-line {
+    background: rgba($primary, .3);
+    flex: 1;
+    height: 1px;
+  }
+
+  svg {
+    color: $primary-dark;
+    flex-shrink: 0;
+    margin: 0 1em;
+  }
+}
+
 .craft-body {
+  flex: 1;
+  min-width: 0;
+
+  @media screen and (min-width: $medium) {
+    margin-right: 2em;
+  }
+
   img {
     max-width: 100%;
   }
@@ -425,34 +468,34 @@
   flex-wrap: wrap;
   display: flex;
   margin-bottom: $lg-space;
+}
 
-  .prep-info-detail {
-    margin-right: 50px;
-    margin-bottom: 1em;
+.prep-info-detail {
+  margin-right: 50px;
+  margin-bottom: 1em;
 
-    strong {
-      color: $primary-dark;
-    }
+  strong {
+    color: $primary-dark;
+  }
 
-    p {
-      margin: $sm-space 0;
-    }
+  p {
+    margin: $sm-space 0;
+  }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: $sm-space 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: $sm-space 0;
 
-      li {
-        background: rgba($primary, .2);
-        border-radius: 20px;
-        display: inline-block;
-        font-size: .85em;
-        line-height: .85em;
-        margin-bottom: 1em;
-        margin-right: 1em;
-        padding: .75em 1em;
-      }
+    li {
+      background: rgba($primary, .2);
+      border-radius: 20px;
+      display: inline-block;
+      font-size: .85em;
+      line-height: .85em;
+      margin-bottom: 1em;
+      margin-right: 1em;
+      padding: .75em 1em;
     }
   }
 }
@@ -527,6 +570,10 @@
 
     @media screen and (min-width: ($medium + 1)) {
       width: 350px;
+      flex-shrink: 0;
+      margin-top: 2em;
+      position: sticky;
+      top: 130px;
     }
   }
 }

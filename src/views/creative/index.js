@@ -9,7 +9,10 @@ import BananaBread from "./recipes/Bananabread";
 import Fudge from "./recipes/Baileysfudge";
 import ChocolateOrange from "./recipes/OrangeChocolateSwirl";
 import VinylElephant from "./crafts/VinylElephant";
+import SarahsChoiceQuilt from "./crafts/SarahsChoiceQuilt";
 import PipeDesk from "./diy/PipeDesk";
+import LoftBed from "./diy/LoftBed";
+import BuffetRefurbish from "./diy/BuffetRefurbish";
 import Shortbread from "./recipes/Shortbread";
 import PumpkinPie from "./recipes/PumpkinPie";
 import SweetPotatoCasserole from "./recipes/SweetPotatoCasserole";
@@ -27,6 +30,7 @@ export const CreativeRoutes = [
   { path: "/creative", name: "Creative", component: Creative, exact: true },
   { path: "/creative/crafts", name: "Crafts", component: Crafts },
   { path: "/creative/crafts/vinyl-elephant", name: "Vinyl Elephant", component: VinylElephant },
+  { path: "/creative/crafts/sarahs-choice-quilt", name: "Sarah's Choice Quilt", component: SarahsChoiceQuilt },
   { path: "/creative/recipes", name: "Recipes", component: Recipes },
   { path: "/creative/recipes/cheesecake", name: "Cheesecake", component: Cheesecake },
   { path: "/creative/recipes/lasagna", name: "Chicken Lasagna", component: Lasagna },
@@ -45,5 +49,7 @@ export const CreativeRoutes = [
   { path: "/creative/recipes/twice-baked-potatoes", name: "Twice Baked Potatoes", component: TwiceBakedPotatoesRecipe },
   { path: "/creative/diy", name: "DIY", component: Diy },
   { path: "/creative/diy/pipe-desk", name: "Pipe Desk", component: PipeDesk },
+  { path: "/creative/diy/loft-bed", name: "Loft Bed", component: LoftBed },
+  { path: "/creative/diy/buffet-refurbish", name: "Buffet Refurbish", component: BuffetRefurbish },
   { path: "/creative/photography", name: "Photography", component: Photography },
 ];
