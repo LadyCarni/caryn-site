@@ -50,9 +50,9 @@ const Diy = () => {
     {
       title: "Stairs refinish",
       image: stairsRefinish,
-      link: "#",
-      thumb: "item large-square soon",
-      id: 3,
+      link: "/creative/diy/stairs-refinish",
+      thumb: "item large-square",
+      id: crypto.randomUUID(),
     },
     {
       title: "Air conditioner cover",

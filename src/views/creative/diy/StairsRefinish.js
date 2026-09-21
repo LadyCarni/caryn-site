@@ -62,7 +62,7 @@ const StairsRefinish = () => {
       <Helmet>
         <title>Stairs Refinish</title>
         <meta property="og:title" content="Stairs Refinish" />
-        <meta property="og:description" content="TODO: one-sentence description" />
+        <meta property="og:description" content="Refinishing a builder-grade staircase." />
         <meta property="og:image" content={stairsCover} />
         <meta property="og:url" content="https://carynfarvour.design/creative/diy/stairs-refinish" />
         <meta property="og:type" content="article" />
@@ -102,7 +102,7 @@ const StairsRefinish = () => {
               <img src={stairsPadding} alt="stairs old carpet" />
               <img src={stairsStaples} alt="stairs old staples" />
 
-              <p>The stairs underneath were made up of pieces of plywood that werent't even flush or straight in spots. Assorted screws, drywall pieces, and small rocks and other debris were jammed up in between the pieces of plywood.</p>
+              <p>The stairs underneath were made up of pieces of plywood that weren't even flush or straight in spots. Assorted screws, drywall pieces, and small rocks and other debris were jammed up in between the pieces of plywood.</p>
               <img src={stairsBeforeState} alt="gaps and mess on stairs" />
 
               <p>Once we had enough of the carpet off, we were able to start assessing the integrity of the stairs themselves.</p>
